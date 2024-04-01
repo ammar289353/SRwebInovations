@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         <div className="lg:w-[50%]  lg:pt-3">
           <img
-            className="h-80 md:h-[50vh] lg:h-[120vh] w-full"
+            className="h-80 md:h-[50vh] lg:h-[60vh] w-full"
             src={Hero}
             alt=""
           />
