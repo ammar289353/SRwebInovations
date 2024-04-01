@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
                 <div className='pt-6 px-6 md:px-12 lg:px-0 lg:pt-2'>
                     <button className='bg-[#09367D] w-[78vw] md:w-[37vw] lg:w-[27.5vw] lg:px-28 py-2 rounded-2xl shadow-sm shadow-blue-400'>
-                        Sign Up
+                        Sign Ups
                     </button>
                 </div>
             
