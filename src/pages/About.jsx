@@ -55,7 +55,7 @@ const About = () => {
                 <h1 className='pt-4 font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[2vw] text-gray-600'>Mission</h1>
                 <p className='pt-4 text-[2.5vw] sm:text-[2.5vw] md:text-[1vw] lg:text-[1vw] text-gray-500 hover:text-white'>Our mission is to empower businesses with innovative technology solutions.</p>
               </div>
-              <div className='w-[93vw] mt-3 sm:mt-4 md:mt-0 lg:mt-0 h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-[16vw] lg:w-[26vw] lg:h-[16vw] bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-black hover:text-white'>
+              <div className='w-[93vw] mt-3 sm:mt-4 md:mt-4 lg:mt-4 h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-[16vw] lg:w-[26vw] lg:h-[16vw] bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-black hover:text-white'>
                 <img src="https://techigems.pk/wp-content/uploads/2024/02/aboutx3.png" alt="" />
                 <h1 className='pt-4 font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[2vw] text-gray-600'>Vision</h1>
                 <p className='pt-4 text-[2.5vw] sm:text-[2.5vw] md:text-[1vw] lg:text-[1vw] text-gray-500 hover:text-white'>Our vision is to create a world where technology empowers everyone.</p>
@@ -67,7 +67,7 @@ const About = () => {
                 <h1 className='pt-4 font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[2vw] text-gray-600'>Value</h1>
                 <p className='pt-4 text-[2.5vw] sm:text-[2.5vw] md:text-[1vw] lg:text-[1vw] text-gray-500 hover:text-white'>We value integrity, innovation, and excellence in everything we do.</p>
               </div>
-              <div className='w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-[16vw] lg:w-[26vw] lg:h-[16vw] bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-black hover:text-white mt-3 sm:mt-4 md:mt-0 lg:mt-0'>
+              <div className='w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-[16vw] lg:w-[26vw] lg:h-[16vw] bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-black hover:text-white mt-3 sm:mt-4 md:mt-4 lg:mt-4'>
                 <img src="https://techigems.pk/wp-content/uploads/2024/02/aboutx4.png" alt="" />
                 <h1 className='pt-4 font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[2vw] text-gray-600'>Purpose</h1>
                 <p className='pt-4 text-[2.5vw] sm:text-[2.5vw] md:text-[1vw] lg:text-[1vw] text-gray-500 hover:text-white'>Our purpose is to bridge the gap between technology and humans, making operations simpler and more efficient.</p>
