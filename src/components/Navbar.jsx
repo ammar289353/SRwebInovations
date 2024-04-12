@@ -54,7 +54,7 @@ const Navbar = () => {
             </li>
           </Link>
           <Link
-            to="/MasterClasses"
+            to="/Portfolio"
             className="md:text-[#515151]  pt-2 text-white font-medium hover:text-[#009CDE]"
           >
             <li className="md:ml-6 ml-2 text-xl md:text-[1.5vw] my-2 md:my-0">
@@ -62,7 +62,7 @@ const Navbar = () => {
             </li>
           </Link>
           <Link
-            to="/MasterClasses"
+            to="/Contact"
             className="md:text-[#515151]  pt-2 text-white font-medium hover:text-[#009CDE]"
           >
             <li className="md:ml-6 ml-2 text-xl md:text-[1.5vw] my-2 md:my-0">
