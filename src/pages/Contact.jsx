@@ -39,6 +39,19 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+        <section>
+            <h1>
+            Send a message get in touch
+            </h1>
+            <div>
+                <div>
+                    
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
     </>
   )
 }
