@@ -51,72 +51,72 @@ const Portfolio = () => {
         <p className='font-semibold'>CUSTOM BUSINESS SOLUTIONS</p>
         <h1 className='text-[4vw] font-bold '>Position Your Brand <br /> As A Leader In The Industry</h1>
      </div>
-     <div className='w-[60vw] justify-between flex m-auto pb-4'>
-     <span onClick={() => handleCategoryChange('all')} className='border border-black rounded-full p-2 pl-6 pr-6 hover:bg-blue-800 hover:text-white'>All</span>
-                    <span onClick={() => handleCategoryChange('logo')} className='border border-black rounded-full p-2 pl-6 pr-6 hover:bg-blue-800 hover:text-white'>LOGO DESIGN</span>
-                    <span onClick={() => handleCategoryChange('website')} className='border border-black rounded-full p-2 pl-6 pr-6 hover:bg-blue-800 hover:text-white'>WEBSITE DESIGN</span>
-                    <span onClick={() => handleCategoryChange('stationary')} className='border border-black rounded-full p-2 pl-6 pr-6 hover:bg-blue-800 hover:text-white'>STATIONARY</span>
-                    <span onClick={() => handleCategoryChange('packaging')} className='border border-black rounded-full p-2 pl-6 pr-6 hover:bg-blue-800 hover:text-white'>Packaging Design</span>
+     <div className='w-[40vw] sm:w-[40vw] md:w-[60vw] lg:w-[60vw] justify-between block sm:block md:flex lg:flex m-auto pb-4'>
+     <button onClick={() => handleCategoryChange('all')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-4 sm:pr-4 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>All</button>
+                    <button onClick={() => handleCategoryChange('logo')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>LOGO DESIGN</button>
+                    <button onClick={() => handleCategoryChange('website')} className='border border-black rounded-full p-2 pl-1 pr-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>WEBSITE DESIGN</button>
+                    <button onClick={() => handleCategoryChange('stationary')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>STATIONARY</button>
+                    <button onClick={() => handleCategoryChange('packaging')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>Packaging Design</button>
 
      </div>
-     <div className="grid grid-cols-3 justify-between mt-5">
+     <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between mt-5">
                     {category === 'all' && (
                         <>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/arabic-logo-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/arabic-logo-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/creative-logo-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/creative-logo-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/artistic-logo-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/artistic-logo-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/logo-2.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/logo-2.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] '/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/website-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/website-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] '/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] '/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-2.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]  mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-2.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] '/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-3.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-3.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-4.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-4.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-3.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-3.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-2.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-2.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-4.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-4.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
                         </>
                     )}
 
                     {category === 'logo' && (
                         <>
-                           <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/arabic-logo-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                           <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/arabic-logo-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw]'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/creative-logo-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/creative-logo-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-3'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/logo-2.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-3'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/logo-2.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
 
                         </>
@@ -125,14 +125,14 @@ const Portfolio = () => {
 
                    {category === 'website' && (
                         <>
-                             <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/artistic-logo-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                             <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/artistic-logo-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-2.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-2.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/website-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/website-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
                            
                         </>
@@ -140,28 +140,28 @@ const Portfolio = () => {
                    
                    {category === 'stationary' && (
                         <>
-                             <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-1.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                             <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-1.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-2.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-2.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-3.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-3.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
                         </>
                     )}
                     
                     {category === 'packaging' && (
                         <>
-                             <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-4.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                             <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-4.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-3.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-3.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
-                            <div className='border rounded-lg w-[29vw] h-[22vw] mb-10'>
-                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-4.jpg" alt="" className='border rounded-lg w-[29vw] h-[22vw]'/>
+                            <div className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10'>
+                                <img src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-4.jpg" alt="" className='border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]'/>
                             </div>
                         </>
                     )}
