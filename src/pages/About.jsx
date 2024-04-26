@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import backgroundImage from '../images/Sr-Particle.jpg';
 
 const About = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -15,7 +16,7 @@ const About = () => {
      <section>
             <div className='h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[38vw] w-full text-center relative overflow-hidden'
              style={{
-                 backgroundImage: `url('https://img.alicdn.com/imgextra/i4/6000000000490/O1CN01D5fXgg1FUSjXOMz2D_!!6000000000490-0-tbvideo.jpg')`,
+                 backgroundImage: `url(${backgroundImage})`,
                 backgroundSize: 'cover'
                 }}
                 onMouseEnter={handleHover}
