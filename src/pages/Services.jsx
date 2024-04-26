@@ -131,9 +131,9 @@ const Services = () => {
     {/* OUR EXPERIENCE */}
      <section>
       <div className='w-[93vw] m-auto'>
-        <p className='font-semibold text-center text-[3vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] mt-10'>OUR EXPERIENCE</p>
-        <h1 className='font-bold text-center text-[4vw] sm:text-[3vw] md:text-[3vw] lg:text-[3vw]'>We Have Been Working In <br /> The Industry Since 2016</h1>
-        <p className='text-center text-[2vw] sm:text-[2vw] md:text-[1.2vw] lg:text-[1vw] mt-3'>We have established ourselves as a leading provider of innovative technology solutions. <br />With our state-of-the-art services, we can help you take your business to the next level and beyond.</p>
+        <p className='font-semibold text-center text-[4vw] sm:text-[4vw] md:text-[1vw] lg:text-[1vw] mt-10'>OUR EXPERIENCE</p>
+        <h1 className='font-bold text-center text-[3.5vw] sm:text-[3vw] md:text-[3vw] lg:text-[3vw]'>We Have Been Working In <br /> The Industry Since 2016</h1>
+        <p className='text-center text-[3vw] sm:text-[3vw] md:text-[1.2vw] lg:text-[1vw] mt-3'>We have established ourselves as a leading provider of innovative technology solutions. <br />With our state-of-the-art services, we can help you take your business to the next level and beyond.</p>
         <div className='block sm:block md:flex lg:flex mt-10 mb-10 w-[80vw] sm:w-[80vw] md:w-[86vw] lg:w-[90vw] m-auto'>
           <div className='rounded-xl border border-gray w-[80vw] h-[25vw] sm:w-[80vw] sm:h-[20vw] lg:w-[22vw] lg:h-[13vw] mr-4 mt-3 sm:mt-4'>
             <h1 className='text-center text-black font-bold text-[4.5vw] sm:text-[4vw] md:text-[4vw] lg:text-[3.5vw] mt-3'>14k</h1>
@@ -159,28 +159,28 @@ const Services = () => {
       <div className='w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20'>
          <div className='block sm:block md:flex lg:flex pt-10 sm:pt-10 md:pt-20 lg:pt-20'>
           <div className='w-[80vw] sm:w-[70vw] md:w-[35vw] lg:w-[30vw] m-auto'>
-            <p className='text-black text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold'>TESTIMONIAL</p>
+            <p className='text-black text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] font-semibold'>TESTIMONIAL</p>
             <h1 className='text-black text-[4vw] sm:text-[4vw] md:text-[3vw] lg:text-[3vw] font-bold'>What They Say About Us</h1>
-            <p className='text-[##7A5353]  text-[1.5vw] sm:text-[1.5vw] md:text-[1vw] lg:text-[1vw]]'>We have established ourselves as a leading provider of innovative technology solutions. With our state-of-the-art services, we can help you take.</p>
+            <p className='text-[##7A5353]  text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]]'>We have established ourselves as a leading provider of innovative technology solutions. With our state-of-the-art services, we can help you take.</p>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[60vw] m-auto'>
             <div className=' w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] mr-3 bg-white rounded-lg p-6 mt-6 sm:mt-6 md:mt-0 lg:mt-0'>
-            <p className='text-[#8d8b8b] text-[1.5vw] sm:text-[1.5vw] md:text-[1vw] lg:text-[1vw]'>chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.</p>
+            <p className='text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]'>chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.</p>
             <div className='flex'>
               <img src="https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg" alt="" className='rounded-full w-14 mt-2'/>
               <div>
-              <h1 className='text-blue-900 text-[1.4vw] font-bold ml-10 mt-3'>Mark Johnson</h1>
-              <p className='text-blue-700 text-[1vw] font-semibold ml-10'>Business manager</p>
+              <h1 className='text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3'>Mark Johnson</h1>
+              <p className='text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10'>Business manager</p>
               </div>
             </div>
            </div>
            <div className=' w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6 mt-4 sm:mt-4 md:mt-0 lg:mt-0 md:ml-4 lg:ml-5'>
-            <p className='text-[#8d8b8b] text-[1.5vw] sm:text-[1.5vw] md:text-[1vw] lg:text-[1vw]'>chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.</p>
+            <p className='text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]'>chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.</p>
             <div className='flex'>
               <img src="https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg" alt="" className='rounded-full w-14 mt-2'/>
               <div>
-              <h1 className='text-blue-900 text-[1.4vw] font-bold ml-10 mt-3'>Mark Johnson</h1>
-              <p className='text-blue-700 text-[1vw] font-semibold ml-10'>Business manager</p>
+              <h1 className='text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3'>Mark Johnson</h1>
+              <p className='text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10'>Business manager</p>
               </div>
             </div>
            </div>

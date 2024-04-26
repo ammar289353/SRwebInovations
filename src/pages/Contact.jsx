@@ -61,7 +61,7 @@ const Contact = () => {
                     Customer Support
                     </h1>
                     <div className="text-center pt-6">
-                    <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 ">
+                    <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
                        Chat now
                     </button>
                     </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                     Customer Support
                     </h1>
                     <div className="text-center pt-6">
-                    <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 ">
+                    <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
                        Chat now
                     </button>
                     </div>
@@ -83,7 +83,7 @@ const Contact = () => {
                     Customer Support
                     </h1>
                     <div className="text-center pt-6">
-                    <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 ">
+                    <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
                        Chat now
                     </button>
                     </div>
@@ -92,36 +92,36 @@ const Contact = () => {
             </section>
         <section className='w-[93vw] m-auto mt-10 pb-10'>
             <div className='block sm:block md:flex lg:flex'>
-            <div className='w-[30vw] h-auto sm:h-auto md:h-[38vw] lg:h-[38vw] mt-16'>
+            <div className='w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] text-center sm:text-center h-auto sm:h-auto md:h-[38vw] lg:h-[38vw] mt-16'>
              <p className='text-blue-800 font-semibold'>CONTACT US</p>
              <h1 className='text-[3vw] font-bold'>Get in touch</h1>
              <div className='pb-10 border-b'>
                         {emailData.map((item) => (
-                            <div key={item.id} className='flex items-center mt-7'>
-                                <div className='text-blue-500 text-[2vw]'>
+                            <div key={item.id} className='flex mt-7'>
+                                <div className='text-blue-500 text-[4.5vw] sm:text-[4.5vw] md:text-[2vw] lg:text-[2vw]'>
                                     {item.icon}
                                 </div>
-                                <div className='ml-4'>
-                                    <h1 className='text-[1.3vw] font-semibold text-gray-600'>{item.label}</h1>
-                                    <p className='text-[1vw] text-gray-600'>{item.email}</p>
+                                <div className='text-start ml-14'>
+                                    <h1 className=' text-[4vw] sm:text-[4vw] md:text-[1.3vw] lg:text-[1.3vw] font-semibold text-gray-600'>{item.label}</h1>
+                                    <p className=' text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] text-gray-600 pl-1'>{item.email}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
             </div>
             <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[70vw] lg:h-[45vw] mb-5">
-              <h1 className='text-[2.7vw] text-gray-800 font-bold pt-7 pl-10'>Send a message</h1>
-              <p className='text-[1.2vw] pl-10 text-gray-500 '>We have established ourselves as a leading provider of innovative <br /> technology solutions.</p>
+              <h1 className='text-[4vw] sm:text-[4vw] md:text-[2.7vw] lg:text-[2.7vw] text-gray-800 font-bold pt-7 pl-10'>Send a message</h1>
+              <p className='text-[2.6vw] sm:text-[2.6vw] md:text-[1.5vw] lg:text-[1.2vw] pl-10 text-gray-500 '>We have established ourselves as a leading provider of innovative <br /> technology solutions.</p>
               <form action="" className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-5'>
-                <input type="text" name='name' placeholder='Name' className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] p-[1vw] ml-10 '/>
-                <input type="text" name='company' placeholder='Company' className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  p-[1vw] ml-10 sm:ml-10 mt-3 sm:mt-3'/>
-                <input type="phone" name='compant' placeholder='Phone'  className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  mt-3 p-[1vw] ml-10 '/>
-                <input type="email" name='email' placeholder='Email' className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] mt-3  p-[1vw] ml-10 sm:ml-10'/>
+                 <input type="text"  name='name' placeholder='Name'  className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  mt-3 p-[1vw] ml-10'/>
+                <input type="text" name='company' placeholder='Company' className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  p-[1vw] ml-10 sm:ml-10 md:ml-0 lg:ml-0 mt-3 sm:mt-3'/>
+                <input type="phone" name='compant' placeholder='Phone'  className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  mt-3 p-[1vw] ml-10'/>
+                <input type="email" name='email' placeholder='Email' className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] mt-3  p-[1vw] ml-10 sm:ml-10 md:ml-0 lg:ml-0'/>
               </form>
-              <input type="text" name='subject' placeholder='Subject' className='bg-gray-100 rounded-full  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[52vw] mt-3  p-[1vw] ml-10'/>
-              <textarea name="message" type='text' placeholder='Message' className='bg-gray-100 rounded-lg mt-3  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[52vw] p-[1vw] ml-10 pl-6'></textarea>
-            <button className='bg-blue-700 w-[50vw] rounded-full ml-14 text-white p-3 mt-2'>
-                Send
+              <input type="text" name='subject' placeholder='Subject' className='bg-gray-100 rounded-full  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] mt-3 p-[1vw] ml-10'/>
+              <textarea name="message" type='text' placeholder='Message' className='bg-gray-100 rounded-lg mt-3  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] p-[1vw] ml-10 pl-6'></textarea>
+            <button className='flex bg-blue-700 w-[53vw] sm:w-[53vw] md:w-[50vw] lg:w-[50vw] text-center pl-[23vw] text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] rounded-full ml-14 text-white p-3 mt-2'>
+            <MdOutlineMail className='text-[3vw] sm:text-[3vw] md:text-[2vw] lg:text-[2vw] mt-1 sm:mt-1'/> Send
             </button>
             </div>
             </div>

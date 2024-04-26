@@ -153,9 +153,9 @@ const Home = () => {
               </p>
             </div>
             <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500  bg-[#6f8d9a] text-white px-5 py-1 border- rounded-lg ">
-                Learn More
-              </button>
+            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
+                       Learn more
+                    </button>
             </div>
           </div>
           {/* card2 */}
@@ -172,9 +172,9 @@ const Home = () => {
               </p>
             </div>
             <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500  bg-[#6f8d9a] text-white px-5 py-1 border- rounded-lg ">
-                Learn More
-              </button>
+            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
+                       Learn more
+                    </button>
             </div>
           </div>
           {/* card3 */}
@@ -191,9 +191,9 @@ const Home = () => {
               </p>
             </div>
             <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500  bg-[#6f8d9a] text-white px-5 py-1 border- rounded-lg ">
-                Learn More
-              </button>
+            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
+                       Learn more
+                    </button>
             </div>
           </div>
           {/* card4 */}
@@ -210,9 +210,9 @@ const Home = () => {
               </p>
             </div>
             <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500  bg-[#6f8d9a] text-white px-5 py-1 border- rounded-lg ">
-                Learn More
-              </button>
+            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
+                       Learn more
+                    </button>
             </div>
           </div>
           {/* card5 */}
@@ -229,9 +229,9 @@ const Home = () => {
               </p>
             </div>
             <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500  bg-[#6f8d9a] text-white px-5 py-1 border- rounded-lg ">
-                Learn More
-              </button>
+            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
+                       Learn more
+                    </button>
             </div>
           </div>
           {/* card6 */}
@@ -248,9 +248,9 @@ const Home = () => {
               </p>
             </div>
             <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500  bg-[#6f8d9a] text-white px-5 py-1 border- rounded-lg ">
-                Learn More
-              </button>
+              <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
+                       Learn more
+                    </button>
             </div>
           </div>
         </div>
