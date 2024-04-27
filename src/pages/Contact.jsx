@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
@@ -21,8 +22,44 @@ const Contact = () => {
         { id: 2,  icon: <FaWhatsapp/>, label: 'WhatsApp', email: '+92-343-900-6803' },
         { id: 3,  icon: <FiPhone/>, label: 'Contact', email: '021-3729-3327' },
         { id: 4,  icon: <IoLocationOutline/>, label: 'Find Us', email: 'Mashriq Center, Gulshan-e-iqbal, Block 14, Shah Suleman Road, Karachi-Pakistan' },
-        // Add more email entries as needed
     ];
+
+    const [name , setName] = useState('');
+    const [email , setEmail] = useState('');
+    const [company , setCompany] = useState('');
+    const [tel , setTel] = useState('');
+    const [subject , setSubject] = useState('');
+    const [message , setMessage] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const serviceId = 'service_y31dw1e';
+        const templateId = 'template_3viu0vg';
+        const publicKey = 'nNzYMhfwB-bCLec3Q';
+
+        const templateParams = {
+          form_name: name,
+          from_email: email,
+          to_name: 'maryam fatima',
+          message: message,
+        };
+       
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+    .then((response) => {
+       console.log('Email sent successfully!', response);
+       setName('');
+       setEmail('');
+       setCompany('');
+       setTel('');
+       setSubject('');
+       setMessage('');
+    })
+    .catch((error) => {
+        console.error('Error sending email', error);
+    });
+
+    }
 
   return (
     <>
@@ -109,20 +146,25 @@ const Contact = () => {
                         ))}
                     </div>
             </div>
+            {/* contact us */}
             <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[70vw] lg:h-[45vw] mb-5">
               <h1 className='text-[4vw] sm:text-[4vw] md:text-[2.7vw] lg:text-[2.7vw] text-gray-800 font-bold pt-7 pl-10'>Send a message</h1>
               <p className='text-[2.6vw] sm:text-[2.6vw] md:text-[1.5vw] lg:text-[1.2vw] pl-10 text-gray-500 '>We have established ourselves as a leading provider of innovative <br /> technology solutions.</p>
-              <form action="" className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-5'>
-                 <input type="text"  name='name' placeholder='Name'  className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  mt-3 p-[1vw] ml-10'/>
-                <input type="text" name='company' placeholder='Company' className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  p-[1vw] ml-10 sm:ml-10 md:ml-0 lg:ml-0 mt-3 sm:mt-3'/>
-                <input type="phone" name='compant' placeholder='Phone'  className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  mt-3 p-[1vw] ml-10'/>
-                <input type="email" name='email' placeholder='Email' className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] mt-3  p-[1vw] ml-10 sm:ml-10 md:ml-0 lg:ml-0'/>
-              </form>
-              <input type="text" name='subject' placeholder='Subject' className='bg-gray-100 rounded-full  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] mt-3 p-[1vw] ml-10'/>
-              <textarea name="message" type='text' placeholder='Message' className='bg-gray-100 rounded-lg mt-3  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] p-[1vw] ml-10 pl-6'></textarea>
-            <button className='flex bg-blue-700 w-[53vw] sm:w-[53vw] md:w-[50vw] lg:w-[50vw] text-center pl-[23vw] text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] rounded-full ml-14 text-white p-3 mt-2'>
+              <form action="" onSubmit={handleSubmit} className='grid pt-5'>
+                <div className='block sm:block md:flex lg:flex'>
+                 <input type="text"  name='name' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)}  className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] mt-3 p-[1vw] ml-10'/>
+                <input type="text" name='company' placeholder='Company' value={company} onChange={(e) => setCompany(e.target.value)} className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  p-[1vw] ml-10 sm:ml-10 md:ml-10 lg:ml-10 mt-3 sm:mt-3'/>
+                </div>
+                <div className='block sm:block md:flex lg:flex'>
+                <input type="tel" name='phone' placeholder='Phone' value={tel} onChange={(e) => setTel(e.target.value)}  className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  mt-3 p-[1vw] ml-10'/>
+                <input type="email" name='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} className='bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] mt-3  p-[1vw] ml-10 sm:ml-10 md:ml-10 lg:ml-10'/>
+                </div>
+              <input type="text" name='subject' placeholder='Subject' value={subject} onChange={(e) => setSubject(e.target.value)} className='bg-gray-100 rounded-full  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] mt-3 p-[1vw] ml-10'/>
+              <textarea name="message" type='text' placeholder='Message' value={message} onChange={(e) => setMessage(e.target.value)} className='bg-gray-100 rounded-lg mt-3  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] p-[1vw] ml-10 pl-6'></textarea>
+            <button type='submit' className='flex bg-blue-700 w-[53vw] sm:w-[53vw] md:w-[50vw] lg:w-[50vw] text-center pl-[23vw] text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] rounded-full ml-14 text-white p-3 mt-2'>
             <MdOutlineMail className='text-[3vw] sm:text-[3vw] md:text-[2vw] lg:text-[2vw] mt-1 sm:mt-1'/> Send
             </button>
+              </form>
             </div>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23078.288084510416!2d74.28194354170905!3d31.462312357965956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903e4b7e6ff87%3A0xcc62842150b2ec7!2sBlock-C%2C%20faisal%20Town!5e1!3m2!1sen!2s!4v1698343462968!5m2!1sen!2s" 
