@@ -6,7 +6,7 @@ import uiux from '../images/uiux.png'
 import branding from '../images/branding.png'
 import Group from '../images/Group.png'
 
-const Graphic = () => {
+const Website = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -31,16 +31,16 @@ const Graphic = () => {
                 >
                     <p className='text-white text-center pt-[20vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] '>TECHIGEMS PAKISTAN</p>
                     <div
-                        className={`absolute top-[16vw] mr-[9vw] sm:mr-[8vw] md:mr-[8vw] lg:mr-4 transform transition-transform ${
+                        className={`absolute top-[16vw] mr-[9vw] sm:mr-[8vw] md:mr-0 lg:mr-0 md:ml-3 lg:ml-3 text-center transform transition-transform ${
                             isHovered ? '-translate-y-2' : ''
                         } ${isHovered ? 'left-[38%]' : 'right-[30%]'}`}
                     >
                         <h1
-                            className={`text-white text-center text-[6vw] font-bold ${isHovered ? 'hovered' : ''}`}
+                            className={`text-white text-center text-[4vw] font-bold ${isHovered ? 'hovered' : ''}`}
                             onMouseEnter={handleHover}
                             onMouseLeave={handleMouseLeave}
                         >
-                           Graphic Design
+                          Website Development
                         </h1>
                     </div>
                     <p className='text-white text-[1.1vw] text-center mt-40'>WE OFFER A WIDE RANGE OF SERVICES TO HELP YOU CREATE A UNIQUE AND PROFESSIONAL VISUAL IDENTITY FOR YOUR BUSINESS. <br /> OUR TEAM OF EXPERIENCED DESIGNERS IS DEDICATED TO CREATING STUNNING DESIGNS THAT WILL MAKE YOUR BRAND STAND OUT <br /> FROM THE REST.</p>
@@ -94,4 +94,4 @@ const Graphic = () => {
   )
 }
 
-export default Graphic
+export default Website

@@ -7,6 +7,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Graphic from './components/Graphic';
+import Website from './components/Website';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path='Portfolio' element={<Portfolio />} />
       <Route path='Contact' element={<Contact />} />
       <Route path='Graphic' element={<Graphic />} />
+      <Route path='Website' element={<Website />} />
     </Routes>
     <Footer/>
    </>
