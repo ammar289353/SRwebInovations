@@ -6,6 +6,7 @@ import Services from "./pages/Services"
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Graphic from './components/Graphic';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path='About' element={<About />} />
       <Route path='Portfolio' element={<Portfolio />} />
       <Route path='Contact' element={<Contact />} />
+      <Route path='Graphic' element={<Graphic />} />
     </Routes>
     <Footer/>
    </>
