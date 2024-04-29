@@ -63,8 +63,8 @@ const Navbar = () => {
                         {servicesOpen && (
                             <div
                             className="absolut cursor-pointer w-[22vw] rounded-lg bg-white shadow-md p-2 mt-5">
-                                <Link to="/Graphic" className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]">Graphic Design</Link>
-                                <Link to="/Website" className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]">Website Development</Link>
+                                <Link to="/Graphic"  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]">Graphic Design</Link>
+                                <Link to="/Website"  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]">Website Development</Link>
                                 <Link to="/Service3" className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]">Domain & Hosting Solutions</Link>
                                 <Link to="/Service3" className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]">Mobile App Development</Link>
                                 <Link to="/Service3" className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]">Video Animation</Link>
