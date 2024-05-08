@@ -4,9 +4,48 @@ import Hero from "../images/sr-hero.jpg";
 import heroblock from "../images/sr-block.png";
 import herorocket from "../images/sr-rocket.png";
 import herobulb from "../images/sr-bulb.png";
-import UiUx from "../images/ui.png";
 
 const Home = () => {
+
+  const cardsData = [
+    {
+      imageUrl: 'https://techigems.pk/wp-content/uploads/2024/02/uiux.png',
+      title: 'UI/UX Design',
+      description:
+        'User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.',
+    },
+    {
+        imageUrl: 'https://techigems.pk/wp-content/uploads/2024/02/uiux.png',
+        title: 'UI/UX Design',
+        description:
+          'User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.',
+      },
+      {
+        imageUrl: 'https://techigems.pk/wp-content/uploads/2024/02/uiux.png',
+        title: 'UI/UX Design',
+        description:
+          'User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.',
+      },
+      {
+        imageUrl: 'https://techigems.pk/wp-content/uploads/2024/02/uiux.png',
+        title: 'UI/UX Design',
+        description:
+          'User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.',
+      },
+      {
+        imageUrl: 'https://techigems.pk/wp-content/uploads/2024/02/uiux.png',
+        title: 'UI/UX Design',
+        description:
+          'User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.',
+      },
+      {
+        imageUrl: 'https://techigems.pk/wp-content/uploads/2024/02/uiux.png',
+        title: 'UI/UX Design',
+        description:
+          'User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.',
+      },
+  ];
+
   return (
     <>
       {/* Hero  */}
@@ -133,128 +172,32 @@ const Home = () => {
         </div>
       </section>
       {/* Cards  */}
-      <section className="pt-12">
-        <p className="text-center">WHAT WE OFFER</p>
-        <h1 className="text-center text-[4vw] lg:text-[2vw] font-extrabold ">
-          Where Technology Meets Business.
-        </h1>
-        <div className="px-12 py-2 pt-6 grid lg:grid-cols-3 gap-8">
-          {/* car1 */}
-          <div className="shadow-2xl shadow-slate-400 pb-4 lg:h-96 mb-5">
-            <img className="pt-12 px-36 w-[380px]" src={UiUx} alt="" />
+      <section className='bg-[#FFFFFF] w-full h-auto md:h-auto lg:h-[86vw]'>
+      <div className='w-[93vw] m-auto pt-[5vw]'>
+        <p className='text-black text-center font-semibold'>WHAT WE OFFER</p>
+        <h1 className='text-center text-[3vw] font-bold'>Where Technology Meets <br /> Business.</h1>
+      </div>
+      <div className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8">
+        {cardsData.map((service, index) => (
+          <div key={index} className="shadow-2xl text-black hover:text-white bg-[#fff] hover:bg-[#093E86] shadow-slate-400 pb-4 sm:w-[70vw] md:w-[43vw] lg:w-[30vw] md:h-auto lg:h-[30vw] mb-4">
+            <img className="pt-12 px-36 w-[390px] ml-0 sm:ml-10 sm:w-[385px] md:ml-1 md:w-[370px] lg:w-[380px]" src={service.imageUrl} alt="" />
             <div>
-              <h1 className="text-center font-bold text-[4vw] lg:text-[2vw] pt-3 ">
-                UI/UX Design
+              <h1 className=" text-center font-bold text-[4vw] md:text-[3vw] lg:text-[2vw] pt-3 ">
+                {service.title}
               </h1>
-              <p className="text-[2vw] pt-3 lg:text-[1vw] px-12 ">
-                User experience (UX) and user interface (UI) design are critical
-                components of any website or application. Our team of UI/UX
-                designers will work with you to create a user-friendly
+              <p className="text-[3vw] pt-3 sm:text-[2vw] md:text-[2vw] lg:text-[1vw] px-12 ">
+                {service.description}
               </p>
             </div>
             <div className="text-center pt-6">
-            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                       Learn more
-                    </button>
+              <button className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
+                Learn More
+              </button>
             </div>
           </div>
-          {/* card2 */}
-          <div className="shadow-2xl shadow-slate-400 pb-4 lg:h-96 mb-5">
-            <img className="pt-12 px-36 w-[380px]" src={UiUx} alt="" />
-            <div>
-              <h1 className="text-center font-bold text-[4vw] lg:text-[2vw] pt-3 ">
-                UI/UX Design
-              </h1>
-              <p className="text-[2vw] pt-3 lg:text-[1vw] px-12 ">
-                User experience (UX) and user interface (UI) design are critical
-                components of any website or application. Our team of UI/UX
-                designers will work with you to create a user-friendly
-              </p>
-            </div>
-            <div className="text-center pt-6">
-            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                       Learn more
-                    </button>
-            </div>
-          </div>
-          {/* card3 */}
-          <div className="shadow-2xl shadow-slate-400 pb-4 lg:h-96 mb-5">
-            <img className="pt-12 px-36 w-[380px]" src={UiUx} alt="" />
-            <div>
-              <h1 className="text-center font-bold text-[4vw] lg:text-[2vw] pt-3 ">
-                UI/UX Design
-              </h1>
-              <p className="text-[2vw] pt-3 lg:text-[1vw] px-12 ">
-                User experience (UX) and user interface (UI) design are critical
-                components of any website or application. Our team of UI/UX
-                designers will work with you to create a user-friendly
-              </p>
-            </div>
-            <div className="text-center pt-6">
-            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                       Learn more
-                    </button>
-            </div>
-          </div>
-          {/* card4 */}
-          <div className="shadow-2xl shadow-slate-400 pb-4 lg:h-96 mb-5">
-            <img className="pt-12 px-36 w-[380px]" src={UiUx} alt="" />
-            <div>
-              <h1 className="text-center font-bold text-[4vw] lg:text-[2vw] pt-3 ">
-                UI/UX Design
-              </h1>
-              <p className="text-[2vw] pt-3 lg:text-[1vw] px-12 ">
-                User experience (UX) and user interface (UI) design are critical
-                components of any website or application. Our team of UI/UX
-                designers will work with you to create a user-friendly
-              </p>
-            </div>
-            <div className="text-center pt-6">
-            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                       Learn more
-                    </button>
-            </div>
-          </div>
-          {/* card5 */}
-          <div className="shadow-2xl shadow-slate-400 pb-4 lg:h-96 mb-5">
-            <img className="pt-12 px-36 w-[380px]" src={UiUx} alt="" />
-            <div>
-              <h1 className="text-center font-bold text-[4vw] lg:text-[2vw] pt-3 ">
-                UI/UX Design
-              </h1>
-              <p className="text-[2vw] pt-3 lg:text-[1vw] px-12 ">
-                User experience (UX) and user interface (UI) design are critical
-                components of any website or application. Our team of UI/UX
-                designers will work with you to create a user-friendly
-              </p>
-            </div>
-            <div className="text-center pt-6">
-            <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                       Learn more
-                    </button>
-            </div>
-          </div>
-          {/* card6 */}
-          <div className="shadow-2xl shadow-slate-400 pb-4 lg:h-96 mb-5">
-            <img className="pt-12 px-36 w-[380px]" src={UiUx} alt="" />
-            <div>
-              <h1 className="text-center font-bold text-[4vw] lg:text-[2vw] pt-3 ">
-                UI/UX Design
-              </h1>
-              <p className="text-[2vw] pt-3 lg:text-[1vw] px-12 ">
-                User experience (UX) and user interface (UI) design are critical
-                components of any website or application. Our team of UI/UX
-                designers will work with you to create a user-friendly
-              </p>
-            </div>
-            <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                       Learn more
-                    </button>
-            </div>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
+        </section>
        {/* TESTIMONIAL */}
      <section className='bg-[#D9EAF7] w-full h-auto'>
       <div className='w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20'>

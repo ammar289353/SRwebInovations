@@ -12,7 +12,7 @@ const Services = () => {
         setIsHovered(false);
     };
 
-    const servicesData = [
+    const cardsData = [
         {
           imageUrl: 'https://techigems.pk/wp-content/uploads/2024/02/uiux.png',
           title: 'UI/UX Design',
@@ -86,7 +86,7 @@ const Services = () => {
         <h1 className='text-center text-[3vw] font-bold'>Where Technology Meets <br /> Business.</h1>
       </div>
       <div className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8">
-        {servicesData.map((service, index) => (
+        {cardsData.map((service, index) => (
           <div key={index} className="shadow-2xl text-black hover:text-white bg-[#fff] hover:bg-[#093E86] shadow-slate-400 pb-4 sm:w-[70vw] md:w-[43vw] lg:w-[30vw] md:h-auto lg:h-[30vw] mb-4">
             <img className="pt-12 px-36 w-[390px] ml-0 sm:ml-10 sm:w-[385px] md:ml-1 md:w-[370px] lg:w-[380px]" src={service.imageUrl} alt="" />
             <div>
@@ -105,7 +105,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-    </section>
+        </section>
     {/* OUR WORK PORTFOLIO */}
     <section className='bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]'>
       <div className='lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10'> 
