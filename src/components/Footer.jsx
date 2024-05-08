@@ -1,70 +1,62 @@
 import React from 'react'
-import NavLogo from '../images/nav-logo.png'
+import FooterLogo from '../images/footer-logo.png'
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
     <section className='bg-[#0B4790] '>
-         <div className='pt-12'>
-            <h1 className='text-[6vw] lg:text-[3vw] text-center font-bold pt-3 text-white pb-12 lg:pb-24'>Lets Talk </h1>
-            
-         </div>
          <hr />
-         <div className='pt-5 lg:flex justify-between text-white  lg:pl-4 pr-12 pb-20'>
-            <div>
+         <div className='pt-5 text-white pb-12'>
+            <div className='text-center'>
                 <img 
-                className='h-24 lg:h-30 lg:w-72 px-12 md:px-48 lg:px-4'
-                src={NavLogo} alt="" /> 
-                <p className='lg:w-72 text-[3vw] px-6 md:px-12 lg:text-[1vw] pt-3 '>
+                className='h-24 lg:h-30 pl-32 lg:px-[46vw] '
+                src={FooterLogo} alt="" /> 
+                <p className=' text-[3vw]  md:px-12 lg:text-[1vw] pt-3 '>
                     We are a team of tech-savvy professionals who are dedicated to simplifying business operations with the power of technology.</p>
             </div>
-           <div className='flex gap-20 px-3 md:px-24'>
-           <div className='text-center pt-8'>
-                <h1 className='text-[6vw] lg:text-[2vw] font-bold '>
+            </div>
+           <div className='flex gap-10 lg:gap-20 text-white px-4  justify-center pb-8'>
+           <div className='text-center'>
+                <h1 className='text-[4vw] lg:text-[2vw] font-bold pb-5 '>
                     Company
                 </h1>
                 <ul>
-                    <li>About Us</li>
-                    <li>About Us</li>
-                    <li>About Us</li>
-                    <li>About Us</li>
+                    <li className='text-left hover:text-slate-300'>About Us</li>
+                    <hr />
+                    <li className='text-left hover:text-slate-300'>Portfolio</li>
+                    <hr />
+                    
                 </ul>
             </div>
-            <div className='text-center pt-8'>
-            <h1 className='text-[6vw] lg:text-[2vw] font-bold '>
+            <div className='text-center'>
+            <h1 className='text-[4vw] lg:text-[2vw] font-bold pb-2 '>
                     Services
                 </h1>
                 <ul>
-                    <li>About Us</li>
-                    <li>About Us</li>
-                    <li>About Us</li>
-                    <li>About Us</li>
+                    <li className='text-left hover:text-slate-300'>Web Development</li>
+                    <hr />
+                    <li className='text-left hover:text-slate-300'>Graphic Design</li>
+                    <hr />
+                    <li className='text-left hover:text-slate-300'>Digital Marketting</li>
+                    <hr />
+                    <li className='text-left hover:text-slate-300'>Mobile App Development</li>
+                    <hr />
                 </ul>
             </div>
-           </div>
-            <div className='pt-8'>
-            <h1 className='text-center text-[6vw] lg:text-[2vw] font-bold '>
-                    NewsLetter
-                </h1>
-                <p className='text-[4vw] pt-3 lg:text-[1.3vw] lg:w-72 px-4 md:px-12 lg:px-12'>
-                Sign up our newsletter to get update news and article about company.
-                </p>
-                <div className='pt-6 lg:pt-2 px-6 md:px-12 lg:px-0  text-center '>
-                    <input 
-                    className='px-8 py-2 rounded-2xl'
-                    type="text" placeholder='Enter Your Email' />
+            <div className=''>
+                <h1 className='text-[4vw] lg:text-[2vw] font-bold '>Lets Connect</h1>
+                <div className='flex gap-2 pt-6'>
+                <FaInstagram/>
+                <FaFacebook />
                 </div>
-                <div className='pt-6 px-6 md:px-12 lg:px-0 lg:pt-4 text-center'>
-                    <button className='bg-[#09367D] px-24  lg:px-24 py-2 rounded-2xl shadow-sm shadow-blue-400'>
-                        Sign Up
-
-                    </button>
-                </div>
-            
             </div>
-         </div>
+           </div>
+         
          <hr />
          <div className='py-3 px-3 text-white'>
-        <p>© 2024, Techigems All Rights Reserved</p>
+        <p>© 2024, SR Innovations All Rights Reserved</p>
          </div>
     </section>
   )

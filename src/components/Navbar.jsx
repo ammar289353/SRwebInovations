@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import Navlogo from "../images/nav-logo.png";
+import "./Navbar.css"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="shadow-md w-full fixed z-50 top-0 left-0">
+    <div className="shadow-md w-full fixed z-50 top-0 left-0 ">
       <div className="md:flex items-center h-[15vw] sm:h-auto justify-between bg-white md:px-20 px-7">
         <div
           onClick={() => setMenuOpen(!menuOpen)}
@@ -29,38 +30,38 @@ const Navbar = () => {
         <div className="flex">
           <Link to="/">
             <img
-              className="h-[12vw] sm:h-[8w] md:h-[6vw] lg:h-[6vw] pl-[10vw] sm:pl-[10vw] md:pl-0 pt-3 sm:py-2"
+              className="h-[14vw] sm:h-[8w] md:h-[6vw] lg:h-[6vw] pl-[12vw] sm:pl-[10vw] md:pl-0 pt-3 sm:py-2"
               src={Navlogo}
               alt=""
             />
           </Link>
         </div>
         <ul
-          className={`md:flex text-left items-start md:pb-6 pb-8 absolute md:static md:bg-white bg-[#2B2B2B] h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
+          className={`md:flex text-left items-start  md:pb-2 pb-8 absolute md:static md:bg-white bg-[#2B2B2B] h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
                     md:pl-0 pl-9 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4 ${
                       menuOpen ? "top-6" : "top-[-1100px]"
                     }`}
         >
-          <li>
+          <li onClick={()=>setMenuOpen(false)}>
             <Link
               to="/Home"
-              className="md:text-[#515151] pt-24 pr-6 text-white font-medium hover:text-[#009CDE]"
+              className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2  pr-6 text-white font-medium hover:text-[#65c4cd]"
             >
               Home
             </Link>
           </li>
-          <li>
+          <li onClick={()=>setMenuOpen(false)}>
             <Link
               to="/About"
-              className="md:text-[#515151] pt-2 pr-6 text-white font-medium hover:text-[#009CDE]"
+              className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2 pr-6 text-white font-medium hover:text-[#65c4cd]"
             >
               About Us
             </Link>
           </li>
-          <li onMouseEnter={() => toggleServices('open')}>
+          <li onClick={()=>setMenuOpen(false)} onMouseEnter={() => toggleServices('open')}>
             <Link
               to="/Services"
-              className="md:text-[#515151] pt-2 pr-6 text-white font-medium hover:text-[#009CDE]"
+              className="nav md:text-[#515151] pt-2 text-[4vw] lg:text-[1.5vw] pr-6 text-white font-medium hover:text-[#65c4cd]"
             >
               Services
             </Link>
@@ -139,18 +140,18 @@ const Navbar = () => {
               </div>
             )}
           </li>
-          <li>
+          <li onClick={()=>setMenuOpen(false)}>
             <Link
               to="/Portfolio"
-              className="md:text-[#515151] pt-2 pr-6 text-white font-medium hover:text-[#009CDE]"
+              className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2 pr-6 text-white font-medium hover:text-[#65c4cd]"
             >
               Portfolio
             </Link>
           </li>
-          <li>
+          <li onClick={()=>setMenuOpen(false)}>
             <Link
               to="/Contact"
-              className="md:text-[#515151] pt-2 pr-6 text-white font-medium hover:text-[#009CDE]"
+              className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2 pr-6 text-white font-medium hover:text-[#65c4cd]"
             >
               Contact Us
             </Link>
@@ -158,9 +159,9 @@ const Navbar = () => {
           <li>
             <Link
               to="/Contact"
-              className="md:text-[#515151]  pt-2 text-white font-medium hover:text-[#009CDE]"
+              className="md:text-[#515151]  pt-2 pl-3 text-white font-medium hover:text-[#009CDE]"
             >
-              <button className="md:ml-6 ml-2 text-xl md:text-[1.5vw] my-2 md:my-0 px-4 py-1  bg-[#093D84] text-white rounded-2xl ">
+              <button className="md:ml-6 text-xl md:text-[1.5vw] my-2 md:my-0 px-24 lg:px-4 py-1  bg-[#093D84] text-white rounded-2xl ">
                 Get Started
               </button>
             </Link>

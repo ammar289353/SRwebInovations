@@ -53,11 +53,11 @@ const Portfolio = () => {
         <h1 className='text-[4vw] font-bold '>Position Your Brand <br /> As A Leader In The Industry</h1>
      </div>
      <div className='w-[40vw] sm:w-[40vw] md:w-[60vw] lg:w-[60vw] justify-between block sm:block md:flex lg:flex m-auto pb-4'>
-     <button onClick={() => handleCategoryChange('all')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-4 sm:pr-4 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>All</button>
-                    <button onClick={() => handleCategoryChange('logo')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>LOGO DESIGN</button>
-                    <button onClick={() => handleCategoryChange('website')} className='border border-black rounded-full p-2 pl-1 pr-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>WEBSITE DESIGN</button>
-                    <button onClick={() => handleCategoryChange('stationary')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>STATIONARY</button>
-                    <button onClick={() => handleCategoryChange('packaging')} className='border border-black rounded-full p-2 pl-3 pr-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>Packaging Design</button>
+     <button onClick={() => handleCategoryChange('all')} className='border border-black rounded-full px-16 mb-1 sm:pl-4 sm:pr-4 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>All</button>
+                    <button onClick={() => handleCategoryChange('logo')} className='border border-black rounded-full px-6 mb-1  sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>LOGO DESIGN</button>
+                    <button onClick={() => handleCategoryChange('website')} className='border border-black rounded-full px-3 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>WEBSITE DESIGN</button>
+                    <button onClick={() => handleCategoryChange('stationary')} className='border border-black rounded-full px-7 mb-1 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>STATIONARY</button>
+                    <button onClick={() => handleCategoryChange('packaging')} className='border border-black rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white'>Packaging Design</button>
 
      </div>
      <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between mt-5">

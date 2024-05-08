@@ -1,0 +1,21 @@
+.nav{
+    position: relative;
+}
+.nav:active{
+   color: #009CDE;
+}
+.nav::after{
+    content: '';
+    height: 2px;
+    width: 75%;
+    background: rgb(0, 183, 255);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.nav:hover::after{
+    opacity: 1;
+}
