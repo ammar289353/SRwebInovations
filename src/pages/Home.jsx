@@ -116,8 +116,13 @@ const Home = () => {
         </div>
       </section>
       {/* Moto */}
-      <section className="bg-[#0B488D]  text-white">
-        <div className="md:flex pb-12">
+      <section className="bg-[#0B488D] " 
+      style={{
+            backgroundImage: `url(${Hero})`,
+            backgroundSize: "cover",
+            opacity : 0.6,
+          }}>
+        <div className="md:flex pb-12 text-white">
           <div className="md:w-[50%] pt-12 md:pt-32 px-8">
             <p>WE ARE</p>
             <h1 className="text-[3vw] font-extrabold">
@@ -152,7 +157,7 @@ const Home = () => {
           </div>
         </div>
         <hr />
-        <div className="flex justify-between px-4 md:px-24 py-12">
+        <div className="flex justify-between px-4 md:px-24 py-12 text-white">
           <div>
             <h1 className="text-[6vw] md:text-[3vw] font-bold ">14K+</h1>
             <p>Project Done</p>
