@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import FooterLogo from "../images/footer-logo.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <section className="bg-[#0B4790] ">
+    <section className="bg-[#0B4790] " data-aos="zoom-in-left">
       <hr />
       <div className="pt-5 text-white pb-12">
         <div className="text-center">
