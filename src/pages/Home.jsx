@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import "../App.css";
 import Hero from "../images/sr-hero.jpg";
 import heroblock from "../images/sr-block.png";
@@ -8,9 +8,9 @@ import herorocket from "../images/sr-rocket.png";
 import herobulb from "../images/sr-bulb.png";
 
 const Home = () => {
-  useEffect(() =>{
-     AOS.init({duration: 3000});
-  },[])
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const cardsData = [
     {
       imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
@@ -54,7 +54,10 @@ const Home = () => {
     <>
       {/* Hero  */}
       <section className="block md:flex w-[100%] mt-8 lg:mt-16">
-        <div className="text-black bg-[#C8E1F4] md:w-[50%] pt-3 pb-2" data-aos="flip-right" >
+        <div
+          className="text-black bg-[#C8E1F4] md:w-[50%] pt-3 pb-2"
+          data-aos="flip-right"
+        >
           <h1 className="text-[4vw] font-extrabold px-12 pt-12 lg:pt-32">
             Shaping Tomorrow
             <span className="text-[#0B428B]"> with State-of-the-Art </span>
@@ -84,6 +87,7 @@ const Home = () => {
         <div
           className="mx-16 bg-[#093D84] h-auto pb-12 lg:h-48 my-5 rounded-lg lg:flex justify-between 
         px-6 lg:px-12 pt-12"
+        data-aos="fade-up"
         >
           <div className="flex gap-6">
             <img src={heroblock} className="lg:h-24" alt="" />
@@ -121,12 +125,15 @@ const Home = () => {
         </div>
       </section>
       {/* Moto */}
-      <section className="bg-[#0B488D] " 
-      style={{
-            backgroundImage: `url(${Hero})`,
-            backgroundSize: "cover",
-            opacity : 0.6,
-          }}>
+      <section
+        className="bg-[#0B488D] "
+        data-aos="zoom-in-left"
+        style={{
+          backgroundImage: `url(${Hero})`,
+          backgroundSize: "cover",
+          opacity: 0.6,
+        }}
+      >
         <div className="md:flex pb-12 text-white">
           <div className="md:w-[50%] pt-12 md:pt-32 px-8">
             <p>WE ARE</p>
@@ -181,15 +188,60 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* OUR WORK PORTFOLIO */}
+      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]" data-aos="zoom-in-left">
+        <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
+          <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
+            <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
+              OUR WORK PORTFOLIO
+            </p>
+            <h1 className="text-[5vw] sm:text-[4vw] md:text-[4vw] lg:text-4xl font-bold pt-3 text-[#05185A]">
+              Discover Our Portfolio Highlighting Our Expertise and Creativity
+            </h1>
+            <p className="md:text-[1.3vw] lg:text-[1vw] pt-4">
+              Explore our portfolio for a showcase of our expertise and
+              innovative solutions, demonstrating our commitment to excellence
+              in every project.lvinar dapibus leo.
+            </p>
+            <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
+              Explore More
+            </button>
+            <div className="sm:block lg:flex md:flex mt-8">
+              <div className=" mr-4">
+                <img
+                  src="https://techigems.pk/wp-content/uploads/2024/02/Rectangle-63.png"
+                  alt=""
+                />
+              </div>
+              <div className="mt-4 sm:mt-4 md:mt-0">
+                <img
+                  src="https://techigems.pk/wp-content/uploads/2024/02/Rectangle-64.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mt-3 sm:mt-5 pb-5 md:mt-10 lg:mt-16 lg:ml-7 md:ml-5">
+            <img
+              src="https://techigems.pk/wp-content/uploads/2024/02/services.png"
+              alt=""
+              className="md:h-[70vw] lg:h-[50vw] sm:h-[70vw] sm:w-[70vw] md:w-[70vw] lg:w-[50vw]"
+            />
+          </div>
+        </div>
+      </section>
       {/* Cards  */}
       <section className="bg-[#FFFFFF] w-full h-auto md:h-auto lg:h-[86vw]">
-        <div className="w-[93vw] m-auto pt-[5vw]">
+        <div className="w-[93vw] m-auto pt-[5vw]" data-aos="fade-down">
           <p className="text-black text-center font-semibold">WHAT WE OFFER</p>
           <h1 className="text-center text-[3vw] font-bold">
             Bridging Technology and <br /> Business.
           </h1>
         </div>
-        <div className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8">
+        <div
+          className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8"
+          data-aos="zoom-in-left"
+        >
           {cardsData.map((service, index) => (
             <div
               key={index}
@@ -218,7 +270,7 @@ const Home = () => {
         </div>
       </section>
       {/* TESTIMONIAL */}
-      <section className="bg-[#D9EAF7] w-full h-auto">
+      <section className="bg-[#D9EAF7] w-full h-auto" data-aos="zoom-in-left">
         <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20">
           <div className="block sm:block md:flex lg:flex pt-10 sm:pt-10 md:pt-20 lg:pt-20">
             <div className="w-[80vw] sm:w-[70vw] md:w-[35vw] lg:w-[30vw] m-auto">
