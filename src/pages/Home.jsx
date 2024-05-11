@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 import "../App.css";
 import Hero from "../images/sr-hero.jpg";
 import heroblock from "../images/sr-block.png";
@@ -6,6 +8,9 @@ import herorocket from "../images/sr-rocket.png";
 import herobulb from "../images/sr-bulb.png";
 
 const Home = () => {
+  useEffect(() =>{
+     AOS.init({duration: 3000});
+  },[])
   const cardsData = [
     {
       imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
@@ -49,7 +54,7 @@ const Home = () => {
     <>
       {/* Hero  */}
       <section className="block md:flex w-[100%] mt-8 lg:mt-16">
-        <div className="text-black bg-[#C8E1F4] md:w-[50%] pt-3 pb-2">
+        <div className="text-black bg-[#C8E1F4] md:w-[50%] pt-3 pb-2" data-aos="flip-right" >
           <h1 className="text-[4vw] font-extrabold px-12 pt-12 lg:pt-32">
             Shaping Tomorrow
             <span className="text-[#0B428B]"> with State-of-the-Art </span>
@@ -66,7 +71,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="md:w-[50%]  lg:pt-3">
+        <div className="md:w-[50%]  lg:pt-3" data-aos="flip-left">
           <img
             className="h-80 md:h-[80vh] lg:h-[90vh] w-full"
             src={Hero}
