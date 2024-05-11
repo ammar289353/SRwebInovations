@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import backgroundImage from "../images/Sr-Particle.jpg";
+import Screenshot from '../images/Screenshot (93).png';
+import Screenshot2 from '../images/Screenshot (384).png';
+import Screenshot3 from '../images/Screenshot (497).png';
+import Screenshot4 from '../images/Screenshot (498).png';
+import Screenshot5 from '../images/Screenshot (499).png'
 
 const Portfolio = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -75,7 +80,7 @@ const Portfolio = () => {
             onClick={() => handleCategoryChange("website")}
             className="border border-black rounded-full px-3 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white"
           >
-            WEBSITE DESIGN
+            WEBSITES
           </button>
           <button
             onClick={() => handleCategoryChange("stationary")}
@@ -224,21 +229,35 @@ const Portfolio = () => {
             <>
               <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src="https://techigems.pk/wp-content/uploads/2024/03/artistic-logo-design-1.jpg"
+                  src={Screenshot}
                   alt=""
                   className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
                 />
               </div>
               <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-2.jpg"
+                  src={Screenshot2}
                   alt=""
                   className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
                 />
               </div>
               <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src="https://techigems.pk/wp-content/uploads/2024/03/website-design-1.jpg"
+                  src={Screenshot3}
+                  alt=""
+                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
+                />
+              </div>
+              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot4}
+                  alt=""
+                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
+                />
+              </div>
+              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot5}
                   alt=""
                   className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
                 />
