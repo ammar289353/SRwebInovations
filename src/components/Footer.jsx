@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FooterLogo from "../images/footer-logo.png";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   useEffect(() => {
@@ -26,17 +24,19 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-10 lg:gap-20 text-white px-4  justify-center pb-8">
-        <div className="text-center">
+      <div className=" block md:flex gap-10 lg:gap-20 text-white px-4  justify-center pb-8">
+        <div className="text-center pb-8">
           <h1 className="text-[4vw] lg:text-[2vw] font-bold pb-5 ">Company</h1>
           <ul>
             <li className="text-left hover:text-slate-300">About Us</li>
+            <hr />
+            <li className="text-left hover:text-slate-300">Services</li>
             <hr />
             <li className="text-left hover:text-slate-300">Portfolio</li>
             <hr />
           </ul>
         </div>
-        <div className="text-center">
+        <div className="text-center pb-8">
           <h1 className="text-[4vw] lg:text-[2vw] font-bold pb-2 ">Services</h1>
           <ul>
             <li className="text-left hover:text-slate-300">Web Development</li>
@@ -51,13 +51,26 @@ const Footer = () => {
               Mobile App Development
             </li>
             <hr />
+            <li className="text-left hover:text-slate-300">
+              Video Animation
+            </li>
+            <hr />
+            <li className="text-left hover:text-slate-300">
+              SEO
+            </li>
+            <hr />
           </ul>
         </div>
-        <div className="">
-          <h1 className="text-[4vw] lg:text-[2vw] font-bold ">Lets Connect</h1>
-          <div className="flex gap-2 pt-6">
-            <FaInstagram />
-            <FaFacebook />
+        <div>
+          <h1 className="text-[4vw] text-center lg:text-[2vw] font-bold ">Lets Connect</h1>
+          <div className="gap-2 pt-6 ">
+            <p>Address: <span>Mashriq Center, Gulshan-e-iqbal,<br /> Block 14,  Shah Suleman Road, Karachi Pakistan</span> </p>
+            <hr />
+            <p>Email: <span className="hover:text-slate-300">info@techigems.pk</span> </p>
+            <hr />
+            <p>Phone: <span className="hover:text-slate-300">+44 7903 147313</span> </p>
+            <hr />
+            
           </div>
         </div>
       </div>

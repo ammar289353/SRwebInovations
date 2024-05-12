@@ -215,53 +215,77 @@ const Portfolio = () => {
                   className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
                 />
               </div>
-              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src="https://techigems.pk/wp-content/uploads/2024/03/packaging-design-1.jpg"
-                  alt=""
-                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
-                />
-              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <img
+              src={Screenshot}
+              alt=""
+              className="border rounded-lg w-full h-full"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+              <span className="text-white text-lg font-bold">Dashboard</span>
+            </div>
+          </div>
+
             </>
           )}
 
           {category === "website" && (
             <>
-              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot}
-                  alt=""
-                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
-                />
-              </div>
-              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot2}
-                  alt=""
-                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
-                />
-              </div>
-              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot3}
-                  alt=""
-                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
-                />
-              </div>
-              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot4}
-                  alt=""
-                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
-                />
-              </div>
-              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot5}
-                  alt=""
-                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
-                />
-              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <img
+              src={Screenshot}
+              alt=""
+              className="border rounded-lg w-full h-full"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+              <span className="text-white text-lg font-bold">Dashboard</span>
+            </div>
+          </div>
+
+
+          <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <img
+              src={Screenshot2}
+              alt=""
+              className="border rounded-lg w-full h-full"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+              <span className="text-white text-lg font-bold">ASkill</span>
+            </div>
+          </div>
+
+          <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <img
+              src={Screenshot3}
+              alt=""
+              className="border rounded-lg w-full h-full"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+              <span className="text-white text-lg font-bold">GET "Green Envirnment Technology"</span>
+            </div>
+          </div>
+
+          <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <img
+              src={Screenshot4}
+              alt=""
+              className="border rounded-lg w-full h-full"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+              <span className="text-white text-lg font-bold">GRAYSCALE</span>
+            </div>
+          </div>
+
+          <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <img
+              src={Screenshot5}
+              alt=""
+              className="border rounded-lg w-full h-full"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+              <span className="text-white text-lg font-bold">DELICIOUS</span>
+            </div>
+          </div>
             </>
           )}
 
@@ -281,13 +305,16 @@ const Portfolio = () => {
                   className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
                 />
               </div>
-              <div className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src="https://techigems.pk/wp-content/uploads/2024/03/stationery-design-3.jpg"
-                  alt=""
-                  className="border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw]"
-                />
-              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <img
+              src={Screenshot5}
+              alt=""
+              className="border rounded-lg w-full h-full"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+              <span className="text-white text-lg font-bold">DELICIOUS</span>
+            </div>
+          </div>
             </>
           )}
 

@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services"
+import Loader from "./components/LoadingPage/Loader";
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
@@ -12,8 +13,10 @@ import MobileApp from './pages/MobileApp';
 import VideoAnimation from './pages/VideoAnimation';
 import DigitalMarketing from './pages/DigitalMarketing';
 import SEO from './pages/SEO';
+import { useState } from 'react';
 
 function App() {
+  const [loader, setLoader] = useState(false);
   return (
     <>
     <div>
