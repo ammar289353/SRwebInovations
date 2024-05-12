@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="gap-2 pt-6 ">
             <p>Address: <span>Mashriq Center, Gulshan-e-iqbal,<br /> Block 14,  Shah Suleman Road, Karachi Pakistan</span> </p>
             <hr />
-            <p>Email: <span className="hover:text-slate-300">info@techigems.pk</span> </p>
+            <p>Email: <span className="hover:text-slate-300">sr.webinnovations@outlook.com</span> </p>
             <hr />
             <p>Phone: <span className="hover:text-slate-300">+44 7903 147313</span> </p>
             <hr />
