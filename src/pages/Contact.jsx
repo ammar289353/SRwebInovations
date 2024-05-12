@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
@@ -7,6 +9,9 @@ import { IoLocationOutline } from "react-icons/io5";
 import backgroundImage from "../images/Sr-Particle.jpg";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -79,7 +84,7 @@ const Contact = () => {
 
   return (
     <>
-      <section>
+      <section data-aos="zoom-in-left">
         <div
           className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[32vw] w-full text-center relative overflow-hidden"
           style={{
@@ -112,7 +117,8 @@ const Contact = () => {
       {/* <h1 className='text-[5vw] font-bold text-[#545353] text-center'>Contact Us</h1> */}
       <section className="w-[90vw] m-auto mt-6">
         <div className="block sm:block md:flex lg:flex pt-6">
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5">
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5"
+           data-aos="flip-left">
             <img
               className="pt-12 px-36 w-[380px]"
               src="https://techigems.pk/wp-content/uploads/2024/02/Frame.png"
@@ -127,7 +133,7 @@ const Contact = () => {
               </button>
             </div>
           </div>
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5">
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5" data-aos="flip-left">
             <img
               className="pt-12 px-36 w-[380px]"
               src="https://techigems.pk/wp-content/uploads/2024/02/Frame.png"
@@ -142,7 +148,7 @@ const Contact = () => {
               </button>
             </div>
           </div>
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5">
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5" data-aos="flip-left">
             <img
               className="pt-12 px-36 w-[380px]"
               src="https://techigems.pk/wp-content/uploads/2024/02/Frame.png"
@@ -183,7 +189,7 @@ const Contact = () => {
             </div>
           </div>
           {/* contact us */}
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[70vw] lg:h-[45vw] mb-5">
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[70vw] lg:h-[45vw] mb-5" data-aos="zoom-in-left">
             <h1 className="text-[4vw] sm:text-[4vw] md:text-[2.7vw] lg:text-[2.7vw] text-gray-800 font-bold pt-7 pl-10">
               Send a message
             </h1>

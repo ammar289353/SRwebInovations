@@ -68,6 +68,7 @@ const Navbar = () => {
             {servicesOpen && (
               <div className="absolute cursor-pointer w-[22vw] rounded-lg bg-white shadow-md p-2 pt-8 -z-10"
                 onMouseLeave={() => toggleServices('close')}>
+                   {/* Add key prop to each Link */}
                 <Link
                   key="1"
                   to="/Graphic"
@@ -75,7 +76,7 @@ const Navbar = () => {
                 >
                   Graphic Design
                 </Link>
-                {/* Add key prop to each Link */}
+               
                 <Link
                   key="2"
                   to="/Website"
@@ -83,16 +84,10 @@ const Navbar = () => {
                 >
                   Website Development
                 </Link>
+
                 <Link
                   key="3"
-                  to="/Service3"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
-                >
-                  Domain & Hosting Solutions
-                </Link>
-                <Link
-                  key="4"
-                  to="/Service3"
+                  to="/MobileApp"
                   className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
                 >
                   Mobile App Development
@@ -100,7 +95,7 @@ const Navbar = () => {
             
                 <Link
                   key="5"
-                  to="/Service3"
+                  to="/VideoAnimation"
                   className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
                 >
                   Video Animation
@@ -108,7 +103,7 @@ const Navbar = () => {
                 
                 <Link
                   key="6"
-                  to="/Service3"
+                  to="/DigitalMarketing"
                   className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
                 >
                   Digital Marketing
@@ -116,27 +111,13 @@ const Navbar = () => {
                 
                 <Link
                   key="7"
-                  to="/Service3"
+                  to="/SEO"
                   className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
                 >
                   Professional SEO Services
                 </Link>
 
-                <Link
-                  key="8"
-                  to="/Service3"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
-                >
-                  Managed IT Services
-                </Link>
 
-                <Link
-                  key="9"
-                  to="/Service3"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
-                >
-                  BPO Solutions
-                </Link>
               </div>
             )}
           </li>

@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import backgroundImage from "../images/Sr-Particle.jpg";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -13,7 +18,7 @@ const About = () => {
   };
   return (
     <>
-      <section>
+      <section data-aos="zoom-in-left">
         <div
           className="h-auto pb-5 w-full text-center relative overflow-hidden"
           style={{
@@ -53,7 +58,10 @@ const About = () => {
       <section className="bg-[#F0F6FB] pb-12 sm:pb-12 md:pb-0 lg:pb-0 ">
         <div className="w-[94vw] h-auto sm:h-auto md:h-auto lg:h-auto m-auto">
           <div className="block sm:block md:flex lg:flex">
-            <div className="w-[80vw] sm:w-[85vw] md:w-[40vw] lg:w-[40vw] pt-14 m-auto sm:m-auto">
+            <div
+              className="w-[80vw] sm:w-[85vw] md:w-[40vw] lg:w-[40vw] pt-14 m-auto sm:m-auto"
+              data-aos="zoom-in"
+            >
               <p className="font-semibold text-[4.5vw] sm:text-[4.5vw] md:text-[2vw] lg:text-[1vw]">
                 Our value
               </p>
@@ -71,7 +79,10 @@ const About = () => {
               </p>
             </div>
             <div className="w-[80vw] sm:w-[85vw] md:w-[30vw] lg:w-[30vw] pt-10">
-              <div className="w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-gray-600 hover:text-white">
+              <div
+                className="w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-gray-600 hover:text-white"
+                data-aos="flip-left"
+              >
                 <img
                   src="https://techigems.pk/wp-content/uploads/2024/02/aboutx11.png"
                   alt=""
@@ -84,7 +95,10 @@ const About = () => {
                   solutions.
                 </p>
               </div>
-              <div className="w-[93vw] mt-3 sm:mt-4 md:mt-4 lg:mt-4 h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8  hover:bg-[#093E86] text-gray-600 hover:text-white">
+              <div
+                className="w-[93vw] mt-3 sm:mt-4 md:mt-4 lg:mt-4 h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8  hover:bg-[#093E86] text-gray-600 hover:text-white"
+                data-aos="flip-left"
+              >
                 <img
                   src="https://techigems.pk/wp-content/uploads/2024/02/aboutx3.png"
                   alt=""
@@ -99,7 +113,10 @@ const About = () => {
               </div>
             </div>
             <div className="w-[30vw] pt-6 sm:pt-6 md:pb-10 md:pt-20 lg:pt-20">
-              <div className="w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-gray-600 hover:text-white">
+              <div
+                className="w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-gray-600 hover:text-white"
+                data-aos="flip-right"
+              >
                 <img
                   src="https://techigems.pk/wp-content/uploads/2024/02/aboutx2.png"
                   alt=""
@@ -112,7 +129,10 @@ const About = () => {
                   guide all our endeavors.
                 </p>
               </div>
-              <div className="w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-gray-600 hover:text-white mt-3 sm:mt-4 md:mt-4 lg:mt-4">
+              <div
+                className="w-[93vw] h-auto sm:w-[40vw] sm:h-auto md:w-[26vw] md:h-auto lg:w-[26vw] lg:h-auto bg-white rounded-lg p-5 sm:p-5 md:p-8 lg:p-8 hover:bg-[#093E86] text-gray-600 hover:text-white mt-3 sm:mt-4 md:mt-4 lg:mt-4"
+                data-aos="flip-right"
+              >
                 <img
                   src="https://techigems.pk/wp-content/uploads/2024/02/aboutx4.png"
                   alt=""
@@ -130,7 +150,7 @@ const About = () => {
         </div>
       </section>
       {/* WE ARE  */}
-      <section className="bg-[#093E86]">
+      <section className="bg-[#093E86]" data-aos="zoom-in-left">
         <div className="w-[95vw] h-auto sm:w-[95vw] sm:h-auto md:w-[95vw] md:h-[56vw] lg:w-[95vw] lg:h-[55vw] m-auto">
           <div className="block sm:block md:flex lg:flex">
             <div className="w-[90vw] sm:w-[90vw] md:w-[50vw] lg:w-[50vw] p-7 pt-10 sm:pt-16 md:pt-32 lg:pt-36">
@@ -209,18 +229,18 @@ const About = () => {
       {/* OUR PEOPLE-FIRST APPROACH  */}
       <section className="bg-white">
         <div className="block sm:block md:flex lg:flex w-[90vw] h-auto sm:w-[90vw] sm:h-auto md:[90vw] md:h-[40vw] lg:w-[90vw] lg:h-[40vw] m-auto pt-16">
-          <div className="w-[90vw] sm:w-[80vw] md:w-[50vw] lg:w-[50vw]">
+          <div className="w-[90vw] sm:w-[80vw] md:w-[50vw] lg:w-[50vw]" data-aos="flip-right">
             <img
               src="https://techigems.pk/wp-content/uploads/2024/02/Mask-group-1.png"
               alt=""
             />
           </div>
-          <div className="w-[90vw] h-auto sm:w-[90vw] sm:h-auto md:w-[50vw] md:h-auto lg:w-[50vw] lg:h-auto p-10 pt-10 sm:pt-10 md:pt-24 lg:pt-24">
+          <div className="w-[90vw] h-auto sm:w-[90vw] sm:h-auto md:w-[50vw] md:h-auto lg:w-[50vw] lg:h-auto p-10 pt-10 sm:pt-10 md:pt-24 lg:pt-24"  data-aos="flip-left">
             <p className="font-semibold text-[#05185A]">
               OUR PEOPLE-FIRST APPROACH{" "}
             </p>
             <h1 className="text-[3vw] sm:text-[3vw] md:text-[2.6vw] lg:text-[2.6vw] text-[#05185A] font-bold mt-3">
-            We prioritize the well-being and success of our employees.
+              We prioritize the well-being and success of our employees.
             </h1>
             <p className="text-gray-600 pt-3">
               At SR Innovations, we hold the belief that our people are our most
@@ -235,7 +255,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="h-auto sm:h-auto md:h-[19vw] lg:h-[19vw] pb-5 sm:pb-5 w-[90vw] bg-white m-auto">
+        <div className="h-auto sm:h-auto md:h-[19vw] lg:h-[19vw] pb-5 sm:pb-5 w-[90vw] bg-white m-auto" data-aos="zoom-in-left">
           <div className="bg-[#093E86] block sm:block md:flex lg:flex sm:w-[50vw] sm:h-auto md:w-[90vw] md:h-[13vw] lg:w-[90vw] lg:h-[13vw] rounded-lg mt-5 sm:mt-4 md:mt-28 lg:mt-28 text-center sm:text-center justify-between">
             <div className="text-white p-2 sm:p-2 md:p-10 lg:p-10">
               <h1 className="font-bold text-[3.5vw] sm:text-[3.5vw] md:text-[1.4vw] lg:text-[1.4vw]">
@@ -248,7 +268,7 @@ const About = () => {
             </div>
             <div className="text-white p-2 sm:p-2 md:p-10 lg:p-10">
               <h1 className="font-bold text-[3.5vw] sm:text-[3.5vw] md:text-[1.4vw] lg:text-[1.4vw]">
-              Decades of Expertise
+                Decades of Expertise
               </h1>
               <p className="text-[3vw] sm:text-[3vw] md:text-[0.8vw] lg:text-[0.8vw] pt-1 sm:pt-1 md:pt-3 lg:pt-3">
                 With years of industry experience, we've been delivering
@@ -257,7 +277,7 @@ const About = () => {
             </div>
             <div className="text-white p-2 sm:p-2 md:p-10 lg:p-10">
               <h1 className="font-bold text-[3.5vw] sm:text-[3.5vw] md:text-[1.4vw] lg:text-[1.4vw]">
-              Visionary Innovators
+                Visionary Innovators
               </h1>
               <p className="text-[3vw] sm:text-[3vw] md:text-[0.8vw] lg:text-[0.8vw] pt-1 sm:pt-1 md:pt-3 lg:pt-3">
                 Comprising experienced professionals, our team is committed to

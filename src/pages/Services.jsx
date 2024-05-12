@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import backgroundImage from "../images/Sr-Particle.jpg";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -53,7 +58,7 @@ const Services = () => {
 
   return (
     <>
-      <section>
+      <section data-aos="zoom-in-left">
         <div
           className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[32vw] w-full text-center relative overflow-hidden"
           style={{
@@ -85,13 +90,16 @@ const Services = () => {
       </section>
       {/* Cards section */}
       <section className="bg-[#FFFFFF] w-full h-auto md:h-auto lg:h-[86vw]">
-        <div className="w-[93vw] m-auto pt-[5vw]">
+        <div className="w-[93vw] m-auto pt-[5vw]" data-aos="fade-down">
           <p className="text-black text-center font-semibold">WHAT WE OFFER</p>
           <h1 className="text-center text-[3vw] font-bold">
             Bridging Technology and <br /> Business.
           </h1>
         </div>
-        <div className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8">
+        <div
+          className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8"
+          data-aos="zoom-in-left"
+        >
           {cardsData.map((service, index) => (
             <div
               key={index}
@@ -120,7 +128,7 @@ const Services = () => {
         </div>
       </section>
       {/* OUR WORK PORTFOLIO */}
-      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]">
+      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]"  data-aos="zoom-in-left">
         <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
           <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
             <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
@@ -162,7 +170,7 @@ const Services = () => {
         </div>
       </section>
       {/* OUR EXPERIENCE */}
-      <section>
+      <section  data-aos="zoom-in-left">
         <div className="w-[93vw] m-auto">
           <p className="font-semibold text-center text-[4vw] sm:text-[4vw] md:text-[1vw] lg:text-[1vw] mt-10">
             OUR EXPERIENCE
@@ -174,8 +182,8 @@ const Services = () => {
           <p className="text-center text-[3vw] sm:text-[3vw] md:text-[1.2vw] lg:text-[1vw] mt-3">
             Having positioned ourselves as a forefront provider of pioneering
             technology solutions, <br />
-            we're equipped with state-of-the-art services
-            to propel your business to new heights and beyond.
+            we're equipped with state-of-the-art services to propel your
+            business to new heights and beyond.
           </p>
           <div className="block sm:block md:flex lg:flex mt-10 mb-10 w-[80vw] sm:w-[80vw] md:w-[86vw] lg:w-[90vw] m-auto">
             <div className="rounded-xl border border-gray w-[80vw] h-[25vw] sm:w-[80vw] sm:h-[20vw] lg:w-[22vw] lg:h-[13vw] mr-4 mt-3 sm:mt-4">
@@ -216,7 +224,7 @@ const Services = () => {
         </div>
       </section>
       {/* TESTIMONIAL */}
-      <section className="bg-[#D9EAF7] w-full h-auto">
+      <section className="bg-[#D9EAF7] w-full h-auto"  data-aos="zoom-in-left">
         <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20">
           <div className="block sm:block md:flex lg:flex pt-10 sm:pt-10 md:pt-20 lg:pt-20">
             <div className="w-[80vw] sm:w-[70vw] md:w-[35vw] lg:w-[30vw] m-auto">
