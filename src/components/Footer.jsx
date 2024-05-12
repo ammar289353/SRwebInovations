@@ -64,7 +64,7 @@ const Footer = () => {
         <div>
           <h1 className="text-[4vw] text-center lg:text-[2vw] font-bold ">Lets Connect</h1>
           <div className="gap-2 pt-6 ">
-            <p>Address: <span>Mashriq Center, Gulshan-e-iqbal,<br /> Block 14,  Shah Suleman Road, Karachi Pakistan</span> </p>
+            <p>Address: <span className="hover:text-slate-300">150 St Michael’s Hill, Bristol <br /> BS2 8DA, United Kingdom</span> </p>
             <hr />
             <p>Email: <span className="hover:text-slate-300">sr.webinnovations@outlook.com</span> </p>
             <hr />
