@@ -14,6 +14,7 @@ import VideoAnimation from './pages/VideoAnimation';
 import DigitalMarketing from './pages/DigitalMarketing';
 import SEO from './pages/SEO';
 import { useState } from 'react';
+import WhatsAppButton from './components/WhatsApp';
 
 function App() {
   const [loader, setLoader] = useState(false);
@@ -44,6 +45,7 @@ function App() {
       <Route path='SEO' element={<SEO />} />
     </Routes>
     <Footer/>
+    <WhatsAppButton/>
    </>
   );
 }

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FooterLogo from "../images/footer-logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   useEffect(() => {
@@ -28,49 +29,83 @@ const Footer = () => {
         <div className="text-center pb-8">
           <h1 className="text-[4vw] lg:text-[2vw] font-bold pb-5 ">Company</h1>
           <ul>
-            <li className="text-left hover:text-slate-300">About Us</li>
+            <li className="text-left hover:text-slate-300"><Link  to="/About">About Us</Link></li>
             <hr />
-            <li className="text-left hover:text-slate-300">Services</li>
+            <li className="text-left hover:text-slate-300"><Link  to="/Services">Services</Link></li>
             <hr />
-            <li className="text-left hover:text-slate-300">Portfolio</li>
+            <li className="text-left hover:text-slate-300"><Link  to="/Portfolio">Portfolio</Link></li>
             <hr />
           </ul>
         </div>
         <div className="text-center pb-8">
           <h1 className="text-[4vw] lg:text-[2vw] font-bold pb-2 ">Services</h1>
           <ul>
-            <li className="text-left hover:text-slate-300">Web Development</li>
-            <hr />
-            <li className="text-left hover:text-slate-300">Graphic Design</li>
+            <li className="text-left hover:text-slate-300">
+              <Link to="/Website">
+              Web Development
+              </Link>
+              </li>
             <hr />
             <li className="text-left hover:text-slate-300">
-              Digital Marketting
+             <Link to="/Graphic">
+             Graphic Design
+             </Link>
+              </li>
+            <hr />
+            <li className="text-left hover:text-slate-300">
+              <Link to="/DigitalMarketing">
+                Digital Marketting
+              </Link>
             </li>
             <hr />
             <li className="text-left hover:text-slate-300">
-              Mobile App Development
+             <Link  to="/MobileApp">
+             Mobile App Development
+             </Link>
             </li>
             <hr />
             <li className="text-left hover:text-slate-300">
+              <Link to="/VideoAnimation">
               Video Animation
-            </li>
+              </Link>
+              </li>
             <hr />
             <li className="text-left hover:text-slate-300">
-              SEO
+              <Link  to="/SEO">
+                SEO
+              </Link>
             </li>
             <hr />
           </ul>
         </div>
         <div>
-          <h1 className="text-[4vw] text-center lg:text-[2vw] font-bold ">Lets Connect</h1>
+          <h1 className="text-[4vw] text-center lg:text-[2vw] font-bold ">
+            Lets Connect
+          </h1>
           <div className="gap-2 pt-6 ">
-            <p>Address: <span className="hover:text-slate-300">150 St Michael’s Hill, Bristol <br /> BS2 8DA, United Kingdom</span> </p>
+            <p>
+              Address:{" "}
+              <span className="hover:text-slate-300">
+                <a href="https://www.google.com/maps/search/?api=1&query=150+St+Michael’s+Hill,+Bristol+BS2+8DA,+United+Kingdom">
+                  150 St Michael’s Hill, Bristol <br /> BS2 8DA, United Kingdom
+                </a>
+              </span>{" "}
+            </p>
             <hr />
-            <p>Email: <span className="hover:text-slate-300">sr.webinnovations@outlook.com</span> </p>
+            <p>
+              Email:{" "}
+              <span className="hover:text-slate-300">
+                <a href="mailto:sr.webinnovations@outlook.com">
+                  sr.webinnovations@outlook.com
+                </a>
+              </span>{" "}
+            </p>
             <hr />
-            <p>Phone: <span className="hover:text-slate-300">+44 7903 147313</span> </p>
+            <p>
+              Phone:{" "}
+              <span className="hover:text-slate-300">+44 7903 147313</span>{" "}
+            </p>
             <hr />
-            
           </div>
         </div>
       </div>

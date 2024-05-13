@@ -6,6 +6,7 @@ import Hero from "../images/sr-hero.jpg";
 import heroblock from "../images/sr-block.png";
 import herorocket from "../images/sr-rocket.png";
 import herobulb from "../images/sr-bulb.png";
+import WhatsAppButton from "../components/WhatsApp";
 
 const Home = () => {
   useEffect(() => {
