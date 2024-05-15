@@ -84,7 +84,7 @@ const Contact = () => {
 
   return (
     <>
-      <section data-aos="zoom-in-left">
+      <section data-aos="zoom-in-up">
         <div
           className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[32vw] w-full text-center relative overflow-hidden"
           style={{
@@ -189,7 +189,7 @@ const Contact = () => {
             </div>
           </div>
           {/* contact us */}
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[70vw] lg:h-[45vw] mb-5" data-aos="zoom-in-left">
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[70vw] lg:h-[45vw] mb-5" data-aos="zoom-in-up">
             <h1 className="text-[4vw] sm:text-[4vw] md:text-[2.7vw] lg:text-[2.7vw] text-gray-800 font-bold pt-7 pl-10">
               Send a message
             </h1>

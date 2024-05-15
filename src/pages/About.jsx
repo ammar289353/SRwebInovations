@@ -18,7 +18,7 @@ const About = () => {
   };
   return (
     <>
-      <section data-aos="zoom-in-left">
+      <section data-aos="zoom-in-up">
         <div
           className="h-auto pb-5 w-full text-center relative overflow-hidden"
           style={{
@@ -150,7 +150,7 @@ const About = () => {
         </div>
       </section>
       {/* WE ARE  */}
-      <section className="bg-[#093E86]" data-aos="zoom-in-left">
+      <section className="bg-[#093E86]" data-aos="zoom-in-up">
         <div className="w-[95vw] h-auto sm:w-[95vw] sm:h-auto md:w-[95vw] md:h-[56vw] lg:w-[95vw] lg:h-[55vw] m-auto">
           <div className="block sm:block md:flex lg:flex">
             <div className="w-[90vw] sm:w-[90vw] md:w-[50vw] lg:w-[50vw] p-7 pt-10 sm:pt-16 md:pt-32 lg:pt-36">
@@ -255,7 +255,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="h-auto sm:h-auto md:h-[19vw] lg:h-[19vw] pb-5 sm:pb-5 w-[90vw] bg-white m-auto" data-aos="zoom-in-left">
+        <div className="h-auto sm:h-auto md:h-[19vw] lg:h-[19vw] pb-5 sm:pb-5 w-[90vw] bg-white m-auto" data-aos="zoom-in-up">
           <div className="bg-[#093E86] block sm:block md:flex lg:flex sm:w-[50vw] sm:h-auto md:w-[90vw] md:h-[13vw] lg:w-[90vw] lg:h-[13vw] rounded-lg mt-5 sm:mt-4 md:mt-28 lg:mt-28 text-center sm:text-center justify-between">
             <div className="text-white p-2 sm:p-2 md:p-10 lg:p-10">
               <h1 className="font-bold text-[3.5vw] sm:text-[3.5vw] md:text-[1.4vw] lg:text-[1.4vw]">

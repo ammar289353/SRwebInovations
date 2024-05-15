@@ -6,7 +6,6 @@ import Hero from "../images/sr-hero.jpg";
 import heroblock from "../images/sr-block.png";
 import herorocket from "../images/sr-rocket.png";
 import herobulb from "../images/sr-bulb.png";
-import WhatsAppButton from "../components/WhatsApp";
 
 const Home = () => {
   useEffect(() => {
@@ -128,7 +127,7 @@ const Home = () => {
       {/* Moto */}
       <section
         className="bg-[#0B488D] "
-        data-aos="zoom-in-left"
+        data-aos="zoom-in-up"
         style={{
           backgroundImage: `url(${Hero})`,
           backgroundSize: "cover",
@@ -190,7 +189,7 @@ const Home = () => {
         </div>
       </section>
       {/* OUR WORK PORTFOLIO */}
-      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]" data-aos="zoom-in-left">
+      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]" data-aos="zoom-in-up">
         <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
           <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
             <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
@@ -241,7 +240,7 @@ const Home = () => {
         </div>
         <div
           className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8"
-          data-aos="zoom-in-left"
+          data-aos="zoom-in-up"
         >
           {cardsData.map((service, index) => (
             <div
@@ -271,7 +270,7 @@ const Home = () => {
         </div>
       </section>
       {/* TESTIMONIAL */}
-      <section className="bg-[#D9EAF7] w-full h-auto" data-aos="zoom-in-left">
+      <section className="bg-[#D9EAF7] w-full h-auto" data-aos="zoom-in-up">
         <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20">
           <div className="block sm:block md:flex lg:flex pt-10 sm:pt-10 md:pt-20 lg:pt-20">
             <div className="w-[80vw] sm:w-[70vw] md:w-[35vw] lg:w-[30vw] m-auto">

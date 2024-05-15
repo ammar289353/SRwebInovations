@@ -15,7 +15,7 @@ const SEO = () => {
 
   return (
     <>
-      <section data-aos="zoom-in-left">
+      <section data-aos="zoom-in-up">
         <div
           className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
           style={{

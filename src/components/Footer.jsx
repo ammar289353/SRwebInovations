@@ -9,7 +9,7 @@ const Footer = () => {
     AOS.init({ duration: 3000 });
   }, []);
   return (
-    <section className="bg-[#0B4790] " data-aos="zoom-in-left">
+    <section className="bg-[#0B4790] " data-aos="zoom-in-up">
       <hr />
       <div className="pt-5 text-white pb-12">
         <div className="text-center">
