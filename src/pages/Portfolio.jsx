@@ -115,13 +115,13 @@ const Portfolio = () => {
           </button>
           <button
             onClick={() => handleCategoryChange("website")}
-            className="border border-black rounded-full px-3 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white"
+            className="border border-black rounded-full px-9 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white"
           >
             WEBSITES
           </button>
           <button
             onClick={() => handleCategoryChange("MobileApps")}
-            className="border border-black rounded-full px-7 mb-1 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white"
+            className="border border-black rounded-full px-[30px] mb-1 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white"
           >
             Mobile Apps
           </button>

@@ -1,28 +1,32 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
 import Navlogo from "../images/nav-logo.png";
-import "./Navbar.css"
+import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false); // Add state for services dropdown
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const location = useLocation();
 
-  const toggleServices = (action) => {
-    if (action === 'open') {
-      setServicesOpen(true);
-    } else if (action === 'close') {
-      setTimeout(() => {
-        setServicesOpen(false);
-      }, 100); 
-    }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const toggleServices = () => {
+    setServicesOpen(!servicesOpen);
   };
 
   return (
-    <div className="shadow-md w-full fixed z-50 top-0 left-0 ">
+    <div className="shadow-md w-full fixed z-50 top-0 left-0">
       <div className="md:flex items-center h-[15vw] sm:h-auto justify-between bg-white md:px-20 px-7">
         <div
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={toggleMenu}
           className="text-[8vw] sm:text-4xl absolute cursor-pointer md:hidden pt-4 sm:pt-6"
         >
           <IoMenu name={menuOpen ? "close" : "menu"} />
@@ -37,12 +41,12 @@ const Navbar = () => {
           </Link>
         </div>
         <ul
-          className={`md:flex text-left items-start  md:pb-2 pb-8 absolute md:static md:bg-white bg-[#2B2B2B] h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
+          className={`md:flex text-left items-start md:pb-2 pb-8 absolute md:static md:bg-white bg-blue-300 h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
                     md:pl-0 pl-9 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4 ${
                       menuOpen ? "top-6" : "top-[-1100px]"
                     }`}
         >
-          <li onClick={()=>setMenuOpen(false)}>
+          <li onClick={() => setMenuOpen(false)}>
             <Link
               to="/Home"
               className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2  pr-6 text-white font-medium hover:text-[#65c4cd]"
@@ -50,7 +54,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li onClick={()=>setMenuOpen(false)}>
+          <li onClick={() => setMenuOpen(false)}>
             <Link
               to="/About"
               className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2 pr-6 text-white font-medium hover:text-[#65c4cd]"
@@ -58,29 +62,30 @@ const Navbar = () => {
               About Us
             </Link>
           </li>
-          <li onClick={()=>setMenuOpen(false)} onMouseEnter={() => toggleServices('open')}>
-            <Link
-              to="/Services"
-              className="nav md:text-[#515151] pt-2 text-[4vw] lg:text-[1.5vw] pr-6 text-white font-medium hover:text-[#65c4cd]"
-            >
+          <li  className="relative flex" >
+            <Link onClick={() => setMenuOpen(false)}  to="/Services" className="nav flex md:text-[#515151] text-[4vw] lg:text-[1.5vw] pr-1 text-white font-medium hover:text-[#65c4cd] cursor-pointer">
               Services
             </Link>
+            <span><RiArrowDropDownLine  onClick={toggleServices} className="ml-48 md:ml-0 text-[6.5vw] lg:text-[2.5vw] mr-4" /></span>
             {servicesOpen && (
-              <div className="absolute cursor-pointer w-[22vw] rounded-lg bg-white shadow-md p-2 pt-8 -z-10"
-                onMouseLeave={() => toggleServices('close')}>
-                   {/* Add key prop to each Link */}
+              <div
+                className="absolute cursor-pointer w-[72vw] lg:w-[22vw] rounded-lg bg-white shadow-md p-2 pt-2 lg:pt-8 mt-7"
+                onMouseLeave={() => setServicesOpen(false)}
+              >
                 <Link
                   key="1"
                   to="/Graphic"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  className="block pl-3 py-2 text-[#05185A] text-[3.2vw] lg:text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Graphic Design
                 </Link>
-               
+
                 <Link
                   key="2"
                   to="/Website"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  className="block pl-3 py-2 text-[#05185A] text-[3.2vw] lg:text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Website Development
                 </Link>
@@ -88,40 +93,46 @@ const Navbar = () => {
                 <Link
                   key="3"
                   to="/MobileApp"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  className="block pl-3 py-2 text-[#05185A] text-[3.2vw] lg:text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Mobile App Development
                 </Link>
-            
+
                 <Link
                   key="5"
                   to="/VideoAnimation"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  className="block pl-3 py-2 text-[#05185A] text-[3.2vw] lg:text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Video Animation
                 </Link>
-                
+
                 <Link
                   key="6"
                   to="/DigitalMarketing"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  className="block pl-3 py-2 text-[#05185A] text-[3.2vw] lg:text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Digital Marketing
                 </Link>
-                
+
                 <Link
                   key="7"
                   to="/SEO"
-                  className="block pl-3 py-2 text-[#05185A] text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  className="block pl-3 py-2 text-[#05185A] text-[3.2vw] lg:text-[1.2vw] hover:text-white hover:bg-[#05185A]"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Professional SEO Services
                 </Link>
 
 
               </div>
+                
+             
             )}
           </li>
-          <li onClick={()=>setMenuOpen(false)}>
+          <li className={`md:mt-0 ${servicesOpen ? "mt-56" : ""}`} onClick={() => setMenuOpen(false)}>
             <Link
               to="/Portfolio"
               className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2 pr-6 text-white font-medium hover:text-[#65c4cd]"
@@ -129,7 +140,7 @@ const Navbar = () => {
               Portfolio
             </Link>
           </li>
-          <li onClick={()=>setMenuOpen(false)}>
+          <li onClick={() => setMenuOpen(false)}>
             <Link
               to="/Contact"
               className="nav md:text-[#515151] text-[4vw] lg:text-[1.5vw] pt-2 pr-6 text-white font-medium hover:text-[#65c4cd]"
@@ -137,7 +148,7 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
-          <li>
+          <li onClick={() => setMenuOpen(false)}>
             <Link
               to="/Contact"
               className="md:text-[#515151]  pt-2 pl-3 text-white font-medium hover:text-[#009CDE]"

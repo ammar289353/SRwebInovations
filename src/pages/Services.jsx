@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import backgroundImage from "../images/Sr-Particle.jpg";
+// Card Images
+import GraphicImage from "../images/graphic.png";
+import WebsiteImage from "../images/Website.png";
+import MobileAppImage from "../images/Mobile App.jpg";
+import VideoImage from "../images/video.png";
+import DMImage from "../images/DM.png";
+import SEOImage from "../images/Seo.png";
 
 const Services = () => {
   useEffect(() => {
@@ -19,41 +26,47 @@ const Services = () => {
 
   const cardsData = [
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: GraphicImage,
+      title: "Graphic Design",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/Graphic"
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: WebsiteImage,
+      title: "Webiste Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/Website"
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: MobileAppImage,
+      title: "Mobile App Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/MobileApp"
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: VideoImage,
+      title: "Video Animation",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/VideoAnimation"
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: DMImage,
+      title: "Digital Marketing",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/DigitalMarketing"
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: SEOImage,
+      title: "SEO",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-    },
+        link:"/SEO"
+      },
   ];
 
   return (
@@ -119,7 +132,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="text-center pt-6">
-                <button className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
+                <button onClick={() => { window.location.href = service.link; }} className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
                   Learn More
                 </button>
               </div>
@@ -128,7 +141,10 @@ const Services = () => {
         </div>
       </section>
       {/* OUR WORK PORTFOLIO */}
-      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]"  data-aos="zoom-in-up">
+      <section
+        className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]"
+        data-aos="zoom-in-up"
+      >
         <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
           <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
             <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
@@ -170,7 +186,7 @@ const Services = () => {
         </div>
       </section>
       {/* OUR EXPERIENCE */}
-      <section  data-aos="zoom-in-up">
+      <section data-aos="zoom-in-up">
         <div className="w-[93vw] m-auto">
           <p className="font-semibold text-center text-[4vw] sm:text-[4vw] md:text-[1vw] lg:text-[1vw] mt-10">
             OUR EXPERIENCE
@@ -224,7 +240,7 @@ const Services = () => {
         </div>
       </section>
       {/* TESTIMONIAL */}
-      <section className="bg-[#D9EAF7] w-full h-auto"  data-aos="zoom-in-up">
+      <section className="bg-[#D9EAF7] w-full h-auto" data-aos="zoom-in-up">
         <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20">
           <div className="block sm:block md:flex lg:flex pt-10 sm:pt-10 md:pt-20 lg:pt-20">
             <div className="w-[80vw] sm:w-[70vw] md:w-[35vw] lg:w-[30vw] m-auto">

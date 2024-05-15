@@ -6,6 +6,13 @@ import Hero from "../images/sr-hero.jpg";
 import heroblock from "../images/sr-block.png";
 import herorocket from "../images/sr-rocket.png";
 import herobulb from "../images/sr-bulb.png";
+// Card Images
+import GraphicImage from "../images/graphic.png";
+import WebsiteImage from "../images/Website.png";
+import MobileAppImage from "../images/Mobile App.jpg";
+import VideoImage from "../images/video.png";
+import DMImage from "../images/DM.png";
+import SEOImage from "../images/Seo.png";
 
 const Home = () => {
   useEffect(() => {
@@ -13,38 +20,38 @@ const Home = () => {
   }, []);
   const cardsData = [
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: GraphicImage,
+      title: "Graphic Design",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: WebsiteImage,
+      title: "Webiste Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: MobileAppImage ,
+      title: "Mobile App Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: VideoImage,
+      title: "Video Animation",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: DMImage,
+      title: "Digital Marketing",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
     },
     {
-      imageUrl: "https://techigems.pk/wp-content/uploads/2024/02/uiux.png",
-      title: "UI/UX Design",
+      imageUrl: SEOImage,
+      title: "SEO",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
     },
@@ -128,11 +135,11 @@ const Home = () => {
       <section
         className="bg-[#0B488D] "
         data-aos="zoom-in-up"
-        style={{
-          backgroundImage: `url(${Hero})`,
-          backgroundSize: "cover",
-          opacity: 0.6,
-        }}
+        // style={{
+        //   backgroundImage: `url(${Hero})`,
+        //   backgroundSize: "cover",
+        //   opacity: 0.6,
+        // }}
       >
         <div className="md:flex pb-12 text-white">
           <div className="md:w-[50%] pt-12 md:pt-32 px-8">

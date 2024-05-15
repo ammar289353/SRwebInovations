@@ -102,6 +102,11 @@ const Footer = () => {
             </p>
             <hr />
             <p>
+              Office Tel:{" "}
+              <span className="hover:text-slate-300">+44 7951 793541</span>{" "}
+            </p>
+            <hr />
+            <p>
               Phone:{" "}
               <span className="hover:text-slate-300">+44 7903 147313</span>{" "}
             </p>
