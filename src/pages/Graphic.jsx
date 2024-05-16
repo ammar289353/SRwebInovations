@@ -79,12 +79,14 @@ const Graphic = () => {
               Get A Custom Design <br /> For Your Brand
             </h1>
             <p className="mt-2 text-[4.5vw] sm:text-[4vw] md:text-[1.2vw] lg:text-[1.2vw] text-gray-400">
-              Our graphic design services are designed to help businesses create
-              a strong and effective visual identity. Our team of creative
-              designers specializes in everything from logo design to branding,
-              social media design, and UI/UX design. We create visually stunning
-              designs and grab the attention of the target audience. Let us
-              create a stunning design for your brand.
+              "A dynamic collage of vibrant and visually appealing graphic
+              design elements showcasing various aspects of our services,
+              including logo design, branding, social media design, and UI/UX
+              design. Our team's expertise in crafting compelling visuals is
+              highlighted, emphasizing our ability to create a strong and
+              effective visual identity for businesses. Trust us to captivate
+              your target audience with stunning designs tailored to elevate
+              your brand."
             </p>
             <button className="bg-blue-800 text-white text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1.5vw] rounded-full p-2 pl-14 sm:pl-14 md:pl-10 lg:pl-10 pr-14 sm:pr-14 md:pr-10 lg:pr-10 mt-4 mb-4">
               Get Started
@@ -122,17 +124,22 @@ const Graphic = () => {
               Logo Design
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              A sleek and modern logo design featuring bold typography and
+              distinctive graphical elements, symbolizing the essence of your
+              brand. Our team of dedicated logo designers collaborates closely
+              with you to understand your business, target audience, and vision,
+              ensuring the creation of a custom logo that resonates with your
+              brand identity. Elevate your brand with a unique and captivating
+              logo designed specifically for you. Contact us today to get
+              started.
             </p>
           </div>
         </div>
-        <div className="block sm:block md:flex lg:flex mb-14" >
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
+        <div className="block sm:block md:flex lg:flex mb-14">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={uiux}
               alt=""
@@ -142,15 +149,20 @@ const Graphic = () => {
               UI/UX
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              A minimalist and intuitive user interface (UI) design that
+              prioritizes user experience (UX) to deliver seamless interactions
+              and enhanced usability. Our UI/UX designers meticulously craft
+              every detail to ensure optimal functionality and aesthetic appeal,
+              catering to the needs and preferences of your target audience. Let
+              our expert team transform your digital platform into an engaging
+              and user-friendly experience that leaves a lasting impression.
+              Elevate your brand with exceptional UI/UX design today
             </p>
           </div>
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={branding}
               alt=""
@@ -160,15 +172,21 @@ const Graphic = () => {
               Branding Design
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              A comprehensive branding design package tailored to establish a
+              cohesive and impactful brand identity for your business. Our team
+              of branding specialists delves deep into your brand ethos, values,
+              and target market to craft a unique and memorable brand identity
+              that resonates with your audience. From logo design to color
+              palette selection and brand messaging, we ensure consistency
+              across all touchpoints to leave a lasting impression. Let us
+              elevate your brand presence with our strategic and creative
+              branding solutions.
             </p>
           </div>
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white" data-aos="flip-left">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={Group}
               alt=""
@@ -178,12 +196,15 @@ const Graphic = () => {
               Social Media Design
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Eye-catching and dynamic social media design solutions crafted to
+              amplify your brand's online presence and engage your audience
+              effectively. Our team of creative designers specializes in
+              creating captivating visuals tailored for various social media
+              platforms. From compelling graphics to engaging animations, we
+              ensure that your social media content stands out amidst the
+              digital noise. Let us help you make a memorable impression and
+              drive meaningful interactions with your audience through
+              innovative social media design.
             </p>
           </div>
         </div>

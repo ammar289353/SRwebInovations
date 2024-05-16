@@ -26,13 +26,8 @@ const DigitalMarketing = () => {
           <p className="text-white text-center pt-[20vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
             SR Innovations
           </p>
-          <div
-            className="top-[16vw] mr-[9vw] sm:mr-[8vw] md:text-center transform transition-transform"
-          >
-            <h1
-              className="text-white text-center text-[4vw] font-bold"
-             
-            >
+          <div className="top-[16vw] mr-[9vw] sm:mr-[8vw] md:text-center transform transition-transform">
+            <h1 className="text-white text-center text-[4vw] font-bold">
               Digital Marketing
             </h1>
           </div>
@@ -42,7 +37,6 @@ const DigitalMarketing = () => {
             EXPERIENCED DESIGNERS IS DEDICATED TO CREATING STUNNING DESIGNS THAT
             WILL MAKE YOUR BRAND STAND OUT <br /> FROM THE REST.
           </p>
-          
         </div>
       </section>
       <section className="w-[94vw] m-auto mb-10 mt-10">
@@ -58,18 +52,18 @@ const DigitalMarketing = () => {
             data-aos="flip-right"
           >
             <p className="font-semibold text-[3.5vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-            Digital Marketing
+              Digital Marketing
             </p>
             <h1 className="font-bold text-[5.5vw] sm:text-[5vw] md:text-[3vw] lg:text-[3vw]">
-              Get A Custom Design <br /> For Your Brand
+              Why Choose Our Digital <br />
+              Marketing Services?
             </h1>
             <p className="mt-2 text-[4.5vw] sm:text-[4vw] md:text-[1.2vw] lg:text-[1.2vw] text-gray-400">
-              Our graphic design services are designed to help businesses create
-              a strong and effective visual identity. Our team of creative
-              designers specializes in everything from logo design to branding,
-              social media design, and UI/UX design. We create visually stunning
-              designs and grab the attention of the target audience. Let us
-              create a stunning design for your brand.
+              Gain a competitive edge with our digital marketing services. From
+              SEO to social media, we help you reach your audience and drive
+              website traffic. With years of experience, our experts deliver
+              results to boost your online presence, brand awareness, and sales.
+              Trust us for effective strategies and maximum ROI.
             </p>
             <button className="bg-blue-800 text-white text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1.5vw] rounded-full p-2 pl-14 sm:pl-14 md:pl-10 lg:pl-10 pr-14 sm:pr-14 md:pr-10 lg:pr-10 mt-4 mb-4">
               Get Started
@@ -84,11 +78,11 @@ const DigitalMarketing = () => {
             data-aos="fade-down"
           >
             <p className="font-semibold text-[4.5vw] sm:text-[4.5vw] md:text-[1vw] lg:text-[1vw]">
-              GRAPHIC DESIGN
+              Digital Marketing{" "}
             </p>
             <h1 className="font-bold text-[4.5vw] sm:text-[4vw] md:text-[2.5vw] lg:text-[2.5vw] mt-2 text-gray-800">
-              Create A Strong Brand Identity With Our <br /> Professional
-              Graphic Design Services!
+              Attract more customers, generate leads! Our digital marketing
+              services drive growth. Contact us today!
             </h1>
             <button className="bg-blue-800 text-white text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1.5vw] rounded-full p-2 pl-14 sm:pl-14 md:pl-10 lg:pl-10 pr-14 sm:pr-14 md:pr-10 lg:pr-10 mt-4 mb-4">
               Get Started
@@ -104,71 +98,76 @@ const DigitalMarketing = () => {
               className="sm:ml-60 ml-40 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-0 lg:ml-24"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Server Management
+              Server Management
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Ensure seamless digital marketing operations with expert server
+              management services. Our team handles the technical aspects,
+              ensuring your campaigns run smoothly and securely. Contact us
+              today to optimize your digital marketing infrastructure.
             </p>
           </div>
         </div>
-        <div className="block sm:block md:flex lg:flex mb-14" >
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
+        <div className="block sm:block md:flex lg:flex mb-14">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={Ecommerce}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            E-commerce
+              E-commerce
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Elevate your digital marketing strategy with ecommerce
+              integration. From optimizing product listings to enhancing user
+              experience, we help you leverage ecommerce platforms for maximum
+              sales and growth. Reach out today to boost your online presence
+              and drive revenue with ecommerce in digital marketing.
             </p>
           </div>
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={AppDevelopment}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            App Development
+              App Development
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Incorporate app development into your digital marketing strategy
+              for enhanced engagement and brand visibility. From creating
+              user-friendly interfaces to implementing effective marketing
+              features, we tailor app solutions to elevate your online presence.
+              Contact us now to leverage app development for success in digital
+              marketing.
             </p>
           </div>
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white" data-aos="flip-left">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={BookDesign}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Book Design
+              Book Design
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Transform your digital marketing efforts with captivating book
+              design services. From eye-catching covers to engaging interior
+              layouts, we ensure your content shines online. Connect with us
+              today to elevate your brand and attract readers with professional
+              book design in digital marketing.
             </p>
           </div>
         </div>

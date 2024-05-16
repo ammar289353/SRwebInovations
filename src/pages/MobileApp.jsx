@@ -26,13 +26,8 @@ const MobileApp = () => {
           <p className="text-white text-center pt-[20vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
             SR Innovations
           </p>
-          <div
-            className="top-[16vw] mr-[9vw] sm:mr-[8vw] md:text-center transform transition-transform"
-          >
-            <h1
-              className="text-white text-center text-[4vw] font-bold"
-             
-            >
+          <div className="top-[16vw] mr-[9vw] sm:mr-[8vw] md:text-center transform transition-transform">
+            <h1 className="text-white text-center text-[4vw] font-bold">
               Mobile App Development
             </h1>
           </div>
@@ -42,7 +37,6 @@ const MobileApp = () => {
             EXPERIENCED DESIGNERS IS DEDICATED TO CREATING STUNNING DESIGNS THAT
             WILL MAKE YOUR BRAND STAND OUT <br /> FROM THE REST.
           </p>
-          
         </div>
       </section>
       <section className="w-[94vw] m-auto mb-10 mt-10">
@@ -58,18 +52,21 @@ const MobileApp = () => {
             data-aos="flip-right"
           >
             <p className="font-semibold text-[3.5vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-              GRAPHIC DESIGN
+              MOBILE APP DEVELOPMENT
             </p>
             <h1 className="font-bold text-[5.5vw] sm:text-[5vw] md:text-[3vw] lg:text-[3vw]">
-              Get A Custom Design <br /> For Your Brand
+              IOS & Android <br /> App Development
             </h1>
             <p className="mt-2 text-[4.5vw] sm:text-[4vw] md:text-[1.2vw] lg:text-[1.2vw] text-gray-400">
-              Our graphic design services are designed to help businesses create
-              a strong and effective visual identity. Our team of creative
-              designers specializes in everything from logo design to branding,
-              social media design, and UI/UX design. We create visually stunning
-              designs and grab the attention of the target audience. Let us
-              create a stunning design for your brand.
+              We specialize in comprehensive mobile application development for
+              iOS and Android platforms. Whether it's gaming, social media,
+              e-commerce, or utility apps, we deliver top-notch results. Using
+              cutting-edge tools and technologies, we ensure your app is not
+              just functional but visually appealing, user-friendly, and
+              future-proof. Our mission is to empower businesses to connect with
+              their audience and achieve their goals through innovative mobile
+              solutions. With years of industry experience, we consistently
+              exceed client expectations with high-quality apps.
             </p>
             <button className="bg-blue-800 text-white text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1.5vw] rounded-full p-2 pl-14 sm:pl-14 md:pl-10 lg:pl-10 pr-14 sm:pr-14 md:pr-10 lg:pr-10 mt-4 mb-4">
               Get Started
@@ -84,11 +81,11 @@ const MobileApp = () => {
             data-aos="fade-down"
           >
             <p className="font-semibold text-[4.5vw] sm:text-[4.5vw] md:text-[1vw] lg:text-[1vw]">
-              GRAPHIC DESIGN
+              MOBILE APP DEVELOPMENT
             </p>
             <h1 className="font-bold text-[4.5vw] sm:text-[4vw] md:text-[2.5vw] lg:text-[2.5vw] mt-2 text-gray-800">
-              Create A Strong Brand Identity With Our <br /> Professional
-              Graphic Design Services!
+              Ready to take your business to new heights with top-tier mobile
+              app development? Contact us now for the best services in town.
             </h1>
             <button className="bg-blue-800 text-white text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1.5vw] rounded-full p-2 pl-14 sm:pl-14 md:pl-10 lg:pl-10 pr-14 sm:pr-14 md:pr-10 lg:pr-10 mt-4 mb-4">
               Get Started
@@ -104,71 +101,71 @@ const MobileApp = () => {
               className="sm:ml-60 ml-40 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-0 lg:ml-24"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Gaming Apps
+              Gaming Apps
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Need an exciting gaming app to engage your audience? We've got you
+              covered! Our team specializes in crafting immersive gaming
+              experiences that captivate users and keep them coming back for
+              more. Let's turn your gaming idea into a reality!
             </p>
           </div>
         </div>
-        <div className="block sm:block md:flex lg:flex mb-14" >
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
+        <div className="block sm:block md:flex lg:flex mb-14">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={EcommerceApps}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Ecommerce Apps
+              Ecommerce Apps
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Ready to boost your online sales? Our ecommerce app development
+              services are designed to enhance your customers' shopping
+              experience and drive conversions. Reach out today to transform
+              your business with a custom ecommerce app
             </p>
           </div>
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={BlogApps}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Blog Apps 
+              Blog Apps
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Want to share your ideas with the world? Our blog app development
+              services make it easy to connect with your audience on the go.
+              Reach out now to bring your blogging dreams to life!
             </p>
           </div>
-          <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white" data-aos="flip-left">
+          <div
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
+            data-aos="flip-left"
+          >
             <img
               src={UtilityApps}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Utility Apps
+              Utility Apps
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quaerat repellendus iusto delectus provident possimus
-              recusandae earum, minus quos ducimus tenetur ratione. Quae
-              deleniti libero magni pariatur vitae cupiditate aspernatur? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
-              jksjdksjdkSDSFjf
+              Simplify life with our utility app solutions! From productivity
+              tools to handy gadgets, we design apps that make everyday tasks a
+              breeze. Contact us today to streamline your users' experiences
+              with a custom utility app.
             </p>
           </div>
         </div>
