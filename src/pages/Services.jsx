@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import backgroundImage from "../images/Sr-Particle.jpg";
@@ -9,6 +11,10 @@ import MobileAppImage from "../images/Mobile App.jpg";
 import VideoImage from "../images/video.png";
 import DMImage from "../images/DM.png";
 import SEOImage from "../images/Seo.png";
+import TexasLogo from "../images/txtogo.jpg";
+import ASkillAdmin from "../images/1.jpeg";
+import ASkillSite from "../images/2.jpeg";
+import MoyenExpress from "../images/moyen-app.jpg";
 
 const Services = () => {
   useEffect(() => {
@@ -141,10 +147,7 @@ const Services = () => {
         </div>
       </section>
       {/* OUR WORK PORTFOLIO */}
-      <section
-        className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]"
-        data-aos="zoom-in-up"
-      >
+      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]" data-aos="zoom-in-up">
         <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
           <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
             <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
@@ -158,19 +161,26 @@ const Services = () => {
               innovative solutions, demonstrating our commitment to excellence
               in every project.lvinar dapibus leo.
             </p>
-            <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
+           <Link to="/Portfolio">
+           <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
               Explore More
             </button>
-            <div className="sm:block lg:flex md:flex mt-8">
-              <div className=" mr-4">
+            </Link>
+            <div className="sm:block lg:flex md:flex mt-8 w-[100%]">
+              <div className=" mr-4 w-[50%]">
                 <img
-                  src="https://techigems.pk/wp-content/uploads/2024/02/Rectangle-63.png"
+                  src={TexasLogo}
                   alt=""
                 />
               </div>
-              <div className="mt-4 sm:mt-4 md:mt-0">
+              <div className="mt-4 sm:mt-4 md:mt-0 w-[50%]">
                 <img
-                  src="https://techigems.pk/wp-content/uploads/2024/02/Rectangle-64.png"
+                  src={ASkillAdmin}
+                  alt=""
+                />
+                <br />
+                <img
+                  src={ASkillSite}
                   alt=""
                 />
               </div>
@@ -178,7 +188,7 @@ const Services = () => {
           </div>
           <div className="mt-3 sm:mt-5 pb-5 md:mt-10 lg:mt-16 lg:ml-7 md:ml-5">
             <img
-              src="https://techigems.pk/wp-content/uploads/2024/02/services.png"
+              src={MoyenExpress}
               alt=""
               className="md:h-[70vw] lg:h-[50vw] sm:h-[70vw] sm:w-[70vw] md:w-[70vw] lg:w-[50vw]"
             />

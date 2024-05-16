@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import backgroundImage from "../images/Sr-Particle.jpg";
-import graphic from "../images/graphic.png";
-import logodesign from "../images/logodesign.png";
-import uiux from "../images/uiux.png";
-import branding from "../images/branding.png";
-import Group from "../images/Group.png";
+import VideoService from "../images/Video-Service.png";
+import TwoD from "../images/2D.png";
+import ThreeD from "../images/3D.png";
+import Motiion from "../images/Motion.png";
+import Explainer from "../images/Explainer.png";
 
 const VideoAnimation = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const VideoAnimation = () => {
 
   return (
     <>
-      <section data-aos="zoom-in-left">
+      <section data-aos="zoom-in-up">
         <div
           className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
           style={{
@@ -51,14 +51,14 @@ const VideoAnimation = () => {
             className="w-[90vw] sm:w-[90vw] md:w-[50vw] lg:w-[50vw]"
             data-aos="flip-left"
           >
-            <img src={graphic} alt="" />
+            <img src={VideoService} alt="" />
           </div>
           <div
             className="w-[90vw] sm:w-[90vw] md:w-[50vw] lg:w-[50vw] ml-0 sm:ml-0 md:ml-10 lg:ml-10 mt-10 sm:mt-10 md:mt-28 lg:mt-30 text-center sm:text-center md:text-start lg:text-start"
             data-aos="flip-right"
           >
             <p className="font-semibold text-[3.5vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-              GRAPHIC DESIGN
+            Video Animation
             </p>
             <h1 className="font-bold text-[5.5vw] sm:text-[5vw] md:text-[3vw] lg:text-[3vw]">
               Get A Custom Design <br /> For Your Brand
@@ -99,12 +99,12 @@ const VideoAnimation = () => {
             data-aos="flip-left"
           >
             <img
-              src={logodesign}
+              src={TwoD}
               alt=""
               className="sm:ml-60 ml-40 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-0 lg:ml-24"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-              Logo Design
+              2D Animation
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -119,12 +119,12 @@ const VideoAnimation = () => {
         <div className="block sm:block md:flex lg:flex mb-14" >
           <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
             <img
-              src={uiux}
+              src={ThreeD}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-              UI/UX
+            3D Animation
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -137,12 +137,12 @@ const VideoAnimation = () => {
           </div>
           <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white" data-aos="flip-left">
             <img
-              src={branding}
+              src={Motiion}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-              Branding Design
+            Motiion Graphics
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -155,12 +155,12 @@ const VideoAnimation = () => {
           </div>
           <div className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto sm:h-auto md:h-auto lg:h-auto p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-slate-400 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white" data-aos="flip-left">
             <img
-              src={Group}
+              src={Explainer}
               alt=""
               className="sm:ml-60 ml-44 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-              Social Media Design
+            Explainer Videos
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

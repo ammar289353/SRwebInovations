@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import backgroundImage from "../images/Sr-Particle.jpg";
-import graphic from "../images/graphic.png";
+import GraphicService from "../images/graphic-service.png";
 import logodesign from "../images/logodesign.png";
 import uiux from "../images/uiux.png";
 import branding from "../images/branding.png";
@@ -24,7 +24,7 @@ const Graphic = () => {
 
   return (
     <>
-      <section data-aos="zoom-in-left">
+      <section data-aos="zoom-in-up">
         <div
           className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
           style={{
@@ -66,7 +66,7 @@ const Graphic = () => {
             className="w-[90vw] sm:w-[90vw] md:w-[50vw] lg:w-[50vw]"
             data-aos="flip-left"
           >
-            <img src={graphic} alt="" />
+            <img src={GraphicService} alt="" />
           </div>
           <div
             className="w-[90vw] sm:w-[90vw] md:w-[50vw] lg:w-[50vw] ml-0 sm:ml-0 md:ml-10 lg:ml-10 mt-10 sm:mt-10 md:mt-28 lg:mt-30 text-center sm:text-center md:text-start lg:text-start"

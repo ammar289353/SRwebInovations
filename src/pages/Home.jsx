@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
@@ -13,6 +15,11 @@ import MobileAppImage from "../images/Mobile App.jpg";
 import VideoImage from "../images/video.png";
 import DMImage from "../images/DM.png";
 import SEOImage from "../images/Seo.png";
+// Portfolio
+import TexasLogo from "../images/txtogo.jpg";
+import ASkillAdmin from "../images/1.jpeg";
+import ASkillSite from "../images/2.jpeg";
+import MoyenExpress from "../images/moyen-app.jpg";
 
 const Home = () => {
   useEffect(() => {
@@ -210,19 +217,26 @@ const Home = () => {
               innovative solutions, demonstrating our commitment to excellence
               in every project.lvinar dapibus leo.
             </p>
-            <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
+           <Link to="/Portfolio">
+           <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
               Explore More
             </button>
-            <div className="sm:block lg:flex md:flex mt-8">
-              <div className=" mr-4">
+            </Link>
+            <div className="sm:block lg:flex md:flex mt-8 w-[100%]">
+              <div className=" mr-4 w-[50%]">
                 <img
-                  src="https://techigems.pk/wp-content/uploads/2024/02/Rectangle-63.png"
+                  src={TexasLogo}
                   alt=""
                 />
               </div>
-              <div className="mt-4 sm:mt-4 md:mt-0">
+              <div className="mt-4 sm:mt-4 md:mt-0 w-[50%]">
                 <img
-                  src="https://techigems.pk/wp-content/uploads/2024/02/Rectangle-64.png"
+                  src={ASkillAdmin}
+                  alt=""
+                />
+                <br />
+                <img
+                  src={ASkillSite}
                   alt=""
                 />
               </div>
@@ -230,7 +244,7 @@ const Home = () => {
           </div>
           <div className="mt-3 sm:mt-5 pb-5 md:mt-10 lg:mt-16 lg:ml-7 md:ml-5">
             <img
-              src="https://techigems.pk/wp-content/uploads/2024/02/services.png"
+              src={MoyenExpress}
               alt=""
               className="md:h-[70vw] lg:h-[50vw] sm:h-[70vw] sm:w-[70vw] md:w-[70vw] lg:w-[50vw]"
             />
