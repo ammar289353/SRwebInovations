@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
-import Hero from "../images/sr-hero.jpg";
-import heroblock from "../images/sr-block.png";
-import herorocket from "../images/sr-rocket.png";
-import herobulb from "../images/sr-bulb.png";
+import About from "../images/about.png";
+import Techno from "../images/techno.jpg";
 // Card Images
 import GraphicImage from "../images/graphic.png";
 import WebsiteImage from "../images/Website.png";
@@ -39,7 +37,7 @@ const Home = () => {
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
     },
     {
-      imageUrl: MobileAppImage ,
+      imageUrl: MobileAppImage,
       title: "Mobile App Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
@@ -67,15 +65,20 @@ const Home = () => {
   return (
     <>
       {/* Hero  */}
-      <section className="block md:flex w-[100%] bg-slate-500 m-auto h-[46vw] mt-8 lg:mt-16">
-        <div className="m-auto w-[80vw]">
-          <h1 className="text-[4.5vw] mt-16 font-bold text-center">Shaping Tomorrow with State-of-the-Art Technology</h1>
-          <h1 className="text-[#093D84] text-center font-bold text-[4vw]">IT COMPANY</h1>
-          <button className="bg-[#093D84] text-[1.5vw] text-white p-3 border-2 rounded-[0.5vw] pr-4 pl-4 ml-[33vw]">Let's Get Started</button>
+      <section className="w-[100%] bg-slate-500 h-auto pb-24 lg:mt-16">
+        <div>
+          <h1 className="text-[5vw] md:text-[3.5vw] pt-24 md:pt-16 font-bold text-center">
+            Shaping Tomorrow with <br />
+            <span className="text-[#093D84]"> State-of-the-Art Technology</span>
+            <br /> IT COMPANY
+          </h1>
+          <button className="bg-[#093D84] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1 ml-[33vw] md:ml-[42vw] mt-4 ">
+            Let's Get Started
+          </button>
         </div>
       </section>
       {/* Block */}
-      <section className="bg-white">
+      {/* <section className="bg-white">
         <div className="w-[90vw] m-auto">
          <div className="flex pt-8">
           <h1 className="text-[4vw] font-bold ">Our Portfolio</h1>
@@ -90,7 +93,8 @@ const Home = () => {
           </span>
          </div>
         </div>
-      </section>
+      </section> */}
+
       {/* Moto */}
       {/* <section
         className="bg-[#0B488D] "
@@ -156,7 +160,10 @@ const Home = () => {
         </div>
       </section> */}
       {/* OUR WORK PORTFOLIO */}
-      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]" data-aos="zoom-in-up">
+      <section
+        className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]"
+        data-aos="zoom-in-up"
+      >
         <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
           <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
             <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
@@ -170,28 +177,19 @@ const Home = () => {
               innovative solutions, demonstrating our commitment to excellence
               in every project.lvinar dapibus leo.
             </p>
-           <Link to="/Portfolio">
-           <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
-              Explore More
-            </button>
+            <Link to="/Portfolio">
+              <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
+                Explore More
+              </button>
             </Link>
-            <div className="sm:block lg:flex md:flex mt-8 w-[100%]">
+            <div className=" flex sm:block lg:flex md:flex mt-8 w-[100%]">
               <div className=" mr-4 w-[50%]">
-                <img
-                  src={TexasLogo}
-                  alt=""
-                />
+                <img src={TexasLogo} alt="" />
               </div>
               <div className="mt-4 sm:mt-4 md:mt-0 w-[50%]">
-                <img
-                  src={ASkillAdmin}
-                  alt=""
-                />
+                <img src={ASkillAdmin} alt="" />
                 <br />
-                <img
-                  src={ASkillSite}
-                  alt=""
-                />
+                <img src={ASkillSite} alt="" />
               </div>
             </div>
           </div>
@@ -202,6 +200,37 @@ const Home = () => {
               className="md:h-[70vw] lg:h-[50vw] sm:h-[70vw] sm:w-[70vw] md:w-[70vw] lg:w-[50vw]"
             />
           </div>
+        </div>
+      </section>
+      {/* About  */}
+      <section className="md:flex" data-aos="zoom-in-up">
+        <div className="md:w-[50%] px-16 py-32">
+          <span className="text-[#093D84] font-medium "> About us</span>
+          <h1 className="text-[4vw] font-bold ">
+            Transforming technology into a positive impact
+          </h1>
+          <button className="bg-[#093D84] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1  mt-4 ">
+            Let's Get Started
+          </button>
+        </div>
+        <div
+          className="h-[100vh] md:w-[50%]"
+          style={{
+            backgroundImage: `url(${About})`,
+            backgroundSize: "cover",
+          }}
+        >
+          <p className="text-white px-12 pt-32">
+            Since its inception in 2016, Techigems Llc has been providing
+            full-fledged and tech-powered solutions to clients globally. Our
+            experts at Techigems Llc begin every project with thorough research
+            and a well-planned strategy to deliver the desired outcomes.
+            <br />
+            <br />
+            With over successful years in the Software and IT industry, our work
+            leaves no room for mistakes and errors. We aim to help you create
+            innovative products faster and at scale.
+          </p>
         </div>
       </section>
       {/* Cards  */}
@@ -241,6 +270,27 @@ const Home = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+      {/* Let's do it  */}
+      <section className="bg-slate-300 h-[100vh] px-24 md:flex">
+        <div className="w-[50%] pt-16">
+          <span className="text-[#093D84] font-medium">LET'S DO IT</span>
+          <h1 className="text-[4vw] font-bold" >Driving Your <span className="text-[#093D84]">Success</span>  through Innovative Solutions</h1>
+          <p>
+            At Techigems Llc., we help businesses solve their unique challenges
+            with efficiency and creativity. We have the technical expertise and
+            creativity to build custom web and mobile apps for high growth. From
+            ideation, design, and prototyping to internet-scale rollout, we
+            offer comprehensive solutions to businesses of all sizes and
+            industries.
+          </p>
+          <button className="bg-[#093D84] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1  mt-4 ">
+            Let's Get Started
+          </button>
+        </div>
+        <div className="w-[50%] px-8 pt-24">
+           <img src={Techno} alt="" />
         </div>
       </section>
       {/* TESTIMONIAL */}
