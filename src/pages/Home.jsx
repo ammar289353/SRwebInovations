@@ -67,33 +67,10 @@ const Home = () => {
   return (
     <>
       {/* Hero  */}
-      <section className="block md:flex w-[100%] mt-8 lg:mt-16">
-        <div
-          className="text-black bg-[#C8E1F4] md:w-[50%] pt-3 pb-2"
-          data-aos="flip-right"
-        >
-          <h1 className="text-[4vw] font-extrabold px-12 pt-12 lg:pt-32">
-            Shaping Tomorrow
-            <span className="text-[#0B428B]"> with State-of-the-Art </span>
-            Technology
-          </h1>
-          <p className="px-12 text-[2vw] lg:text-[1vw] ">
-            Experience Business Transformation: Enhance Efficiency, Drive
-            Growth, and Streamline Operations. Our Customized Solutions are
-            Designed to Elevate Your Business Amidst Dynamic Challenges.
-          </p>
-          <div className="px-12 pt-3">
-            <button className="px-7 py-2 text-[3vw] lg:text-[1.5vw]  bg-[#093D84] text-white rounded-lg ">
-              Let's Begin.
-            </button>
-          </div>
-        </div>
-        <div className="md:w-[50%]  lg:pt-3" data-aos="flip-left">
-          <img
-            className="h-80 md:h-[80vh] lg:h-[90vh] w-full"
-            src={Hero}
-            alt=""
-          />
+      <section className="block md:flex w-[100%] m-auto h-full mt-8 lg:mt-16">
+        <div className="bg-white m-auto w-[80vw]">
+          <h1 className="text-[4vw] mt-16 text-center">Shaping Tomorrow with State-of-the-Art <br /> Technology</h1>
+          <h1 className="text-[#093D84] text-center font-bold text-[4vw]">IT COMPANY</h1>
         </div>
       </section>
       {/* Block */}
