@@ -67,56 +67,32 @@ const Home = () => {
   return (
     <>
       {/* Hero  */}
-      <section className="block md:flex w-[100%] m-auto h-full mt-8 lg:mt-16">
-        <div className="bg-white m-auto w-[80vw]">
-          <h1 className="text-[4vw] mt-16 text-center">Shaping Tomorrow with State-of-the-Art <br /> Technology</h1>
+      <section className="block md:flex w-[100%] bg-slate-500 m-auto h-[46vw] mt-8 lg:mt-16">
+        <div className="m-auto w-[80vw]">
+          <h1 className="text-[4.5vw] mt-16 font-bold text-center">Shaping Tomorrow with State-of-the-Art Technology</h1>
           <h1 className="text-[#093D84] text-center font-bold text-[4vw]">IT COMPANY</h1>
+          <button className="bg-[#093D84] text-[1.5vw] text-white p-3 border-2 rounded-[0.5vw] pr-4 pl-4 ml-[33vw]">Let's Get Started</button>
         </div>
       </section>
       {/* Block */}
-      <section>
-        <div
-          className="mx-16 bg-[#093D84] h-auto pb-12 lg:h-48 my-5 rounded-lg lg:flex justify-between 
-        px-6 lg:px-12 pt-12"
-        data-aos="fade-up"
-        >
-          <div className="flex gap-6">
-            <img src={heroblock} className="lg:h-24" alt="" />
-            <div className="text-white pt-5">
-              <h1 className="font-bold text-[3vw] lg:text-[1.2vw]">
-                Innovation
-              </h1>
-              <p className="text-[2vw] lg:text-[1vw] text-slate-300">
-                Exploring novel concepts to craft innovative solutions.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-6 pt-12 lg:pt-2">
-            <img src={herorocket} className="lg:h-20" alt="" />
-            <div className="text-white pt-5 lg:pt-3">
-              <h1 className="font-bold text-[3vw] lg:text-[1.2vw]">
-                Customization
-              </h1>
-              <p className="text-[2vw] lg:text-[1vw] text-slate-300">
-                Personalizing offerings to suit specific requirements.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-6 pt-12 lg:pt-2">
-            <img src={herobulb} className="lg:h-20" alt="" />
-            <div className="text-white pt-5 lg:pt-3">
-              <h1 className="font-bold text-[3vw] lg:text-[1.2vw]">
-                Efficiency
-              </h1>
-              <p className="text-[2vw] lg:text-[1vw] text-slate-300">
-                Optimizing productivity while conserving resources.
-              </p>
-            </div>
-          </div>
+      <section className="bg-white">
+        <div className="w-[90vw] m-auto">
+         <div className="flex pt-8">
+          <h1 className="text-[4vw] font-bold ">Our Portfolio</h1>
+          <span className="pt-8 border-b-2 border-gray-700 ml-32">
+            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Website</a>
+            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Logo</a>
+            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Branding</a>
+            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Animation</a>
+            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">NET Design</a>
+            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Illustration</a>
+            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Social Media</a>
+          </span>
+         </div>
         </div>
       </section>
       {/* Moto */}
-      <section
+      {/* <section
         className="bg-[#0B488D] "
         data-aos="zoom-in-up"
         // style={{
@@ -178,7 +154,7 @@ const Home = () => {
             <p>Years Experience</p>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* OUR WORK PORTFOLIO */}
       <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]" data-aos="zoom-in-up">
         <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
