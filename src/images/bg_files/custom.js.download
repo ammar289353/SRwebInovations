@@ -1,0 +1,279 @@
+$(document).ready(function () {
+    AOS.init({})
+
+    $(".navicon .nav-toggle").on("click", function () {
+        $(this).toggleClass("active"), $(".detailHeader").toggleClass("active"), $("body").toggleClass("headerOpen");
+    });
+    var e = $("#parent .child").length,
+        a = $(".child").height(),
+        o = e * a - $("#parent").height();
+    $(document).on("click", "#down", function () {
+        var e = $("#parent").scrollTop();
+        $("#parent").scrollTop(a + e), e == o ? $(this).hide() : $("#up").show();
+    });
+    $(document).on("click", "#up", function () {
+        var e = parseInt($("#parent").scrollTop());
+        $("#parent").scrollTop(e - a), a + e == a ? $(this).hide() : $("#down").show();
+    });
+    let s = document.querySelector(".main-burger"),
+        i = document.querySelector(".cross-wrapper"),
+        t = gsap.timeline({ paused: !0 });
+    t.to(".main_navigation-overlay", { xPercent: 100, duration: 1, ease: " power1.inOut" }),
+        t.from(".main_nav-list li", { y: -860, opacity: 0, duration: 1, stagger: 0.4, ease: "power1.inOut" }, 0.5),
+        t.from(".cross-wrapper", { scale: 0, ease: "elastic", duration: 0.5 }),
+        s.addEventListener("click", function () {
+            t.play(), t.timeScale(2);
+        });
+    i.addEventListener("click", function () {
+        t.reverse();
+    });
+    let r = document.querySelectorAll(".home-banner");
+    gsap
+        .timeline({ scrollTrigger: { trigger: r, scroller: ".scrollContainer", toggleActions: "restart none none none", start: "top 70%", end: "bottom 50%", markers: !1 } })
+        .set(".ban-img2", { y: "40px" })
+        .to(".banner-ipad", { x: "0", duration: 1, ease: "power1.out" })
+        .to(".ban-img2", { y: "0px", opacity: 1, stagger: 0.05, ease: "Bounce.easeOut", duration: 4 }),
+        $(".feature-carousel").owlCarousel({
+            loop: !0,
+            margin: 0,
+            nav: !0,
+            navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+            dots: !1,
+            autoplay: !0,
+            autoplayTimeout: 3e3,
+            autoplayHoverPause: !1,
+            responsive: { 0: { items: 1 }, 575: { items: 1 }, 991: { items: 1 }, 1024: { items: 2 }, 1200: { items: 3 } },
+        });
+    var brandLogo = Array.from(document.querySelectorAll('.logo-animated'));
+    // console.log(brandLogo)
+    brandLogo.forEach(function ($this) {
+        console.log(brandLogo)
+        bodymovin.loadAnimation({
+            wrapper: $this,
+            animType: 'svg',
+            loop: true,
+            path: 'assets/images/logo.json'
+        })
+    })
+    $(window).width() <= 991 &&
+        0 != ".service-wrapper".length &&
+        ($(".service-wrapper").addClass("owl-carousel owl-theme"),
+            $(".service-wrapper").owlCarousel({
+                loop: !1,
+                margin: 0,
+                nav: !1,
+                dots: !0,
+                autoplay: !1,
+                autoplayTimeout: !1,
+                autoplayHoverPause: !1,
+                mouseDrag: !0,
+                responsive: { 0: { items: 1 }, 460: { items: 1 }, 767: { items: 1 }, 991: { items: 2 } },
+            }));
+    $('.packages-wrapper').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: !0,
+        center: false,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        dots: !1,
+        mouseDrag: false,
+        autoplay: false,
+        autoplayTimeout: 3e3,
+        autoplayHoverPause: !0,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true,
+            },
+            600: {
+                items: 1
+            },
+            991: {
+                items: 1
+            },
+            1024: {
+                items: 3
+            }
+        }
+    });
+    $(window).width() <= 991 &&
+        0 != ".digital-serv".length &&
+        ($(".digital-serv").addClass("owl-carousel owl-theme"),
+            $(".digital-serv").owlCarousel({ loop: !1, margin: 0, nav: !1, dots: !0, autoplay: 0, autoplayHoverPause: !1, mouseDrag: !0, responsive: { 0: { items: 1 }, 460: { items: 1 }, 767: { items: 1 }, 991: { items: 2 } } })),
+        $(window).width() <= 768 &&
+        0 != ".port-slider".length &&
+        ($(".port-slider").addClass("owl-carousel owl-theme"),
+            $(".port-slider").owlCarousel({
+                loop: !1,
+                margin: 0,
+                nav: !1,
+                dots: !0,
+                autoplay: !1,
+                autoplayTimeout: 4e3,
+                autoplayHoverPause: !1,
+                mouseDrag: !0,
+                responsive: { 0: { items: 1 }, 460: { items: 1 }, 768: { items: 3 } },
+            }));
+    $(".desccontent ul").slimScroll({ height: "300px", color: "#ccc" }),
+        0 != $(".scroll").length &&
+        $(".scroll").slimScroll({
+            height: "300px",
+            size: "4px",
+            color: "#fff",
+            alwaysVisible: !0,
+            distance: "16px",
+            railVisible: !0,
+            railColor: " rgb(209, 0, 29)",
+            railOpacity: 1,
+            railBorderRadius: "0px",
+            wheelStep: 10,
+            disableFadeOut: !1,
+        });
+    $(".testi-slider").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: true,
+        autoplay: false,
+        navText: ['Previous', 'Next'],
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            575: {
+                items: 1
+            },
+            991: {
+                items: 1
+            },
+            1024: {
+                items: 2
+            },
+            1200: {
+                items: 2
+            }
+            ,
+            1366: {
+                items: 2
+            }
+        }
+    });
+    $(window).width() <= 768 &&
+        0 != ".logo-side-img ul".length &&
+        ($(".logo-side-img ul").addClass("owl-carousel owl-theme"),
+            $(".logo-side-img ul").owlCarousel({
+                loop: !1,
+                margin: 0,
+                nav: !1,
+                dots: !0,
+                autoplay: !1,
+                autoplayTimeout: 4e3,
+                autoplayHoverPause: !1,
+                mouseDrag: !0,
+                responsive: { 0: { items: 3 }, 460: { items: 4 }, 767: { items: 4 } },
+            }));
+    $('.animation-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    // $('.packages-wrapper div[class^=col]:first-child').addClass('offset-lg-4')
+
+    // Services hover text animate
+
+    $('.serv-box-wrap').hover(function () {
+        var serviceText = $(this).data('service-name');
+        console.log(serviceText);
+        $('.serv-anim-text-top').text(serviceText);
+        $(this).parents('.services').children('.serv-anim-text').removeClass('serv-anim-text-bottom');
+    })
+
+    $('.serv-box-wrap:nth-child(n+4)').hover(function () {
+        $(this).parents('.services').children('.serv-anim-text').addClass('serv-anim-text-bottom');
+        // $('.serv-anim-text-bottom').text(serviceText);
+    })
+
+
+
+
+
+}); // Ready Function Close
+
+
+$(document).ready(function () {
+    $(".nft-design .heading-h1").text('Reserve Now to Avail');
+    $(".nft-design .heading-h2").text('Discount');
+});
+
+// Popup Close Script
+$('.cross').click(function () {
+    $('#popup_form').css('display', 'none');
+    // $('body').removeClass('modal-open').css('padding-right', '0');
+    // $('div').removeClass('modal-backdrop fade show');
+});
+$('.popup-open').click(function () {
+    $('#popup_form').css('display', 'block');
+    // $('body').removeClass('modal-open').css('padding-right', '0');
+    // $('div').removeClass('modal-backdrop fade show');
+})
+
+
+
+if ($("#banner_typewriter").length != 0) {
+    console.log('working')
+    var banner_typewriter = document.getElementById('banner_typewriter');
+    var typewriter = new Typewriter(banner_typewriter, {
+        loop: true
+    });
+
+
+    typewriter
+        .typeString('Web Designs that attract millions')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('Results-oriented SEO')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('Unique Logo Designs')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('Self-explanatory Video Animation')
+        .pauseFor(1500)
+        .start();
+}
