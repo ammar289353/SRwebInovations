@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import ParticleComponent from '../components/particle';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
@@ -66,6 +66,9 @@ const Home = () => {
     <>
       {/* Hero  */}
       <section className="w-[100%] bg-slate-500 h-auto pb-24 lg:mt-16">
+        <ParticleComponent 
+        className="h-[60vw]"
+        />
         <div>
           <h1 className="text-[5vw] md:text-[3.5vw] pt-24 md:pt-16 font-bold text-center">
             Shaping Tomorrow with <br />
