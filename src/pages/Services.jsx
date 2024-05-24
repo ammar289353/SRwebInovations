@@ -138,7 +138,8 @@ const Services = () => {
                 </p>
               </div>
               <div className="text-center pt-6">
-                <button onClick={() => { window.location.href = service.link; }} className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
+                <button onClick={() => { window.location.href = service.link; }} 
+                className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
                   Learn More
                 </button>
               </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import ParticleComponent from '../components/particle';
+// import ParticleComponent from '../components/particle';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
@@ -29,38 +29,45 @@ const Home = () => {
       title: "Graphic Design",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/Graphic"
     },
     {
       imageUrl: WebsiteImage,
       title: "Webiste Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/Website"
     },
     {
       imageUrl: MobileAppImage,
       title: "Mobile App Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/MobileApp"
     },
     {
       imageUrl: VideoImage,
       title: "Video Animation",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/VideoAnimation"
     },
     {
       imageUrl: DMImage,
       title: "Digital Marketing",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        link: "/DigitalMarketing"
     },
     {
       imageUrl: SEOImage,
       title: "SEO",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-    },
+        link:"/SEO"
+      },
   ];
+
 
   return (
     <>
@@ -169,10 +176,10 @@ const Home = () => {
       >
         <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
           <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
-            <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
+            <p className="font-semibold text-[3vw] md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
               OUR WORK PORTFOLIO
             </p>
-            <h1 className="text-[5vw] sm:text-[4vw] md:text-[4vw] lg:text-4xl font-bold pt-3 text-[#05185A]">
+            <h1 className="text-[6vw] sm:text-[4vw] md:text-[4vw] lg:text-4xl font-bold pt-3 text-[#05185A]">
               Discover Our Portfolio Highlighting Our Expertise and Creativity
             </h1>
             <p className="md:text-[1.3vw] lg:text-[1vw] pt-4">
@@ -207,17 +214,17 @@ const Home = () => {
       </section>
       {/* About  */}
       <section className="md:flex" data-aos="zoom-in-up">
-        <div className="md:w-[50%] px-16 py-32">
+        <div className="md:w-[50%] px-4 md:px-16 py-12 md:py-32">
           <span className="text-[#093D84] font-medium "> About us</span>
-          <h1 className="text-[4vw] font-bold ">
+          <h1 className="text-[6vw] md:text-[4vw] font-bold ">
             Transforming technology into a positive impact
           </h1>
-          <button className="bg-[#093D84] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1  mt-4 ">
+          <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
             Let's Get Started
           </button>
         </div>
         <div
-          className="h-[100vh] md:w-[50%]"
+          className="h-auto pb-12 md:w-[50%]"
           style={{
             backgroundImage: `url(${About})`,
             backgroundSize: "cover",
@@ -237,7 +244,7 @@ const Home = () => {
         </div>
       </section>
       {/* Cards  */}
-      <section className="bg-[#FFFFFF] w-full h-auto md:h-auto lg:h-[86vw]">
+      <section className="bg-[#FFFFFF] w-full h-auto mt-6 md:h-auto lg:h-[86vw]">
         <div className="w-[93vw] m-auto pt-[5vw]" data-aos="fade-down">
           <p className="text-black text-center font-semibold">WHAT WE OFFER</p>
           <h1 className="text-center text-[3vw] font-bold">
@@ -267,7 +274,8 @@ const Home = () => {
                 </p>
               </div>
               <div className="text-center pt-6">
-                <button className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
+                <button onClick={() => { window.location.href = service.link; }}
+                 className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
                   Learn More
                 </button>
               </div>
@@ -276,10 +284,10 @@ const Home = () => {
         </div>
       </section>
       {/* Let's do it  */}
-      <section className="bg-slate-300 h-[100vh] px-24 md:flex">
-        <div className="w-[50%] pt-16">
+      <section className="bg-slate-300 h-auto pb-6 px-6 lg:px-24 md:flex">
+        <div className="md:w-[50%] pt-16">
           <span className="text-[#093D84] font-medium">LET'S DO IT</span>
-          <h1 className="text-[4vw] font-bold" >Driving Your <span className="text-[#093D84]">Success</span>  through Innovative Solutions</h1>
+          <h1 className="text-[6vw] lg:text-[4vw] font-bold" >Driving Your <span className="text-[#093D84]">Success</span>  through Innovative Solutions</h1>
           <p>
             At Techigems Llc., we help businesses solve their unique challenges
             with efficiency and creativity. We have the technical expertise and
@@ -288,11 +296,11 @@ const Home = () => {
             offer comprehensive solutions to businesses of all sizes and
             industries.
           </p>
-          <button className="bg-[#093D84] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1  mt-4 ">
+          <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
             Let's Get Started
           </button>
         </div>
-        <div className="w-[50%] px-8 pt-24">
+        <div className="md:w-[50%] px-4 md:px-8 pt-12 md:pt-24">
            <img src={Techno} alt="" />
         </div>
       </section>
@@ -325,22 +333,22 @@ const Home = () => {
           <button className="text-center bg-[#093D84] font-semibold text-white p-3 rounded-md pl-8 pr-8 text-[1.4vw] ml-[43vw]">Let's Start</button>
       </section>
       {/* TESTIMONIAL */}
-      {/* <section className="bg-[#D9EAF7] w-full h-auto mt-6" data-aos="zoom-in-up">
-        <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20">
-              <p className="text-black text-[3vw] sm:text-[3vw] md:text-[1.5vw] mt-4 lg:text-[1.5vw] text-center font-semibold">
+      <section className="bg-[#D9EAF7] w-full h-auto mt-8 pb-20" data-aos="zoom-in-up">
+        <div>
+              <p className="text-[#093D84] text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
                 TESTIMONIAL
               </p>
               <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
                 What They Say About Us
               </h1>
-              <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
+              <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
                 We've cemented our position as a premier provider of
                 cutting-edge technology solutions. <br /> Leveraging our
                 state-of-the-art services, we can assist you in achieving your
                 goals.
               </p>
-            <div className="grid grid-cols-3 w-[95vw]">
-            <div className=" w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
+            <div className="grid gap-2 grid-cols-1 lg:grid-cols-3 px-8">
+            <div className="w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
                 <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
                   chiGems Pakistan has been a game-changer for our digital
                   marketing efforts. They have helped us increase our online
@@ -367,7 +375,7 @@ const Home = () => {
                 </div>
             </div>
             
-            <div className=" w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
+            <div className="w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
                 <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
                   chiGems Pakistan has been a game-changer for our digital
                   marketing efforts. They have helped us increase our online
@@ -393,7 +401,7 @@ const Home = () => {
                   </div>
                 </div>
                 </div>
-                <div className=" w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
+                <div className="w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
                 <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
                   chiGems Pakistan has been a game-changer for our digital
                   marketing efforts. They have helped us increase our online
@@ -421,7 +429,7 @@ const Home = () => {
                 </div>
                 </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };
