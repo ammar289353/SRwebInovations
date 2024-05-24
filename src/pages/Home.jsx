@@ -66,9 +66,9 @@ const Home = () => {
     <>
       {/* Hero  */}
       <section className="w-[100%] bg-slate-500 h-auto pb-24 lg:mt-16">
-        <ParticleComponent 
+        {/* <ParticleComponent 
         className="h-[60vw]"
-        />
+        /> */}
         <div>
           <h1 className="text-[5vw] md:text-[3.5vw] pt-24 md:pt-16 font-bold text-center">
             Shaping Tomorrow with <br />
@@ -325,7 +325,7 @@ const Home = () => {
           <button className="text-center bg-[#093D84] font-semibold text-white p-3 rounded-md pl-8 pr-8 text-[1.4vw] ml-[43vw]">Let's Start</button>
       </section>
       {/* TESTIMONIAL */}
-      <section className="bg-[#D9EAF7] w-full h-auto mt-6" data-aos="zoom-in-up">
+      {/* <section className="bg-[#D9EAF7] w-full h-auto mt-6" data-aos="zoom-in-up">
         <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20">
               <p className="text-black text-[3vw] sm:text-[3vw] md:text-[1.5vw] mt-4 lg:text-[1.5vw] text-center font-semibold">
                 TESTIMONIAL
@@ -339,7 +339,7 @@ const Home = () => {
                 state-of-the-art services, we can assist you in achieving your
                 goals.
               </p>
-            <div className="grid grid-cols-3 w-[95vw] m-auto">
+            <div className="grid grid-cols-3 w-[95vw]">
             <div className=" w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
                 <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
                   chiGems Pakistan has been a game-changer for our digital
@@ -366,7 +366,7 @@ const Home = () => {
                   </div>
                 </div>
             </div>
-            </div>
+            
             <div className=" w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
                 <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
                   chiGems Pakistan has been a game-changer for our digital
@@ -419,8 +419,9 @@ const Home = () => {
                   </div>
                 </div>
                 </div>
+                </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
