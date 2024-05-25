@@ -18,6 +18,7 @@ import TexasLogo from "../images/txtogo.jpg";
 import ASkillAdmin from "../images/1.jpeg";
 import ASkillSite from "../images/2.jpeg";
 import MoyenExpress from "../images/moyen-app.jpg";
+import "./Testimonial.css"
 
 const Home = () => {
   useEffect(() => {
@@ -67,7 +68,38 @@ const Home = () => {
         link:"/SEO"
       },
   ];
-
+  const testimonials = [
+    {
+      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Mark Johnson",
+      title: "Business manager"
+    },
+    {
+      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Mark Johnson",
+      title: "Business manager"
+    },
+    {
+      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Mark Johnson",
+      title: "Business manager"
+    },
+    {
+      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Mark Johnson",
+      title: "Business manager"
+    },
+    {
+      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Mark Johnson",
+      title: "Business manager"
+    },
+  ];
 
   return (
     <>
@@ -334,102 +366,41 @@ const Home = () => {
       </section>
       {/* TESTIMONIAL */}
       <section className="bg-[#D9EAF7] w-full h-auto mt-8 pb-20" data-aos="zoom-in-up">
-        <div>
-              <p className="text-[#093D84] text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
-                TESTIMONIAL
-              </p>
-              <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
-                What They Say About Us
-              </h1>
-              <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
-                We've cemented our position as a premier provider of
-                cutting-edge technology solutions. <br /> Leveraging our
-                state-of-the-art services, we can assist you in achieving your
-                goals.
-              </p>
-            <div className="grid gap-2 grid-cols-1 lg:grid-cols-3 px-8">
-            <div className="w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
+      <div>
+        <p className="text-[#093D84] text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
+          TESTIMONIAL
+        </p>
+        <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
+          What They Say About Us
+        </h1>
+        <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
+          We've cemented our position as a premier provider of cutting-edge technology solutions.
+          <br /> Leveraging our state-of-the-art services, we can assist you in achieving your goals.
+        </p>
+        <div className="carousel-container">
+          <div className="carousel-wrapper grid grid-cols-3">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="carousel-item w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[25vw] lg:h-[25vw] bg-white rounded-lg ml-3 p-6">
                 <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-                  chiGems Pakistan has been a game-changer for our digital
-                  marketing efforts. They have helped us increase our online
-                  visibility, drive more traffic to our website, and generate
-                  more leads. Their team is knowledgeable, creative, and always
-                  willing to go above and beyond to ensure our success. We
-                  highly recommend their digital marketing services to anyone
-                  looking to take their online presence to the next level.
+                chiGems Pakistan has been a game-changer for our digital marketing <br />efforts.  They have helped us increase our online visibility,drive more <br /> traffic to our website, and generate more leads. Their  team is<br />  knowledgeable, creative, and always willing to go above and beyond <br /> to ensure our success. We highly recommend their digital marketing <br /> services to anyone looking to take their online presence to the<br />  next level.
                 </p>
                 <div className="flex">
-                  <img
-                    src="https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg"
-                    alt=""
-                    className="rounded-full w-14 mt-2"
-                  />
+                  <img src={testimonial.imgSrc} alt={testimonial.name} className="rounded-full w-14 mt-2" />
                   <div>
                     <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3">
-                      Mark Johnson
+                      {testimonial.name}
                     </h1>
                     <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10">
-                      Business manager
+                      {testimonial.title}
                     </p>
                   </div>
                 </div>
-            </div>
-            
-            <div className="w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
-                <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-                  chiGems Pakistan has been a game-changer for our digital
-                  marketing efforts. They have helped us increase our online
-                  visibility, drive more traffic to our website, and generate
-                  more leads. Their team is knowledgeable, creative, and always
-                  willing to go above and beyond to ensure our success. We
-                  highly recommend their digital marketing services to anyone
-                  looking to take their online presence to the next level.
-                </p>
-                <div className="flex">
-                  <img
-                    src="https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg"
-                    alt=""
-                    className="rounded-full w-14 mt-2"
-                  />
-                  <div>
-                    <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3">
-                      Mark Johnson
-                    </h1>
-                    <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10">
-                      Business manager
-                    </p>
-                  </div>
-                </div>
-                </div>
-                <div className="w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6">
-                <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-                  chiGems Pakistan has been a game-changer for our digital
-                  marketing efforts. They have helped us increase our online
-                  visibility, drive more traffic to our website, and generate
-                  more leads. Their team is knowledgeable, creative, and always
-                  willing to go above and beyond to ensure our success. We
-                  highly recommend their digital marketing services to anyone
-                  looking to take their online presence to the next level.
-                </p>
-                <div className="flex">
-                  <img
-                    src="https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg"
-                    alt=""
-                    className="rounded-full w-14 mt-2"
-                  />
-                  <div>
-                    <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3">
-                      Mark Johnson
-                    </h1>
-                    <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10">
-                      Business manager
-                    </p>
-                  </div>
-                </div>
-                </div>
-                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
     </>
   );
 };

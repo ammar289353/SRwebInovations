@@ -1,0 +1,25 @@
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    animation: slide 20s linear infinite;
+  }
+
+  .carousel-item {
+    flex: 0 0 33.33%; /* Adjust this based on the number of items you want visible at once */
+    max-width: 33.3%;
+  }
