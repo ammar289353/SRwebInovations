@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-// import ParticleComponent from '../components/particle';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
@@ -18,7 +17,7 @@ import TexasLogo from "../images/txtogo.jpg";
 import ASkillAdmin from "../images/1.jpeg";
 import ASkillSite from "../images/2.jpeg";
 import MoyenExpress from "../images/moyen-app.jpg";
-import "./Testimonial.css"
+import "./Testimonial.css";
 
 const Home = () => {
   useEffect(() => {
@@ -30,84 +29,87 @@ const Home = () => {
       title: "Graphic Design",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/Graphic"
+      link: "/Graphic",
     },
     {
       imageUrl: WebsiteImage,
       title: "Webiste Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/Website"
+      link: "/Website",
     },
     {
       imageUrl: MobileAppImage,
       title: "Mobile App Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/MobileApp"
+      link: "/MobileApp",
     },
     {
       imageUrl: VideoImage,
       title: "Video Animation",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/VideoAnimation"
+      link: "/VideoAnimation",
     },
     {
       imageUrl: DMImage,
       title: "Digital Marketing",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/DigitalMarketing"
+      link: "/DigitalMarketing",
     },
     {
       imageUrl: SEOImage,
       title: "SEO",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link:"/SEO"
-      },
-  ];
-  const testimonials = [
-    {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
-      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager"
-    },
-    {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
-      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager"
-    },
-    {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
-      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager"
-    },
-    {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
-      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager"
-    },
-    {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
-      imgSrc: "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager"
+      link: "/SEO",
     },
   ];
+  // const testimonials = [
+  //   {
+  //     text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+  //     imgSrc:
+  //       "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+  //     name: "Mark Johnson",
+  //     title: "Business manager",
+  //   },
+  //   {
+  //     text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+  //     imgSrc:
+  //       "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+  //     name: "Mark Johnson",
+  //     title: "Business manager",
+  //   },
+  //   {
+  //     text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+  //     imgSrc:
+  //       "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+  //     name: "Mark Johnson",
+  //     title: "Business manager",
+  //   },
+  //   {
+  //     text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+  //     imgSrc:
+  //       "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+  //     name: "Mark Johnson",
+  //     title: "Business manager",
+  //   },
+  //   {
+  //     text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+  //     imgSrc:
+  //       "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+  //     name: "Mark Johnson",
+  //     title: "Business manager",
+  //   },
+  // ];
 
   return (
     <>
       {/* Hero  */}
       <section className="w-[100%] bg-slate-500 h-auto pb-24 lg:mt-16">
-        {/* <ParticleComponent 
-        className="h-[60vw]"
-        /> */}
+        
         <div>
           <h1 className="text-[5vw] md:text-[3.5vw] pt-24 md:pt-16 font-bold text-center">
             Shaping Tomorrow with <br />
@@ -119,88 +121,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-      {/* Block */}
-      {/* <section className="bg-white">
-        <div className="w-[90vw] m-auto">
-         <div className="flex pt-8">
-          <h1 className="text-[4vw] font-bold ">Our Portfolio</h1>
-          <span className="pt-8 border-b-2 border-gray-700 ml-32">
-            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Website</a>
-            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Logo</a>
-            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Branding</a>
-            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Animation</a>
-            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">NET Design</a>
-            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Illustration</a>
-            <a href="" className="text-[1.3vw] font-semibold p-2 text-gray-800">Social Media</a>
-          </span>
-         </div>
-        </div>
-      </section> */}
 
-      {/* Moto */}
-      {/* <section
-        className="bg-[#0B488D] "
-        data-aos="zoom-in-up"
-        // style={{
-        //   backgroundImage: `url(${Hero})`,
-        //   backgroundSize: "cover",
-        //   opacity: 0.6,
-        // }}
-      >
-        <div className="md:flex pb-12 text-white">
-          <div className="md:w-[50%] pt-12 md:pt-32 px-8">
-            <p>WE ARE</p>
-            <h1 className="text-[3vw] font-extrabold">
-              Equipping our Varied Client Base to Harness Cutting-Edge
-              Technology and Unlock Fresh Business Prospects.
-            </h1>
-          </div>
-          <div className="md:w-[50%] pt-12 md:pt-20 px-12">
-            <p className="text-[3vw] md:text-[1.7vw] lg:text-[1.3vw] ">
-              At SR Innovations, we recognize the ever-evolving nature of
-              technology and the paramount importance of staying ahead. That's
-              why we're passionately committed to empowering our diverse
-              clientele with the tools to harness the latest advancements and
-              seize new business horizons. Whether it's crafting responsive
-              websites, mobile apps, delving into cloud computing, artificial
-              intelligence, or any other pioneering technology, we're dedicated
-              to ensuring our clients lead the charge in their respective
-              industries.
-              <br />
-              <br />
-              We're driven by a deep passion for guiding our clients towards
-              harnessing technology for transformative business outcomes. Our
-              seasoned team collaborates closely with each client, delving into
-              their distinctive requirements to craft tailor-made solutions that
-              align with their objectives. Through our cutting-edge offerings,
-              clients can optimize their operations, enhance efficiency, and tap
-              into fresh revenue channels, all while maintaining a competitive
-              edge. If you're poised to elevate your business to unprecedented
-              heights of success, we're poised to support you at every stage of
-              your journey.
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div className="flex justify-between px-4 md:px-24 py-12 text-white">
-          <div>
-            <h1 className="text-[6vw] md:text-[3vw] font-bold ">14K+</h1>
-            <p>Project Done</p>
-          </div>
-          <div>
-            <h1 className="text-[6vw] md:text-[3vw]  font-bold ">12K+</h1>
-            <p>Happy customer</p>
-          </div>
-          <div>
-            <h1 className="text-[6vw] md:text-[3vw]  font-bold ">4.7</h1>
-            <p>Review customer</p>
-          </div>
-          <div>
-            <h1 className="text-[6vw] md:text-[3vw]  font-bold ">15+</h1>
-            <p>Years Experience</p>
-          </div>
-        </div>
-      </section> */}
       {/* OUR WORK PORTFOLIO */}
       <section
         className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]"
@@ -306,8 +227,12 @@ const Home = () => {
                 </p>
               </div>
               <div className="text-center pt-6">
-                <button onClick={() => { window.location.href = service.link; }}
-                 className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
+                <button
+                  onClick={() => {
+                    window.location.href = service.link;
+                  }}
+                  className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg "
+                >
                   Learn More
                 </button>
               </div>
@@ -319,7 +244,10 @@ const Home = () => {
       <section className="bg-slate-300 h-auto pb-6 px-6 lg:px-24 md:flex">
         <div className="md:w-[50%] pt-16">
           <span className="text-[#093D84] font-medium">LET'S DO IT</span>
-          <h1 className="text-[6vw] lg:text-[4vw] font-bold" >Driving Your <span className="text-[#093D84]">Success</span>  through Innovative Solutions</h1>
+          <h1 className="text-[6vw] lg:text-[4vw] font-bold">
+            Driving Your <span className="text-[#093D84]">Success</span> through
+            Innovative Solutions
+          </h1>
           <p>
             At Techigems Llc., we help businesses solve their unique challenges
             with efficiency and creativity. We have the technical expertise and
@@ -333,74 +261,117 @@ const Home = () => {
           </button>
         </div>
         <div className="md:w-[50%] px-4 md:px-8 pt-12 md:pt-24">
-           <img src={Techno} alt="" />
+          <img src={Techno} alt="" />
         </div>
       </section>
       {/* cards */}
       <section>
         <div className="text-center mt-4">
-          <h1 className="font-semibold text-[1.5vw] text-[#093D84]">NO.1 DIGITAL PLATFORM</h1>
-          <h1 className="font-bold text-black text-[3.5vw]">Best Digital & IT Company <br /> Who We Work With</h1>
+          <h1 className="font-semibold text-[2.4vw] md:text-[1.5vw] text-[#093D84]">
+            NO.1 DIGITAL PLATFORM
+          </h1>
+          <h1 className="font-bold text-black text-[5vw] md:text-[3.5vw]">
+            Best Digital & IT Company <br /> Who We Work With
+          </h1>
         </div>
-        <div className="flex mt-4 justify-between w-[80vw] m-auto">
-          <div className="bg-gray-800 rounded-sm text-white mt-16 w-[25vw] p-4 h-[24vw]">
-          <h1 className="font-bold text-[1.7vw] pt-3"> Enterprise <br /> Organizations </h1>
-          <p className="pt-3">
-          We understand the complex technology needs of large-scale organizations and have the expertise to help them achieve their goals. Our team can help Enterprise Organizations modernize their existing technology infrastructure, streamline processes, and improve user experience.
-          </p>
+        <div className="md:flex mt-4 justify-between  px-12 md:px-24">
+          <div className="bg-gray-800 rounded-sm text-white mt-16 md:w-[25vw] p-4 h-auto md:h-[24vw] ">
+            <h1 className="font-bold text-[1.7vw] pt-3">
+              {" "}
+              Enterprise <br /> Organizations{" "}
+            </h1>
+            <p className="pt-3">
+              We understand the complex technology needs of large-scale
+              organizations and have the expertise to help them achieve their
+              goals. Our team can help Enterprise Organizations modernize their
+              existing technology infrastructure, streamline processes, and
+              improve user experience.
+            </p>
           </div>
-          <div className="bg-gray-800 rounded-sm mt-6 text-white w-[25vw] p-4 h-[24vw]">
-           <h1 className="font-bold text-[1.7vw] pt-3">
-           Small & Medium <br />Enterprises
-           </h1>
-           <p className="pt-3">
-           We understand that Small & Medium Enterprises (SMEs) face unique challenges when it comes to technology. We offer affordable and flexible technology solutions that can help SMEs stay competitive in the fast-paced business landscape.
-           </p>
+          <div className="bg-gray-800 rounded-sm mt-6 text-white md:w-[25vw] p-4 h-auto md:h-[24vw]">
+            <h1 className="font-bold text-[1.7vw] pt-3">
+              Small & Medium <br />
+              Enterprises
+            </h1>
+            <p className="pt-3">
+              We understand that Small & Medium Enterprises (SMEs) face unique
+              challenges when it comes to technology. We offer affordable and
+              flexible technology solutions that can help SMEs stay competitive
+              in the fast-paced business landscape.
+            </p>
           </div>
-          <div className="bg-gray-800 rounded-sm mt-16 text-white w-[25vw] p-4 h-[24vw]">
-           <h1 className="font-bold text-[1.7vw] pt-3">Startups</h1>
-           <p className="pt-3">As a startup, you need a technology partner who can help you build a solid foundation for your business. Our team can help startups navigate the complex world of technology and provide them with the support they need to succeed.</p>
+          <div className="bg-gray-800 rounded-sm mt-16 text-white md:w-[25vw] p-4 h-auto md:h-[24vw]">
+            <h1 className="font-bold text-[1.7vw] pt-3">Startups</h1>
+            <p className="pt-3">
+              As a startup, you need a technology partner who can help you build
+              a solid foundation for your business. Our team can help startups
+              navigate the complex world of technology and provide them with the
+              support they need to succeed.
+            </p>
           </div>
         </div>
-          <button className="text-center bg-[#093D84] font-semibold text-white p-3 rounded-md pl-8 pr-8 text-[1.4vw] ml-[43vw]">Let's Start</button>
+        <button className="text-center mb-6 bg-[#093D84] font-semibold text-white py-2 mt-4 md:mt-0 rounded-md px-8 text-[2.5vw] md:text-[1.4vw] ml-[35vw] md:ml-[43vw]">
+          Let's Start
+        </button>
       </section>
       {/* TESTIMONIAL */}
-      <section className="bg-[#D9EAF7] w-full h-auto mt-8 pb-20" data-aos="zoom-in-up">
-      <div>
-        <p className="text-[#093D84] text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
-          TESTIMONIAL
-        </p>
-        <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
-          What They Say About Us
-        </h1>
-        <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
-          We've cemented our position as a premier provider of cutting-edge technology solutions.
-          <br /> Leveraging our state-of-the-art services, we can assist you in achieving your goals.
-        </p>
-        <div className="carousel-container">
-          <div className="carousel-wrapper grid grid-cols-3">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="carousel-item w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[25vw] lg:h-[25vw] bg-white rounded-lg ml-3 p-6">
-                <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-                chiGems Pakistan has been a game-changer for our digital marketing <br />efforts.  They have helped us increase our online visibility,drive more <br /> traffic to our website, and generate more leads. Their  team is<br />  knowledgeable, creative, and always willing to go above and beyond <br /> to ensure our success. We highly recommend their digital marketing <br /> services to anyone looking to take their online presence to the<br />  next level.
-                </p>
-                <div className="flex">
-                  <img src={testimonial.imgSrc} alt={testimonial.name} className="rounded-full w-14 mt-2" />
-                  <div>
-                    <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3">
-                      {testimonial.name}
-                    </h1>
-                    <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10">
-                      {testimonial.title}
-                    </p>
+      {/* <section
+        className="bg-[#D9EAF7] w-full h-auto mt-8 pb-20"
+        data-aos="zoom-in-up"
+      >
+        <div>
+          <p className="text-[#093D84] text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
+            TESTIMONIAL
+          </p>
+          <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
+            What They Say About Us
+          </h1>
+          <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
+            We've cemented our position as a premier provider of cutting-edge
+            technology solutions.
+            <br /> Leveraging our state-of-the-art services, we can assist you
+            in achieving your goals.
+          </p>
+          <div className="carousel-container">
+            <div className="carousel-wrapper grid grid-cols-3">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="carousel-item w-[85vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[25vw] lg:h-[25vw] bg-white rounded-lg ml-3 p-6"
+                >
+                  <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
+                    chiGems Pakistan has been a game-changer for our digital
+                    marketing <br />
+                    efforts. They have helped us increase our online
+                    visibility,drive more <br /> traffic to our website, and
+                    generate more leads. Their team is
+                    <br /> knowledgeable, creative, and always willing to go
+                    above and beyond <br /> to ensure our success. We highly
+                    recommend their digital marketing <br /> services to anyone
+                    looking to take their online presence to the
+                    <br /> next level.
+                  </p>
+                  <div className="flex">
+                    <img
+                      src={testimonial.imgSrc}
+                      alt={testimonial.name}
+                      className="rounded-full w-14 mt-2"
+                    />
+                    <div>
+                      <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3">
+                        {testimonial.name}
+                      </h1>
+                      <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10">
+                        {testimonial.title}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section> */}
     </>
   );
 };
