@@ -4,29 +4,28 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
 // Slider
-import {Swiper, SwiperSlide} from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/free-mode';
-import 'swiper/css/autoplay';
-import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+import "swiper/css/autoplay";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import About from "../images/about.png";
 import Techno from "../images/techno.jpg";
 
 // Card Images
 import GraphicImage from "../images/graphic.png";
 import WebsiteImage from "../images/Website.png";
-import MobileAppImage from "../images/Mobile App.jpg";
+// import MobileAppImage from "../images/Mobile App.jpg";
 import VideoImage from "../images/video.png";
 import DMImage from "../images/DM.png";
 import SEOImage from "../images/Seo.png";
 // Portfolio
-import TexasLogo from "../images/txtogo.jpg";
+import TexasLogo from "../images/DJCREFLO.jpg";
 import ASkillAdmin from "../images/1.jpeg";
 import ASkillSite from "../images/2.jpeg";
-import MoyenExpress from "../images/moyen-app.jpg";
+import MoyenExpress from "../images/massagetherapy.jpg";
 import Hero from "../images/Hero.png";
-
 
 const Home = () => {
   useEffect(() => {
@@ -47,13 +46,13 @@ const Home = () => {
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
       link: "/Website",
     },
-    {
-      imageUrl: MobileAppImage,
-      title: "Mobile App Development",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-      link: "/MobileApp",
-    },
+    // {
+    //   imageUrl: MobileAppImage,
+    //   title: "Mobile App Development",
+    //   description:
+    //     "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+    //   link: "/MobileApp",
+    // },
     {
       imageUrl: VideoImage,
       title: "Video Animation",
@@ -78,54 +77,70 @@ const Home = () => {
   ];
   const testimonials = [
     {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      text: "Working with SR Innovations has significantly boosted our digital marketing performance. Their team implemented strategies that increased our online visibility and drove more traffic to our website. We're now seeing a steady increase in leads. Their dedication and creativity are truly commendable. I highly recommend their services for anyone serious about enhancing their online presence.",
       imgSrc:
         "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager",
+      name: "John D.",
+      title: "Digital Marketing",
     },
     {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      text:"SR Innovations has transformed our search engine rankings with their expert SEO services. The team is not only knowledgeable but also incredibly innovative. They helped us climb to the top of search results, resulting in higher website traffic and better lead generation. Their commitment to our success is evident in everything they do. If you're looking to improve your SEO, SR Innovations is the way to go.",
       imgSrc:
         "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager",
+      name: "Emily S.",
+      title: "SEO",
     },
     {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      text:"Our experience with SR Innovations for website development has been outstanding. They delivered a sleek, responsive, and highly functional website that exceeded our expectations. Their attention to detail and ability to understand our vision made the entire process smooth and efficient. I highly recommend their web development services for any business looking to enhance its online presence.",
       imgSrc:
         "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager",
+      name: "Jessica L.",
+      title: "Website Development",
     },
     {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      text: "We partnered with SR Innovations for our website development needs, and the results have been fantastic. Their expertise helped us create a user-friendly and visually appealing site that attracts more visitors. Their proactive approach and creative solutions have been instrumental in generating new leads for our business. I highly recommend their website development services to any company looking to grow online.",
       imgSrc:
         "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager",
+      name: "Michael R.",
+      title: "Website Development",
     },
     {
-      text: "chiGems Pakistan has been a game-changer for our digital marketing efforts. They have helped us increase our online visibility, drive more traffic to our website, and generate more leads. Their team is knowledgeable, creative, and always willing to go above and beyond to ensure our success. We highly recommend their digital marketing services to anyone looking to take their online presence to the next level.",
+      text: "SR Innovations completely revamped our digital marketing strategy, and the impact has been incredible. Their team's innovative approach and in-depth knowledge have led to a significant increase in our online visibility and website traffic. We've seen a noticeable uptick in leads and conversions. I can't recommend their digital marketing services enough!",
       imgSrc:
         "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Mark Johnson",
-      title: "Business manager",
+      name: "Sarah K.",
+      title: "Digital Marketing",
+    },
+    {
+      text: "SR Innovations has played a crucial role in enhancing our brand through video animation. They crafted engaging and professional animations that captured our audience's attention and improved our online presence. The team is professional, creative, and always ready to go the extra mile to ensure our success. We couldn't be happier with their services and recommend them highly.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Lisa T.",
+      title: "Video Animation",
+    },
+    {
+      text: "Since partnering with SR Innovations, our graphic design needs have been met with outstanding results. Their team's expertise in creating stunning visuals has been a game-changer for us. We've seen a substantial increase in engagement and overall brand recognition. The team is creative, diligent, and genuinely invested in our success. For anyone looking to elevate their brand with top-notch graphic design, SR Innovations is the perfect choice.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "David M.",
+      title: "Graphic Design",
     },
   ];
 
   return (
     <>
       {/* Hero  */}
-      
-      <section className="w-[100%] bg-slate-500 h-auto pb-48 lg:mt-16" 
-      style={{ backgroundImage: `url(${Hero})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: '100%',
-      height: '100%',
-      }}>
-        
+
+      <section
+        className="w-[100%] bg-slate-500 h-auto pb-48 lg:mt-16"
+        style={{
+          backgroundImage: `url(${Hero})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: "100%",
+          height: "100%",
+        }}
+      >
         <div>
           <h1 className="text-[5vw] text-[#e5e7ea] md:text-[3.5vw] pt-48 md:pt-48  font-bold text-center">
             Shaping Tomorrow with <br />
@@ -133,13 +148,12 @@ const Home = () => {
             <br /> IT COMPANY
           </h1>
           <Link to="/Contact">
-          <button className="bg-[#7a9dcf] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1 ml-[33vw] md:ml-[42vw] mt-4 hover:bg-[#39547a]  ">
-            Let's Get Started
-          </button>
+            <button className="bg-[#7a9dcf] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1 ml-[33vw] md:ml-[42vw] mt-4 hover:bg-[#39547a]  ">
+              Let's Get Started
+            </button>
           </Link>
         </div>
       </section>
-      
 
       {/* OUR WORK PORTFOLIO */}
       <section
@@ -191,12 +205,10 @@ const Home = () => {
           <h1 className="text-[6vw] md:text-[4vw] font-bold ">
             Transforming technology into a positive impact
           </h1>
-          <Link
-           to="/Contact"
-          >
-          <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
-            Let's Get Started
-          </button>
+          <Link to="/Contact">
+            <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
+              Let's Get Started
+            </button>
           </Link>
         </div>
         <div
@@ -207,15 +219,15 @@ const Home = () => {
           }}
         >
           <p className="text-white px-12 pt-32">
-            Since its inception in 2016, Techigems Llc has been providing
-            full-fledged and tech-powered solutions to clients globally. Our
-            experts at Techigems Llc begin every project with thorough research
-            and a well-planned strategy to deliver the desired outcomes.
+            Founded in 2024, SR Innovations delivers comprehensive and
+            innovative tech solutions to clients worldwide. At SR Innovations,
+            our projects commence with detailed research and strategic planning
+            to ensure optimal results.
             <br />
             <br />
-            With over successful years in the Software and IT industry, our work
-            leaves no room for mistakes and errors. We aim to help you create
-            innovative products faster and at scale.
+            With years of proven success in the Software and IT industry, we
+            pride ourselves on precision and excellence. Our mission is to help
+            you develop cutting-edge products efficiently and on a large scale.
           </p>
         </div>
       </section>
@@ -272,17 +284,18 @@ const Home = () => {
             Innovative Solutions
           </h1>
           <p>
-            At Techigems Llc., we help businesses solve their unique challenges
-            with efficiency and creativity. We have the technical expertise and
-            creativity to build custom web and mobile apps for high growth. From
-            ideation, design, and prototyping to internet-scale rollout, we
-            offer comprehensive solutions to businesses of all sizes and
-            industries.
+            At SR Innovations, we help businesses tackle their unique challenges
+            with efficiency and creativity. Our technical expertise and
+            innovative approach enable us to build custom web and mobile apps
+            designed for high growth. From ideation, design, and prototyping to
+            internet-scale rollout, we offer comprehensive solutions to
+            businesses of all sizes and industries.
           </p>
           <Link to="/Contact">
-          <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
-            Let's Get Started
-          </button></Link>
+            <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
+              Let's Get Started
+            </button>
+          </Link>
         </div>
         <div className="md:w-[50%] px-4 md:px-8 pt-12 md:pt-24">
           <img src={Techno} alt="" />
@@ -334,10 +347,10 @@ const Home = () => {
             </p>
           </div>
         </div>
-       <Link to="/Contact">
-       <button className="text-center mb-6 bg-[#093D84] font-semibold text-white py-2 mt-4 md:mt-0 rounded-md px-8 text-[2.5vw] md:text-[1.4vw] ml-[35vw] md:ml-[43vw]">
-          Let's Start
-        </button>
+        <Link to="/Contact">
+          <button className="text-center mb-6 bg-[#093D84] font-semibold text-white py-2 mt-4 md:mt-0 rounded-md px-8 text-[2.5vw] md:text-[1.4vw] ml-[35vw] md:ml-[43vw]">
+            Let's Start
+          </button>
         </Link>
       </section>
       {/* TESTIMONIAL */}
@@ -346,80 +359,78 @@ const Home = () => {
         data-aos="zoom-in-up"
       >
         <p className="text-[#093D84] text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
-            TESTIMONIAL
-          </p>
-          <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
-            What They Say About Us
-          </h1>
-          <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
-            We've cemented our position as a premier provider of cutting-edge
-            technology solutions.
-            <br /> Leveraging our state-of-the-art services, we can assist you
-            in achieving your goals.
-          </p>
-       <div className="w-[90%] md:w-[100%] overflow-hidden ">
-       <Swiper
-        breakpoints={{
-          340: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          700: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-        }}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        modules={[FreeMode, Pagination, Autoplay]}
-        className="w-[140vw] h-[44vh] md:h-auto md:max-w-[90%]">
+          TESTIMONIAL
+        </p>
+        <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
+          What They Say About Us
+        </h1>
+        <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
+          We've cemented our position as a premier provider of cutting-edge
+          technology solutions.
+          <br /> Leveraging our state-of-the-art services, we can assist you in
+          achieving your goals.
+        </p>
+        <div className="w-[90%] md:w-[100%] overflow-hidden ">
+          <Swiper
+            breakpoints={{
+              340: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              700: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+            }}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            modules={[FreeMode, Pagination, Autoplay]}
+            className="w-[140vw] h-[44vh] md:h-auto md:max-w-[90%]"
+          >
             {/* Slider */}
-          <div>
-            <div className="">
-              {testimonials.map((testimonial, index) => (
-                <SwiperSlide
-                  key={index}
-                  className="bg-white rounded-lg ml-5 md:ml-0 p-6"
-                >
-                  <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-                    TechiGems Pakistan has been a game-changer for our digital
-                    marketing <br />
-                    efforts. They have helped us increase our online
-                    visibility,drive more <br /> traffic to our website, and
-                    generate more leads. Their team is
-                    <br /> knowledgeable, creative, and always willing to go
-                    above and beyond <br /> to ensure our success. We highly
-                    recommend their digital marketing <br /> services to anyone
-                    looking to take their online presence to the
-                    <br /> next level.
-                  </p>
-                  <div className="flex">
-                    <img
-                      src={testimonial.imgSrc}
-                      alt={testimonial.name}
-                      className="rounded-full w-14 mt-2"
-                    />
-                    <div>
-                      <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-3 lg:ml-10 mt-3">
-                        {testimonial.name}
-                      </h1>
-                      <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-3 lg:ml-10">
-                        {testimonial.title}
-                      </p>
+            <div>
+              <div className="">
+                {testimonials.map((testimonial, index) => (
+                  <SwiperSlide
+                    key={index}
+                    className="bg-white rounded-lg ml-5 md:ml-0 p-6"
+                  >
+                    <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
+                      "Working with SR Innovations has significantly boosted our
+                      digital marketing performance. Their team implemented
+                      strategies that increased our online visibility and drove
+                      more traffic to our website. We're now seeing a steady
+                      increase in leads. Their dedication and creativity are
+                      truly commendable. I highly recommend their services for
+                      anyone serious about enhancing their online presence."
+                    </p>
+                    <div className="flex">
+                      <img
+                        src={testimonial.imgSrc}
+                        alt={testimonial.name}
+                        className="rounded-full w-14 mt-2"
+                      />
+                      <div>
+                        <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-3 lg:ml-10 mt-3">
+                          {testimonial.name}
+                        </h1>
+                        <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-3 lg:ml-10">
+                          {testimonial.title}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+                  </SwiperSlide>
+                ))}
+              </div>
             </div>
-          </div>
-       </Swiper>
-       </div>
+          </Swiper>
+        </div>
       </section>
     </>
   );

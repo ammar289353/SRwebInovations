@@ -5,10 +5,17 @@ import backgroundImage from "../images/Sr-Particle.jpg";
 // Website Images
 import Screenshot from "../images/1.jpeg";
 import Screenshot2 from "../images/2.jpeg";
+import Screenshot4 from "../images/Screenshot4.jpeg";
+import Screenshot5 from "../images/CRM.jpeg";
+import Screenshot6 from "../images/Cordelias.jpeg";
+import Screenshot10 from "../images/REMS.jpeg";
+import Screenshot9 from "../images/NexSkill.jpeg";
 import Screenshot3 from "../images/3.jpeg";
-import Screenshot4 from "../images/4.jpeg";
-import Screenshot5 from "../images/5.jpeg";
+import Screenshot7 from "../images/Santosh.jpeg";
+import Screenshot8 from "../images/5.jpeg";
 // Logo Images
+import Cordelias from "../images/massagetherapy.jpg";
+import DJ from "../images/DJCREFLO.jpg";
 import addMoney from "../images/addmoney.jpg";
 import astoria from "../images/astoria.jpg";
 import bookit from "../images/bookit.jpg";
@@ -16,23 +23,12 @@ import cannabis from "../images/cannabis.jpg";
 import gasBuddy from "../images/gasbuddy.jpg";
 import hotelnBaku from "../images/hotelinbaku.jpg";
 import kppr from "../images/kppr.jpg";
-import MoyenLogo from "../images/moyen-logo.jpg";
 import my420 from "../images/my420.jpg";
 import onePageCrm from "../images/onepagecrm.jpg";
 import travelUp from "../images/travelup.jpg";
 import txtogo from "../images/txtogo.jpg";
 import Wow from "../images/wow.jpg";
-// Mobile Apps Images
-import WowApp from "../images/wow-app.jpg";
-import txtogoApp from "../images/txtogo-app.jpg";
-import TravelUp from "../images/travelup-app.jpg";
-import OnePageCrm from "../images/onepagecrm-app.jpg";
-import Moyen from "../images/moyen-app.jpg";
-import Kppr from "../images/kppr-app.jpg";
-import GasBuddy from "../images/gasbuddy-app.jpg";
-import CounterPro from "../images/counterpro-app.jpg";
-import Cabify from "../images/cabify-app.jpg";
-import BookIt from "../images/bookit-app.jpg";
+
 // Packaging Images
 import pkg1 from "../images/packaging-design-1.jpg";
 import pkg2 from "../images/packaging-design-2.jpg";
@@ -120,12 +116,6 @@ const Portfolio = () => {
             WEBSITES
           </button>
           <button
-            onClick={() => handleCategoryChange("MobileApps")}
-            className="border border-black rounded-full px-[30px] mb-1 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white"
-          >
-            Mobile Apps
-          </button>
-          <button
             onClick={() => handleCategoryChange("packaging")}
             className="border border-black rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:pl-6 lg:pr-6 hover:bg-blue-800 hover:text-white"
           >
@@ -135,39 +125,28 @@ const Portfolio = () => {
         <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between mt-5">
           {category === "all" && (
             <>
-            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={MoyenLogo}
+                  src={Cordelias}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
                   <span className="text-white text-lg font-bold">
-                  MoyenLogo
+                  Cordelias Clinic
                   </span>
                 </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={my420}
+                  src={DJ}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
                   <span className="text-white text-lg font-bold">
-                  my420
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={onePageCrm}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  One Page Crm
+                  DJ Creflo
                   </span>
                 </div>
               </div>
@@ -356,86 +335,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-
-              <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={WowApp}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Wow App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={txtogoApp}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Texas Togo  App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={Moyen}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Moyen App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={OnePageCrm}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  One Page Crm
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={Kppr}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Kppr App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={GasBuddy}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  GasBuddy App
-                  </span>
-                </div>
-              </div>
-             
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+             <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={pkg1}
                   alt=""
@@ -491,6 +391,19 @@ const Portfolio = () => {
             <>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
+                  src={Cordelias}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+                  <span className="text-white text-lg font-bold">
+                  Cordelias Clinic
+                  </span>
+                </div>
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
                   src={addMoney}
                   alt=""
                   className="border rounded-lg w-full h-full"
@@ -501,6 +414,7 @@ const Portfolio = () => {
                   </span>
                 </div>
               </div>
+
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={astoria}
@@ -573,18 +487,7 @@ const Portfolio = () => {
                   </span>
                 </div>
               </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={MoyenLogo}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  MoyenLogo
-                  </span>
-                </div>
-              </div>
+  
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={my420}
@@ -650,6 +553,84 @@ const Portfolio = () => {
 
           {category === "website" && (
             <>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot5}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+                  <span className="text-white text-lg font-bold">
+                    CRM (Customer Relation Management)
+                  </span>
+                </div>
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot6}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+                  <span className="text-white text-lg font-bold">
+                    Cordelias Clinic
+                  </span>
+                </div>
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot4}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+                  <span className="text-white text-lg font-bold">
+                    MaxCool (A Real State Website)
+                  </span>
+                </div>
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot8}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+                  <span className="text-white text-lg font-bold">
+                    DELICIOUS (A Fast Food Shop)
+                  </span>
+                </div>
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot10}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+                  <span className="text-white text-lg font-bold">
+                    REMS (Real State Management System)
+                  </span>
+                </div>
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot9}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
+                  <span className="text-white text-lg font-bold">
+                    NexSkill LMS
+                  </span>
+                </div>
+              </div>
+              
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={Screenshot}
@@ -658,7 +639,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
                   <span className="text-white text-lg font-bold">
-                    Dashboard
+                    A-Skill Admin Dashboard
                   </span>
                 </div>
               </div>
@@ -670,9 +651,20 @@ const Portfolio = () => {
                   className="border rounded-lg w-full h-full"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">ASkill</span>
+                  <span className="text-white text-lg font-bold">A-Skill (An E-Learning Platform)</span>
                 </div>
               </div>
+
+             
+              
+
+              
+
+             
+
+              
+
+              
 
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -687,166 +679,20 @@ const Portfolio = () => {
                 </div>
               </div>
 
+
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={Screenshot4}
+                  src={Screenshot7}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
                   <span className="text-white text-lg font-bold">
-                    GRAYSCALE
+                   Santosh Architecture
                   </span>
                 </div>
               </div>
 
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot5}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    DELICIOUS
-                  </span>
-                </div>
-              </div>
-            </>
-          )}
-
-          {category === "MobileApps" && (
-            <>
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={WowApp}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Wow App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={txtogoApp}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Texas Togo  App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={Moyen}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Moyen App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={OnePageCrm}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  One Page Crm
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={Kppr}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Kppr App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={GasBuddy}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  GasBuddy App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={TravelUp}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  TravelUp App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={CounterPro}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  CounterPro App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={Cabify}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Cabify App
-                  </span>
-                </div>
-              </div>
-              
-             <div className="relative border rounded-lg w-[90vw] h-[85vw] sm:w-[85vw] sm:h-[80vw] md:w-[40vw] md:h-[52vw] lg:w-[29vw] lg:h-[35vw] mb-10">
-                <img
-                  src={BookIt}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  BookIt App
-                  </span>
-                </div>
-              </div>
-              
               
             </>
           )}

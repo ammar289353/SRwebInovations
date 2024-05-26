@@ -90,14 +90,14 @@ const Navbar = () => {
                   Website Development
                 </Link>
 
-                <Link
+                {/* <Link
                   key="3"
                   to="/MobileApp"
                   className="block pl-3 py-2 text-[#05185A] text-[3.2vw] lg:text-[1.2vw] hover:text-white hover:bg-[#05185A]"
                   onClick={() => setMenuOpen(false)}
                 >
                   Mobile App Development
-                </Link>
+                </Link> */}
 
                 <Link
                   key="5"
