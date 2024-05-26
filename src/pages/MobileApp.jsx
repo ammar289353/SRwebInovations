@@ -17,25 +17,25 @@ const MobileApp = () => {
     <>
       <section data-aos="zoom-in-up">
         <div
-          className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
+          className="h-[75vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: "cover",
           }}
         >
-          <p className="text-white text-center pt-[20vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
+          <p className="text-white text-center pt-[30vw]  md:pt-[15vw] text-[2.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
             SR Innovations
           </p>
-          <div className="top-[16vw] mr-[9vw] sm:mr-[8vw] md:text-center transform transition-transform">
+          <div className="top-[36vw] md:top-[16vw] mr-0  md:text-center transform transition-transform">
             <h1 className="text-white text-center text-[4vw] font-bold">
               Mobile App Development
             </h1>
           </div>
-          <p className="text-white text-[1.1vw] text-center mt-20">
+          <p className="text-white text-[2vw] px-3 md:px-24 md:text-[1.1vw] text-center mt-8">
             WE OFFER A WIDE RANGE OF SERVICES TO HELP YOU CREATE A UNIQUE AND
-            PROFESSIONAL VISUAL IDENTITY FOR YOUR BUSINESS. <br /> OUR TEAM OF
+            PROFESSIONAL VISUAL IDENTITY FOR YOUR BUSINESS. OUR TEAM OF
             EXPERIENCED DESIGNERS IS DEDICATED TO CREATING STUNNING DESIGNS THAT
-            WILL MAKE YOUR BRAND STAND OUT <br /> FROM THE REST.
+            WILL MAKE YOUR BRAND STAND OUT FROM THE REST.
           </p>
         </div>
       </section>

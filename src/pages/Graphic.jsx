@@ -26,7 +26,7 @@ const Graphic = () => {
     <>
       <section data-aos="zoom-in-up">
         <div
-          className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
+          className="h-[75vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: "cover",
@@ -34,11 +34,11 @@ const Graphic = () => {
           onMouseEnter={handleHover}
           onMouseLeave={handleMouseLeave}
         >
-          <p className="text-white text-center pt-[20vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
+          <p className="text-white text-center pt-[30vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[2.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
             SR Innovations
           </p>
           <div
-            className={`absolute top-[16vw] mr-[9vw] sm:mr-[8vw] md:mr-[8vw] lg:mr-4 transform transition-transform ${
+            className={`absolute top-[36vw] md:top-[16vw] mr-0 sm:mr-[8vw] md:mr-[8vw] lg:mr-4 transform transition-transform ${
               isHovered ? "-translate-y-2" : ""
             } ${isHovered ? "left-[38%]" : "right-[30%]"}`}
           >
@@ -52,11 +52,11 @@ const Graphic = () => {
               Graphic Design
             </h1>
           </div>
-          <p className="text-white text-[1.1vw] text-center mt-40">
+          <p className="text-white text-[2vw] px-3 md:px-24 md:text-[1.1vw] text-center mt-[15vw] md:mt-40">
             WE OFFER A WIDE RANGE OF SERVICES TO HELP YOU CREATE A UNIQUE AND
-            PROFESSIONAL VISUAL IDENTITY FOR YOUR BUSINESS. <br /> OUR TEAM OF
+            PROFESSIONAL VISUAL IDENTITY FOR YOUR BUSINESS. OUR TEAM OF
             EXPERIENCED DESIGNERS IS DEDICATED TO CREATING STUNNING DESIGNS THAT
-            WILL MAKE YOUR BRAND STAND OUT <br /> FROM THE REST.
+            WILL MAKE YOUR BRAND STAND OUT  FROM THE REST.
           </p>
         </div>
       </section>
