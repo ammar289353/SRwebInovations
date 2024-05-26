@@ -191,9 +191,13 @@ const Home = () => {
           <h1 className="text-[6vw] md:text-[4vw] font-bold ">
             Transforming technology into a positive impact
           </h1>
+          <Link
+           to="/Contact"
+          >
           <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
             Let's Get Started
           </button>
+          </Link>
         </div>
         <div
           className="h-auto pb-12 md:w-[50%]"
@@ -275,9 +279,10 @@ const Home = () => {
             offer comprehensive solutions to businesses of all sizes and
             industries.
           </p>
+          <Link to="/Contact">
           <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
             Let's Get Started
-          </button>
+          </button></Link>
         </div>
         <div className="md:w-[50%] px-4 md:px-8 pt-12 md:pt-24">
           <img src={Techno} alt="" />
@@ -329,9 +334,11 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <button className="text-center mb-6 bg-[#093D84] font-semibold text-white py-2 mt-4 md:mt-0 rounded-md px-8 text-[2.5vw] md:text-[1.4vw] ml-[35vw] md:ml-[43vw]">
+       <Link to="/Contact">
+       <button className="text-center mb-6 bg-[#093D84] font-semibold text-white py-2 mt-4 md:mt-0 rounded-md px-8 text-[2.5vw] md:text-[1.4vw] ml-[35vw] md:ml-[43vw]">
           Let's Start
         </button>
+        </Link>
       </section>
       {/* TESTIMONIAL */}
       <section
