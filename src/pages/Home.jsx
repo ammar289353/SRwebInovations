@@ -10,9 +10,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 import 'swiper/css/autoplay';
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
-
 import About from "../images/about.png";
 import Techno from "../images/techno.jpg";
+
 // Card Images
 import GraphicImage from "../images/graphic.png";
 import WebsiteImage from "../images/Website.png";
@@ -25,6 +25,7 @@ import TexasLogo from "../images/txtogo.jpg";
 import ASkillAdmin from "../images/1.jpeg";
 import ASkillSite from "../images/2.jpeg";
 import MoyenExpress from "../images/moyen-app.jpg";
+import Hero from "../images/Hero.png";
 
 
 const Home = () => {
@@ -116,19 +117,29 @@ const Home = () => {
   return (
     <>
       {/* Hero  */}
-      <section className="w-[100%] bg-slate-500 h-auto pb-24 lg:mt-16">
+      
+      <section className="w-[100%] bg-slate-500 h-auto pb-48 lg:mt-16" 
+      style={{ backgroundImage: `url(${Hero})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: '100%',
+      height: '100%',
+      }}>
         
         <div>
-          <h1 className="text-[5vw] md:text-[3.5vw] pt-24 md:pt-16 font-bold text-center">
+          <h1 className="text-[5vw] text-[#e5e7ea] md:text-[3.5vw] pt-48 md:pt-48  font-bold text-center">
             Shaping Tomorrow with <br />
-            <span className="text-[#093D84]"> State-of-the-Art Technology</span>
+            <span className="text-[#e5e7ea]"> State-of-the-Art Technology</span>
             <br /> IT COMPANY
           </h1>
-          <button className="bg-[#093D84] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1 ml-[33vw] md:ml-[42vw] mt-4 ">
+          <Link to="/Contact">
+          <button className="bg-[#7a9dcf] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1 ml-[33vw] md:ml-[42vw] mt-4 hover:bg-[#39547a]  ">
             Let's Get Started
           </button>
+          </Link>
         </div>
       </section>
+      
 
       {/* OUR WORK PORTFOLIO */}
       <section

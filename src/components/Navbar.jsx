@@ -41,7 +41,7 @@ const Navbar = () => {
           </Link>
         </div>
         <ul
-          className={`md:flex text-left items-start md:pb-2 pb-8 absolute md:static md:bg-white bg-blue-300 h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
+          className={`md:flex text-left items-start md:pb-2 pb-8 absolute md:static md:bg-white bg-[#76aece] h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
                     md:pl-0 pl-9 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4 ${
                       menuOpen ? "top-6" : "top-[-1100px]"
                     }`}
@@ -148,7 +148,7 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
-          <li onClick={() => setMenuOpen(false)}>
+          {/* <li onClick={() => setMenuOpen(false)}>
             <Link
               to="/Contact"
               className="md:text-[#515151]  pt-2 pl-3 text-white font-medium hover:text-[#009CDE]"
@@ -157,7 +157,7 @@ const Navbar = () => {
                 Get Started
               </button>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
