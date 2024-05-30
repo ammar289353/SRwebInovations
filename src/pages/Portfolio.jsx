@@ -123,7 +123,7 @@ const Portfolio = () => {
           </button>
         </div>
         <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between mt-5">
-          {category === "all" && (
+          {/* {category === "all" && (
             <>
             
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
@@ -385,9 +385,9 @@ const Portfolio = () => {
               </div>
              
             </>
-          )}
+          )} */}
 
-          {category === "logo" && (
+          {/* {category === "logo" && (
             <>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -549,7 +549,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </>
-          )}
+          )} */}
 
           {category === "website" && (
             <>
@@ -697,7 +697,7 @@ const Portfolio = () => {
             </>
           )}
 
-          {category === "packaging" && (
+          {/* {category === "packaging" && (
             <>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -748,7 +748,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </>
-          )}
+          )} */}
         </div>
       </section>
     </>
