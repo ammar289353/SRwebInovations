@@ -187,7 +187,7 @@ const Home = () => {
           <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
             Our Awesome Work Portfolio
           </h1>
-          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-titleFont">
+          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont">
             <button
               onClick={() => handleCategoryChange("logo")}
               className="rounded-full px-4 mb-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
@@ -392,34 +392,36 @@ const Home = () => {
             </p>
             <div className="pt-4 md:pt-0">
               <Link to="/Graphic">
-                <button className="mx-12 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
                   Graphic Design
                 </button>
               </Link>
               <Link to="/Website">
-                <button className="mx-12 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
                   Website Development
                 </button>
               </Link>
               <Link to="/VideoAnimation">
-                <button className="mx-12 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
                   Video Animation
                 </button>
               </Link>
+              <br />
               <Link to="/DigitalMarketing">
-                <button className="mx-12 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
                   Digital Marketing
                 </button>
               </Link>
+            
               <Link to="/SEO">
-                <button className="mx-12 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
                   SEO
                 </button>
               </Link>
             </div>
           </div>
         </div>
-        <div className="md:flex gap-8 pt-12 md:pt-24">
+        <div className="hidden md:flex gap-8 pt-12 md:pt-24">
           <img className="w-72" src={Image1} alt="" />
           <img className="w-72 pt-4 md:pt-0 md:w-[35vw]" src={Image2} alt="" />
           <img className="w-72 pt-4 md:pt-0" src={Image3} alt="" />
@@ -428,7 +430,7 @@ const Home = () => {
       {/* cards */}
       <section className="bg-[#2A2A2A] pb-8 overflow-x-hidden">
         <div className="text-center mt-4 pt-6">
-          <h1 className="font-extrabold font-titleFont text-white text-[5vw] md:text-[3.5vw]">
+          <h1 className="font-extrabold font-titleFont text-white text-[6vw] md:text-[3.5vw]">
             Best Digital & <span className="text-[#5454D4]">IT Company</span>{" "}
             <br /> Who We Work With
           </h1>
@@ -436,31 +438,31 @@ const Home = () => {
         <div className="flex justify-evenly pt-8">
           <div>
             <img
-              className="mx-8 md:mx-20 px-1 text-[#ddbf45] bg-[#5b5025] rounded-full py-1"
+              className="mx-4 md:mx-20 px-1 text-[#ddbf45] bg-[#5b5025] rounded-full py-1"
               src={Business}
               alt=""
             />
-            <p className="font-bodyFont px-2 text-white ">
+            <p className="font-bodyFont text-[3vw] px-2 text-white ">
               Enterprise Organization
             </p>
           </div>
           <div>
             <img
-              className="mx-8 md:mx-20 text-[#5454D4] bg-[#19193d] rounded-full py-1 px-1"
+              className="mx-4 md:mx-20 text-[#5454D4] bg-[#19193d] rounded-full py-1 px-1"
               src={Organization}
               alt=""
             />
-            <p className="font-bodyFont text-white justify-center">
+            <p className="font-bodyFont text-[3vw] text-white justify-center">
               Small & Medium Enterprises
             </p>
           </div>
           <div>
             <img
-              className="md:mx-3 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
+              className="mx-2 md:mx-3 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
               src={Rocket}
               alt=""
             />
-            <p className="font-bodyFont text-white pr-5 md:pr-0 ">Startups</p>
+            <p className="font-bodyFont text-[3.5vw] text-white pr-5 md:pr-0 ">Startups</p>
           </div>
         </div>
       </section>
