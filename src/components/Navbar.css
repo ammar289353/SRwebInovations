@@ -2,13 +2,13 @@
     position: relative;
 }
 .nav:active{
-   color: #009CDE;
+   color: #5454D4;
 }
 .nav::after{
     content: '';
     height: 2px;
     width: 75%;
-    background: rgb(0, 183, 255);
+    background: rgb(84, 84, 212);
     position: absolute;
     left: 0;
     bottom: -8px;

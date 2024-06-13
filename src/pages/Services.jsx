@@ -1,330 +1,472 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Form from "../components/Form";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import backgroundImage from "../images/Sr-Particle.jpg";
-// Card Images
-import GraphicImage from "../images/graphic.png";
-import WebsiteImage from "../images/Website.png";
-import MobileAppImage from "../images/Mobile App.jpg";
-import VideoImage from "../images/video.png";
-import DMImage from "../images/DM.png";
-import SEOImage from "../images/Seo.png";
-import TexasLogo from "../images/txtogo.jpg";
-import ASkillAdmin from "../images/1.jpeg";
-import ASkillSite from "../images/2.jpeg";
-import MoyenExpress from "../images/moyen-app.jpg";
+// Slider
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+import "swiper/css/autoplay";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+// hero images
+import vector13 from "../images/Vector 13.png";
+import circle from "../images/circle.png";
+import Triangle from "../images/tri.png";
+import add from "../images/add.png";
+// Service Images
+import WebService from "../images/WebsiteFeatureImage.png";
+import GraphicService from "../images/GraphicFeatureImage.png";
+import VideoService from "../images/VideoAnimationFeatureImage.png";
+import DMMService from "../images/DMMFeatureImage.png";
+import SEOService from "../images/SEOFeatureImage.png";
 
 const Services = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const cardsData = [
+  const testimonials = [
     {
-      imageUrl: GraphicImage,
-      title: "Graphic Design",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/Graphic"
-    },
-    {
-      imageUrl: WebsiteImage,
-      title: "Webiste Development",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/Website"
-    },
-    {
-      imageUrl: MobileAppImage,
-      title: "Mobile App Development",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/MobileApp"
-    },
-    {
-      imageUrl: VideoImage,
-      title: "Video Animation",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/VideoAnimation"
-    },
-    {
-      imageUrl: DMImage,
+      text: "Working with SR Innovations has significantly boosted our digital marketing performance. Their team implemented strategies that increased our online visibility and drove more traffic to our website. We're now seeing a steady increase in leads. Their dedication and creativity are truly commendable. I highly recommend their services for anyone serious about enhancing their online presence.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "John D.",
       title: "Digital Marketing",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link: "/DigitalMarketing"
     },
     {
-      imageUrl: SEOImage,
+      text: "SR Innovations has transformed our search engine rankings with their expert SEO services. The team is not only knowledgeable but also incredibly innovative. They helped us climb to the top of search results, resulting in higher website traffic and better lead generation. Their commitment to our success is evident in everything they do. If you're looking to improve your SEO, SR Innovations is the way to go.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Emily S.",
       title: "SEO",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-        link:"/SEO"
-      },
+    },
+    {
+      text: "Our experience with SR Innovations for website development has been outstanding. They delivered a sleek, responsive, and highly functional website that exceeded our expectations. Their attention to detail and ability to understand our vision made the entire process smooth and efficient. I highly recommend their web development services for any business looking to enhance its online presence.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Jessica L.",
+      title: "Website Development",
+    },
+    {
+      text: "We partnered with SR Innovations for our website development needs, and the results have been fantastic. Their expertise helped us create a user-friendly and visually appealing site that attracts more visitors. Their proactive approach and creative solutions have been instrumental in generating new leads for our business. I highly recommend their website development services to any company looking to grow online.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Michael R.",
+      title: "Website Development",
+    },
+    {
+      text: "SR Innovations completely revamped our digital marketing strategy, and the impact has been incredible. Their team's innovative approach and in-depth knowledge have led to a significant increase in our online visibility and website traffic. We've seen a noticeable uptick in leads and conversions. I can't recommend their digital marketing services enough!",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Sarah K.",
+      title: "Digital Marketing",
+    },
+    {
+      text: "SR Innovations has played a crucial role in enhancing our brand through video animation. They crafted engaging and professional animations that captured our audience's attention and improved our online presence. The team is professional, creative, and always ready to go the extra mile to ensure our success. We couldn't be happier with their services and recommend them highly.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Lisa T.",
+      title: "Video Animation",
+    },
+    {
+      text: "Since partnering with SR Innovations, our graphic design needs have been met with outstanding results. Their team's expertise in creating stunning visuals has been a game-changer for us. We've seen a substantial increase in engagement and overall brand recognition. The team is creative, diligent, and genuinely invested in our success. For anyone looking to elevate their brand with top-notch graphic design, SR Innovations is the perfect choice.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "David M.",
+      title: "Graphic Design",
+    },
   ];
 
   return (
     <>
-      <section data-aos="zoom-in-up">
+     <section className=" bg-[#2A2A2A] h-auto" data-aos="zoom-in-up">
+        
         <div
-          className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[32vw] w-full text-center relative overflow-hidden"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-          }}
-          onMouseEnter={handleHover}
-          onMouseLeave={handleMouseLeave}
+          className="w-full text-center"
         >
-          <p className="text-white text-center pt-[20vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
-            SR Innovations
+          <div className="flex justify-between">
+          <img className="pt-24 px-4 md:px-48" src={vector13} alt="" />
+          <img className=" pt-24 pr-4 md:pr-48" src={circle} alt="" />
+          </div>
+          <p className="text-[#5454D4] text-center font-bodyFont  text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
+            Services
           </p>
-          <div
-            className={`absolute top-1/2 mr-[9vw] sm:mr-[8vw] md:mr-[8vw] lg:mr-28 transform transition-transform ${
-              isHovered ? "-translate-y-2" : ""
-            } ${isHovered ? "left-[38%]" : "right-[30%]"}`}
-          >
+          
             <h1
-              className={`text-white text-center text-[6vw] font-bold ${
-                isHovered ? "hovered" : ""
-              }`}
-              onMouseEnter={handleHover}
-              onMouseLeave={handleMouseLeave}
+              className="text-white justify-center text-center text-[6vw] px-24 md:px-96 font-titleFont md:text-[4vw] font-extrabold"
             >
-              Services
+               Bridging  <span className="text-[#5454D4]">Technology</span> and Business.
             </h1>
-          </div>
+            <div className="flex justify-between">
+            <img className="px-3 md:px-48" src={Triangle} alt="" />
+            <img className="pr-4 md:pr-44" src={add} alt="" />
+            </div>
         </div>
       </section>
-      {/* Cards section */}
-      <section className="bg-[#FFFFFF] w-full h-auto md:h-auto lg:h-[86vw]">
-        <div className="w-[93vw] m-auto pt-[5vw]" data-aos="fade-down">
-          <p className="text-black text-center font-semibold">WHAT WE OFFER</p>
-          <h1 className="text-center text-[3vw] font-bold">
-            Bridging Technology and <br /> Business.
-          </h1>
-        </div>
-        <div
-          className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8"
-          data-aos="zoom-in-up"
-        >
-          {cardsData.map((service, index) => (
-            <div
-              key={index}
-              className="shadow-2xl text-black hover:text-white bg-[#fff] hover:bg-[#093E86] shadow-slate-400 pb-4 sm:w-[70vw] md:w-[43vw] lg:w-[30vw] md:h-auto lg:h-[30vw] mb-4"
-            >
-              <img
-                className="pt-12 px-36 w-[390px] ml-0 sm:ml-10 sm:w-[385px] md:ml-1 md:w-[370px] lg:w-[380px]"
-                src={service.imageUrl}
-                alt=""
-              />
-              <div>
-                <h1 className=" text-center font-bold text-[4vw] md:text-[3vw] lg:text-[2vw] pt-3 ">
-                  {service.title}
-                </h1>
-                <p className="text-[3vw] pt-3 sm:text-[2vw] md:text-[2vw] lg:text-[1vw] px-12 ">
-                  {service.description}
-                </p>
-              </div>
-              <div className="text-center pt-6">
-                <button onClick={() => { window.location.href = service.link; }} 
-                className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg ">
-                  Learn More
+      
+      <section>
+        {/* Website Service */}
+      <div className="flex flex-col md:flex-row pb-8">
+      <div className="pt-8 px-12 md:w-[50%]">
+          <div>
+            <span className="text-[#093D84] font-medium">Website Development</span>
+            <h1 className="text-[6vw] lg:text-[3vw] font-extrabold font-titleFont">
+              Driving Your <span className="text-[#093D84]">Success</span>{" "}
+              through Innovative Solutions
+            </h1>
+          </div>
+          <div className="pt-2 font-bodyFont">
+            <p>
+              At SR Innovations, we help businesses tackle their unique
+              challenges with efficiency and creativity. Our technical expertise
+              and innovative approach enable us to build custom web and mobile
+              apps designed for high growth. From ideation, design, and
+              prototyping to internet-scale rollout, we offer comprehensive
+              solutions to businesses of all sizes and industries.
+            </p>
+            <div className="pt-4 md:pt-0">
+              <Link to="/Graphic">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                  Graphic Design
                 </button>
-              </div>
+              </Link>
+              <Link to="/Website">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                  Website Development
+                </button>
+              </Link>
+              <Link to="/VideoAnimation">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                  Video Animation
+                </button>
+              </Link>
+              <Link to="/DigitalMarketing">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                  Digital Marketing
+                </button>
+              </Link>
+              <Link to="/SEO">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                  SEO
+                </button>
+              </Link>
             </div>
-          ))}
-        </div>
-      </section>
-      {/* OUR WORK PORTFOLIO */}
-      <section className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]" data-aos="zoom-in-up">
-        <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
-          <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
-            <p className="font-semibold md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
-              OUR WORK PORTFOLIO
-            </p>
-            <h1 className="text-[5vw] sm:text-[4vw] md:text-[4vw] lg:text-4xl font-bold pt-3 text-[#05185A]">
-              Discover Our Portfolio Highlighting Our Expertise and Creativity
+          </div>
+      </div>
+      <div className="pt-8">
+        <img src={WebService} alt="" />
+      </div>
+      </div>
+       {/* Graphic Service */}
+      <div className="flex flex-col-reverse md:flex-row pt-4 bg-[#2A2A2A] pb-8 ">
+      <div className="pt-8 px-4">
+        <img src={GraphicService} alt="" />
+      </div>
+      <div className="pt-8 px-12 md:w-[50%]">
+          <div>
+            <span className="text-white font-medium">Graphic Design</span>
+            <h1 className="text-[6vw] text-white lg:text-[3vw] font-extrabold font-titleFont">
+              Driving Your Success{" "}
+              through Innovative Solutions
             </h1>
-            <p className="md:text-[1.3vw] lg:text-[1vw] pt-4">
-              Explore our portfolio for a showcase of our expertise and
-              innovative solutions, demonstrating our commitment to excellence
-              in every project.lvinar dapibus leo.
+          </div>
+          <div className="pt-2 font-bodyFont text-white">
+            <p>
+              At SR Innovations, we help businesses tackle their unique
+              challenges with efficiency and creativity. Our technical expertise
+              and innovative approach enable us to build custom web and mobile
+              apps designed for high growth. From ideation, design, and
+              prototyping to internet-scale rollout, we offer comprehensive
+              solutions to businesses of all sizes and industries.
             </p>
-           <Link to="/Portfolio">
-           <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
-              Explore More
-            </button>
-            </Link>
-            <div className="sm:block lg:flex md:flex mt-8 w-[100%]">
-              <div className=" mr-4 w-[50%]">
-                <img
-                  src={TexasLogo}
-                  alt=""
-                />
-              </div>
-              <div className="mt-4 sm:mt-4 md:mt-0 w-[50%]">
-                <img
-                  src={ASkillAdmin}
-                  alt=""
-                />
-                <br />
-                <img
-                  src={ASkillSite}
-                  alt=""
-                />
-              </div>
+            <div className="pt-4 md:pt-0">
+              <Link to="/Graphic">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                  Graphic Design
+                </button>
+              </Link>
+              <Link to="/Website">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                  Website Development
+                </button>
+              </Link>
+              <Link to="/VideoAnimation">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                  Video Animation
+                </button>
+              </Link>
+              <Link to="/DigitalMarketing">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                  Digital Marketing
+                </button>
+              </Link>
+              <Link to="/SEO">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                  SEO
+                </button>
+              </Link>
             </div>
           </div>
-          <div className="mt-3 sm:mt-5 pb-5 md:mt-10 lg:mt-16 lg:ml-7 md:ml-5">
-            <img
-              src={MoyenExpress}
-              alt=""
-              className="md:h-[70vw] lg:h-[50vw] sm:h-[70vw] sm:w-[70vw] md:w-[70vw] lg:w-[50vw]"
-            />
+      </div>
+      
+      </div>
+        {/* Video Service */}
+      <div className="flex flex-col md:flex-row pb-8">
+      <div className="pt-8 px-12 md:w-[50%]">
+          <div>
+            <span className="text-[#093D84] font-medium">Video Animation</span>
+            <h1 className="text-[6vw] lg:text-[3vw] font-extrabold font-titleFont">
+              Driving Your <span className="text-[#093D84]">Success</span>{" "}
+              through Innovative Solutions
+            </h1>
           </div>
-        </div>
-      </section>
-      {/* OUR EXPERIENCE */}
-      <section data-aos="zoom-in-up">
-        <div className="w-[93vw] m-auto">
-          <p className="font-semibold text-center text-[4vw] sm:text-[4vw] md:text-[1vw] lg:text-[1vw] mt-10">
-            OUR EXPERIENCE
-          </p>
-          <h1 className="font-bold text-center text-[3.5vw] sm:text-[3vw] md:text-[3vw] lg:text-[3vw]">
-            We've been active in the industry <br /> delivering exceptional
-            services tailored to your needs.
-          </h1>
-          <p className="text-center text-[3vw] sm:text-[3vw] md:text-[1.2vw] lg:text-[1vw] mt-3">
-            Having positioned ourselves as a forefront provider of pioneering
-            technology solutions, <br />
-            we're equipped with state-of-the-art services to propel your
-            business to new heights and beyond.
-          </p>
-          <div className="block sm:block md:flex lg:flex mt-10 mb-10 w-[80vw] sm:w-[80vw] md:w-[86vw] lg:w-[90vw] m-auto">
-            <div className="rounded-xl border border-gray w-[80vw] h-[25vw] sm:w-[80vw] sm:h-[20vw] lg:w-[22vw] lg:h-[13vw] mr-4 mt-3 sm:mt-4">
-              <h1 className="text-center text-black font-bold text-[4.5vw] sm:text-[4vw] md:text-[4vw] lg:text-[3.5vw] mt-3">
-                14k
-              </h1>
-              <p className="text-center text-[3.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] text-[#7A5353]">
-                Projects <br /> Done
-              </p>
-            </div>
-            <div className="rounded-xl border bg-blue-700 mr-4 w-[80vw] h-[25vw] sm:w-[80vw] sm:h-[20vw] lg:w-[22vw] lg:h-[13vw] mt-3 sm:mt-4">
-              <h1 className="text-center text-white font-bold text-[4.5vw] sm:text-[4vw] md:text-[4vw] lg:text-[3.5vw] mt-3">
-                12k+
-              </h1>
-              <p className="text-center text-white text-[3.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw]">
-                Happy <br />
-                Customers
-              </p>
-            </div>
-            <div className="rounded-xl border border-gray mr-4 w-[80vw] h-[25vw] sm:w-[80vw] sm:h-[20vw] lg:w-[22vw] lg:h-[13vw] mt-3 sm:mt-4">
-              <h1 className="text-center text-black font-bold text-[4.5vw] sm:text-[4vw] md:text-[4vw] lg:text-[3.5vw] mt-3">
-                4.7
-              </h1>
-              <p className="text-center text-[3.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] text-[#7A5353]">
-                Customer <br /> Review
-              </p>
-            </div>
-            <div className="rounded-xl border bg-blue-700 w-[80vw] h-[25vw] sm:w-[80vw] sm:h-[20vw] lg:w-[22vw] lg:h-[13vw] mt-3 sm:mt-4">
-              <h1 className="text-center text-white font-bold text-[4.5vw] sm:text-[4vw] md:text-[4vw] lg:text-[3.5vw] mt-3">
-                15+
-              </h1>
-              <p className="text-center text-[3.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] text-white">
-                Years <br />
-                Experience
-              </p>
+          <div className="pt-2 font-bodyFont">
+            <p>
+              At SR Innovations, we help businesses tackle their unique
+              challenges with efficiency and creativity. Our technical expertise
+              and innovative approach enable us to build custom web and mobile
+              apps designed for high growth. From ideation, design, and
+              prototyping to internet-scale rollout, we offer comprehensive
+              solutions to businesses of all sizes and industries.
+            </p>
+            <div className="pt-4 md:pt-0">
+              <Link to="/Graphic">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                  Graphic Design
+                </button>
+              </Link>
+              <Link to="/Website">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                  Website Development
+                </button>
+              </Link>
+              <Link to="/VideoAnimation">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                  Video Animation
+                </button>
+              </Link>
+              <Link to="/DigitalMarketing">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                  Digital Marketing
+                </button>
+              </Link>
+              <Link to="/SEO">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                  SEO
+                </button>
+              </Link>
             </div>
           </div>
-        </div>
+      </div>
+      <div className="pt-8 px-4">
+        <img className="rounded-md" src={VideoService} alt="" />
+      </div>
+      </div>
+       {/* DMM Service */}
+      <div className="flex flex-col-reverse md:flex-row pt-4 bg-[#2A2A2A] pb-8 ">
+      <div className="pt-8 px-4">
+        <img src={DMMService} alt="" />
+      </div>
+      <div className="pt-8 px-12 md:w-[50%]">
+          <div>
+            <span className="text-white font-medium">Digital Marketting</span>
+            <h1 className="text-[6vw] text-white lg:text-[3vw] font-extrabold font-titleFont">
+              Driving Your Success{" "}
+              through Innovative Solutions
+            </h1>
+          </div>
+          <div className="pt-2 font-bodyFont text-white">
+            <p>
+              At SR Innovations, we help businesses tackle their unique
+              challenges with efficiency and creativity. Our technical expertise
+              and innovative approach enable us to build custom web and mobile
+              apps designed for high growth. From ideation, design, and
+              prototyping to internet-scale rollout, we offer comprehensive
+              solutions to businesses of all sizes and industries.
+            </p>
+            <div className="pt-4 md:pt-0">
+              <Link to="/Graphic">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                  Graphic Design
+                </button>
+              </Link>
+              <Link to="/Website">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                  Website Development
+                </button>
+              </Link>
+              <Link to="/VideoAnimation">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                  Video Animation
+                </button>
+              </Link>
+              <Link to="/DigitalMarketing">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                  Digital Marketing
+                </button>
+              </Link>
+              <Link to="/SEO">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                  SEO
+                </button>
+              </Link>
+            </div>
+          </div>
+      </div>
+      
+      </div>
+      {/* SEO Service */}
+      <div className="flex flex-col md:flex-row pb-8">
+      <div className="pt-8 px-12 md:w-[50%]">
+          <div>
+            <span className="text-[#093D84] font-medium">SEO</span>
+            <h1 className="text-[6vw] lg:text-[3vw] font-extrabold font-titleFont">
+              Driving Your <span className="text-[#093D84]">Success</span>{" "}
+              through Innovative Solutions
+            </h1>
+          </div>
+          <div className="pt-2 font-bodyFont">
+            <p>
+              At SR Innovations, we help businesses tackle their unique
+              challenges with efficiency and creativity. Our technical expertise
+              and innovative approach enable us to build custom web and mobile
+              apps designed for high growth. From ideation, design, and
+              prototyping to internet-scale rollout, we offer comprehensive
+              solutions to businesses of all sizes and industries.
+            </p>
+            <div className="pt-4 md:pt-0">
+              <Link to="/Graphic">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                  Graphic Design
+                </button>
+              </Link>
+              <Link to="/Website">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                  Website Development
+                </button>
+              </Link>
+              <Link to="/VideoAnimation">
+                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                  Video Animation
+                </button>
+              </Link>
+              <Link to="/DigitalMarketing">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                  Digital Marketing
+                </button>
+              </Link>
+              <Link to="/SEO">
+                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                  SEO
+                </button>
+              </Link>
+            </div>
+          </div>
+      </div>
+      <div className="pt-8 px-4">
+        <img className="rounded-md"  src={SEOService} alt="" />
+      </div>
+      </div>
+
+
       </section>
       {/* TESTIMONIAL */}
-      <section className="bg-[#D9EAF7] w-full h-auto" data-aos="zoom-in-up">
-        <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[90vw] m-auto pb-20">
-          <div className="block sm:block md:flex lg:flex pt-10 sm:pt-10 md:pt-20 lg:pt-20">
-            <div className="w-[80vw] sm:w-[70vw] md:w-[35vw] lg:w-[30vw] m-auto">
-              <p className="text-black text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] font-semibold">
-                TESTIMONIAL
-              </p>
-              <h1 className="text-black text-[4vw] sm:text-[4vw] md:text-[3vw] lg:text-[3vw] font-bold">
-                What They Say About Us
-              </h1>
-              <p className="text-[##7A5353]  text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]]">
-                We've cemented our position as a premier provider of
-                cutting-edge technology solutions. Leveraging our
-                state-of-the-art services, we can assist you in achieving your
-                goals.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[60vw] m-auto">
-              <div className=" w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] mr-3 bg-white rounded-lg p-6 mt-6 sm:mt-6 md:mt-0 lg:mt-0">
-                <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-                  chiGems Pakistan has been a game-changer for our digital
-                  marketing efforts. They have helped us increase our online
-                  visibility, drive more traffic to our website, and generate
-                  more leads. Their team is knowledgeable, creative, and always
-                  willing to go above and beyond to ensure our success. We
-                  highly recommend their digital marketing services to anyone
-                  looking to take their online presence to the next level.
-                </p>
-                <div className="flex">
-                  <img
-                    src="https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg"
-                    alt=""
-                    className="rounded-full w-14 mt-2"
-                  />
-                  <div>
-                    <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3">
-                      Mark Johnson
-                    </h1>
-                    <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10">
-                      Business manager
+      <section
+        className="w-full h-auto pb-20 overflow-x-hidden"
+        data-aos="zoom-in-up"
+      >
+        <p className="text-[#093D84] font-titleFont text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
+          TESTIMONIALS
+        </p>
+        <h1 className="text-black font-titleFont text-[5vw] text-center  md:text-[3.5vw] font-extrabold">
+          Don't just take our word for it:
+        </h1>
+        <p className="text-slate-500 font-bodyFont text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
+          Hear from our satisfied clients
+        </p>
+        <div className="w-[90%] md:w-[100%] overflow-hidden ">
+          <Swiper
+            breakpoints={{
+              340: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              700: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+            }}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            modules={[FreeMode, Pagination, Autoplay]}
+            className="w-[140vw] h-[44vh] md:h-auto md:max-w-[90%]"
+          >
+            {/* Slider */}
+            <div>
+              <div>
+                {testimonials.map((testimonial, index) => (
+                  <SwiperSlide
+                    key={index}
+                    className="bg-white rounded-lg ml-5 md:ml-0 p-6"
+                  >
+                    <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
+                      "Working with SR Innovations has significantly boosted our
+                      digital marketing performance. Their team implemented
+                      strategies that increased our online visibility and drove
+                      more traffic to our website. We're now seeing a steady
+                      increase in leads. Their dedication and creativity are
+                      truly commendable. I highly recommend their services for
+                      anyone serious about enhancing their online presence."
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div className=" w-[55vw] h-auto sm:w-[40vw] sm:h-[35vw] md:w-[30vw] md:h-[25vw] lg:w-[30vw] lg:h-[25vw] bg-white rounded-lg p-6 mt-4 sm:mt-4 md:mt-0 lg:mt-0 md:ml-4 lg:ml-5">
-                <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
-                  chiGems Pakistan has been a game-changer for our digital
-                  marketing efforts. They have helped us increase our online
-                  visibility, drive more traffic to our website, and generate
-                  more leads. Their team is knowledgeable, creative, and always
-                  willing to go above and beyond to ensure our success. We
-                  highly recommend their digital marketing services to anyone
-                  looking to take their online presence to the next level.
-                </p>
-                <div className="flex">
-                  <img
-                    src="https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg"
-                    alt=""
-                    className="rounded-full w-14 mt-2"
-                  />
-                  <div>
-                    <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-10 mt-3">
-                      Mark Johnson
-                    </h1>
-                    <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-10">
-                      Business manager
-                    </p>
-                  </div>
-                </div>
+                    <div className="flex">
+                      <img
+                        src={testimonial.imgSrc}
+                        alt={testimonial.name}
+                        className="rounded-full w-14 mt-2"
+                      />
+                      <div>
+                        <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-3 lg:ml-10 mt-3">
+                          {testimonial.name}
+                        </h1>
+                        <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-3 lg:ml-10">
+                          {testimonial.title}
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
               </div>
             </div>
-          </div>
+          </Swiper>
+        </div>
+        {/* <hr className="border-[0.2vw] border-slate-400 mx-24 md:mx-60" /> */}
+      </section>
+      {/* Contact  */}
+
+      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
+        <div className="md:w-1/2">
+          <p className="font-titleFont text-[#5454D4]">Contact Us</p>
+          <h1 className="font-titleFont text-[7vw] md:text-[5vw] font-extrabold px-6 ">Build Your Awesome Platform</h1>
+          <p className="font-bodyFont pt-4 px-6 ">
+            At SR Innovations, we help businesses tackle their unique challenges
+            with efficiency and creativity. Our technical expertise and
+            innovative approach enable us to build custom web and mobile apps
+            designed for high growth.
+          </p>
+        </div>
+        <div className="md:w-1/2 pt-4">
+        <Form/>
         </div>
       </section>
+      
     </>
   );
 };

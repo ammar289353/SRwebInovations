@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
+import Hero from "../images/download1.png";
+
+
 // Slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,65 +13,87 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
-import About from "../images/about.png";
-import Techno from "../images/techno.jpg";
+//  Icons
+import { MdArrowOutward } from "react-icons/md";
+import { FaCode } from "react-icons/fa6";
+import { PiPaintBrushLight } from "react-icons/pi";
+import { TfiVideoClapper } from "react-icons/tfi";
+import { RxSpeakerLoud } from "react-icons/rx";
+import { IoMdSearch } from "react-icons/io";
+import Business from "../images/Business Building.png";
+import Organization from "../images/Organization.png";
+import Rocket from "../images/Rocket.png";
+// Logo Images
+import logo1 from "../images/logo1.jpeg";
+import logo2 from "../images/logo2.jpeg";
+import logo3 from "../images/logo3.jpeg";
+import logo5 from "../images/logo5.jpeg";
+import logo6 from "../images/logo6.jpeg";
+import logo17 from "../images/logo17.jpeg";
+// Website Images
+import Screenshot from "../images/1.jpeg";
+import Screenshot2 from "../images/2.jpeg";
+import Screenshot5 from "../images/CRM.jpeg";
+import Screenshot6 from "../images/Cordelias.jpeg";
+import Screenshot10 from "../images/REMS.jpeg";
+import Screenshot9 from "../images/NexSkill.jpeg";
 
-// Card Images
-import GraphicImage from "../images/graphic.png";
-import WebsiteImage from "../images/Website.png";
-// import MobileAppImage from "../images/Mobile App.jpg";
-import VideoImage from "../images/video.png";
-import DMImage from "../images/DM.png";
-import SEOImage from "../images/Seo.png";
-// Portfolio
-import TexasLogo from "../images/DJCREFLO.jpg";
-import ASkillAdmin from "../images/1.jpeg";
-import ASkillSite from "../images/2.jpeg";
-import MoyenExpress from "../images/massagetherapy.jpg";
-import Hero from "../images/Hero.png";
+// Let's do it
+import Image1 from "../images/Image 1.png";
+import Image2 from "../images/Image 2.png";
+import Image3 from "../images/Image 3.png";
+import Form from "../components/Form";
 
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
+  const [category, setCategory] = useState("logo");
+
+  const handleCategoryChange = (category) => {
+    setCategory(category);
+  };
   const cardsData = [
     {
-      imageUrl: GraphicImage,
+      icon: (
+        <PiPaintBrushLight className="text-[#ddbf45] hover:text-white hover:bg-[#b0a57a] bg-[#5b5025] rounded-full py-2" />
+      ),
       title: "Graphic Design",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
       link: "/Graphic",
     },
     {
-      imageUrl: WebsiteImage,
+      icon: (
+        <FaCode className="text-[#5454D4] hover:text-white hover:bg-[#5858bc] bg-[#b2b2d9] rounded-full py-2" />
+      ),
       title: "Webiste Development",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
       link: "/Website",
     },
-    // {
-    //   imageUrl: MobileAppImage,
-    //   title: "Mobile App Development",
-    //   description:
-    //     "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
-    //   link: "/MobileApp",
-    // },
     {
-      imageUrl: VideoImage,
+      icon: (
+        <TfiVideoClapper className="text-[#ddbf45] hover:text-white hover:bg-[#b0a57a] bg-[#5b5025] rounded-full py-2" />
+      ),
       title: "Video Animation",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
       link: "/VideoAnimation",
     },
     {
-      imageUrl: DMImage,
+      icon: (
+        <RxSpeakerLoud className="text-[#5454D4] hover:text-white hover:bg-[#5858bc] bg-[#b2b2d9] rounded-full py-2" />
+      ),
       title: "Digital Marketing",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
       link: "/DigitalMarketing",
     },
     {
-      imageUrl: SEOImage,
+      icon: (
+        <IoMdSearch className="text-[#F04037] hover:text-white hover:bg-[#F04037] bg-[#a57472] rounded-full py-2" />
+      ),
       title: "SEO",
       description:
         "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
@@ -84,14 +109,14 @@ const Home = () => {
       title: "Digital Marketing",
     },
     {
-      text:"SR Innovations has transformed our search engine rankings with their expert SEO services. The team is not only knowledgeable but also incredibly innovative. They helped us climb to the top of search results, resulting in higher website traffic and better lead generation. Their commitment to our success is evident in everything they do. If you're looking to improve your SEO, SR Innovations is the way to go.",
+      text: "SR Innovations has transformed our search engine rankings with their expert SEO services. The team is not only knowledgeable but also incredibly innovative. They helped us climb to the top of search results, resulting in higher website traffic and better lead generation. Their commitment to our success is evident in everything they do. If you're looking to improve your SEO, SR Innovations is the way to go.",
       imgSrc:
         "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
       name: "Emily S.",
       title: "SEO",
     },
     {
-      text:"Our experience with SR Innovations for website development has been outstanding. They delivered a sleek, responsive, and highly functional website that exceeded our expectations. Their attention to detail and ability to understand our vision made the entire process smooth and efficient. I highly recommend their web development services for any business looking to enhance its online presence.",
+      text: "Our experience with SR Innovations for website development has been outstanding. They delivered a sleek, responsive, and highly functional website that exceeded our expectations. Their attention to detail and ability to understand our vision made the entire process smooth and efficient. I highly recommend their web development services for any business looking to enhance its online presence.",
       imgSrc:
         "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
       name: "Jessica L.",
@@ -131,128 +156,208 @@ const Home = () => {
     <>
       {/* Hero  */}
 
-      <section
-        className="w-[100%] bg-slate-500 h-auto pb-48 lg:mt-16"
-        style={{
-          backgroundImage: `url(${Hero})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          width: "100%",
-          height: "100%",
-        }}
-      >
-        <div>
-          <h1 className="text-[5vw] text-[#e5e7ea] md:text-[3.5vw] pt-48 md:pt-48  font-bold text-center">
-            Shaping Tomorrow with <br />
-            <span className="text-[#e5e7ea]"> State-of-the-Art Technology</span>
-            <br /> IT COMPANY
+      <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto lg:mt-2 pb-12 md:pb-0 overflow-hidden">
+        <div className="md:w-[50%]">
+          <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3.5vw] md:pt-28">
+            Build Your Awesome Platform
           </h1>
-          <Link to="/Contact">
-            <button className="bg-[#7a9dcf] text-[3vw] lg:text-[1.5vw] text-white rounded-md px-5 py-1 ml-[33vw] md:ml-[42vw] mt-4 hover:bg-[#39547a]  ">
-              Let's Get Started
-            </button>
+          <p className="px-6 md:px-32 pt-3 md:pt-0 font-bodyFont">
+            At SR Innovations,we help bussinesses tackle their unique challenges
+            with efficency and creativity.Our technical expertise and innovative
+            approach enables us to build custom web and mobile apps designed for
+            high growth
+          </p>
+          <Link to="/Services">
+            <div className="px-24 md:px-32 pt-3 md:pt-0">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+                Our services{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+              </button>
+            </div>
           </Link>
+        </div>
+        <div className="md:w-[50%]">
+          <img src={Hero} alt="" />
         </div>
       </section>
 
       {/* OUR WORK PORTFOLIO */}
-      <section
-        className="bg-[#F0F6FB] w-full md:pb-5 md:h-auto lg:h-[60vw]"
-        data-aos="zoom-in-up"
-      >
-        <div className="lg:flex md:flex sm:block w-[92vw] m-auto sm:ml-10">
-          <div className="sm:w-full lg:w-[50vw] sm:pt-3 pt-7">
-            <p className="font-semibold text-[3vw] md:text-[1vw] text-[#05185A] sm:pt-16 md:pt-14 lg:pt-16">
-              OUR WORK PORTFOLIO
-            </p>
-            <h1 className="text-[6vw] sm:text-[4vw] md:text-[4vw] lg:text-4xl font-bold pt-3 text-[#05185A]">
-              Discover Our Portfolio Highlighting Our Expertise and Creativity
-            </h1>
-            <p className="md:text-[1.3vw] lg:text-[1vw] pt-4">
-              Explore our portfolio for a showcase of our expertise and
-              innovative solutions, demonstrating our commitment to excellence
-              in every project.lvinar dapibus leo.
-            </p>
-            <Link to="/Portfolio">
-              <button className="bg-blue-700 border rounded-full p-2 text-white pl-7 pr-7 mt-10">
-                Explore More
-              </button>
-            </Link>
-            <div className=" flex sm:block lg:flex md:flex mt-8 w-[100%]">
-              <div className=" mr-4 w-[50%]">
-                <img src={TexasLogo} alt="" />
-              </div>
-              <div className="mt-4 sm:mt-4 md:mt-0 w-[50%]">
-                <img src={ASkillAdmin} alt="" />
-                <br />
-                <img src={ASkillSite} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="mt-3 sm:mt-5 pb-5 md:mt-10 lg:mt-16 lg:ml-7 md:ml-5">
-            <img
-              src={MoyenExpress}
-              alt=""
-              className="md:h-[70vw] lg:h-[50vw] sm:h-[70vw] sm:w-[70vw] md:w-[70vw] lg:w-[50vw]"
-            />
-          </div>
-        </div>
-      </section>
-      {/* About  */}
-      <section className="md:flex" data-aos="zoom-in-up">
-        <div className="md:w-[50%] px-4 md:px-16 py-12 md:py-32">
-          <span className="text-[#093D84] font-medium "> About us</span>
-          <h1 className="text-[6vw] md:text-[4vw] font-bold ">
-            Transforming technology into a positive impact
+      <section className="pb-8 overflow-hidden">
+        <div className="md:flex">
+          <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
+            Our Awesome Work Portfolio
           </h1>
-          <Link to="/Contact">
-            <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
-              Let's Get Started
+          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-titleFont">
+            <button
+              onClick={() => handleCategoryChange("logo")}
+              className="rounded-full px-4 mb-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
+            >
+              LOGO DESIGN
             </button>
-          </Link>
+            <button
+              onClick={() => handleCategoryChange("website")}
+              className=" rounded-full px-4 mb-1  sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5c5cc0]"
+            >
+              WEB Development
+            </button>
+            <button
+              onClick={() => handleCategoryChange()}
+              className=" rounded-full px-4 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
+            >
+              Video Animation
+            </button>
+            <button
+              onClick={() => handleCategoryChange()}
+              className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
+            >
+              Digital Markertting
+            </button>
+            <button
+              onClick={() => handleCategoryChange("packaging")}
+              className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-0 hover:text-[#5454D4]"
+            >
+              SEO
+            </button>
+          </div>
         </div>
-        <div
-          className="h-auto pb-12 md:w-[50%]"
-          style={{
-            backgroundImage: `url(${About})`,
-            backgroundSize: "cover",
-          }}
-        >
-          <p className="text-white px-12 pt-32">
-            Founded in 2024, SR Innovations delivers comprehensive and
-            innovative tech solutions to clients worldwide. At SR Innovations,
-            our projects commence with detailed research and strategic planning
-            to ensure optimal results.
-            <br />
-            <br />
-            With years of proven success in the Software and IT industry, we
-            pride ourselves on precision and excellence. Our mission is to help
-            you develop cutting-edge products efficiently and on a large scale.
-          </p>
+        <div className="block sm:block md:grid lg:grid grid-cols-3 pl-6 justify-between mt-5">
+          
+          {category === "logo" && (
+            <>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo1}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo2}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo3}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo5}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo6}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo17}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            </>
+          )}
+
+          {category === "website" && (
+            <>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot5}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot6}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot10}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot9}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={Screenshot2}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            </>
+          )}
         </div>
+            
+        <Link to="/Portfolio">
+          <div className="px-24 md:px-[40vw]">
+            <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+              View All Portfolio{" "}
+              <MdArrowOutward className="text-[5vw] md:text-[2vw] md:pt-2" />
+            </button>
+          </div>
+        </Link>
       </section>
-      {/* Cards  */}
-      <section className="bg-[#FFFFFF] w-full h-auto mt-6 md:h-auto lg:h-[86vw]">
+
+      {/* Services */}
+
+      <section className="pb-20 bg-[#2A2A2A] overflow-x-hidden">
         <div className="w-[93vw] m-auto pt-[5vw]" data-aos="fade-down">
-          <p className="text-black text-center font-semibold">WHAT WE OFFER</p>
-          <h1 className="text-center text-[3vw] font-bold">
-            Bridging Technology and <br /> Business.
+          <h1 className="text-center text-white text-[6vw] md:text-[3vw] font-bold font-titleFont">
+            Bridging <span className="text-[#5454D4]">Technology</span> <br />{" "}
+            and Business.
           </h1>
         </div>
         <div
-          className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8"
+          className="item-center px-4 sm:m-auto sm:ml-20 md:ml-0 ml-3 lg:ml-0 md:px-10 py-2 pt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-8"
           data-aos="zoom-in-up"
         >
           {cardsData.map((service, index) => (
             <div
               key={index}
-              className="shadow-2xl text-black hover:text-white bg-[#fff] hover:bg-[#093E86] shadow-slate-400 pb-4 sm:w-[70vw] md:w-[43vw] lg:w-[30vw] md:h-auto lg:h-[30vw] mb-4"
+              onClick={() => {
+                window.location.href = service.link;
+              }}
+              className="text-white pb-2 sm:w-[70vw] md:w-[43vw] lg:w-[30vw] md:h-auto lg:h-auto"
             >
-              <img
-                className="pt-12 px-36 w-[390px] ml-0 sm:ml-10 sm:w-[385px] md:ml-1 md:w-[370px] lg:w-[380px]"
-                src={service.imageUrl}
-                alt=""
-              />
+              <div className="pt-12 text-white flex justify-center">
+                <div className="text-[12vw] md:text-[4vw] lg:text-[3vw]">
+                  {service.icon}
+                </div>
+              </div>
               <div>
                 <h1 className=" text-center font-bold text-[4vw] md:text-[3vw] lg:text-[2vw] pt-3 ">
                   {service.title}
@@ -261,114 +366,117 @@ const Home = () => {
                   {service.description}
                 </p>
               </div>
-              <div className="text-center pt-6">
-                <button
-                  onClick={() => {
-                    window.location.href = service.link;
-                  }}
-                  className=" hover:text-white border-[2px] border-blue-800 hover:border-white rounded-full bg-[#ffff] hover:bg-[#093E86] text-black px-5 py-1 border-rounded-lg "
-                >
-                  Learn More
-                </button>
-              </div>
             </div>
           ))}
         </div>
       </section>
+
       {/* Let's do it  */}
-      <section className="bg-slate-300 h-auto pb-6 px-6 lg:px-24 md:flex">
-        <div className="md:w-[50%] pt-16">
-          <span className="text-[#093D84] font-medium">LET'S DO IT</span>
-          <h1 className="text-[6vw] lg:text-[4vw] font-bold">
-            Driving Your <span className="text-[#093D84]">Success</span> through
-            Innovative Solutions
-          </h1>
-          <p>
-            At SR Innovations, we help businesses tackle their unique challenges
-            with efficiency and creativity. Our technical expertise and
-            innovative approach enable us to build custom web and mobile apps
-            designed for high growth. From ideation, design, and prototyping to
-            internet-scale rollout, we offer comprehensive solutions to
-            businesses of all sizes and industries.
-          </p>
-          <Link to="/Contact">
-            <button className="bg-[#093D84] text-[4vw] lg:text-[1.5vw] text-white rounded-lg px-5 py-2  mt-4 ">
-              Let's Get Started
-            </button>
-          </Link>
+      <section className="h-auto pb-6 px-6 lg:px-24 overflow-x-hidden">
+        <div className="pt-8 flex flex-col md:flex-row">
+          <div className="md:w-[50%]">
+            <span className="text-[#093D84] font-medium">LET'S DO IT</span>
+            <h1 className="text-[6vw] lg:text-[4vw] font-bold font-titleFont">
+              Driving Your <span className="text-[#093D84]">Success</span>{" "}
+              through Innovative Solutions
+            </h1>
+          </div>
+          <div className="md:w-[50%] pt-12 font-bodyFont">
+            <p>
+              At SR Innovations, we help businesses tackle their unique
+              challenges with efficiency and creativity. Our technical expertise
+              and innovative approach enable us to build custom web and mobile
+              apps designed for high growth. From ideation, design, and
+              prototyping to internet-scale rollout, we offer comprehensive
+              solutions to businesses of all sizes and industries.
+            </p>
+            <div className="pt-4 md:pt-0">
+              <Link to="/Graphic">
+                <button className="mx-12 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                  Graphic Design
+                </button>
+              </Link>
+              <Link to="/Website">
+                <button className="mx-12 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                  Website Development
+                </button>
+              </Link>
+              <Link to="/VideoAnimation">
+                <button className="mx-12 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                  Video Animation
+                </button>
+              </Link>
+              <Link to="/DigitalMarketing">
+                <button className="mx-12 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                  Digital Marketing
+                </button>
+              </Link>
+              <Link to="/SEO">
+                <button className="mx-12 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                  SEO
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="md:w-[50%] px-4 md:px-8 pt-12 md:pt-24">
-          <img src={Techno} alt="" />
+        <div className="md:flex gap-8 pt-12 md:pt-24">
+          <img className="w-72" src={Image1} alt="" />
+          <img className="w-72 pt-4 md:pt-0 md:w-[35vw]" src={Image2} alt="" />
+          <img className="w-72 pt-4 md:pt-0" src={Image3} alt="" />
         </div>
       </section>
       {/* cards */}
-      <section>
-        <div className="text-center mt-4">
-          <h1 className="font-semibold text-[2.4vw] md:text-[1.5vw] text-[#093D84]">
-            NO.1 DIGITAL PLATFORM
-          </h1>
-          <h1 className="font-bold text-black text-[5vw] md:text-[3.5vw]">
-            Best Digital & IT Company <br /> Who We Work With
+      <section className="bg-[#2A2A2A] pb-8 overflow-x-hidden">
+        <div className="text-center mt-4 pt-6">
+          <h1 className="font-extrabold font-titleFont text-white text-[5vw] md:text-[3.5vw]">
+            Best Digital & <span className="text-[#5454D4]">IT Company</span>{" "}
+            <br /> Who We Work With
           </h1>
         </div>
-        <div className="md:flex mt-4 justify-between  px-12 md:px-24">
-          <div className="bg-gray-800 rounded-sm text-white mt-16 md:w-[25vw] p-4 h-auto md:h-[24vw] ">
-            <h1 className="font-bold text-[1.7vw] pt-3">
-              {" "}
-              Enterprise <br /> Organizations{" "}
-            </h1>
-            <p className="pt-3">
-              We understand the complex technology needs of large-scale
-              organizations and have the expertise to help them achieve their
-              goals. Our team can help Enterprise Organizations modernize their
-              existing technology infrastructure, streamline processes, and
-              improve user experience.
+        <div className="flex justify-evenly pt-8">
+          <div>
+            <img
+              className="mx-8 md:mx-20 px-1 text-[#ddbf45] bg-[#5b5025] rounded-full py-1"
+              src={Business}
+              alt=""
+            />
+            <p className="font-bodyFont px-2 text-white ">
+              Enterprise Organization
             </p>
           </div>
-          <div className="bg-gray-800 rounded-sm mt-6 text-white md:w-[25vw] p-4 h-auto md:h-[24vw]">
-            <h1 className="font-bold text-[1.7vw] pt-3">
-              Small & Medium <br />
-              Enterprises
-            </h1>
-            <p className="pt-3">
-              We understand that Small & Medium Enterprises (SMEs) face unique
-              challenges when it comes to technology. We offer affordable and
-              flexible technology solutions that can help SMEs stay competitive
-              in the fast-paced business landscape.
+          <div>
+            <img
+              className="mx-8 md:mx-20 text-[#5454D4] bg-[#19193d] rounded-full py-1 px-1"
+              src={Organization}
+              alt=""
+            />
+            <p className="font-bodyFont text-white justify-center">
+              Small & Medium Enterprises
             </p>
           </div>
-          <div className="bg-gray-800 rounded-sm mt-16 text-white md:w-[25vw] p-4 h-auto md:h-[24vw]">
-            <h1 className="font-bold text-[1.7vw] pt-3">Startups</h1>
-            <p className="pt-3">
-              As a startup, you need a technology partner who can help you build
-              a solid foundation for your business. Our team can help startups
-              navigate the complex world of technology and provide them with the
-              support they need to succeed.
-            </p>
+          <div>
+            <img
+              className="md:mx-3 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
+              src={Rocket}
+              alt=""
+            />
+            <p className="font-bodyFont text-white pr-5 md:pr-0 ">Startups</p>
           </div>
         </div>
-        <Link to="/Contact">
-          <button className="text-center mb-6 bg-[#093D84] font-semibold text-white py-2 mt-4 md:mt-0 rounded-md px-8 text-[2.5vw] md:text-[1.4vw] ml-[35vw] md:ml-[43vw]">
-            Let's Start
-          </button>
-        </Link>
       </section>
       {/* TESTIMONIAL */}
       <section
-        className="bg-[#D9EAF7] w-full h-auto mt-8 pb-20"
+        className="w-full h-auto pb-20 overflow-x-hidden"
         data-aos="zoom-in-up"
       >
-        <p className="text-[#093D84] text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
-          TESTIMONIAL
+        <p className="text-[#093D84] font-titleFont text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
+          TESTIMONIALS
         </p>
-        <h1 className="text-black text-[4vw] text-center sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw] font-bold">
-          What They Say About Us
+        <h1 className="text-black font-titleFont text-[5vw] text-center  md:text-[3.5vw] font-extrabold">
+          Don't just take our word for it:
         </h1>
-        <p className="text-[##7A5353] text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
-          We've cemented our position as a premier provider of cutting-edge
-          technology solutions.
-          <br /> Leveraging our state-of-the-art services, we can assist you in
-          achieving your goals.
+        <p className="text-slate-500 font-bodyFont text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
+          Hear from our satisfied clients
         </p>
         <div className="w-[90%] md:w-[100%] overflow-hidden ">
           <Swiper
@@ -395,7 +503,7 @@ const Home = () => {
           >
             {/* Slider */}
             <div>
-              <div className="">
+              <div>
                 {testimonials.map((testimonial, index) => (
                   <SwiperSlide
                     key={index}
@@ -431,7 +539,26 @@ const Home = () => {
             </div>
           </Swiper>
         </div>
+        {/* <hr className="border-[0.2vw] border-slate-400 mx-24 md:mx-60" /> */}
       </section>
+      {/* Contact  */}
+
+      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
+        <div className="md:w-1/2">
+          <p className="font-titleFont text-[#5454D4]">Contact Us</p>
+          <h1 className="font-titleFont text-[7vw] md:text-[5vw] font-extrabold px-6 ">Build Your Awesome Platform</h1>
+          <p className="font-bodyFont pt-4 px-6 ">
+            At SR Innovations, we help businesses tackle their unique challenges
+            with efficiency and creativity. Our technical expertise and
+            innovative approach enable us to build custom web and mobile apps
+            designed for high growth.
+          </p>
+        </div>
+        <div className="md:w-1/2 pt-4">
+        <Form/>
+        </div>
+      </section>
+      
     </>
   );
 };

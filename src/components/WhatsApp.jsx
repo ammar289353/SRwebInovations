@@ -19,8 +19,8 @@ const WhatsAppButton = () => {
       }}
       onClick={handleWhatsAppClick}
     >
-        <h1 className="text-green-400 font-serif text-[3.5vw] lg:text-[1.5vw] pt-4 pr-3 animate-bounce">ChatNow</h1>
-        <IoLogoWhatsapp  style={{ width: "50px", height: "50px" , color: "green"}}/>
+        <h1 className="text-green-400 font-serif text-[3.5vw] lg:text-[1.5vw] pt-4  pr-3 animate-bounce">ChatNow</h1>
+        <IoLogoWhatsapp  style={{ width: "50px", height: "40px" , color: "green"}}/>
         
     </div>
   );
