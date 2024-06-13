@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import "swiper/css/autoplay";
+import "swiper/css/autoplay"; 
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 // Website Images
 import Screenshot from "../images/1.jpeg";
