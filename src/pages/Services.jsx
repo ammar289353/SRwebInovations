@@ -128,27 +128,29 @@ const Services = () => {
             </p>
             <div className="pt-4 md:pt-0">
               <Link to="/Graphic">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
                   Graphic Design
                 </button>
               </Link>
               <Link to="/Website">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
                   Website Development
                 </button>
               </Link>
               <Link to="/VideoAnimation">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
                   Video Animation
                 </button>
               </Link>
+              <br />
               <Link to="/DigitalMarketing">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
                   Digital Marketing
                 </button>
               </Link>
+            
               <Link to="/SEO">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
                   SEO
                 </button>
               </Link>
@@ -183,27 +185,29 @@ const Services = () => {
             </p>
             <div className="pt-4 md:pt-0">
               <Link to="/Graphic">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
                   Graphic Design
                 </button>
               </Link>
               <Link to="/Website">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
                   Website Development
                 </button>
               </Link>
               <Link to="/VideoAnimation">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
                   Video Animation
                 </button>
               </Link>
+              <br />
               <Link to="/DigitalMarketing">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
                   Digital Marketing
                 </button>
               </Link>
+            
               <Link to="/SEO">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
                   SEO
                 </button>
               </Link>
@@ -233,27 +237,29 @@ const Services = () => {
             </p>
             <div className="pt-4 md:pt-0">
               <Link to="/Graphic">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
                   Graphic Design
                 </button>
               </Link>
               <Link to="/Website">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
                   Website Development
                 </button>
               </Link>
               <Link to="/VideoAnimation">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
                   Video Animation
                 </button>
               </Link>
+              <br />
               <Link to="/DigitalMarketing">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
                   Digital Marketing
                 </button>
               </Link>
+            
               <Link to="/SEO">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
                   SEO
                 </button>
               </Link>
@@ -288,27 +294,29 @@ const Services = () => {
             </p>
             <div className="pt-4 md:pt-0">
               <Link to="/Graphic">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
                   Graphic Design
                 </button>
               </Link>
               <Link to="/Website">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
                   Website Development
                 </button>
               </Link>
               <Link to="/VideoAnimation">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
                   Video Animation
                 </button>
               </Link>
+              <br />
               <Link to="/DigitalMarketing">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
                   Digital Marketing
                 </button>
               </Link>
+            
               <Link to="/SEO">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
                   SEO
                 </button>
               </Link>
@@ -338,27 +346,29 @@ const Services = () => {
             </p>
             <div className="pt-4 md:pt-0">
               <Link to="/Graphic">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
                   Graphic Design
                 </button>
               </Link>
               <Link to="/Website">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
                   Website Development
                 </button>
               </Link>
               <Link to="/VideoAnimation">
-                <button className="mx-10 md:mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
+                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
                   Video Animation
                 </button>
               </Link>
+              <br />
               <Link to="/DigitalMarketing">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
                   Digital Marketing
                 </button>
               </Link>
+            
               <Link to="/SEO">
-                <button className="mx-10 md:mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
+                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
                   SEO
                 </button>
               </Link>
