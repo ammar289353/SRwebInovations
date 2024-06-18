@@ -136,12 +136,12 @@ const Portfolio = () => {
         </div>
       </section>
       {/* CUSTOM BUSINESS SOLUTIONS */}
-      <section className="w-[90vw] m-auto">
+      <section className="pb-8 pt-6 ">
       <div className="md:flex">
           <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
             Our Awesome Work Portfolio
           </h1>
-          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-titleFont">
+          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont">
             <button
               onClick={() => handleCategoryChange("logo")}
               className="rounded-full px-4 mb-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"

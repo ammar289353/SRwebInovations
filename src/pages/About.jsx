@@ -289,7 +289,7 @@ const About = () => {
       
       </div>
       </section>
-      {/*  */}
+      {/* Cards  */}
       <section className="pt-12">
       <div className="block sm:block md:flex lg:flex mb-14 px-4">
           <div
