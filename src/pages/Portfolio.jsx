@@ -175,7 +175,7 @@ const Portfolio = () => {
           </div>
         </div>
        
-        <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between mt-5">
+        <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between pt-6 px-6 mt-5">
           {/* {category === "all" && (
             <>
             
