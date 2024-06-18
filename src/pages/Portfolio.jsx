@@ -891,7 +891,7 @@ const Portfolio = () => {
 
        {/* TESTIMONIAL */}
        <section
-        className="w-full h-auto pb-20 overflow-x-hidden"
+        className="w-full h-auto pb-20"
         data-aos="zoom-in-up"
       >
         <p className="text-[#093D84] font-titleFont text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
