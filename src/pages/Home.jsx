@@ -442,7 +442,7 @@ const Home = () => {
               src={Business}
               alt=""
             />
-            <p className="font-bodyFont text-[3vw] px-2 text-white ">
+            <p className="font-bodyFont text-[3vw] md:text-[2vw] px-2 text-white ">
               Enterprise Organization
             </p>
           </div>
@@ -452,17 +452,17 @@ const Home = () => {
               src={Organization}
               alt=""
             />
-            <p className="font-bodyFont text-[3vw] text-white justify-center">
+            <p className="font-bodyFont text-[3vw] md:text-[2vw] text-white justify-center">
               Small & Medium Enterprises
             </p>
           </div>
           <div>
             <img
-              className="mx-2 md:mx-3 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
+              className="mx-2 md:mx-6 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
               src={Rocket}
               alt=""
             />
-            <p className="font-bodyFont text-[3.5vw] text-white pr-5 md:pr-0 ">Startups</p>
+            <p className="font-bodyFont text-[3.5vw] md:text-[2vw] text-white pr-5 md:pr-0  ">Startups</p>
           </div>
         </div>
       </section>
@@ -547,7 +547,7 @@ const Home = () => {
 
       <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
         <div className="md:w-1/2">
-          <p className="font-titleFont text-[#5454D4]">Contact Us</p>
+          <p className="font-titleFont text-[#5454D4] px-7 ">Contact Us</p>
           <h1 className="font-titleFont text-[7vw] md:text-[5vw] font-extrabold px-6 ">Build Your Awesome Platform</h1>
           <p className="font-bodyFont pt-4 px-6 ">
             At SR Innovations, we help businesses tackle their unique challenges
