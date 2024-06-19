@@ -421,7 +421,6 @@ const About = () => {
         {/* <hr className="border-[0.2vw] border-slate-400 mx-24 md:mx-60" /> */}
       </section>
       {/* Contact  */}
-
       <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
         <div className="md:w-1/2">
           <p className="font-titleFont text-[#5454D4] px-7">Contact Us</p>

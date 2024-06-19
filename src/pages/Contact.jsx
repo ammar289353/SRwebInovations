@@ -6,21 +6,17 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
-import backgroundImage from "../images/Sr-Particle.jpg";
+// import backgroundImage from "../images/Sr-Particle.jpg";
+// hero images
+import vector13 from "../images/Vector 13.png";
+import circle from "../images/circle.png";
+import Triangle from "../images/tri.png";
+import add from "../images/add.png";
 
 const Contact = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
 
   const emailData = [
     {
@@ -84,34 +80,28 @@ const Contact = () => {
 
   return (
     <>
-      <section data-aos="zoom-in-up">
+     <section className=" bg-[#2A2A2A] h-auto" data-aos="zoom-in-up">
+        
         <div
-          className="h-[45vw] sm:h-[45vw] md:h-[45vw] lg:h-[32vw] w-full text-center relative overflow-hidden"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-          }}
-          onMouseEnter={handleHover}
-          onMouseLeave={handleMouseLeave}
+          className="w-full text-center"
         >
-          <p className="text-white text-center pt-[20vw] sm:pt-[20vw] md:pt-44 lg:pt-44 text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
-            SR Innovations
-          </p>
-          <div
-            className={`absolute top-1/2 mr-[9vw] sm:mr-[8vw] md:mr-[8vw] lg:mr-28 transform transition-transform ${
-              isHovered ? "-translate-y-2" : ""
-            } ${isHovered ? "left-[38%]" : "right-[30%]"}`}
-          >
-            <h1
-              className={`text-white text-center text-[6vw] font-bold ${
-                isHovered ? "hovered" : ""
-              }`}
-              onMouseEnter={handleHover}
-              onMouseLeave={handleMouseLeave}
-            >
-              Contact
-            </h1>
+          <div className="flex justify-between">
+          <img className="pt-24 px-4 md:px-48" src={vector13} alt="" />
+          <img className=" pt-24 pr-4 md:pr-48" src={circle} alt="" />
           </div>
+          <p className="text-[#5454D4] text-center font-bodyFont  text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
+            Contact Us 
+          </p>
+          
+            <h1
+              className="text-white justify-center text-center text-[6vw] px-24 md:px-96 font-titleFont md:text-[4vw] font-extrabold"
+            >
+               Contact Us <br /> <span className="text-[#5454D4]">Today</span>.
+            </h1>
+            <div className="flex justify-between">
+            <img className="px-3 md:px-48" src={Triangle} alt="" />
+            <img className="pr-4 md:pr-44" src={add} alt="" />
+            </div>
         </div>
       </section>
       {/* <h1 className='text-[5vw] font-bold text-[#545353] text-center'>Contact Us</h1> */}

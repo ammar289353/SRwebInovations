@@ -1,12 +1,16 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import backgroundImage from "../images/Sr-Particle.jpg";
 import AppService from "../images/MobileApp-Service.png";
 import GamingApps from "../images/Gaming.png";
 import EcommerceApps from "../images/Ecommerce-Apps.png";
 import BlogApps from "../images//Blog.png";
 import UtilityApps from "../images/Utility.png";
+// hero images
+import vector13 from "../images/Vector 13.png";
+import circle from "../images/circle.png";
+import Triangle from "../images/tri.png";
+import add from "../images/add.png";
 
 const MobileApp = () => {
   useEffect(() => {
@@ -15,28 +19,28 @@ const MobileApp = () => {
 
   return (
     <>
-      <section data-aos="zoom-in-up">
+      <section className=" bg-[#2A2A2A] h-auto" data-aos="zoom-in-up">
+        
         <div
-          className="h-[75vw] sm:h-[45vw] md:h-[45vw] lg:h-[40vw] w-full text-center relative overflow-hidden"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-          }}
+          className="w-full text-center"
         >
-          <p className="text-white text-center pt-[30vw]  md:pt-[15vw] text-[2.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
-            SR Innovations
-          </p>
-          <div className="top-[36vw] md:top-[16vw] mr-0  md:text-center transform transition-transform">
-            <h1 className="text-white text-center text-[4vw] font-bold">
-              Mobile App Development
-            </h1>
+          <div className="flex justify-between">
+          <img className="pt-24 px-4 md:px-48" src={vector13} alt="" />
+          <img className=" pt-24 pr-4 md:pr-48" src={circle} alt="" />
           </div>
-          <p className="text-white text-[2vw] px-3 md:px-24 md:text-[1.1vw] text-center mt-8">
-            WE OFFER A WIDE RANGE OF SERVICES TO HELP YOU CREATE A UNIQUE AND
-            PROFESSIONAL VISUAL IDENTITY FOR YOUR BUSINESS. OUR TEAM OF
-            EXPERIENCED DESIGNERS IS DEDICATED TO CREATING STUNNING DESIGNS THAT
-            WILL MAKE YOUR BRAND STAND OUT FROM THE REST.
+          <p className="text-[#5454D4] text-center font-bodyFont  text-[1.5vw] sm:text-[1vw] md:text-[1vw] lg:text-[1vw] ">
+            Portfolio
           </p>
+          
+            <h1
+              className="text-white justify-center text-center text-[6vw] px-24 md:px-96 font-titleFont md:text-[4vw] font-extrabold"
+            >
+               Establish Your <span className="text-[#5454D4]">Brand</span> as an Industry Leader
+            </h1>
+            <div className="flex justify-between">
+            <img className="px-3 md:px-48" src={Triangle} alt="" />
+            <img className="pr-4 md:pr-44" src={add} alt="" />
+            </div>
         </div>
       </section>
       <section className="w-[94vw] m-auto mb-10 mt-10">
