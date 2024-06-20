@@ -47,7 +47,8 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ width: '300px', margin: '0 auto' }}>
+    <>
+    <form onSubmit={handleSubmit} className='mt-12 w-[500px]'>
       <div style={{ marginBottom: '20px' }}>
         <input
           type="text"
@@ -91,11 +92,15 @@ const Form = () => {
         />
         {errors.description && <p style={errorStyle}>{errors.description}</p>}
       </div>
-      <button className='flex justify-center ' type="submit" style={buttonStyle}>
-        Send
-      <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />
-      </button>
+     
     </form>
+     <div className='pl-80 '>
+     <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-[#39547a] text-white px-12 py-2  ' type="submit">
+     Send
+   <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />
+   </button>
+     </div>
+   </>
   );
 };
 
@@ -123,17 +128,6 @@ const errorStyle = {
   color: 'red',
   fontSize: '12px',
   marginTop: '5px',
-};
-
-const buttonStyle = {
-  width: '100%',
-  padding: '10px',
-  fontSize: '16px',
-  backgroundColor: '#5454D4',
-  color: '#fff',
-  border: 'none',
-  cursor: 'pointer',
-  marginTop: '20px',
 };
 
 export default Form;
