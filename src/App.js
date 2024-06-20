@@ -8,7 +8,6 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Graphic from './pages/Graphic';
 import Website from './pages/Website';
-import MobileApp from './pages/MobileApp';
 import VideoAnimation from './pages/VideoAnimation';
 import DigitalMarketing from './pages/DigitalMarketing';
 import SEO from './pages/SEO';
@@ -39,7 +38,6 @@ function App() {
       <Route path='Contact' element={<Contact />} />
       <Route path='Graphic' element={<Graphic />} />
       <Route path='Website' element={<Website />} />
-      <Route path='MobileApp' element={<MobileApp />} />
       <Route path='VideoAnimation' element={<VideoAnimation />} />
       <Route path='DigitalMarketing' element={<DigitalMarketing />} />
       <Route path='SEO' element={<SEO />} />

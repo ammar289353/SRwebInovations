@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
-import Navlogo from "../images/nav-logo.png";
+import Navlogo from "../images/SR_innovation_logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex">
           <Link to="/">
             <img
-              className="h-[14vw] sm:h-[8w] md:h-[6vw] lg:h-[6vw] pl-[12vw] sm:pl-[10vw] md:pl-0 pt-3 sm:py-2"
+              className="h-[14vw] sm:h-[8w] md:h-[6vw] pl-[12vw] sm:pl-[10vw] md:pl-0 pt-3 sm:py-2"
               src={Navlogo}
               alt=""
             />

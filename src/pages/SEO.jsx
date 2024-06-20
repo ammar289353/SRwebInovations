@@ -11,9 +11,9 @@ import circle from "../images/circle.png";
 import Triangle from "../images/tri.png";
 import add from "../images/add.png";
 // Cards
-import Quilt from "../images/View Quilt.png"
-import DevSkill from "../images/Development Skill.png"
-import Vision from "../images/Vision.png"
+import Technical from "../images/Advanced Search.png"
+import OnnPage from "../images/Search in Browser.png"
+import OffPage from "../images/Browse page.png"
 // Slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -149,51 +149,51 @@ const SEO = () => {
        <h1 className="font-titleFont font-extrabold text-[5vw] md:text-[3vw] text-center ">Ready to enhance your online presence? Schedule <br /> a consultation with our SEO experts today!</h1>
       <div className="block sm:block md:flex lg:flex mb-14 px-4">
           <div
-            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={Quilt}
+              src={Technical}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            3345+ Projects Delivered
+            Technical SEO
             </h1>
-            <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            From marketing to development, and IT services, we empower our diverse clientele with top-notch solutions.
+            <p className="text-[4vw] font-bodyFont  sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
+            Unlock the full potential of your website with Technical SEO expertise.
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={DevSkill}
+              src={OnnPage}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Decades of Expertise
+            On Page SEO
             </h1>
-            <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            With years of industry experience, we've been delivering tailored solutions to businesses of all sizes..
+            <p className="text-[4vw] font-bodyFont  sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
+            Enhance your online presence and boost search engine rankings with OffPage SEO strategies
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={Vision}
+              src={OffPage}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2 ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Visionary Innovators
+            Off Page SEO
             </h1>
-            <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            Comprising experienced professionals, our team is committed to achieving success for our clients..
+            <p className="text-[4vw]  font-bodyFont sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
+            Elevate your SEO strategy with expert content writing services. Our team crafts compelling, keyword-optimized content.
 
             </p>
           </div>

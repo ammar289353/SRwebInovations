@@ -1,82 +1,83 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import emailjs from "@emailjs/browser";
-import { FaWhatsapp } from "react-icons/fa6";
-import { MdOutlineMail } from "react-icons/md";
-import { FiPhone } from "react-icons/fi";
-import { IoLocationOutline } from "react-icons/io5";
-// import backgroundImage from "../images/Sr-Particle.jpg";
+import Form from "../components/Form";
 // hero images
 import vector13 from "../images/Vector 13.png";
 import circle from "../images/circle.png";
 import Triangle from "../images/tri.png";
 import add from "../images/add.png";
+// Cards
+import Customer from "../images/Customer Support.png"
+import Chat from "../images/Chat Room.png"
+import Location from "../images/Location.png"
+// Slider
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+import "swiper/css/autoplay"; 
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
+import { MdArrowOutward } from "react-icons/md";
+
 
 const Contact = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
 
-  const emailData = [
+  const testimonials = [
     {
-      id: 1,
-      icon: <MdOutlineMail />,
-      label: "Email",
-      email: "info@techigems.pk",
+      text: "Working with SR Innovations has significantly boosted our digital marketing performance. Their team implemented strategies that increased our online visibility and drove more traffic to our website. We're now seeing a steady increase in leads. Their dedication and creativity are truly commendable. I highly recommend their services for anyone serious about enhancing their online presence.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "John D.",
+      title: "Digital Marketing",
     },
     {
-      id: 2,
-      icon: <FaWhatsapp />,
-      label: "WhatsApp",
-      email: "+92-343-900-6803",
+      text: "SR Innovations has transformed our search engine rankings with their expert SEO services. The team is not only knowledgeable but also incredibly innovative. They helped us climb to the top of search results, resulting in higher website traffic and better lead generation. Their commitment to our success is evident in everything they do. If you're looking to improve your SEO, SR Innovations is the way to go.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Emily S.",
+      title: "SEO",
     },
-    { id: 3, icon: <FiPhone />, label: "Contact", email: "021-3729-3327" },
     {
-      id: 4,
-      icon: <IoLocationOutline />,
-      label: "Find Us",
-      email:
-        "Mashriq Center, Gulshan-e-iqbal, Block 14, Shah Suleman Road, Karachi-Pakistan",
+      text: "Our experience with SR Innovations for website development has been outstanding. They delivered a sleek, responsive, and highly functional website that exceeded our expectations. Their attention to detail and ability to understand our vision made the entire process smooth and efficient. I highly recommend their web development services for any business looking to enhance its online presence.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Jessica L.",
+      title: "Website Development",
+    },
+    {
+      text: "We partnered with SR Innovations for our website development needs, and the results have been fantastic. Their expertise helped us create a user-friendly and visually appealing site that attracts more visitors. Their proactive approach and creative solutions have been instrumental in generating new leads for our business. I highly recommend their website development services to any company looking to grow online.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Michael R.",
+      title: "Website Development",
+    },
+    {
+      text: "SR Innovations completely revamped our digital marketing strategy, and the impact has been incredible. Their team's innovative approach and in-depth knowledge have led to a significant increase in our online visibility and website traffic. We've seen a noticeable uptick in leads and conversions. I can't recommend their digital marketing services enough!",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Sarah K.",
+      title: "Digital Marketing",
+    },
+    {
+      text: "SR Innovations has played a crucial role in enhancing our brand through video animation. They crafted engaging and professional animations that captured our audience's attention and improved our online presence. The team is professional, creative, and always ready to go the extra mile to ensure our success. We couldn't be happier with their services and recommend them highly.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "Lisa T.",
+      title: "Video Animation",
+    },
+    {
+      text: "Since partnering with SR Innovations, our graphic design needs have been met with outstanding results. Their team's expertise in creating stunning visuals has been a game-changer for us. We've seen a substantial increase in engagement and overall brand recognition. The team is creative, diligent, and genuinely invested in our success. For anyone looking to elevate their brand with top-notch graphic design, SR Innovations is the perfect choice.",
+      imgSrc:
+        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      name: "David M.",
+      title: "Graphic Design",
     },
   ];
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [tel, setTel] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const serviceId = "service_y31dw1e";
-    const templateId = "template_3viu0vg";
-    const publicKey = "nNzYMhfwB-bCLec3Q";
-
-    const templateParams = {
-      form_name: name,
-      from_email: email,
-      to_name: "maryam fatima",
-      message: message,
-    };
-
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully!", response);
-        setName("");
-        setEmail("");
-        setCompany("");
-        setTel("");
-        setSubject("");
-        setMessage("");
-      })
-      .catch((error) => {
-        console.error("Error sending email", error);
-      });
-  };
 
   return (
     <>
@@ -104,162 +105,157 @@ const Contact = () => {
             </div>
         </div>
       </section>
-      {/* <h1 className='text-[5vw] font-bold text-[#545353] text-center'>Contact Us</h1> */}
       <section className="w-[90vw] m-auto mt-6">
         <div className="block sm:block md:flex lg:flex pt-6">
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5"
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-5"
            data-aos="flip-left">
             <img
-              className="pt-12 px-36 w-[380px]"
-              src="https://techigems.pk/wp-content/uploads/2024/02/Frame.png"
+              className="bg-[#5454D4] rounded-full py-2 px-2 mt-5  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
+              src={Customer}
               alt=""
             />
             <h1 className="text-center font-semibold text-[4vw] lg:text-[1.6vw] pt-3 text-gray-600 ">
-              Customer Support
+            24/7 Support
             </h1>
-            <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                Chat now
+            <Link to="#Contact">
+            <div className="px-24 md:px-[93px] pt-3 md:pt-0">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+                Chat Now{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
             </div>
+          </Link>
           </div>
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5" data-aos="flip-left">
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-5" data-aos="flip-left">
             <img
-              className="pt-12 px-36 w-[380px]"
-              src="https://techigems.pk/wp-content/uploads/2024/02/Frame.png"
+              className="bg-[#5454D4] rounded-full py-2 px-2  mt-5 ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
+              src={Chat}
               alt=""
             />
             <h1 className="text-center font-semibold text-[4vw] lg:text-[1.6vw] pt-3 text-gray-600 ">
-              Customer Support
+            24/7 Chat Support
             </h1>
-            <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                Chat now
+            <Link to="#Contact">
+            <div className="px-24 md:px-[93px] pt-3 md:pt-0">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+                Chat Now{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
             </div>
+          </Link>
           </div>
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-72 mb-5" data-aos="flip-left">
+          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-5" data-aos="flip-left">
             <img
-              className="pt-12 px-36 w-[380px]"
-              src="https://techigems.pk/wp-content/uploads/2024/02/Frame.png"
+              className="bg-[#5454D4] rounded-full py-2 px-2 mt-5  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
+              src={Location}
               alt=""
             />
             <h1 className="text-center font-semibold text-[4vw] lg:text-[1.6vw] pt-3 text-gray-600 ">
-              Customer Support
+            View Our Location
             </h1>
-            <div className="text-center pt-6">
-              <button className="shadow-md shadow-white-500 rounded-full border border-blue-800 text-blue-800 font-semibold px-8 py-2 hover:bg-blue-800 hover:text-white">
-                Chat now
+            <Link to="#Contact">
+            <div className="px-24 md:px-28 pt-3 md:pt-0">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+                View{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
             </div>
+          </Link>
           </div>
         </div>
       </section>
-      <section className="w-[93vw] m-auto mt-10 pb-10">
-        <div className="block sm:block md:flex lg:flex">
-          <div className="w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] text-center sm:text-center h-auto sm:h-auto md:h-[38vw] lg:h-[38vw] mt-16">
-            <p className="text-blue-800 font-semibold">CONTACT US</p>
-            <h1 className="text-[3vw] font-bold">Get in touch</h1>
-            <div className="pb-10 border-b">
-              {emailData.map((item) => (
-                <div key={item.id} className="flex mt-7">
-                  <div className="text-blue-500 text-[4.5vw] sm:text-[4.5vw] md:text-[2vw] lg:text-[2vw]">
-                    {item.icon}
-                  </div>
-                  <div className="text-start ml-8 lg:ml-14">
-                    <h1 className=" text-[4vw] sm:text-[4vw] md:text-[1.3vw] lg:text-[1.3vw] font-semibold text-gray-600">
-                      {item.label}
-                    </h1>
-                    <p className=" text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] text-gray-600 pl-1">
-                      {item.email}
+      {/* TESTIMONIAL */}
+      <section
+        className="w-full h-auto pb-20 overflow-x-hidden"
+        data-aos="zoom-in-up"
+      >
+        <p className="text-[#093D84] font-titleFont text-[3vw] sm:text-[3vw] md:text-[1.5vw] pt-8 lg:text-[1.5vw] text-center font-semibold">
+          TESTIMONIALS
+        </p>
+        <h1 className="text-black font-titleFont text-[5vw] text-center  md:text-[3.5vw] font-extrabold">
+          Don't just take our word for it:
+        </h1>
+        <p className="text-slate-500 font-bodyFont text-center text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] pb-8 pt-2">
+          Hear from our satisfied clients
+        </p>
+        <div className="w-[90%] md:w-[100%] overflow-hidden ">
+          <Swiper
+            breakpoints={{
+              340: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              700: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+            }}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            modules={[FreeMode, Pagination, Autoplay]}
+            className="w-[140vw] h-[44vh] md:h-auto md:max-w-[90%]"
+          >
+            {/* Slider */}
+            <div>
+              <div>
+                {testimonials.map((testimonial, index) => (
+                  <SwiperSlide
+                    key={index}
+                    className="bg-white rounded-lg ml-5 md:ml-0 p-6"
+                  >
+                    <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw]">
+                      "Working with SR Innovations has significantly boosted our
+                      digital marketing performance. Their team implemented
+                      strategies that increased our online visibility and drove
+                      more traffic to our website. We're now seeing a steady
+                      increase in leads. Their dedication and creativity are
+                      truly commendable. I highly recommend their services for
+                      anyone serious about enhancing their online presence."
                     </p>
-                  </div>
-                </div>
-              ))}
+                    <div className="flex">
+                      <img
+                        src={testimonial.imgSrc}
+                        alt={testimonial.name}
+                        className="rounded-full w-14 mt-2"
+                      />
+                      <div>
+                        <h1 className="text-blue-900 text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] font-bold ml-3 lg:ml-10 mt-3">
+                          {testimonial.name}
+                        </h1>
+                        <p className="text-blue-700 text-[2vw] sm:text-[2vw] md:text-[1vw] lg:text-[1vw] font-semibold ml-3 lg:ml-10">
+                          {testimonial.title}
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </div>
             </div>
-          </div>
-          {/* contact us */}
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[70vw] lg:h-[45vw] mb-5" data-aos="zoom-in-up">
-            <h1 className="text-[4vw] sm:text-[4vw] md:text-[2.7vw] lg:text-[2.7vw] text-gray-800 font-bold pt-7 pl-10">
-              Send a message
-            </h1>
-            <p className="text-[2.6vw] sm:text-[2.6vw] md:text-[1.5vw] lg:text-[1.2vw] pl-10 text-gray-500 ">
-              We've solidified our position as a premier provider of
-              groundbreaking <br /> technology solutions.
-            </p>
-            <form action="" onSubmit={handleSubmit} className="grid pt-5">
-              <div className="block sm:block md:flex lg:flex">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] mt-3 p-[1vw] ml-10"
-                />
-                <input
-                  type="text"
-                  name="company"
-                  placeholder="Company"
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
-                  className="bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  p-[1vw] ml-10 sm:ml-10 md:ml-10 lg:ml-10 mt-3 sm:mt-3"
-                />
-              </div>
-              <div className="block sm:block md:flex lg:flex">
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone"
-                  value={tel}
-                  onChange={(e) => setTel(e.target.value)}
-                  className="bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw]  mt-3 p-[1vw] ml-10"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="bg-gray-100 rounded-full w-[65vw] sm:w-[70vw] md:w-[25vw] lg:w-[25vw] mt-3  p-[1vw] ml-10 sm:ml-10 md:ml-10 lg:ml-10"
-                />
-              </div>
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-                className="bg-gray-100 rounded-full  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] mt-3 p-[1vw] ml-10"
-              />
-              <textarea
-                name="message"
-                type="text"
-                placeholder="Message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="bg-gray-100 rounded-lg mt-3  w-[65vw] sm:w-[70vw] md:w-[52vw] lg:w-[54vw] p-[1vw] ml-10 pl-6"
-              ></textarea>
-              <button
-                type="submit"
-                className="flex bg-blue-700 w-[53vw] sm:w-[53vw] md:w-[50vw] lg:w-[50vw] text-center pl-[23vw] text-[3vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] rounded-full ml-14 text-white p-3 mt-2"
-              >
-                <MdOutlineMail className="text-[3.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw]  sm:mt-1" />{" "}
-                Send
-              </button>
-            </form>
-          </div>
+          </Swiper>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23078.288084510416!2d74.28194354170905!3d31.462312357965956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903e4b7e6ff87%3A0xcc62842150b2ec7!2sBlock-C%2C%20faisal%20Town!5e1!3m2!1sen!2s!4v1698343462968!5m2!1sen!2s"
-          width="100%"
-          height="270"
-          title="map"
-          style={{ border: 0, marginLeft: "10px", borderRadius: "0px" }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        {/* <hr className="border-[0.2vw] border-slate-400 mx-24 md:mx-60" /> */}
+      </section>
+      {/* Contact  */}
+      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
+        <div className="md:w-1/2">
+          <p className="font-titleFont text-[#5454D4] px-7">Contact Us</p>
+          <h1 className="font-titleFont text-[7vw] md:text-[5vw] font-extrabold px-6 ">Build Your Awesome Platform</h1>
+          <p className="font-bodyFont pt-4 px-6 ">
+            At SR Innovations, we help businesses tackle their unique challenges
+            with efficiency and creativity. Our technical expertise and
+            innovative approach enable us to build custom web and mobile apps
+            designed for high growth.
+          </p>
+        </div>
+        <div className="md:w-1/2 pt-4">
+        <Form/>
+        </div>
       </section>
     </>
   );

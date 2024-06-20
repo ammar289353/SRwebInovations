@@ -11,9 +11,9 @@ import circle from "../images/circle.png";
 import Triangle from "../images/tri.png";
 import add from "../images/add.png";
 // Cards
-import Quilt from "../images/View Quilt.png"
-import DevSkill from "../images/Development Skill.png"
-import Vision from "../images/Vision.png"
+import TwoD from "../images/Animated.png"
+import ThreeD from "../images/3D Object.png"
+import Motion from "../images/Bouncing Ball.png"
 // Slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -146,51 +146,51 @@ const VideoAnimation = () => {
        <h1 className="font-titleFont font-extrabold text-[5vw] md:text-[3vw] text-center ">Keep your audience engaged and informed with <br /> out top-notch video animation services!</h1>
       <div className="block sm:block md:flex lg:flex mb-14 px-4">
           <div
-            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={Quilt}
+              src={TwoD}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            3345+ Projects Delivered
+            2D Animation
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            From marketing to development, and IT services, we empower our diverse clientele with top-notch solutions.
+            implify life with our utility app solutions! From productivity tools to handy gadgets, we design apps that make everyday tasks a breeze.
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={DevSkill}
+              src={ThreeD}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Decades of Expertise
+            3D Animation
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            With years of industry experience, we've been delivering tailored solutions to businesses of all sizes..
+            Elevate your storytelling with stunning 3D video animations! Our experienced team crafts immersive visuals that captivate and impress. 
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={Vision}
+              src={Motion}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2 ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Visionary Innovators
+            Motion Graphics
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            Comprising experienced professionals, our team is committed to achieving success for our clients..
+            Ready to make your brand stand out? Our motion graphics services add flair and dynamism to your content, ensuring it grabs attention and leaves a lasting impression.
 
             </p>
           </div>

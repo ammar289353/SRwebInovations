@@ -10,6 +10,10 @@ import vector13 from "../images/Vector 13.png";
 import circle from "../images/circle.png";
 import Triangle from "../images/tri.png";
 import add from "../images/add.png";
+// Cards
+import Ecommerce from "../images/Layout.png"
+import Landing from "../images/Resume Website.png"
+import Blog from "../images/Blog.png"
 // Slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -141,51 +145,51 @@ const Website = () => {
        <h1 className="font-titleFont font-extrabold text-[5vw] md:text-[3vw] text-center ">Ready to go big online? Let's make it happen! <br /> Connect with us now to bring your ideas to life. </h1>
       <div className="block sm:block md:flex lg:flex mb-14 px-4">
           <div
-            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={''}
+              src={Ecommerce}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            3345+ Projects Delivered
+            Ecommerce Websites 
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            From marketing to development, and IT services, we empower our diverse clientele with top-notch solutions.
+            Cutting-edge e-commerce website design solutions engineered to enhance your online retail presence and drive conversions. 
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={''}
+              src={Landing}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Decades of Expertise
+            Landing Pages  
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            With years of industry experience, we've been delivering tailored solutions to businesses of all sizes..
+            Strategically crafted landing page designs optimized to capture attention, drive engagement, and convert visitors into customers.
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={''}
+              src={Blog}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2 ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Visionary Innovators
+            Blog Websites
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            Comprising experienced professionals, our team is committed to achieving success for our clients..
+            Engaging and informative blog website designs tailored to showcase your content and attract readers.
 
             </p>
           </div>

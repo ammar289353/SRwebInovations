@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import FooterLogo from "../images/footer-logo.png";
-import Navlogo from "../images/nav-logo.png";
+import Navlogo from "../images/SR_innovation_logo.png";
 import { CgMail } from "react-icons/cg";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="pt-5 text-white md:w-[35%] md:pb-12">
         <div>
           <img
-            className="h-24 lg:h-28 px-28 "
+            className="h-24 md:h-32 px-28 md:px-20 "
             src={Navlogo}
             alt=""
           />

@@ -11,9 +11,9 @@ import Triangle from "../images/tri.png";
 import add from "../images/add.png";
 import GraphicService from "../images/GraphicService.png";
 // Cards
-import Quilt from "../images/View Quilt.png"
-import DevSkill from "../images/Development Skill.png"
-import Vision from "../images/Vision.png"
+import Logo from "../images/Create Icon.png"
+import Design from "../images/Design.png"
+import SocialMedia from "../images/Online Ads.png"
 // Slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -148,51 +148,51 @@ const Graphic = () => {
         <h1 className="font-titleFont font-extrabold text-[5vw] md:text-[3vw] text-center ">Create A Strong Brand Identity With Our <br /> Professional Graphic Design Services!</h1>
       <div className="block sm:block md:flex lg:flex mb-14 px-4">
           <div
-            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={Quilt}
+              src={Logo}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            3345+ Projects Delivered
+            Logo Design
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            From marketing to development, and IT services, we empower our diverse clientele with top-notch solutions.
+            A sleek and modern logo design featuring bold typography and distinctive graphical elements, symbolizing the essence of your brand.
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={DevSkill}
+              src={Design}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Decades of Expertise
+            Branding Design
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            With years of industry experience, we've been delivering tailored solutions to businesses of all sizes..
+            A comprehensive branding design package tailored to establish a cohesive and impactful brand identity for your business.
             </p>
           </div>
           <div
-            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[40vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
+            className="ml-1 sm:ml-1 md:m-3 lg:m-3 mt-6 sm:mt-6 md:mt-4 lg:mt-4 w-[90vw] sm:w-[90vw] md:w-[30vw] lg:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 lg:p-6 pt-10 rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500  hover:text-white"
             data-aos="flip-left"
           >
             <img
-              src={Vision}
+              src={SocialMedia}
               alt=""
               className="bg-[#5454D4] rounded-full py-2 px-2 ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
             />
             <h1 className="font-bold text-[5vw] sm:text-[5vw] md:text-[2vw] lg:text-[1.5vw] mt-3">
-            Visionary Innovators
+            Social Media Design
             </h1>
             <p className="text-[4vw] sm:text-[4vw] md:text-[1.5vw] lg:text-[1vw] mt-2">
-            Comprising experienced professionals, our team is committed to achieving success for our clients..
+            Eye-catching and dynamic social media design solutions crafted to amplify your brand's online presence and engage your audience effectively. 
 
             </p>
           </div>
