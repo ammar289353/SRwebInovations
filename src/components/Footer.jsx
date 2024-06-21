@@ -106,6 +106,10 @@ const Footer = () => {
             <FaPhone className="text-[#5454D4] text-[5vw] md:text-[1.5vw]" />{" "}
               <span className="hover:text-slate-300">+44 7908 147313</span>{" "}
             </p>
+            
+            <p className="flex py-2 px-10">
+              <span className="hover:text-slate-300">+44 7951 793541</span>{" "}
+            </p>
             <p className="flex py-2 gap-5">
             <IoLocationOutline className="text-[#5454D4] text-[6vw] md:text-[2vw]" />{" "}
               <span className="hover:text-slate-300">

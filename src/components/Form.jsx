@@ -48,7 +48,7 @@ const Form = () => {
 
   return (
     <>
-    <form onSubmit={handleSubmit} className='mt-12 w-[500px]'>
+    <form onSubmit={handleSubmit} className='mt-12 w-[300px] mx-auto md:w-[500px]'>
       <div style={{ marginBottom: '20px' }}>
         <input
           type="text"
@@ -94,7 +94,7 @@ const Form = () => {
       </div>
      
     </form>
-     <div className='pl-80 '>
+     <div className='pl-40 md:pl-96 '>
      <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-[#39547a] text-white px-12 py-2  ' type="submit">
      Send
    <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />

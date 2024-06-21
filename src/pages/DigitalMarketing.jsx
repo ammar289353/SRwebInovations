@@ -106,7 +106,7 @@ const DigitalMarketing = () => {
             </div>
         </div>
       </section>
-      <section className="w-[94vw] m-auto mb-10 mt-10">
+      <section className="w-[94vw] m-auto md:mb-10 mt-10">
         <div className="block sm:block md:flex lg:flex">
           <div
             className="w-[90vw] sm:w-[90vw] md:w-[50vw] lg:w-[50vw]"
@@ -125,7 +125,7 @@ const DigitalMarketing = () => {
               Why Choose Our Digital <br />
               Marketing Services?
             </h1>
-            <p className="mt-2 text-[4.5vw] sm:text-[4vw] md:text-[1.2vw] lg:text-[1.2vw] text-[#373737]">
+            <p className="mt-2 text-[4.5vw] sm:text-[4vw] text-left md:text-[1.2vw] lg:text-[1.2vw] text-[#373737]">
               Gain a competitive edge with our digital marketing services. From
               SEO to social media, we help you reach your audience and drive
               website traffic. With years of experience, our experts deliver
@@ -133,7 +133,7 @@ const DigitalMarketing = () => {
               Trust us for effective strategies and maximum ROI.
             </p>
             <Link to="/Contact">
-            <div className="px-24 md:px-2 pt-3 md:pt-0">
+            <div className="px-20 md:px-2 pt-3 md:pt-0">
               <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
                 Get Started{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
@@ -145,7 +145,7 @@ const DigitalMarketing = () => {
       </section>
        {/* Cards  */}
        <section className="pt-12">
-       <h1 className="font-titleFont font-extrabold text-[5vw] md:text-[3vw] text-center ">Attract more customers,generate leads! Our <br /> digital marketing services drive growth.</h1>
+       <h1 className="font-titleFont font-extrabold px-6 md:px-24 text-[5vw] md:text-[3vw] text-center ">Attract more customers,generate leads! Our  digital marketing services drive growth.</h1>
       <div className="block sm:block md:flex lg:flex mb-14 px-4">
           <div
             className="ml-1  md:m-3  mt-6 md:mt-4  w-[90vw]  md:w-[30vw] h-auto md:h-[45vh] p-4 sm:p-7 md:p-6 pt-10  rounded-lg shadow-2xl shadow-blue-100 items-center text-center hover:bg-blue-900 text-gray-500 hover:text-white"

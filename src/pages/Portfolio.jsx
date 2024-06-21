@@ -448,11 +448,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Cordelias Clinic
-                  </span>
-                </div>
               </div>
 
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
@@ -461,11 +456,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Adale
-                  </span>
-                </div>
               </div>
 
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
@@ -474,11 +464,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Astoria
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -486,11 +471,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Book it
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -498,11 +478,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Cannabis
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -510,11 +485,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Gas Buddy
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -522,11 +492,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Hotel in Baku
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -534,11 +499,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Kppr
-                  </span>
-                </div>
               </div>
   
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
@@ -547,11 +507,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  my420
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -559,11 +514,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  One Page Crm
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -571,11 +521,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  travelUp
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -583,11 +528,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  txtogo
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -595,11 +535,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -607,11 +542,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -619,11 +549,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -631,11 +556,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -643,11 +563,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -655,11 +570,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -667,11 +577,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -679,11 +584,6 @@ const Portfolio = () => {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
               </div>
             </>
           )}

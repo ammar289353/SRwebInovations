@@ -45,6 +45,7 @@ import Image3 from "../images/Image 3.png";
 import Form from "../components/Form";
 // Testimonial
 import T1 from "../images/testimonial 1.png"
+import T2 from "../images/testimonial 2.png"
 
 const Home = () => {
   useEffect(() => {
@@ -105,14 +106,13 @@ const Home = () => {
   const testimonials = [
     {
       text: "Working with SR Innovations has significantly boosted our digital marketing performance. Their team implemented strategies that increased our online visibility and drove more traffic to our website. We're now seeing a steady increase in leads. Their dedication and creativity are truly commendable. I highly recommend their services for anyone serious about enhancing their online presence.",
-      imgSrc:"",
+      imgSrc:`${T1}`,
       name: "John D.",
       title: "Digital Marketing",
     },
     {
       text: "SR Innovations has transformed our search engine rankings with their expert SEO services. The team is not only knowledgeable but also incredibly innovative. They helped us climb to the top of search results, resulting in higher website traffic and better lead generation. Their commitment to our success is evident in everything they do. If you're looking to improve your SEO, SR Innovations is the way to go.",
-      imgSrc:
-        "",
+      imgSrc:"",
       name: "Emily S.",
       title: "SEO",
     },
@@ -125,8 +125,7 @@ const Home = () => {
     },
     {
       text: "We partnered with SR Innovations for our website development needs, and the results have been fantastic. Their expertise helped us create a user-friendly and visually appealing site that attracts more visitors. Their proactive approach and creative solutions have been instrumental in generating new leads for our business. I highly recommend their website development services to any company looking to grow online.",
-      imgSrc:
-        "",
+      imgSrc:`${T2}`,
       name: "Michael R.",
       title: "Website Development",
     },
