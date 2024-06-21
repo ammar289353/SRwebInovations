@@ -15,16 +15,12 @@ import "swiper/css/free-mode";
 import "swiper/css/autoplay"; 
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 // Website Images
-import Screenshot from "../images/1.jpeg";
-import Screenshot2 from "../images/2.jpeg";
-import Screenshot4 from "../images/Screenshot4.jpeg";
-import Screenshot5 from "../images/CRM.jpeg";
-import Screenshot6 from "../images/Cordelias.jpeg";
-import Screenshot10 from "../images/REMS.jpeg";
-import Screenshot9 from "../images/NexSkill.jpeg";
-import Screenshot3 from "../images/3.jpeg";
-import Screenshot7 from "../images/Santosh.jpeg";
-import Screenshot8 from "../images/5.jpeg";
+import Web1 from "../images/web1.png";
+import Web2 from "../images/web2.png";
+import Web3 from "../images/web3.png";
+import Web4 from "../images/web4.png";
+import Web5 from "../images/web5.png";
+import Web6 from "../images/web6.png";
 // Logo Images
 import logo1 from "../images/logo1.jpeg";
 import logo2 from "../images/logo2.jpeg";
@@ -46,6 +42,14 @@ import logo17 from "../images/logo17.jpeg";
 import logo18 from "../images/logo18.jpeg";
 import logo19 from "../images/logo19.jpeg";
 import logo20 from "../images/logo20.jpeg";
+
+// DMM Images
+import DMM1 from "../images/DMMPortfolio-1.jpg"
+import DMM2 from "../images/DMMPortfolio-2.jpg"
+import DMM3 from "../images/DMMPortfolio-3.jpg"
+import DMM4 from "../images/DMMPortfolio-4.jpg"
+import DMM5 from "../images/DMMPortfolio-5.jpg"
+import DMM6 from "../images/DMMPortfolio-6.jpg"
 
 const Portfolio = () => {
   useEffect(() => {
@@ -161,7 +165,7 @@ const Portfolio = () => {
               Video Animation
             </button>
             <button
-              onClick={() => handleCategoryChange()}
+              onClick={() => handleCategoryChange("DMM")}
               className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
             >
               Digital Markertting
@@ -176,269 +180,6 @@ const Portfolio = () => {
         </div>
        
         <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between pt-6 px-6 mt-5">
-          {/* {category === "all" && (
-            <>
-            
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Cordelias}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Cordelias Clinic
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={DJ}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  DJ Creflo
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={travelUp}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  travelUp
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={txtogo}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  txtogo
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Wow}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Wow
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={addMoney}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Adale
-                  </span>
-                </div>
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={astoria}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Astoria
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={bookit}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Book it
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={cannabis}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Cannabis
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={gasBuddy}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Gas Buddy
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={hotelnBaku}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                  Hotel in Baku
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={kppr}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Kppr
-                  </span>
-                </div>
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Dashboard
-                  </span>
-                </div>
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot2}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">ASkill</span>
-                </div>
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot3}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    GET "Green Envirnment Technology"
-                  </span>
-                </div>
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot4}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    GRAYSCALE
-                  </span>
-                </div>
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot5}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    DELICIOUS
-                  </span>
-                </div>
-              </div>
-
-             <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg1}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg2}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg3}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg4}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-             
-            </>
-          )} */}
 
           {category === "logo" && (
             <>
@@ -590,202 +331,101 @@ const Portfolio = () => {
 
           {category === "website" && (
             <>
-            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot5}
+                  src={Web1}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    CRM (Customer Relation Management)
-                  </span>
-                </div>
               </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot6}
+                  src={Web2}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    Cordelias Clinic
-                  </span>
-                </div>
               </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot4}
+                  src={Web3}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    MaxCool (A Real State Website)
-                  </span>
-                </div>
               </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot8}
+                  src={Web4}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    DELICIOUS (A Fast Food Shop)
-                  </span>
-                </div>
               </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot10}
+                  src={Web5}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    REMS (Real State Management System)
-                  </span>
-                </div>
               </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot9}
+                  src={Web6}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    NexSkill LMS
-                  </span>
-                </div>
               </div>
-              
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    A-Skill Admin Dashboard
-                  </span>
-                </div>
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot2}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">A-Skill (An E-Learning Platform)</span>
-                </div>
-              </div>
-
-             
-              
 
               
-
-             
-
-              
-
-              
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            </>
+          )}
+          {category === "DMM" && (
+            <>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot3}
+                  src={DMM1}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    GET "Green Envirnment Technology"
-                  </span>
-                </div>
               </div>
-
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot7}
+                  src={DMM2}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                   Santosh Architecture
-                  </span>
-                </div>
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM3}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM4}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM5}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM6}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
               </div>
 
               
             </>
           )}
 
-          {/* {category === "packaging" && (
-            <>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg1}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg2}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg3}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={pkg4}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-50">
-                  <span className="text-white text-lg font-bold">
-                    
-                  </span>
-                </div>
-              </div>
-            </>
-          )} */}
         </div>
       </section>
 
