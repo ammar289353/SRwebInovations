@@ -21,6 +21,12 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/autoplay"; 
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+// Testimonial
+import T1 from "../images/testimonial 1.png"
+import T2 from "../images/Cordelia.jpeg"
+import T3 from "../images/Marlene Martins.png"
+import T4 from "../images/testimonial 2.png"
+import T5 from "../images/Testimonial 5.png"
 
 
 const Website = () => {
@@ -31,53 +37,34 @@ const Website = () => {
   const testimonials = [
     {
       text: "Working with SR Innovations has significantly boosted our digital marketing performance. Their team implemented strategies that increased our online visibility and drove more traffic to our website. We're now seeing a steady increase in leads. Their dedication and creativity are truly commendable. I highly recommend their services for anyone serious about enhancing their online presence.",
-      imgSrc:
-        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      imgSrc:`${T1}`,
       name: "John D.",
       title: "Digital Marketing",
     },
     {
-      text: "SR Innovations has transformed our search engine rankings with their expert SEO services. The team is not only knowledgeable but also incredibly innovative. They helped us climb to the top of search results, resulting in higher website traffic and better lead generation. Their commitment to our success is evident in everything they do. If you're looking to improve your SEO, SR Innovations is the way to go.",
-      imgSrc:
-        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Emily S.",
-      title: "SEO",
+      text: "I’ve been using this company for a few months now and I’m very impressed with their services. The team is knowledgeable, dedicated, and loyal. They provide personalized solutions that meet my specific needs, making sure my content reaches the right audience effectively. Their attention to detail and commitment to excellence are outstanding. I highly recommend this company to anyone looking to boost their social media presence",
+      imgSrc:`${T2}`,
+      name: "Cordelia",
+      title: "Digital Marketting ",
     },
     {
       text: "Our experience with SR Innovations for website development has been outstanding. They delivered a sleek, responsive, and highly functional website that exceeded our expectations. Their attention to detail and ability to understand our vision made the entire process smooth and efficient. I highly recommend their web development services for any business looking to enhance its online presence.",
-      imgSrc:
-        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Jessica L.",
+      imgSrc:`${T3}`,
+      name: "Marlene Martins",
       title: "Website Development",
     },
     {
       text: "We partnered with SR Innovations for our website development needs, and the results have been fantastic. Their expertise helped us create a user-friendly and visually appealing site that attracts more visitors. Their proactive approach and creative solutions have been instrumental in generating new leads for our business. I highly recommend their website development services to any company looking to grow online.",
-      imgSrc:
-        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
+      imgSrc:`${T4}`,
       name: "Michael R.",
       title: "Website Development",
     },
     {
       text: "SR Innovations completely revamped our digital marketing strategy, and the impact has been incredible. Their team's innovative approach and in-depth knowledge have led to a significant increase in our online visibility and website traffic. We've seen a noticeable uptick in leads and conversions. I can't recommend their digital marketing services enough!",
-      imgSrc:
-        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Sarah K.",
+      imgSrc:`${T5}`,
+      name: "Sarah ",
       title: "Digital Marketing",
-    },
-    {
-      text: "SR Innovations has played a crucial role in enhancing our brand through video animation. They crafted engaging and professional animations that captured our audience's attention and improved our online presence. The team is professional, creative, and always ready to go the extra mile to ensure our success. We couldn't be happier with their services and recommend them highly.",
-      imgSrc:
-        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "Lisa T.",
-      title: "Video Animation",
-    },
-    {
-      text: "Since partnering with SR Innovations, our graphic design needs have been met with outstanding results. Their team's expertise in creating stunning visuals has been a game-changer for us. We've seen a substantial increase in engagement and overall brand recognition. The team is creative, diligent, and genuinely invested in our success. For anyone looking to elevate their brand with top-notch graphic design, SR Innovations is the perfect choice.",
-      imgSrc:
-        "https://techigems.pk/wp-content/uploads/2024/02/img__0007_Layer-1.jpg",
-      name: "David M.",
-      title: "Graphic Design",
-    },
+    }
   ];
 
   return (
