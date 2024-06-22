@@ -29,6 +29,7 @@ import Web5 from "../images/web5.png";
 import Web6 from "../images/web6.png";
 // Logo Images
 import logo1 from "../images/logo1.jpeg";
+import logo21 from "../images/massagetherapy.jpg";
 import logo2 from "../images/logo2.jpeg";
 import logo3 from "../images/logo3.jpeg";
 import logo4 from "../images/logo4.jpeg";
@@ -173,6 +174,14 @@ const Portfolio = () => {
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo1}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo21}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
