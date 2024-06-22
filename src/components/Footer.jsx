@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import FooterLogo from "../images/footer-logo.png";
-import Navlogo from "../images/SR_innovation_logo.png";
+import Navlogo from "../images/512.png";
 import { CgMail } from "react-icons/cg";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";

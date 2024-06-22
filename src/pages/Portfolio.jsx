@@ -140,7 +140,7 @@ const Portfolio = () => {
         </div>
       </section>
       {/* CUSTOM BUSINESS SOLUTIONS */}
-      <section className="pb-8 pt-6 ">
+      <section className="pb-8 pt-6 " data-aos="zoom-in-up">
       <div className="md:flex">
           <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
             Our Awesome Work Portfolio
@@ -508,7 +508,7 @@ const Portfolio = () => {
       </section>
       {/* Contact  */}
 
-      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
+      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8" data-aos="zoom-in-up">
         <div className="md:w-1/2">
           <p className="font-titleFont text-[#5454D4] px-7">Contact Us</p>
           <h1 className="font-titleFont text-[7vw] md:text-[5vw] font-extrabold px-6 ">Build Your Awesome Platform</h1>

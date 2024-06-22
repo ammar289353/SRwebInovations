@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
-import Navlogo from "../images/SR_innovation_logo.png";
+import Navlogo from "../images/512.png";
 import "./Navbar.css";
 
 const Navbar = () => {

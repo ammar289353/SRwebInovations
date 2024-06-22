@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
-import Hero from "../images/download1.png";
+import Hero from "../images/HeroLaptop.png";
 
 
 // Slider
@@ -31,12 +31,19 @@ import logo5 from "../images/logo5.jpeg";
 import logo6 from "../images/logo6.jpeg";
 import logo17 from "../images/logo17.jpeg";
 // Website Images
-import Screenshot from "../images/1.jpeg";
-import Screenshot2 from "../images/2.jpeg";
-import Screenshot5 from "../images/CRM.jpeg";
-import Screenshot6 from "../images/Cordelias.jpeg";
-import Screenshot10 from "../images/REMS.jpeg";
-import Screenshot9 from "../images/NexSkill.jpeg";
+import Web1 from "../images/web1.png";
+import Web2 from "../images/web2.png";
+import Web3 from "../images/web3.png";
+import Web4 from "../images/web4.png";
+import Web5 from "../images/web5.png";
+import Web6 from "../images/web6.png";
+// DMM Images
+import DMM1 from "../images/DMMPortfolio-1.jpg"
+import DMM2 from "../images/DMMPortfolio-2.jpg"
+import DMM3 from "../images/DMMPortfolio-3.jpg"
+import DMM4 from "../images/DMMPortfolio-4.jpg"
+import DMM5 from "../images/DMMPortfolio-5.jpg"
+import DMM6 from "../images/DMMPortfolio-6.jpg"
 
 // Let's do it
 import Image1 from "../images/Image 1.png";
@@ -51,7 +58,7 @@ const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
-  const [category, setCategory] = useState("logo");
+  const [category, setCategory] = useState("DMM");
 
   const handleCategoryChange = (category) => {
     setCategory(category);
@@ -156,19 +163,20 @@ const Home = () => {
     <>
       {/* Hero  */}
 
-      <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto lg:mt-2 pb-12 md:pb-0 overflow-hidden">
-        <div className="md:w-[50%]">
-          <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3.5vw] md:pt-28">
+      <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto md:mt-28 pb-12 md:pb-24 overflow-hidden">
+        <div className="md:w-[50%]" data-aos="fade-right">
+          <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3vw]
+          pt-16 ">
             Build Your Awesome Platform
           </h1>
-          <p className="px-6 md:px-32 pt-3 md:pt-0 font-bodyFont">
+          <p className="px-6 md:pl-32 pt-3 md:pt-5 font-bodyFont">
             At SR Innovations,we help bussinesses tackle their unique challenges
             with efficency and creativity.Our technical expertise and innovative
             approach enables us to build custom web and mobile apps designed for
             high growth
           </p>
           <Link to="/Services">
-            <div className="px-24 md:px-32 pt-3 md:pt-0">
+            <div className="px-24 md:px-32 pt-3 md:pt-4">
               <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
                 Our services{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
@@ -176,13 +184,13 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        <div className="md:w-[50%]">
+        <div className="md:w-[50%] mt-20 md:mt-0" data-aos="fade-left">
           <img src={Hero} alt="" />
         </div>
       </section>
 
       {/* OUR WORK PORTFOLIO */}
-      <section className="pb-8 overflow-hidden">
+      <section className="pb-8 overflow-hidden" data-aos="zoom-in-up">
         <div className="md:flex">
           <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
             Our Awesome Work Portfolio
@@ -207,7 +215,7 @@ const Home = () => {
               Video Animation
             </button>
             <button
-              onClick={() => handleCategoryChange()}
+              onClick={() => handleCategoryChange("DMM")}
               className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
             >
               Digital Markertting
@@ -269,55 +277,100 @@ const Home = () => {
             </>
           )}
 
-          {category === "website" && (
+{category === "website" && (
             <>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot5}
+                  src={Web1}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={Web2}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={Web3}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={Web4}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={Web5}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={Web6}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
 
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              
+            </>
+          )}
+          {category === "DMM" && (
+            <>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={Screenshot6}
+                  src={DMM1}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM2}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM3}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM4}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM5}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+                <img
+                  src={DMM6}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
 
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot10}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot9}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={Screenshot2}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              
             </>
           )}
         </div>
@@ -372,7 +425,7 @@ const Home = () => {
       </section>
 
       {/* Let's do it  */}
-      <section className="h-auto pb-6 px-6 lg:px-24 overflow-x-hidden">
+      <section className="h-auto pb-6 px-6 lg:px-24 overflow-x-hidden" data-aos="zoom-in-up">
         <div className="pt-8 flex flex-col md:flex-row">
           <div className="md:w-[50%]">
             <span className="text-[#093D84] font-medium">LET'S DO IT</span>
@@ -428,7 +481,7 @@ const Home = () => {
         </div>
       </section>
       {/* cards */}
-      <section className="bg-[#2A2A2A] pb-8 overflow-x-hidden">
+      <section className="bg-[#2A2A2A] pb-8 overflow-x-hidden" data-aos="zoom-in-up">
         <div className="text-center mt-4 pt-6">
           <h1 className="font-extrabold font-titleFont text-white text-[6vw] md:text-[3.5vw]">
             Best Digital & <span className="text-[#5454D4]">IT Company</span>{" "}
@@ -545,7 +598,7 @@ const Home = () => {
       </section>
       {/* Contact  */}
 
-      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
+      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8" data-aos="zoom-in-up">
         <div className="md:w-1/2">
           <p className="font-titleFont text-[#5454D4] px-7 ">Contact Us</p>
           <h1 className="font-titleFont text-[7vw] md:text-[5vw] font-extrabold px-6 ">Build Your Awesome Platform</h1>

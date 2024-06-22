@@ -461,7 +461,7 @@ const Services = () => {
       </section>
       {/* Contact  */}
 
-      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8">
+      <section className="flex flex-col md:flex-row w-full px-6 md:px-12 pb-8" data-aos="zoom-in-up">
         <div className="md:w-1/2">
           <p className="font-titleFont text-[#5454D4] px-7">Contact Us</p>
           <h1 className="font-titleFont text-[7vw] md:text-[5vw] font-extrabold px-6 ">Build Your Awesome Platform</h1>
