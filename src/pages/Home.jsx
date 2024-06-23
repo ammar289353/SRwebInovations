@@ -25,10 +25,10 @@ import Organization from "../images/Organization.png";
 import Rocket from "../images/Rocket.png";
 // Logo Images
 import logo1 from "../images/logo1.jpeg";
-import logo2 from "../images/logo2.jpeg";
+import logo21 from "../images/massagetherapy.jpg";
 import logo3 from "../images/logo3.jpeg";
 import logo5 from "../images/logo5.jpeg";
-import logo6 from "../images/logo6.jpeg";
+import logo8 from "../images/logo8.jpeg";
 import logo17 from "../images/logo17.jpeg";
 // Website Images
 import Web1 from "../images/web1.png";
@@ -228,7 +228,7 @@ const Home = () => {
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo2}
+                  src={logo21}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
@@ -249,7 +249,7 @@ const Home = () => {
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo6}
+                  src={logo8}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
