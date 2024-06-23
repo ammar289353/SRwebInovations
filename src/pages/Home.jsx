@@ -195,24 +195,24 @@ const Home = () => {
             >
               WEB Development
             </button>
-            <button
+            {/* <button
               onClick={() => handleCategoryChange()}
               className=" rounded-full px-4 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
             >
               Video Animation
-            </button>
+            </button> */}
             <button
               onClick={() => handleCategoryChange("DMM")}
               className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
             >
               Digital Markertting
             </button>
-            <button
+            {/* <button
               onClick={() => handleCategoryChange("packaging")}
               className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-0 hover:text-[#5454D4]"
             >
               SEO
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="block sm:block md:grid lg:grid grid-cols-3 pl-6 justify-between mt-5">
