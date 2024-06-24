@@ -218,7 +218,7 @@ const About = () => {
             <div className="px-4 w-full md:w-[80vw] m-auto flex justify-between pb-5 sm:pb-5 pt-7 sm:pt-7 md:pt-7 lg:pt-7">
               <div className="text-[#5454D4]">
                 <h1 className="text-[8vw] sm:text-[3.4vw] md:text-[4vw]  font-extrabold">
-                  14K+
+                  2K+
                 </h1>
                 <p className="text-[2vw] sm:text-[1.8vw] md:text-[1vw] font-bold font-bodyFont text-black">
                   Project Done
@@ -226,7 +226,7 @@ const About = () => {
               </div>
               <div className="text-[#5454D4]">
                 <h1 className="text-[8vw] sm:text-[3.4vw] md:text-[4vw]  font-extrabold">
-                  12K+
+                  1.5K+
                 </h1>
                 <p className="text-[2vw] sm:text-[1.8vw] md:text-[1vw] font-bold font-bodyFont text-black">
                   Happy customer
@@ -242,7 +242,7 @@ const About = () => {
               </div>
               <div className="text-[#5454D4]">
                 <h1 className="text-[8vw] sm:text-[3.4vw] md:text-[4vw]  font-extrabold">
-                  15+
+                  4+
                 </h1>
                 <p className="text-[2vw] sm:text-[1.8vw] md:text-[1vw] font-bold font-bodyFont text-black">
                   Years Experience

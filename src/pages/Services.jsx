@@ -28,6 +28,7 @@ import GraphicService from "../images/GraphicFeatureImage.png";
 import VideoService from "../images/VideoAnimationFeatureImage.png";
 import DMMService from "../images/DMMFeatureImage.png";
 import SEOService from "../images/SEOFeatureImage.png";
+import { MdArrowOutward } from "react-icons/md";
 
 const Services = () => {
   useEffect(() => {
@@ -99,106 +100,53 @@ const Services = () => {
       <div className="pt-8 px-12 md:w-[50%]">
           <div>
             <span className="text-[#093D84] font-medium">Website Development</span>
-            <h1 className="text-[6vw] lg:text-[3vw] font-extrabold font-titleFont">
-              Driving Your <span className="text-[#093D84]">Success</span>{" "}
-              through Innovative Solutions
+            <h1 className="text-[6vw] lg:text-[2.5vw] font-extrabold font-titleFont">
+            Empowering Your Brand with <span className="text-[#093D84]">Cutting-Edge</span>{" "}
+            Web Solutions
             </h1>
           </div>
           <div className="pt-2 font-bodyFont">
             <p>
-              At SR Innovations, we help businesses tackle their unique
-              challenges with efficiency and creativity. Our technical expertise
-              and innovative approach enable us to build custom web and mobile
-              apps designed for high growth. From ideation, design, and
-              prototyping to internet-scale rollout, we offer comprehensive
-              solutions to businesses of all sizes and industries.
+            At SR Innovations, we specialize in crafting custom websites that not only look stunning but also deliver exceptional user experiences. Our expert team combines cutting-edge design with robust development to create responsive, SEO-friendly websites that drive engagement and conversions. Whether you need a dynamic e-commerce platform or a sleek corporate site, we ensure your online presence stands out and meets your business goals. Let us help you transform your ideas into a digital masterpiece that captivates and converts your audience.
             </p>
-            <div className="pt-4 md:pt-0">
-              <Link to="/Graphic">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
-                  Graphic Design
-                </button>
-              </Link>
-              <Link to="/Website">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
-                  Website Development
-                </button>
-              </Link>
-              <Link to="/VideoAnimation">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
-                  Video Animation
-                </button>
-              </Link>
-              <br />
-              <Link to="/DigitalMarketing">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
-                  Digital Marketing
-                </button>
-              </Link>
-            
-              <Link to="/SEO">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
-                  SEO
-                </button>
-              </Link>
+            <Link to="/Website">
+            <div className="pt-3 md:pt-2">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4 hover:bg-[#39547a]  ">
+                Visit{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+              </button>
             </div>
+          </Link>
           </div>
       </div>
-      <div className="pt-8">
+      <div className="pt-16">
         <img src={WebService} alt="" />
       </div>
       </div>
        {/* Graphic Service */}
       <div className="flex flex-col-reverse md:flex-row pt-4 bg-[#2A2A2A] pb-8 ">
-      <div className="pt-8 px-4">
+      <div className="pt-20 px-4">
         <img src={GraphicService} alt="" />
       </div>
-      <div className="pt-8 px-12 md:w-[50%]">
+      <div className="pt-6 px-12 md:w-[50%]">
           <div>
             <span className="text-white font-medium">Graphic Design</span>
-            <h1 className="text-[6vw] text-white lg:text-[3vw] font-extrabold font-titleFont">
-              Driving Your Success{" "}
-              through Innovative Solutions
+            <h1 className="text-[6vw] text-white lg:text-[2.5vw] font-extrabold font-titleFont">
+            Innovative Design and Development for the Modern Business
             </h1>
           </div>
           <div className="pt-2 font-bodyFont text-white">
             <p>
-              At SR Innovations, we help businesses tackle their unique
-              challenges with efficiency and creativity. Our technical expertise
-              and innovative approach enable us to build custom web and mobile
-              apps designed for high growth. From ideation, design, and
-              prototyping to internet-scale rollout, we offer comprehensive
-              solutions to businesses of all sizes and industries.
+            At SR Innovations, we bring your brand to life with our exceptional graphic design services. Our creative team excels in crafting visually compelling designs that capture your brand’s essence and communicate your message effectively. From logos and branding to marketing materials and digital graphics, we ensure each design is unique, impactful, and aligned with your business goals. Whether you need eye-catching visuals for your website, social media, or print, we deliver high-quality designs that engage and inspire your audience. Let us help you make a lasting impression with stunning graphics that elevate your brand.
             </p>
-            <div className="pt-4 md:pt-0">
-              <Link to="/Graphic">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
-                  Graphic Design
-                </button>
-              </Link>
-              <Link to="/Website">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
-                  Website Development
-                </button>
-              </Link>
-              <Link to="/VideoAnimation">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
-                  Video Animation
-                </button>
-              </Link>
-              <br />
-              <Link to="/DigitalMarketing">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
-                  Digital Marketing
-                </button>
-              </Link>
-            
-              <Link to="/SEO">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
-                  SEO
-                </button>
-              </Link>
+            <Link to="/Graphic">
+            <div className="pt-3 md:pt-2">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4 hover:bg-[#39547a]  ">
+                Visit{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+              </button>
             </div>
+          </Link>
           </div>
       </div>
       
@@ -208,106 +156,53 @@ const Services = () => {
       <div className="pt-8 px-12 md:w-[50%]">
           <div>
             <span className="text-[#093D84] font-medium">Video Animation</span>
-            <h1 className="text-[6vw] lg:text-[3vw] font-extrabold font-titleFont">
-              Driving Your <span className="text-[#093D84]">Success</span>{" "}
-              through Innovative Solutions
+            <h1 className="text-[6vw] lg:text-[2.5vw] font-extrabold font-titleFont">
+            Transforming Ideas into  <span className="text-[#093D84]">Stunning Visuals</span>{" "}
+            and Engaging Animations
             </h1>
           </div>
           <div className="pt-2 font-bodyFont">
             <p>
-              At SR Innovations, we help businesses tackle their unique
-              challenges with efficiency and creativity. Our technical expertise
-              and innovative approach enable us to build custom web and mobile
-              apps designed for high growth. From ideation, design, and
-              prototyping to internet-scale rollout, we offer comprehensive
-              solutions to businesses of all sizes and industries.
+            At SR Innovations, we create captivating video animations that bring your stories to life. Our talented animators specialize in producing high-quality animations that effectively communicate your message and engage your audience. From explainer videos and promotional content to animated logos and educational animations, we tailor each project to meet your specific needs and objectives. Whether you aim to enhance your marketing strategy, educate your customers, or simply entertain, our animations are designed to leave a lasting impact. Let us help you transform your ideas into dynamic, visually stunning animations that captivate and inspire.
             </p>
-            <div className="pt-4 md:pt-0">
-              <Link to="/Graphic">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
-                  Graphic Design
-                </button>
-              </Link>
-              <Link to="/Website">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
-                  Website Development
-                </button>
-              </Link>
-              <Link to="/VideoAnimation">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
-                  Video Animation
-                </button>
-              </Link>
-              <br />
-              <Link to="/DigitalMarketing">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
-                  Digital Marketing
-                </button>
-              </Link>
-            
-              <Link to="/SEO">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
-                  SEO
-                </button>
-              </Link>
+            <Link to="/VideoAnimation">
+            <div className="pt-3 md:pt-2">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4 hover:bg-[#39547a]  ">
+                Visit{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+              </button>
             </div>
+          </Link>
           </div>
       </div>
-      <div className="pt-8 px-4">
+      <div className="pt-20 px-4">
         <img className="rounded-md" src={VideoService} alt="" />
       </div>
       </div>
        {/* DMM Service */}
       <div className="flex flex-col-reverse md:flex-row pt-4 bg-[#2A2A2A] pb-8 ">
-      <div className="pt-8 px-4">
+      <div className="pt-24 px-4">
         <img src={DMMService} alt="" />
       </div>
       <div className="pt-8 px-12 md:w-[50%]">
           <div>
             <span className="text-white font-medium">Digital Marketting</span>
-            <h1 className="text-[6vw] text-white lg:text-[3vw] font-extrabold font-titleFont">
-              Driving Your Success{" "}
-              through Innovative Solutions
+            <h1 className="text-[6vw] text-white lg:text-[2.5vw] font-extrabold font-titleFont">
+            Driving Growth with Strategic Digital Marketing and SEO
             </h1>
           </div>
           <div className="pt-2 font-bodyFont text-white">
             <p>
-              At SR Innovations, we help businesses tackle their unique
-              challenges with efficiency and creativity. Our technical expertise
-              and innovative approach enable us to build custom web and mobile
-              apps designed for high growth. From ideation, design, and
-              prototyping to internet-scale rollout, we offer comprehensive
-              solutions to businesses of all sizes and industries.
+            At SR Innovations, we drive your business growth with our comprehensive digital marketing services. Our expert team leverages the latest strategies and tools to increase your online visibility, engage your target audience, and boost conversions. From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media marketing and email campaigns, we create customized marketing plans tailored to your unique business goals. Whether you aim to build brand awareness, generate leads, or enhance customer loyalty, we deliver measurable results that propel your business forward. Let us help you harness the power of digital marketing to achieve your objectives and stay ahead of the competition.
             </p>
-            <div className="pt-4 md:pt-0">
-              <Link to="/Graphic">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
-                  Graphic Design
-                </button>
-              </Link>
-              <Link to="/Website">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
-                  Website Development
-                </button>
-              </Link>
-              <Link to="/VideoAnimation">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
-                  Video Animation
-                </button>
-              </Link>
-              <br />
-              <Link to="/DigitalMarketing">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
-                  Digital Marketing
-                </button>
-              </Link>
-            
-              <Link to="/SEO">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
-                  SEO
-                </button>
-              </Link>
+            <Link to="/DigitalMarketing">
+            <div className="pt-3 md:pt-2">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4 hover:bg-[#39547a]  ">
+                Visit{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+              </button>
             </div>
+          </Link>
           </div>
       </div>
       
@@ -318,51 +213,24 @@ const Services = () => {
           <div>
             <span className="text-[#093D84] font-medium">SEO</span>
             <h1 className="text-[6vw] lg:text-[3vw] font-extrabold font-titleFont">
-              Driving Your <span className="text-[#093D84]">Success</span>{" "}
-              through Innovative Solutions
+            Elevate Your Online Presence with Expert <span className="text-[#093D84]">SEO Strategies</span>{" "}
             </h1>
           </div>
           <div className="pt-2 font-bodyFont">
             <p>
-              At SR Innovations, we help businesses tackle their unique
-              challenges with efficiency and creativity. Our technical expertise
-              and innovative approach enable us to build custom web and mobile
-              apps designed for high growth. From ideation, design, and
-              prototyping to internet-scale rollout, we offer comprehensive
-              solutions to businesses of all sizes and industries.
+            At SR Innovations, we enhance your online presence with our expert SEO services. Our dedicated team specializes in optimizing your website to achieve higher search engine rankings, driving organic traffic, and increasing visibility. We conduct thorough keyword research, on-page and off-page optimization, and technical SEO to ensure your site meets the latest search engine algorithms. Whether you're looking to improve local search results, expand your reach, or boost conversions, our tailored SEO strategies are designed to align with your business goals. Let us help you stay ahead in the digital landscape with effective SEO that delivers long-term success.
             </p>
-            <div className="pt-4 md:pt-0">
-              <Link to="/Graphic">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#FDEBF6] text-[#FF6CC6] ">
-                  Graphic Design
-                </button>
-              </Link>
-              <Link to="/Website">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FFA462] ">
-                  Website Development
-                </button>
-              </Link>
-              <Link to="/VideoAnimation">
-                <button className="mx-1 px-3 py-1 my-1 rounded-md bg-[#EBEFFD] text-[#5162FD] ">
-                  Video Animation
-                </button>
-              </Link>
-              <br />
-              <Link to="/DigitalMarketing">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#EBFDED] text-[#12FF71] ">
-                  Digital Marketing
-                </button>
-              </Link>
-            
-              <Link to="/SEO">
-                <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
-                  SEO
-                </button>
-              </Link>
+            <Link to="/SEO">
+            <div className="pt-3 md:pt-2">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4 hover:bg-[#39547a]  ">
+                Visit{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+              </button>
             </div>
+          </Link>
           </div>
       </div>
-      <div className="pt-8 px-4">
+      <div className="pt-24 px-4">
         <img className="rounded-md"  src={SEOService} alt="" />
       </div>
       </div>

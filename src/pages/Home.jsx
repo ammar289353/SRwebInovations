@@ -72,8 +72,7 @@ const Home = () => {
         <PiPaintBrushLight className="text-[#ddbf45] hover:text-white hover:bg-[#b0a57a] bg-[#5b5025] rounded-full py-2" />
       ),
       title: "Graphic Design",
-      description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+      description:"We create compelling graphic designs that capture your brand's essence and engage your audience, from logos to digital graphics. Let us help you make a lasting impression with high-quality, impactful visuals.",
       link: "/Graphic",
     },
     {
@@ -82,7 +81,7 @@ const Home = () => {
       ),
       title: "Webiste Development",
       description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        "We craft stunning, responsive websites that deliver exceptional user experiences, driving engagement and conversions. Let us transform your ideas into captivating digital masterpieces that achieve your business goals.",
       link: "/Website",
     },
     {
@@ -91,7 +90,7 @@ const Home = () => {
       ),
       title: "Video Animation",
       description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        "We create captivating video animations that bring your stories to life and engage your audience. From explainer videos to animated logos, our high-quality animations are tailored to your needs, enhancing your marketing strategy.",
       link: "/VideoAnimation",
     },
     {
@@ -100,7 +99,7 @@ const Home = () => {
       ),
       title: "Digital Marketing",
       description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        "We propel business growth through comprehensive digital marketing services. From SEO and PPC to social media and email campaigns, we tailor strategies to boost online visibility, engage audiences, and drive conversions, ensuring measurable results that align with your goals.",
       link: "/DigitalMarketing",
     },
     {
@@ -109,7 +108,7 @@ const Home = () => {
       ),
       title: "SEO",
       description:
-        "User experience (UX) and user interface (UI) design are critical components of any website or application. Our team of UI/UX designers will work with you to create a user-friendly.",
+        "we elevate your online presence through expert SEO services. Specializing in optimizing websites for higher rankings, organic traffic, and visibility, we employ advanced strategies including keyword research, on-page/off-page optimization, and technical SEO.",
       link: "/SEO",
     },
   ];
@@ -157,10 +156,7 @@ const Home = () => {
             Build Your Awesome Platform
           </h1>
           <p className="px-6 md:pl-32 pt-3 md:pt-5 font-bodyFont">
-            At SR Innovations,we help bussinesses tackle their unique challenges
-            with efficency and creativity.Our technical expertise and innovative
-            approach enables us to build custom web and mobile apps designed for
-            high growth
+          At SR Innovations, we specialize in helping businesses overcome their unique challenges with efficiency and creativity. Our technical expertise and innovative approach enable us to deliver custom website design, web development, SEO, logo design, and digital marketing solutions tailored for high growth.
           </p>
           <Link to="/Services">
             <div className="px-24 md:px-32 pt-3 md:pt-4">
@@ -478,7 +474,7 @@ const Home = () => {
         <div className="flex justify-evenly pt-8">
           <div>
             <img
-              className="mx-4 md:mx-20 px-1 text-[#ddbf45] bg-[#5b5025] rounded-full py-1"
+              className="mx-4 md:mx-28 px-1 text-[#ddbf45] bg-[#5b5025] rounded-full py-1"
               src={Business}
               alt=""
             />
@@ -488,7 +484,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              className="mx-4 md:mx-20 text-[#5454D4] bg-[#19193d] rounded-full py-1 px-1"
+              className="mx-4 md:mx-32 text-[#5454D4] bg-[#19193d] rounded-full py-1 px-1"
               src={Organization}
               alt=""
             />
@@ -498,7 +494,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              className="mx-2 md:mx-6 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
+              className="mx-2 md:mx-8 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
               src={Rocket}
               alt=""
             />

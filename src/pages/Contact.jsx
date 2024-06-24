@@ -104,7 +104,7 @@ const Contact = () => {
             <h1 className="text-center font-semibold text-[4vw] lg:text-[1.6vw] pt-3 text-gray-600 ">
             24/7 Support
             </h1>
-            <Link to="#Contact">
+            <Link to="https://wa.me/+447951793541">
             <div className="px-24 md:px-[93px] pt-3 md:pt-0">
               <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
                 Chat Now{" "}
@@ -122,7 +122,7 @@ const Contact = () => {
             <h1 className="text-center font-semibold text-[4vw] lg:text-[1.6vw] pt-3 text-gray-600 ">
             24/7 Chat Support
             </h1>
-            <Link to="#Contact">
+            <Link to="https://wa.me/+447951793541">
             <div className="px-24 md:px-[93px] pt-3 md:pt-0">
               <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
                 Chat Now{" "}
@@ -140,7 +140,7 @@ const Contact = () => {
             <h1 className="text-center font-semibold text-[4vw] lg:text-[1.6vw] pt-3 text-gray-600 ">
             View Our Location
             </h1>
-            <Link to="#Contact">
+            <Link to="https://www.google.com/maps/search/?api=1&query=150+St+Michael’s+Hill,+Bristol+BS2+8DA,+United+Kingdom">
             <div className="px-24 md:px-28 pt-3 md:pt-0">
               <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
                 View{" "}
