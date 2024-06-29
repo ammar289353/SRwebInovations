@@ -44,7 +44,7 @@ import DMM3 from "../images/DMMPortfolio-3.jpg"
 import DMM4 from "../images/DMMPortfolio-4.jpg"
 import DMM5 from "../images/DMMPortfolio-5.jpg"
 import DMM6 from "../images/DMMPortfolio-6.jpg"
-
+import video1 from "../videos/VideoAnimation1.mp4"
 // Let's do it
 import Image1 from "../images/Image 1.png";
 import Image2 from "../images/Image 2.png";
@@ -191,12 +191,12 @@ const Home = () => {
             >
               WEB Development
             </button>
-            {/* <button
-              onClick={() => handleCategoryChange()}
+            <button
+              onClick={() => handleCategoryChange("video")}
               className=" rounded-full px-4 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
             >
               Video Animation
-            </button> */}
+            </button>
             <button
               onClick={() => handleCategoryChange("DMM")}
               className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
@@ -260,7 +260,7 @@ const Home = () => {
             </>
           )}
 
-{category === "website" && (
+          {category === "website" && (
             <>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
@@ -308,6 +308,16 @@ const Home = () => {
               
             </>
           )}
+          {category === "video" && (
+            <>
+            <div className="relative border rounded-lg w-[90vw] h-[50vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[15vw] lg:w-[29vw] lg:h-[15vw] mb-10">
+                <video controls controlsList="nodownload">
+                  <source  src={video1} type="video/mp4" />
+                </video>
+              </div>  
+            </>
+          )}
+
           {category === "DMM" && (
             <>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
@@ -356,6 +366,7 @@ const Home = () => {
               
             </>
           )}
+          
         </div>
             
         <Link to="/Portfolio">
