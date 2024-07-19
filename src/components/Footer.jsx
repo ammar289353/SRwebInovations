@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 import "aos/dist/aos.css";
 // import FooterLogo from "../images/footer-logo.png";
 import Navlogo from "../images/512.webp";
@@ -9,11 +8,9 @@ import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  useEffect(() => {
-    AOS.init({ duration: 3000 });
-  }, []);
+ 
   return (
-    <section className="bg-[#2A2A2A] overflow-x-hidden  " data-aos="zoom-in-up">
+    <section className="bg-[#2A2A2A] overflow-x-hidden">
       <hr />
      
       <div className="flex flex-col md:flex-row w-[100%] gap-10 lg:gap-6 text-white px-4 md:px-24  justify-center pb-8">
@@ -131,7 +128,7 @@ const Footer = () => {
 
       <hr />
       <div className="py-3 pl-12 text-white font-bodyFont text-[3vw] md:text-[1vw] ">
-        <p>Copyright© 2024, SR Innovations All Rights Reserved</p>
+        <p>Copyright© 2020, SR Innovations All Rights Reserved</p>
       </div>
     </section>
   );
