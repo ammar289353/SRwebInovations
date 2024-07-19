@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
-import Navlogo from "../images/512.png";
+import Navlogo from "../images/512.webp";
 import "./Navbar.css";
-import { FaInstagram, FaSearch } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
+  // const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -24,9 +24,6 @@ const Navbar = () => {
     setServicesOpen(!servicesOpen);
   };
 
-  const toggleSearch = () => {
-    setSearchOpen(!searchOpen);
-  };
 
   return (
     <div className="shadow-md w-full fixed z-50 top-0 left-0 font-titleFont ">
@@ -48,7 +45,7 @@ const Navbar = () => {
         </div>
         <ul
           className={`md:flex text-left items-start md:pb-2 pb-8 absolute md:static bg-white h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
-                    md:pl-0 pl-9 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-5 ${
+                    md:pl-0 pl-9 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4  ${
                       menuOpen ? "top-6" : "top-[-1100px]"
                     }`}
         >
@@ -157,7 +154,7 @@ const Navbar = () => {
 
           <li onClick={() => setMenuOpen(false)}>
           <a href="https://www.instagram.com/thesrinnovations?igsh=bHo4bDZrY3NvZWY3&utm_source=qr">
-          <FaInstagram  className="md:text-[#515151] hidden md:block pt-1 pl-3 text-[2.5vw] md:ml-28"/>
+          <FaInstagram  className="md:text-[#515151] hidden md:block pt-1 pl-3 text-[2.5vw] md:ml-32 lg:ml-32  2xl:ml-72"/>
           </a>
           </li>
 

@@ -6,14 +6,14 @@ import Form from "../components/Form";
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 // hero images
-import vector13 from "../images/Vector 13.png";
-import circle from "../images/circle.png";
-import Triangle from "../images/tri.png";
-import add from "../images/add.png";
+import vector13 from "../images/Vector 13.webp";
+import circle from "../images/circle.webp";
+import Triangle from "../images/tri.webp";
+import add from "../images/add.webp";
 // Cards
-import Ecommerce from "../images/Layout.png"
+import Ecommerce from "../images/Layout.webp"
 import Landing from "../images/Resume Website.png"
-import Blog from "../images/Blog.png"
+import Blog from "../images/Blog.webp"
 // Slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -23,7 +23,7 @@ import "swiper/css/autoplay";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 // Testimonial
 import T1 from "../images/testimonial 1.png"
-import T2 from "../images/Cordelia.jpeg"
+import T2 from "../images/Cordelia.webp"
 import T3 from "../images/Marlene Martins.png"
 import T4 from "../images/testimonial 2.png"
 import T5 from "../images/Testimonial 5.png"

@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import FooterLogo from "../images/footer-logo.png";
-import Navlogo from "../images/512.png";
+import Navlogo from "../images/512.webp";
 import { CgMail } from "react-icons/cg";
-import { FaPhone } from "react-icons/fa6";
+import { FaInstagram, FaPhone } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,13 @@ const Footer = () => {
             business operations through the transformative potential of
             technology.
           </p>
+         
         </div>
+        <div>
+          <a href="https://www.instagram.com/thesrinnovations?igsh=bHo4bDZrY3NvZWY3&utm_source=qr">
+          <FaInstagram  className="md:text-[#ffff]  pt-3 ml-36 md:ml-0 mt-5 md:mt-0 text-[10vw] md:text-[2.5vw] "/>
+          </a>
+          </div>
       </div>
       <div className="text-center  md:w-[20%] md:pb-8 md:pt-12 ">
           <h1 className="text-[6vw] lg:text-[2vw] font-bold pb-2 font-titleFont text-left ">Services</h1>

@@ -20,29 +20,29 @@ import { PiPaintBrushLight } from "react-icons/pi";
 import { TfiVideoClapper } from "react-icons/tfi";
 import { RxSpeakerLoud } from "react-icons/rx";
 import { IoMdSearch } from "react-icons/io";
-import Business from "../images/Business Building.png";
-import Organization from "../images/Organization.png";
+import Business from "../images/Business Building.webp";
+import Organization from "../images/Organization.webp";
 import Rocket from "../images/Rocket.png";
 // Logo Images
 import logo1 from "../images/logo1.jpeg";
 import logo21 from "../images/massagetherapy.jpg";
-import logo5 from "../images/logo5.jpeg";
+import logo5 from "../images/logo5.webp";
 import logo8 from "../images/logo8.jpeg";
 import logo11 from "../images/logo11.jpeg";
 import logo12 from "../images/logo12.jpeg";
 // Website Images
-import Web1 from "../images/web1.png";
+import Web1 from "../images/web1.webp";
 import Web2 from "../images/web2.png";
 import Web3 from "../images/web3.png";
 import Web4 from "../images/web4.png";
 import Web5 from "../images/web5.png";
 import Web6 from "../images/web6.png";
 // DMM Images
-import DMM1 from "../images/DMMPortfolio-1.jpg"
-import DMM2 from "../images/DMMPortfolio-2.jpg"
-import DMM3 from "../images/DMMPortfolio-3.jpg"
-import DMM4 from "../images/DMMPortfolio-4.jpg"
-import DMM5 from "../images/DMMPortfolio-5.jpg"
+import DMM7 from "../images/DMMPortfolio-7.jpg"
+import DMM8 from "../images/DMMPortfolio-8.jpg"
+import DMM3 from "../images/DMMPortfolio-3.webp"
+import DMM4 from "../images/DMMPortfolio-4.webp"
+import DMM5 from "../images/DMMPortfolio-5.webp"
 import DMM6 from "../images/DMMPortfolio-6.jpg"
 // Video
 import video1 from "../videos/VideoAnimation1.mp4"
@@ -53,7 +53,7 @@ import Image3 from "../images/Image 3.png";
 import Form from "../components/Form";
 // Testimonial
 import T1 from "../images/testimonial 1.png"
-import T2 from "../images/Cordelia.jpeg"
+import T2 from "../images/Cordelia.webp"
 import T3 from "../images/Marlene Martins.png"
 import T4 from "../images/testimonial 2.png"
 import T5 from "../images/Testimonial 5.png"
@@ -150,9 +150,9 @@ const Home = () => {
     <>
       {/* Hero  */}
 
-      <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto md:mt-28 pb-12 md:pb-24 overflow-hidden">
+      <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto md:mt-28  pb-12 md:pb-24 overflow-hidden">
         <div className="md:w-[50%]" data-aos="fade-right">
-          <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3vw]
+          <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3vw] 
           pt-16 ">
             Build Your Awesome Platform
           </h1>
@@ -179,12 +179,12 @@ const Home = () => {
           <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
             Our Awesome Work Portfolio
           </h1>
-          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont">
+          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont"> 
             <button
-              onClick={() => handleCategoryChange("logo")}
-              className="rounded-full px-4 mb-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
+              onClick={() => handleCategoryChange("DMM")}
+              className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
             >
-              LOGO DESIGN
+              Digital Markertting
             </button>
             <button
               onClick={() => handleCategoryChange("website")}
@@ -192,24 +192,24 @@ const Home = () => {
             >
               WEB Development
             </button>
+            {/* <button
+              onClick={() => handleCategoryChange("packaging")}
+              className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-0 hover:text-[#5454D4]"
+            >
+              UI/UX
+            </button> */}
+            <button
+              onClick={() => handleCategoryChange("logo")}
+              className="rounded-full px-4 mb-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
+            >
+              LOGO DESIGN
+            </button>
             <button
               onClick={() => handleCategoryChange("video")}
               className=" rounded-full px-4 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4]"
             >
               Video Animation
             </button>
-            <button
-              onClick={() => handleCategoryChange("DMM")}
-              className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
-            >
-              Digital Markertting
-            </button>
-            {/* <button
-              onClick={() => handleCategoryChange("packaging")}
-              className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-0 hover:text-[#5454D4]"
-            >
-              SEO
-            </button> */}
           </div>
         </div>
         <div className="block sm:block md:grid lg:grid grid-cols-3 pl-6 justify-between mt-5">
@@ -331,14 +331,14 @@ const Home = () => {
             <>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={DMM1}
+                  src={DMM7}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
-                  src={DMM2}
+                  src={DMM8}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
@@ -478,9 +478,9 @@ const Home = () => {
           </div>
         </div>
         <div className="hidden md:flex gap-8 pt-12 md:pt-24">
-          <img className="w-72" src={Image1} alt="" />
+          <img className="w-72 xl:w-96" src={Image1} alt="" />
           <img className="w-72 pt-4 md:pt-0 md:w-[35vw]" src={Image2} alt="" />
-          <img className="w-72 pt-4 md:pt-0" src={Image3} alt="" />
+          <img className="w-72 xl:w-96 pt-4 md:pt-0" src={Image3} alt="" />
         </div>
       </section>
       {/* cards */}
@@ -570,7 +570,7 @@ const Home = () => {
                     <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] h-[30vh]">
                     {testimonial.text}
                     </p>
-                    <div className="flex pt-2">
+                    <div className="flex pt-2 xl:pt-">
                       <img
                         src={testimonial.imgSrc}
                         alt={testimonial.name}

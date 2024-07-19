@@ -3,20 +3,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Form from "../components/Form";
 // hero images
-import vector13 from "../images/Vector 13.png";
-import circle from "../images/circle.png";
-import Triangle from "../images/tri.png";
-import add from "../images/add.png";
+import vector13 from "../images/Vector 13.webp";
+import circle from "../images/circle.webp";
+import Triangle from "../images/tri.webp";
+import add from "../images/add.webp";
 // We Are 
 import Image40 from "../images/image 40.png";
 import Image42 from "../images/image 42.png";
 // Cards
-import Quilt from "../images/View Quilt.png"
-import DevSkill from "../images/Development Skill.png"
-import Vision from "../images/Vision.png"
+import Quilt from "../images/View Quilt.webp"
+import DevSkill from "../images/Development Skill.webp"
+import Vision from "../images/Vision.webp"
 // Testimonial
 import T1 from "../images/testimonial 1.png"
-import T2 from "../images/Cordelia.jpeg"
+import T2 from "../images/Cordelia.webp"
 import T3 from "../images/Marlene Martins.png"
 import T4 from "../images/testimonial 2.png"
 import T5 from "../images/Testimonial 5.png"

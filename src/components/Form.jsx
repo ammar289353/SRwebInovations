@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from "@emailjs/browser";
 import { MdArrowOutward } from 'react-icons/md';
 
 const Form = () => {
@@ -39,7 +40,6 @@ const Form = () => {
     e.preventDefault();
     const errors = validate();
     if (Object.keys(errors).length === 0) {
-      // No errors, submit form (for now, we'll just log the form data)
       console.log(formData);
     } else {
       setErrors(errors);
@@ -131,3 +131,35 @@ const errorStyle = {
 };
 
 export default Form;
+
+
+
+// const Contact = () => {
+
+
+//     const serviceId = "service_y31dw1e";
+//     const templateId = "template_3viu0vg";
+//     const publicKey = "nNzYMhfwB-bCLec3Q";
+
+//     const templateParams = {
+//       form_name: name,
+//       from_email: email,
+//       to_name: "maryam fatima",
+//       message: message,
+//     };
+
+//     emailjs
+//       .send(serviceId, templateId, templateParams, publicKey)
+//       .then((response) => {
+//         console.log("Email sent successfully!", response);
+//         setName("");
+//         setEmail("");
+//         setCompany("");
+//         setTel("");
+//         setSubject("");
+//         setMessage("");
+//       })
+//       .catch((error) => {
+//         console.error("Error sending email", error);
+//       });
+//   };
