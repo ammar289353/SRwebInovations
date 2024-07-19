@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
 import Hero from "../images/HeroLaptop.png";
+import SR from "../videos/SR-Innovations.mp4"
+import { FaCheck } from 'react-icons/fa';
 
 
 // Slider
@@ -24,19 +26,19 @@ import Business from "../images/Business Building.webp";
 import Organization from "../images/Organization.webp";
 import Rocket from "../images/Rocket.png";
 // Logo Images
-import logo1 from "../images/logo1.jpeg";
+import logo1 from "../images/logo1.webp";
 import logo21 from "../images/massagetherapy.jpg";
 import logo5 from "../images/logo5.webp";
 import logo8 from "../images/logo8.jpeg";
 import logo11 from "../images/logo11.jpeg";
-import logo12 from "../images/logo12.jpeg";
+import logo12 from "../images/logo12.webp";
 // Website Images
 import Web1 from "../images/web1.webp";
-import Web2 from "../images/web2.png";
+import Web2 from "../images/web2.webp";
 import Web3 from "../images/web3.png";
-import Web4 from "../images/web4.png";
-import Web5 from "../images/web5.png";
-import Web6 from "../images/web6.png";
+import Web4 from "../images/web4.webp";
+import Web5 from "../images/web5.webp";
+import Web6 from "../images/web6.webp";
 // DMM Images
 import DMM7 from "../images/DMMPortfolio-7.jpg"
 import DMM8 from "../images/DMMPortfolio-8.jpg"
@@ -171,6 +173,42 @@ const Home = () => {
         <div className="md:w-[50%] mt-20 md:mt-0" data-aos="fade-left">
           <img src={Hero} alt="" />
         </div>
+      </section>
+
+      {/* About Us */}
+
+      <section className="flex px-6 pb-12 w-[100%]">
+               <div className="w-[50%]" >
+                   <video controls autoPlay muted controlsList="nodownload">
+                      <source src={SR} type="video/mp4" />
+                   </video>
+               </div>
+               <div className="w-[50%] px-6">
+                    <p className="text-[#5454D4] font-bold ">ABOUT US</p>
+                    <h1 className="font-bold text-[3vw] font-titleFont ">Empowering Projects <span className="text-[#5454D4]">Thrive</span>.</h1>
+                    <p className="font-bodyFont pt-3" >Since 2020, SR Innovations has delivered innovative solutions, becoming a trusted leader in  equipping  businesses with pioneering technology solutions.</p>
+                    <p className="flex pt-4 gap-4 font-bodyFont " >
+                      <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
+                       A focus on tackling bussiness challenges
+                    </p>
+                    <p className="flex pt-4 gap-4 font-bodyFont " >
+                      <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
+                       At the forefront of development
+                    </p>
+                    <p className="flex pt-4 gap-4 font-bodyFont " >
+                      <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
+                       Powered by innovation
+                    </p>
+
+                    <Link to="/About">
+                          <div className="px-24 md:px-0 pt-3 md:pt-4">
+                            <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-2 hover:bg-[#39547a]  ">
+                                 Learn More{" "}
+                              <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+                            </button>
+                          </div>
+                    </Link>
+               </div>
       </section>
 
       {/* OUR WORK PORTFOLIO */}

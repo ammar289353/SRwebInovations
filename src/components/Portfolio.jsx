@@ -2,24 +2,24 @@ import React, { useState } from 'react'
 
 // Website Images
 import Web1 from "../images/web1.webp";
-import Web2 from "../images/web2.png";
+import Web2 from "../images/web2.webp";
 import Web3 from "../images/web3.png";
-import Web4 from "../images/web4.png";
-import Web5 from "../images/web5.png";
-import Web6 from "../images/web6.png";
+import Web4 from "../images/web4.webp";
+import Web5 from "../images/web5.webp";
+import Web6 from "../images/web6.webp";
 // video
 import video1 from "../videos/VideoAnimation1.mp4"
 // Logo Images
-import logo1 from "../images/logo1.jpeg";
+import logo1 from "../images/logo1.webp";
 import logo21 from "../images/massagetherapy.jpg";
 import logo5 from "../images/logo5.webp";
 import logo8 from "../images/logo8.jpeg";
 import logo11 from "../images/logo11.jpeg";
-import logo12 from "../images/logo12.jpeg";
-import logo13 from "../images/logo13.jpeg";
-import logo16 from "../images/logo16.jpeg";
-import logo19 from "../images/logo19.jpeg";
-import logo20 from "../images/logo20.jpeg";
+import logo12 from "../images/logo12.webp";
+import logo13 from "../images/logo13.webp";
+import logo16 from "../images/logo16.webp";
+import logo19 from "../images/logo19.webp";
+import logo20 from "../images/logo20.webp";
 
 // DMM Images
 import DMM1 from "../images/DMMPortfolio-1.webp"

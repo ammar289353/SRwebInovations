@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom';
 import Programming from "../images/Programming.png"
 import Graphic from "../images/Create Icon.webp"
 import DMM from "../images/Commercial.webp"
-import Video from "../images/Visual Effects.png"
+import Video from "../images/Visual Effects.webp"
 import Seo from "../images/Search Bar.png"
 
 export default function ServiceCard() {
