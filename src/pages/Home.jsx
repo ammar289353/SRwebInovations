@@ -152,7 +152,7 @@ const Home = () => {
     <>
       {/* Hero  */}
 
-      <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto md:mt-28  pb-12 md:pb-24 overflow-hidden">
+      <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto md:mt-28  pb-6 md:pb-24 overflow-hidden">
         <div className="md:w-[50%]" data-aos="fade-right">
           <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3vw] 
           pt-16 ">
@@ -162,8 +162,8 @@ const Home = () => {
           At SR Innovations, we specialize in helping businesses overcome their unique challenges with efficiency and creativity. Our technical expertise and innovative approach enable us to deliver custom website design, web development, SEO, logo design, and digital marketing solutions tailored for high growth.
           </p>
           <Link to="/Services">
-            <div className="px-24 md:px-32 pt-3 md:pt-4">
-              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+            <div className="px-6 md:px-32 pt-3 md:pt-4">
+              <button className="flex bg-[#5454D4] text-[3.5vw] md:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
                 Our services{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
@@ -177,31 +177,31 @@ const Home = () => {
 
       {/* About Us */}
 
-      <section className="flex px-6 pb-12 w-[100%]">
-               <div className="w-[50%]" >
+      <section className="block md:flex px-6 pb-12 w-[100%]">
+               <div className="w-[100%] md:w-[50%]" >
                    <video controls autoPlay muted controlsList="nodownload">
                       <source src={SR} type="video/mp4" />
                    </video>
                </div>
-               <div className="w-[50%] px-6">
+               <div className="w-[100%] md:w-[50%] px-2 pt-6 md:pt-0 md:px-6 ">
                     <p className="text-[#5454D4] font-bold ">ABOUT US</p>
-                    <h1 className="font-bold text-[3vw] font-titleFont ">Empowering Projects <span className="text-[#5454D4]">Thrive</span>.</h1>
-                    <p className="font-bodyFont pt-3" >Since 2020, SR Innovations has delivered innovative solutions, becoming a trusted leader in  equipping  businesses with pioneering technology solutions.</p>
-                    <p className="flex pt-4 gap-4 font-bodyFont " >
+                    <h1 className="font-bold text-[6vw] md:text-[3vw] font-titleFont ">Empowering Projects <span className="text-[#5454D4]">Thrive</span>.</h1>
+                    <p className="font-bodyFont pt-3 text-[4vw] md:text-[2vw] " >Since 2020, SR Innovations has delivered innovative solutions, becoming a trusted leader in  equipping  businesses with pioneering technology solutions.</p>
+                    <p className="flex pt-4 gap-2 md:gap-4 font-bodyFont text-[4vw]" >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
                        A focus on tackling bussiness challenges
                     </p>
-                    <p className="flex pt-4 gap-4 font-bodyFont " >
+                    <p className="flex pt-4 gap-2 md:gap-4 font-bodyFont text-[4vw] " >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
                        At the forefront of development
                     </p>
-                    <p className="flex pt-4 gap-4 font-bodyFont " >
+                    <p className="flex pt-4 gap-2 md:gap-4 font-bodyFont text-[4vw]" >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
                        Powered by innovation
                     </p>
 
                     <Link to="/About">
-                          <div className="px-24 md:px-0 pt-3 md:pt-4">
+                          <div className="pt-3 md:pt-4">
                             <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-2 hover:bg-[#39547a]  ">
                                  Learn More{" "}
                               <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />

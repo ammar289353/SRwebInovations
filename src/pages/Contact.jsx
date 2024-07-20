@@ -94,10 +94,10 @@ const Contact = () => {
       </section>
       <section className="w-[90vw] m-auto mt-6">
         <div className="block sm:block md:flex lg:flex pt-6">
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-5"
+          <div className="shadow-2xl rounded-lg shadow-[#ccccf0] pb-4 pt-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-12"
            data-aos="flip-left">
             <img
-              className="bg-[#5454D4] rounded-full py-2 px-2 mt-5  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
+              className="bg-[#5454D4] rounded-full py-2 px-2 mt-5  ml-[136px] w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
               src={Customer}
               alt=""
             />
@@ -105,7 +105,7 @@ const Contact = () => {
             24/7 Support
             </h1>
             <Link to="https://wa.me/+447951793541">
-            <div className="px-24 md:px-[93px] pt-3 md:pt-0">
+            <div className="pl-24 md:px-[93px] pt-3 md:pt-0">
               <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
                 Chat Now{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
@@ -113,9 +113,9 @@ const Contact = () => {
             </div>
           </Link>
           </div>
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-5" data-aos="flip-left">
+          <div className="shadow-2xl rounded-lg shadow-[#ccccf0] pb-4 pt-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-12" data-aos="flip-left">
             <img
-              className="bg-[#5454D4] rounded-full py-2 px-2  mt-5 ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
+              className="bg-[#5454D4] rounded-full py-2 px-2  mt-5 ml-[136px] w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
               src={Chat}
               alt=""
             />
@@ -131,9 +131,9 @@ const Contact = () => {
             </div>
           </Link>
           </div>
-          <div className="shadow-2xl rounded-lg shadow-slate-300 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-5" data-aos="flip-left">
+          <div className="shadow-2xl rounded-lg shadow-[#ccccf0] pt-4 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-12" data-aos="flip-left">
             <img
-              className="bg-[#5454D4] rounded-full py-2 px-2 mt-5  ml-32 w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
+              className="bg-[#5454D4] rounded-full py-2 px-2 mt-5  ml-[136px] w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
               src={Location}
               alt=""
             />
@@ -141,8 +141,8 @@ const Contact = () => {
             View Our Location
             </h1>
             <Link to="https://www.google.com/maps/search/?api=1&query=150+St+Michael’s+Hill,+Bristol+BS2+8DA,+United+Kingdom">
-            <div className="px-24 md:px-28 pt-3 md:pt-0">
-              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+            <div className="px-28 md:px-28 pt-3 md:pt-0">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4 hover:bg-[#39547a]  ">
                 View{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
