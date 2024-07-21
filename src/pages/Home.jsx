@@ -417,7 +417,7 @@ const Home = () => {
         </div>
             
         <Link to="/Portfolio">
-          <div className="pl-24 md:pl-0 md:px-[40vw]">
+          <div className="pl-24  md:px-[40vw]">
             <button className="flex bg-[#5454D4] text-[4vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-2 md:py-1 mt-4 hover:bg-[#39547a]  ">
               View All Portfolio{" "}
               <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
