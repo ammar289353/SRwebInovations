@@ -163,7 +163,7 @@ const Home = () => {
           </p>
           <Link to="/Services">
             <div className="px-6 md:px-32 pt-3 md:pt-4">
-              <button className="flex bg-[#5454D4] text-[3.5vw] md:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+              <button className="flex bg-[#5454D4] text-[4vw] md:text-[1.5vw] text-white rounded-2xl px-6 py-2 md:py-1 mt-4 hover:bg-[#39547a]  ">
                 Our services{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
@@ -186,23 +186,23 @@ const Home = () => {
                <div className="w-[100%] md:w-[50%] px-2 pt-6 md:pt-0 md:px-6 ">
                     <p className="text-[#5454D4] font-bold ">ABOUT US</p>
                     <h1 className="font-bold text-[6vw] md:text-[3vw] font-titleFont ">Empowering Projects <span className="text-[#5454D4]">Thrive</span>.</h1>
-                    <p className="font-bodyFont pt-3 text-[4vw] md:text-[2vw] " >Since 2020, SR Innovations has delivered innovative solutions, becoming a trusted leader in  equipping  businesses with pioneering technology solutions.</p>
-                    <p className="flex pt-4 gap-2 md:gap-4 font-bodyFont text-[4vw]" >
+                    <p className="font-bodyFont pt-3 text-[4vw] md:text-[1.5vw] " >Since 2020, SR Innovations has delivered innovative solutions, becoming a trusted leader in  equipping  businesses with pioneering technology solutions.</p>
+                    <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw]" >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
                        A focus on tackling bussiness challenges
                     </p>
-                    <p className="flex pt-4 gap-2 md:gap-4 font-bodyFont text-[4vw] " >
+                    <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw] " >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
                        At the forefront of development
                     </p>
-                    <p className="flex pt-4 gap-2 md:gap-4 font-bodyFont text-[4vw]" >
+                    <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw]" >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
                        Powered by innovation
                     </p>
 
                     <Link to="/About">
-                          <div className="pt-3 md:pt-4">
-                            <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-2 hover:bg-[#39547a]  ">
+                          <div className="pt-3 md:pt-2">
+                            <button className="flex bg-[#5454D4] text-[4vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-2 md:py-1 mt-2 hover:bg-[#39547a]  ">
                                  Learn More{" "}
                               <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
                             </button>
@@ -417,10 +417,10 @@ const Home = () => {
         </div>
             
         <Link to="/Portfolio">
-          <div className="px-24 md:px-[40vw]">
-            <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+          <div className="pl-24 md:pl-0 md:px-[40vw]">
+            <button className="flex bg-[#5454D4] text-[4vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-2 md:py-1 mt-4 hover:bg-[#39547a]  ">
               View All Portfolio{" "}
-              <MdArrowOutward className="text-[5vw] md:text-[2vw] md:pt-2" />
+              <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
             </button>
           </div>
         </Link>
