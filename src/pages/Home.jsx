@@ -490,7 +490,7 @@ const Home = () => {
         <div className="flex justify-evenly pt-8">
           <div>
             <img
-              className="mx-4 md:mx-28 px-1 text-[#ddbf45] bg-[#5b5025] rounded-full py-1"
+              className="mx-4 md:mx-28 2xl:mx-48 px-1 text-[#ddbf45] bg-[#5b5025] rounded-full py-1 2xl:p-4"
               src={Business}
               alt=""
             />
@@ -500,7 +500,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              className="mx-4 md:mx-32 text-[#5454D4] bg-[#19193d] rounded-full py-1 px-1"
+              className="mx-4 md:mx-32 2xl:mx-56 text-[#5454D4] bg-[#19193d] rounded-full py-1 px-1 2xl:p-4"
               src={Organization}
               alt=""
             />
@@ -510,7 +510,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              className="mx-2 md:mx-8 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1"
+              className="mx-2 md:mx-8 2xl:mx-12 px-1 text-[#F04037]  bg-[#a57472] rounded-full py-1 2xl:p-4"
               src={Rocket}
               alt=""
             />
