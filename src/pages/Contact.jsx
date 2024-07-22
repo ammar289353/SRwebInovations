@@ -105,8 +105,8 @@ const Contact = () => {
             24/7 Support
             </h1>
             <Link to="https://wa.me/+447951793541">
-            <div className="pl-24 md:px-[93px] pt-3 md:pt-0">
-              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+            <div className="pl-24 md:px-[85px] pt-3 md:pt-0">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-white hover:text-[#5454D4] border border-[#5454D4]  ">
                 Chat Now{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
@@ -123,8 +123,8 @@ const Contact = () => {
             24/7 Chat Support
             </h1>
             <Link to="https://wa.me/+447951793541">
-            <div className="px-24 md:px-[93px] pt-3 md:pt-0">
-              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+            <div className="px-24 md:px-[85px] pt-3 md:pt-0">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-white hover:text-[#5454D4] border border-[#5454D4]  ">
                 Chat Now{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>
@@ -132,7 +132,7 @@ const Contact = () => {
           </Link>
           </div>
           <div className="shadow-2xl rounded-lg shadow-[#ccccf0] pt-4 pb-4 lg:m-5 lg:w-[30vw] lg:h-[40vh] mb-12" data-aos="flip-left">
-            <img
+            <img  
               className="bg-[#5454D4] rounded-full py-2 px-2 mt-5  ml-[136px] w-[15vw] sm:w-[15vw] md:w-[5vw] lg:w-[5.5vw] md:ml-14 lg:ml-32"
               src={Location}
               alt=""
@@ -142,7 +142,7 @@ const Contact = () => {
             </h1>
             <Link to="https://www.google.com/maps/search/?api=1&query=150+St+Michael’s+Hill,+Bristol+BS2+8DA,+United+Kingdom">
             <div className="px-28 md:px-28 pt-3 md:pt-0">
-              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4 hover:bg-[#39547a]  ">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-8 py-1 mt-4  hover:bg-white hover:text-[#5454D4] border border-[#5454D4]  ">
                 View{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>

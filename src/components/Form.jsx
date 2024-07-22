@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import { MdArrowOutward } from 'react-icons/md';
 
 const Form = () => {
@@ -95,7 +95,7 @@ const Form = () => {
      
     </form>
      <div className='pl-40 md:pl-96 '>
-     <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-[#39547a] text-white px-12 py-2  ' type="submit">
+     <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-white hover:text-[#5454D4] border border-[#5454D4] text-white px-12 py-2  ' type="submit">
      Send
    <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />
    </button>
