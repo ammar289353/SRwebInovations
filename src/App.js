@@ -13,11 +13,13 @@ import DigitalMarketing from './pages/DigitalMarketing';
 import SEO from './pages/SEO';
 import WhatsAppButton from './components/WhatsApp';
 import ParticleComponent from './components/particle';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <>
     <div>
+    <Toaster position="top-right" />
     <Navbar/>
     </div>
     <Routes>

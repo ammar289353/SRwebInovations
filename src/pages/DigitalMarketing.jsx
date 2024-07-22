@@ -77,7 +77,7 @@ const DigitalMarketing = () => {
             </p>
             <Link to="/Contact">
             <div className="px-20 md:px-2 pt-3 md:pt-0">
-              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-[#39547a]  ">
+              <button className="flex bg-[#5454D4] text-[3.5vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-1 mt-4 hover:bg-white hover:text-[#5454D4] border border-[#5454D4]  ">
                 Get Started{" "}
                 <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
               </button>

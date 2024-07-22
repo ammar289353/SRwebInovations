@@ -16,7 +16,7 @@ import SEOService from "../images/SEOFeatureImage.png";
 import { Link } from 'react-router-dom';
 
 import Programming from "../images/Programming.png"
-import Graphic from "../images/Create Icon.webp"
+import Graphic from "../images/Blue-Create-Icon.webp"
 import DMM from "../images/Commercial.webp"
 import Video from "../images/Visual Effects.webp"
 import Seo from "../images/Search Bar.png"

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { MdArrowOutward } from 'react-icons/md';
+import toast from 'react-hot-toast';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +41,30 @@ const Form = () => {
     e.preventDefault();
     const errors = validate();
     if (Object.keys(errors).length === 0) {
-      console.log(formData);
+      const serviceId = "service_juu3lw5";
+      const templateId = "template_88zmz2q";
+      const publicKey = "Ucqt7mQDpKnEPTCW1";
+
+      const templateParams = {
+        from_name: formData.fullName,
+        from_email: formData.email,
+        to_name: "Saqib",
+        message: formData.description,
+      };
+
+      emailjs.send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+          toast.success("Email sent successfully!");
+          setFormData({
+            fullName: '',
+            email: '',
+            phone: '',
+            description: '',
+          });
+        })
+        .catch((error) => {
+          toast.error("Error sending message");
+        });
     } else {
       setErrors(errors);
     }
@@ -48,59 +72,58 @@ const Form = () => {
 
   return (
     <>
-    <form onSubmit={handleSubmit} className='mt-12 w-[300px] mx-auto md:w-[500px]'>
-      <div style={{ marginBottom: '20px' }}>
-        <input
-          type="text"
-          name="fullName"
-          placeholder="Full Name"
-          value={formData.fullName}
-          onChange={handleChange}
-          style={inputStyle}
-        />
-        {errors.fullName && <p style={errorStyle}>{errors.fullName}</p>}
-      </div>
-      <div style={{ marginBottom: '20px' }}>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          value={formData.email}
-          onChange={handleChange}
-          style={inputStyle}
-        />
-        {errors.email && <p style={errorStyle}>{errors.email}</p>}
-      </div>
-      <div style={{ marginBottom: '20px' }}>
-        <input
-          type="text"
-          name="phone"
-          placeholder="Phone Number"
-          value={formData.phone}
-          onChange={handleChange}
-          style={inputStyle}
-        />
-        {errors.phone && <p style={errorStyle}>{errors.phone}</p>}
-      </div>
-      <div style={{ marginBottom: '20px' }}>
-        <textarea
-          name="description"
-          placeholder="Enter Your Project Brief"
-          value={formData.description}
-          onChange={handleChange}
-          style={textareaStyle}
-        />
-        {errors.description && <p style={errorStyle}>{errors.description}</p>}
-      </div>
-     
-    </form>
-     <div className='pl-40 md:pl-96 '>
-     <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-white hover:text-[#5454D4] border border-[#5454D4] text-white px-12 py-2  ' type="submit">
-     Send
-   <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />
-   </button>
-     </div>
-   </>
+      <form onSubmit={handleSubmit} className='mt-12 w-[300px] mx-auto md:w-[500px]'>
+        <div style={{ marginBottom: '20px' }}>
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Full Name"
+            value={formData.fullName}
+            onChange={handleChange}
+            style={inputStyle}
+          />
+          {errors.fullName && <p style={errorStyle}>{errors.fullName}</p>}
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            style={inputStyle}
+          />
+          {errors.email && <p style={errorStyle}>{errors.email}</p>}
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
+            style={inputStyle}
+          />
+          {errors.phone && <p style={errorStyle}>{errors.phone}</p>}
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <textarea
+            name="description"
+            placeholder="Enter Your Project Brief"
+            value={formData.description}
+            onChange={handleChange}
+            style={textareaStyle}
+          />
+          {errors.description && <p style={errorStyle}>{errors.description}</p>}
+        </div>
+        <div className='pl-40 md:pl-96'>
+          <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-white hover:text-[#5454D4] border border-[#5454D4] text-white px-12 py-2' type="submit">
+            Send
+            <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />
+          </button>
+        </div>
+      </form>
+    </>
   );
 };
 
@@ -131,35 +154,3 @@ const errorStyle = {
 };
 
 export default Form;
-
-
-
-// const Contact = () => {
-
-
-//     const serviceId = "service_y31dw1e";
-//     const templateId = "template_3viu0vg";
-//     const publicKey = "nNzYMhfwB-bCLec3Q";
-
-//     const templateParams = {
-//       form_name: name,
-//       from_email: email,
-//       to_name: "maryam fatima",
-//       message: message,
-//     };
-
-//     emailjs
-//       .send(serviceId, templateId, templateParams, publicKey)
-//       .then((response) => {
-//         console.log("Email sent successfully!", response);
-//         setName("");
-//         setEmail("");
-//         setCompany("");
-//         setTel("");
-//         setSubject("");
-//         setMessage("");
-//       })
-//       .catch((error) => {
-//         console.error("Error sending email", error);
-//       });
-//   };
