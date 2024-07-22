@@ -116,7 +116,7 @@ const Form = () => {
           />
           {errors.description && <p style={errorStyle}>{errors.description}</p>}
         </div>
-        <div className='pl-40 md:pl-96 2xl:pl-[28rem]'>
+        <div className='pl-40 md:pl-80 2xl:pl-[28rem]'>
           <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-white hover:text-[#5454D4] border border-[#5454D4] text-white px-12 2xl:px-16 2xl:text-[1.3vw] py-2' type="submit">
             Send
             <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />

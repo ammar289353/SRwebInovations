@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
         <ul
           className={`md:flex text-left items-start md:pb-2 pb-8 absolute md:static bg-white h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
-                    md:pl-0 pl-9 2xl:pl-48 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4  ${
+                    md:pl-0 pl-9 2xl:pl-48 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4 2xl:pt-8  ${
                       menuOpen ? "top-6" : "top-[-1100px]"
                     }`}
         >

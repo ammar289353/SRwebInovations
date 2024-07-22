@@ -474,9 +474,9 @@ const Home = () => {
           </div>
         </div>
         <div className="hidden md:flex gap-8 pt-12 md:pt-24">
-          <img className="w-72 2xl:w-[36rem]" src={Image1} alt="" />
-          <img className="w-72 pt-4 md:pt-0 md:w-[35vw]" src={Image2} alt="" />
-          <img className="w-72  2xl:w-[36rem] pt-4 md:pt-0" src={Image3} alt="" />
+          <img className="w-72 2xl:w-[32rem]" src={Image1} alt="" />
+          <img className="w-72 pt-4 md:pt-0 md:w-[35vw] 2xl:w-[40vw] " src={Image2} alt="" />
+          <img className="w-72  2xl:w-[32rem] pt-4 md:pt-0" src={Image3} alt="" />
         </div>
       </section>
       {/* cards */}

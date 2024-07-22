@@ -14,14 +14,14 @@ const Footer = () => {
       <hr />
      
       <div className="flex flex-col md:flex-row w-[100%] gap-10 lg:gap-6 text-white px-4 md:px-24  justify-center pb-8">
-      <div className="pt-5 text-white md:w-[35%] md:pb-12">
+      <div className="pt-5 text-white md:w-[35%] 2xl:w-[40%] md:pb-12">
         <div>
           <img
             className="h-24 md:h-32 px-28 md:px-20 "
             src={Navlogo}
             alt=""
           />
-          <p className="text-[3vw] font-bodyFont lg:text-[1vw] pt-3 ">
+          <p className="text-[3vw] font-bodyFont lg:text-[1vw] pt-3 2xl:w-[80%] ">
             We're a cohesive team of tech enthusiasts committed to streamlining
             business operations through the transformative potential of
             technology.
@@ -34,22 +34,22 @@ const Footer = () => {
           </a>
           </div>
       </div>
-      <div className="text-center  md:w-[20%] md:pb-8 md:pt-12 ">
+      <div className="text-center md:w-[20%] 2xl:w-[20%] md:pb-8 md:pt-12 2xl:px-12 ">
           <h1 className="text-[6vw] lg:text-[2vw] font-bold pb-2 font-titleFont text-left ">Services</h1>
           <ul>
-            <li className="text-left font-bodyFont py-1 hover:text-slate-300">
+            <li className="text-left 2xl:text-[1vw] font-bodyFont py-1 hover:text-slate-300">
               <Link to="/Website">
               Web Development
               </Link>
               </li>
             
-            <li className="text-left font-bodyFont py-1 hover:text-slate-300">
+            <li className="text-left  2xl:text-[1vw]  font-bodyFont py-1 hover:text-slate-300">
              <Link to="/Graphic">
              Graphic Design
              </Link>
               </li>
             
-            <li className="text-left font-bodyFont  py-1 hover:text-slate-300">
+            <li className="text-left  2xl:text-[1vw]  font-bodyFont  py-1 hover:text-slate-300">
               <Link to="/DigitalMarketing">
                 Digital Marketting
               </Link>
@@ -61,13 +61,13 @@ const Footer = () => {
              </Link>
             </li> */}
            
-            <li className="text-left font-bodyFont  py-1 hover:text-slate-300">
+            <li className="text-left  2xl:text-[1vw]  font-bodyFont  py-1 hover:text-slate-300">
               <Link to="/VideoAnimation">
               Video Animation
               </Link>
               </li>
             
-            <li className="text-left font-bodyFont  py-1 hover:text-slate-300">
+            <li className="text-left  2xl:text-[1vw]  font-bodyFont  py-1 hover:text-slate-300">
               <Link  to="/SEO">
                 SEO
               </Link>
@@ -75,29 +75,29 @@ const Footer = () => {
             
           </ul>
         </div>
-        <div className="text-center  md:w-[20%] md:pb-8 md:pt-12">
+        <div className="text-center  md:w-[20%] 2xl:w-[20%] md:pb-8 md:pt-12">
           <h1 className="text-[6vw] lg:text-[2vw] text-left font-bold pb-5 font-titleFont ">Resources</h1>
           <ul className="font-bodyFont">
-            <li className="text-left py-1 hover:text-slate-300"><Link  to="/About">About Us</Link></li>
+            <li className="text-left  2xl:text-[1vw]  py-1 hover:text-slate-300"><Link  to="/About">About Us</Link></li>
             
-            <li className="text-left py-1 hover:text-slate-300"><Link  to="/Services">Services</Link></li>
+            <li className="text-left  2xl:text-[1vw]  py-1 hover:text-slate-300"><Link  to="/Services">Services</Link></li>
             
-            <li className="text-left py-1 hover:text-slate-300"><Link  to="/Portfolio">Portfolio</Link></li>
+            <li className="text-left  2xl:text-[1vw]  py-1 hover:text-slate-300"><Link  to="/Portfolio">Portfolio</Link></li>
             
           </ul>
         </div>
       
         
         <div>
-          <h1 className="text-[6vw] md:w-[25%] lg:text-[2vw] font-titleFont font-bold md:pt-12 ">
+          <h1 className="text-[6vw] md:w-[25%] 2xl:w-[20%] lg:text-[2vw] font-titleFont font-bold md:pt-12 ">
             Contact
           </h1>
           <div className="gap-2 pt-6 font-bodyFont">
             
             
-            <p className="flex py-2 gap-5">
+            <p className="flex py-2 gap-4">
              <CgMail className="text-[#5454D4] text-[6vw] md:text-[2vw]"/> {" "}
-              <span className="hover:text-slate-300">
+              <span className="hover:text-slate-300  2xl:text-[1vw] ">
                 <a href="mailto:sr.webinnovations@outlook.com">
                   sr.webinnovations@outlook.com
                 </a>
@@ -107,15 +107,15 @@ const Footer = () => {
             
             <p className="flex py-2 gap-5">
             <FaPhone className="text-[#5454D4] text-[5vw] md:text-[1.5vw]" />{" "}
-              <span className="hover:text-slate-300">+44 7908 147313</span>{" "}
+              <span className="hover:text-slate-300  2xl:text-[1vw] ">+44 7908 147313</span>{" "}
             </p>
             
-            <p className="flex py-2 px-10">
-              <span className="hover:text-slate-300">+44 7951 793541</span>{" "}
+            <p className="flex py-2 px-10 2xl:px-12">
+              <span className="hover:text-slate-300  2xl:text-[1vw] ">+44 7951 793541</span>{" "}
             </p>
             <p className="flex py-2 gap-5">
             <IoLocationOutline className="text-[#5454D4] text-[6vw] md:text-[2vw]" />{" "}
-              <span className="hover:text-slate-300">
+              <span className="hover:text-slate-300 2xl:text-[1vw]">
                 <a href="https://www.google.com/maps/search/?api=1&query=150+St+Michael’s+Hill,+Bristol+BS2+8DA,+United+Kingdom">
                   150 St Michael’s Hill, Bristol <br /> BS2 8DA, United Kingdom
                 </a>
