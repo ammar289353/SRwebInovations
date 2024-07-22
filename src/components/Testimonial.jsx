@@ -99,7 +99,7 @@ const Testimonial = () => {
                     <p className="text-[#8d8b8b] text-[3vw] sm:text-[3vw] md:text-[1vw] lg:text-[1vw] h-[30vh]">
                     {testimonial.text}
                     </p>
-                    <div className="flex pt-2 2xl:pt-16">
+                    <div className="flex pt-2 2xl:pt-8">
                       <img
                         src={testimonial.imgSrc}
                         alt={testimonial.name}
