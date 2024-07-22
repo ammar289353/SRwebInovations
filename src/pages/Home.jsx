@@ -113,10 +113,10 @@ const Home = () => {
       <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto md:mt-28  pb-6 md:pb-24 overflow-hidden">
         <div className="md:w-[50%]" data-aos="fade-right">
           <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3vw] 
-          pt-16 ">
+          pt-16 2xl:pt-48 ">
             Build Your Awesome Platform
           </h1>
-          <p className="px-6 md:pl-32 pt-3 md:pt-5 font-bodyFont">
+          <p className="px-6 md:pl-32 pt-3 md:pt-5 2xl:text-[1.3vw] font-bodyFont">
           At SR Innovations, we specialize in helping businesses overcome their unique challenges with efficiency and creativity. Our technical expertise and innovative approach enable us to deliver custom website design, web development, SEO, logo design, and digital marketing solutions tailored for high growth.
           </p>
           <Link to="/Services">
@@ -128,7 +128,7 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        <div className="md:w-[50%] mt-20 md:mt-0" data-aos="fade-left">
+        <div className="md:w-[50%] mt-20 md:mt-0 2xl:mt-12 " data-aos="fade-left">
           <img src={Hero} alt="" />
         </div>
       </section>
@@ -433,7 +433,7 @@ const Home = () => {
               through Innovative Solutions
             </h1>
           </div>
-          <div className="md:w-[50%] pt-12 font-bodyFont">
+          <div className="md:w-[50%] pt-12 2xl:text-[1.3vw] font-bodyFont">
             <p>
               At SR Innovations, we help businesses tackle their unique
               challenges with efficiency and creativity. Our technical expertise
@@ -474,9 +474,9 @@ const Home = () => {
           </div>
         </div>
         <div className="hidden md:flex gap-8 pt-12 md:pt-24">
-          <img className="w-72 xl:w-96" src={Image1} alt="" />
+          <img className="w-72 2xl:w-[36rem]" src={Image1} alt="" />
           <img className="w-72 pt-4 md:pt-0 md:w-[35vw]" src={Image2} alt="" />
-          <img className="w-72 xl:w-96 pt-4 md:pt-0" src={Image3} alt="" />
+          <img className="w-72  2xl:w-[36rem] pt-4 md:pt-0" src={Image3} alt="" />
         </div>
       </section>
       {/* cards */}

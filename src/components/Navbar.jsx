@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
         <ul
           className={`md:flex text-left items-start md:pb-2 pb-8 absolute md:static bg-white h-screen md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto
-                    md:pl-0 pl-9 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4  ${
+                    md:pl-0 pl-9 2xl:pl-48 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4  ${
                       menuOpen ? "top-6" : "top-[-1100px]"
                     }`}
         >
@@ -154,7 +154,7 @@ const Navbar = () => {
 
           <li onClick={() => setMenuOpen(false)}>
           <a href="https://www.instagram.com/thesrinnovations?igsh=bHo4bDZrY3NvZWY3&utm_source=qr">
-          <FaInstagram  className="md:text-[#515151] hidden md:block pt-1 pl-3 text-[2.5vw] md:ml-32 lg:ml-32  2xl:ml-72"/>
+          <FaInstagram  className="md:text-[#515151] hidden md:block pt-1 2xl:pt-0 pl-3 text-[2.5vw] 2xl:text-[2vw] md:ml-32  2xl:ml-96 "/>
           </a>
           </li>
 
