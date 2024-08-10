@@ -72,7 +72,7 @@ const Home = () => {
       icon: (
         <FaCode className="text-[#5454D4] hover:text-white hover:bg-[#5858bc] bg-[#b2b2d9] rounded-full py-2" />
       ),
-      title: "Webiste Development",
+      title: "Website Development",
       description:
         "We craft stunning, responsive websites that deliver exceptional user experiences, driving engagement and conversions. Let us transform your ideas into captivating digital masterpieces that achieve your business goals.",
       link: "/Website",
@@ -147,7 +147,7 @@ const Home = () => {
                     <p className="font-bodyFont pt-3 text-[4vw] md:text-[1.5vw] " >Since 2020, SR Innovations has delivered innovative solutions, becoming a trusted leader in  equipping  businesses with pioneering technology solutions.</p>
                     <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw]" >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
-                       A focus on tackling bussiness challenges
+                       A focus on tackling business challenges
                     </p>
                     <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw] " >
                       <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />

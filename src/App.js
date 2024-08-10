@@ -12,7 +12,6 @@ import VideoAnimation from './pages/VideoAnimation';
 import DigitalMarketing from './pages/DigitalMarketing';
 import SEO from './pages/SEO';
 import WhatsAppButton from './components/WhatsApp';
-import ParticleComponent from './components/particle';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
     </div>
     <Routes>
       <Route
-       path="/#"
+       path="/"
        element={
          <>
            <RouteIndex />
@@ -33,7 +32,6 @@ function App() {
       />
      
       <Route path='Home' element={<Home />} />
-      <Route path='Particle' eleme={<ParticleComponent />}/>
       <Route path='Services' element={<Services />} />
       <Route path='About' element={<About />} />
       <Route path='Portfolio' element={<Portfolio />} />

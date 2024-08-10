@@ -12,6 +12,7 @@ const Form = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const validate = () => {
     const errors = {};
@@ -41,6 +42,8 @@ const Form = () => {
     e.preventDefault();
     const errors = validate();
     if (Object.keys(errors).length === 0) {
+      setLoading(true);
+
       const serviceId = "service_juu3lw5";
       const templateId = "template_88zmz2q";
       const publicKey = "Ucqt7mQDpKnEPTCW1";
@@ -61,9 +64,11 @@ const Form = () => {
             phone: '',
             description: '',
           });
+          setLoading(false);
         })
         .catch((error) => {
           toast.error("Error sending message");
+          setLoading(false);
         });
     } else {
       setErrors(errors);
@@ -117,9 +122,17 @@ const Form = () => {
           {errors.description && <p style={errorStyle}>{errors.description}</p>}
         </div>
         <div className='pl-40 md:pl-80 2xl:pl-[28rem]'>
-          <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-white hover:text-[#5454D4] border border-[#5454D4] text-white px-12 2xl:px-16 2xl:text-[1.3vw] py-2' type="submit">
+          {/* <button className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-white hover:text-[#5454D4] border border-[#5454D4] text-white px-12 2xl:px-16 2xl:text-[1.3vw] py-2' type="submit">
             Send
             <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />
+          </button> */}
+           <button
+               className='flex font-bodyFont rounded-lg bg-[#5454D4] hover:bg-white hover:text-[#5454D4] border border-[#5454D4] text-white px-12 2xl:px-16 2xl:text-[1.3vw] py-2'
+               type="submit"
+               disabled={loading}
+             >
+               {loading ? 'Sending...' : 'Send'}
+               <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-1" />
           </button>
         </div>
       </form>
