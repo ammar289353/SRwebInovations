@@ -20,26 +20,27 @@ import Business from "../images/Business Building.webp";
 import Organization from "../images/Organization.webp";
 import Rocket from "../images/Rocket.png";
 // Logo Images
-import logo1 from "../images/logo1.webp";
-import logo21 from "../images/massagetherapy.jpg";
-import logo5 from "../images/logo5.webp";
-import logo8 from "../images/logo8.jpeg";
-import logo11 from "../images/logo11.jpeg";
-import logo12 from "../images/logo12.webp";
+import logo21 from "../images/Logo/logo21.jpeg";
+// import massagetherapy from "../images/massagetherapy.jpg";
+import logo22 from "../images/Logo/logo22.jpeg";
+import logo23 from "../images/Logo/logo23.jpeg";
+import logo24 from "../images/Logo/logo24.png";
+import logo31 from "../images/Logo/logo31.jpeg";
+import logo38 from "../images/Logo/logo38.png";
 // Website Images
-import Web1 from "../images/web1.webp";
-import Web2 from "../images/web2.webp";
-import Web3 from "../images/web3.png";
-import Web4 from "../images/web4.webp";
-import Web5 from "../images/web5.webp";
-import Web6 from "../images/web6.webp";
+import Web1 from "../images/Website/web1.webp";
+import Web2 from "../images/Website/web2.webp";
+import Web3 from "../images/Website/web3.png";
+import Web4 from "../images/Website/web4.webp";
+import Web5 from "../images/Website/web5.webp";
+import Web6 from "../images/Website/web6.webp";
 // DMM Images
-import DMM7 from "../images/DMMPortfolio-7.jpg"
-import DMM8 from "../images/DMMPortfolio-8.jpg"
-import DMM3 from "../images/DMMPortfolio-3.webp"
-import DMM4 from "../images/DMMPortfolio-4.webp"
-import DMM5 from "../images/DMMPortfolio-5.webp"
-import DMM6 from "../images/DMMPortfolio-6.jpg"
+import DMM7 from "../images/DMM/DMMPortfolio-7.jpg"
+import DMM8 from "../images/DMM/DMMPortfolio-8.jpg"
+import DMM3 from "../images/DMM/DMMPortfolio-3.webp"
+import DMM4 from "../images/DMM/DMMPortfolio-4.webp"
+import DMM5 from "../images/DMM/DMMPortfolio-5.webp"
+import DMM6 from "../images/DMM/DMMPortfolio-6.jpg"
 // Video
 import video1 from "../videos/VideoAnimation1.mp4"
 // Let's do it
@@ -214,25 +215,25 @@ const Home = () => {
             <>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo1}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
                   src={logo21}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
 
+              {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={massagetherapy}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div> */}
+
              
             
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo5}
+                  src={logo22}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
@@ -240,7 +241,7 @@ const Home = () => {
               
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo8}
+                  src={logo23}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
@@ -250,14 +251,21 @@ const Home = () => {
               
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo11}
+                  src={logo24}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo12}
+                  src={logo31}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo38}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />

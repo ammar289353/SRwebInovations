@@ -1,35 +1,53 @@
 import React, { useState } from 'react'
 
 // Website Images
-import Web1 from "../images/web1.webp";
-import Web2 from "../images/web2.webp";
-import Web3 from "../images/web3.png";
-import Web4 from "../images/web4.webp";
-import Web5 from "../images/web5.webp";
-import Web6 from "../images/web6.webp";
+import Web1 from "../images/Website/web1.webp";
+import Web2 from "../images/Website/web2.webp";
+import Web3 from "../images/Website/web3.png";
+import Web4 from "../images/Website/web4.webp";
+import Web5 from "../images/Website/web5.webp";
+import Web6 from "../images/Website/web6.webp";
 // video
 import video1 from "../videos/VideoAnimation1.mp4"
 // Logo Images
-import logo1 from "../images/logo1.webp";
-import logo21 from "../images/massagetherapy.jpg";
-import logo5 from "../images/logo5.webp";
-import logo8 from "../images/logo8.jpeg";
-import logo11 from "../images/logo11.jpeg";
-import logo12 from "../images/logo12.webp";
-import logo13 from "../images/logo13.webp";
-import logo16 from "../images/logo16.webp";
-import logo19 from "../images/logo19.webp";
-import logo20 from "../images/logo20.webp";
+import logo21 from "../images/Logo/logo21.jpeg";
+import logo22 from "../images/Logo/logo22.jpeg";
+import logo23 from "../images/Logo/logo23.jpeg";
+import logo24 from "../images/Logo/logo24.png";
+import logo25 from "../images/Logo/logo25.png";
+import logo26 from "../images/Logo/logo26.jpeg";
+import logo27 from "../images/Logo/logo27.png";
+import logo28 from "../images/Logo/logo28.png";
+import logo29 from "../images/Logo/logo29.jpeg";
+import logo30 from "../images/Logo/logo30.jpeg";
+import logo31 from "../images/Logo/logo31.jpeg";
+import logo32 from "../images/Logo/logo32.png";
+import logo33 from "../images/Logo/logo33.jpeg";
+import logo34 from "../images/Logo/logo34.png";
+import logo35 from "../images/Logo/logo35.png";
+import logo36 from "../images/Logo/logo36.png";
+import logo37 from "../images/Logo/logo37.png";
+import logo38 from "../images/Logo/logo38.png";
+import logo1 from "../images/Logo/logo1.webp";
+import massagetherapy from "../images/massagetherapy.jpg";
+import logo5 from "../images/Logo/logo5.webp";
+import logo8 from "../images/Logo/logo8.jpeg";
+import logo11 from "../images/Logo/logo11.jpeg";
+import logo12 from "../images/Logo/logo12.webp";
+import logo13 from "../images/Logo/logo13.webp";
+import logo16 from "../images/Logo/logo16.webp";
+import logo19 from "../images/Logo/logo19.webp";
+import logo20 from "../images/Logo/logo20.webp";
 
 // DMM Images
-import DMM1 from "../images/DMMPortfolio-1.webp"
-import DMM2 from "../images/DMMPortfolio-2.webp"
-import DMM3 from "../images/DMMPortfolio-3.webp"
-import DMM4 from "../images/DMMPortfolio-4.webp"
-import DMM5 from "../images/DMMPortfolio-5.webp"
-import DMM6 from "../images/DMMPortfolio-6.jpg"
-import DMM7 from "../images/DMMPortfolio-7.jpg"
-import DMM8 from "../images/DMMPortfolio-8.jpg"
+import DMM1 from "../images/DMM/DMMPortfolio-1.webp"
+import DMM2 from "../images/DMM/DMMPortfolio-2.webp"
+import DMM3 from "../images/DMM/DMMPortfolio-3.webp"
+import DMM4 from "../images/DMM/DMMPortfolio-4.webp"
+import DMM5 from "../images/DMM/DMMPortfolio-5.webp"
+import DMM6 from "../images/DMM/DMMPortfolio-6.jpg"
+import DMM7 from "../images/DMM/DMMPortfolio-7.jpg"
+import DMM8 from "../images/DMM/DMMPortfolio-8.jpg"
 
 // UI/UX Images
 // import Design1 from "../images/ui-1.jpg"
@@ -101,6 +119,133 @@ const PortfolioImages = ()=> {
             <>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
+                  src={logo21}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo22}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo23}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo24}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo25}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo26}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo27}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo28}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo29}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo30}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo31}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo32}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo33}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo34}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo35}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo36}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo37}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
+                  src={logo38}
+                  alt=""
+                  className="border rounded-lg w-full h-full"
+                />
+              </div>
+
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+                <img
                   src={logo1}
                   alt=""
                   className="border rounded-lg w-full h-full"
@@ -109,7 +254,7 @@ const PortfolioImages = ()=> {
 
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo21}
+                  src={massagetherapy}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />

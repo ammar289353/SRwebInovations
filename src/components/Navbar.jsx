@@ -152,7 +152,7 @@ const Navbar = () => {
           </li>
 
           <li onClick={() => setMenuOpen(false)}>
-          <a href="https://www.instagram.com/thesrinnovations?igsh=bHo4bDZrY3NvZWY3&utm_source=qr">
+          <a href="https://www.instagram.com/thesr_innovations?igsh=azMzamx0b3MybmN6&utm_source=qr">
           <FaInstagram  className="md:text-[#515151] hidden md:block pt-1 2xl:pt-0 pl-3 text-[2.5vw] 2xl:text-[2vw] md:ml-32  2xl:ml-96 "/>
           </a>
           </li>

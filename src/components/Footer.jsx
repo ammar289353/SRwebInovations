@@ -1,7 +1,7 @@
 import React from "react";
 import "aos/dist/aos.css";
 // import FooterLogo from "../images/footer-logo.png";
-import Navlogo from "../images/512.webp";
+import Navlogo from "../images/SR innovation logo-07.png";
 import { CgMail } from "react-icons/cg";
 import { FaInstagram, FaPhone } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
@@ -29,7 +29,7 @@ const Footer = () => {
          
         </div>
         <div>
-          <a href="https://www.instagram.com/thesrinnovations?igsh=bHo4bDZrY3NvZWY3&utm_source=qr">
+          <a href="https://www.instagram.com/thesr_innovations?igsh=azMzamx0b3MybmN6&utm_source=qr">
           <FaInstagram  className="md:text-[#ffff]  pt-3 ml-36 md:ml-0 mt-5 md:mt-0 text-[10vw] md:text-[2.5vw] "/>
           </a>
           </div>
