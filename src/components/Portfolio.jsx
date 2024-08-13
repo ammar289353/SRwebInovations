@@ -10,19 +10,19 @@ import Web6 from "../images/Website/web6.webp";
 // video
 import video1 from "../videos/VideoAnimation1.mp4"
 // Logo Images
-import logo21 from "../images/Logo/logo21.jpeg";
-import logo22 from "../images/Logo/logo22.jpeg";
-import logo23 from "../images/Logo/logo23.jpeg";
-import logo24 from "../images/Logo/logo24.png";
-import logo25 from "../images/Logo/logo25.png";
-import logo26 from "../images/Logo/logo26.jpeg";
-import logo27 from "../images/Logo/logo27.png";
-import logo28 from "../images/Logo/logo28.png";
-import logo29 from "../images/Logo/logo29.jpeg";
-import logo30 from "../images/Logo/logo30.jpeg";
-import logo31 from "../images/Logo/logo31.jpeg";
-import logo32 from "../images/Logo/logo32.png";
-import logo33 from "../images/Logo/logo33.jpeg";
+// import logo21 from "../images/Logo/logo21.jpeg";
+// import logo22 from "../images/Logo/logo22.jpeg";
+// import logo23 from "../images/Logo/logo23.jpeg";
+// import logo24 from "../images/Logo/logo24.png";
+// import logo25 from "../images/Logo/logo25.png";
+// import logo26 from "../images/Logo/logo26.jpeg";
+// import logo27 from "../images/Logo/logo27.png";
+// import logo28 from "../images/Logo/logo28.png";
+// import logo29 from "../images/Logo/logo29.jpeg";
+// import logo30 from "../images/Logo/logo30.jpeg";
+// import logo31 from "../images/Logo/logo31.jpeg";
+// import logo32 from "../images/Logo/logo32.png";
+// import logo33 from "../images/Logo/logo33.jpeg";
 import logo34 from "../images/Logo/logo34.png";
 import logo35 from "../images/Logo/logo35.png";
 import logo36 from "../images/Logo/logo36.png";
