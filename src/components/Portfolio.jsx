@@ -117,7 +117,7 @@ const PortfolioImages = ()=> {
 
           {category === "logo" && (
             <>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo21}
                   alt=""
@@ -193,8 +193,8 @@ const PortfolioImages = ()=> {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              </div> */}
+              {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo32}
                   alt=""
@@ -207,7 +207,7 @@ const PortfolioImages = ()=> {
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-              </div>
+              </div> */}
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo34}

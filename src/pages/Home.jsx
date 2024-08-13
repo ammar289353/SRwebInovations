@@ -20,12 +20,11 @@ import Business from "../images/Business Building.webp";
 import Organization from "../images/Organization.webp";
 import Rocket from "../images/Rocket.png";
 // Logo Images
-import logo21 from "../images/Logo/logo21.jpeg";
-// import massagetherapy from "../images/massagetherapy.jpg";
-import logo22 from "../images/Logo/logo22.jpeg";
-import logo23 from "../images/Logo/logo23.jpeg";
-import logo24 from "../images/Logo/logo24.png";
-import logo31 from "../images/Logo/logo31.jpeg";
+import logo34 from "../images/Logo/logo34.png";
+import massagetherapy from "../images/massagetherapy.jpg";
+import logo35 from "../images/Logo/logo35.png";
+import logo36 from "../images/Logo/logo36.png";
+import logo37 from "../images/Logo/logo37.png";
 import logo38 from "../images/Logo/logo38.png";
 // Website Images
 import Web1 from "../images/Website/web1.webp";
@@ -215,25 +214,25 @@ const Home = () => {
             <>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo21}
+                  src={logo34}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
 
-              {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={massagetherapy}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
-              </div> */}
+              </div>
 
              
             
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo22}
+                  src={logo35}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
@@ -241,7 +240,7 @@ const Home = () => {
               
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo23}
+                  src={logo36}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
@@ -251,14 +250,7 @@ const Home = () => {
               
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
-                  src={logo24}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo31}
+                  src={logo37}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
