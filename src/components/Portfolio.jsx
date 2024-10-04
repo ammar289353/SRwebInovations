@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 // Website Images
 import Web1 from "../images/Website/web1.webp";
@@ -8,7 +8,7 @@ import Web4 from "../images/Website/web4.webp";
 import Web5 from "../images/Website/web5.webp";
 import Web6 from "../images/Website/web6.webp";
 // video
-import video1 from "../videos/VideoAnimation1.mp4"
+import video1 from "../videos/VideoAnimation1.mp4";
 // Logo Images
 // import logo21 from "../images/Logo/logo21.jpeg";
 // import logo22 from "../images/Logo/logo22.jpeg";
@@ -40,14 +40,14 @@ import logo19 from "../images/Logo/logo19.webp";
 import logo20 from "../images/Logo/logo20.webp";
 
 // DMM Images
-import DMM1 from "../images/DMM/DMMPortfolio-1.webp"
-import DMM2 from "../images/DMM/DMMPortfolio-2.webp"
-import DMM3 from "../images/DMM/DMMPortfolio-3.webp"
-import DMM4 from "../images/DMM/DMMPortfolio-4.webp"
-import DMM5 from "../images/DMM/DMMPortfolio-5.webp"
-import DMM6 from "../images/DMM/DMMPortfolio-6.jpg"
-import DMM7 from "../images/DMM/DMMPortfolio-7.jpg"
-import DMM8 from "../images/DMM/DMMPortfolio-8.jpg"
+import DMM1 from "../images/DMM/N_DM_1.jpeg";
+import DMM2 from "../images/DMM/N_DM_2.jpeg";
+import DMM3 from "../images/DMM/N_DM_3.jpeg";
+import DMM4 from "../images/DMM/N_DM_4.jpeg";
+import DMM5 from "../images/DMM/DMMPortfolio-5.webp";
+import DMM6 from "../images/DMM/DMMPortfolio-6.jpg";
+import DMM7 from "../images/DMM/DMMPortfolio-7.jpg";
+import DMM8 from "../images/DMM/DMMPortfolio-8.jpg";
 
 // UI/UX Images
 // import Design1 from "../images/ui-1.jpg"
@@ -62,8 +62,7 @@ import DMM8 from "../images/DMM/DMMPortfolio-8.jpg"
 // import Design10 from "../images/ui-10.jpg"
 // import Design11 from "../images/ui-11.png"
 
-
-const PortfolioImages = ()=> {
+const PortfolioImages = () => {
   const [category, setCategory] = useState("DMM");
 
   const handleCategoryChange = (category) => {
@@ -72,52 +71,49 @@ const PortfolioImages = ()=> {
 
   return (
     <>
-    <div className="md:flex">
-          <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
-            Our Awesome Work Portfolio
-          </h1>
-          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont">
+      <div className="md:flex">
+        <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
+          Our Awesome Work Portfolio
+        </h1>
+        <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont">
           <button
-              onClick={() => handleCategoryChange("DMM")}
-              className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4] active:text-[#5454D4] "
-            >
-              Digital Markertting
-            </button>
-            <button
-              onClick={() => handleCategoryChange("website")}
-              className=" rounded-full px-4 mb-1  sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5c5cc0] active:text-[#5454D4]"
-            >
-              WEB Development
-            </button>
-            {/* <button
+            onClick={() => handleCategoryChange("DMM")}
+            className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4] active:text-[#5454D4] "
+          >
+            Digital Markertting
+          </button>
+          <button
+            onClick={() => handleCategoryChange("website")}
+            className=" rounded-full px-4 mb-1  sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5c5cc0] active:text-[#5454D4]"
+          >
+            WEB Development
+          </button>
+          {/* <button
               onClick={() => handleCategoryChange("ui/ux")}
               className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-0 hover:text-[#5454D4] active:text-[#5454D4]"
             >
               UI/UX
             </button> */}
-            <button
-              onClick={() => handleCategoryChange("logo")}
-              className="rounded-full px-4 mb-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4] active:text-[#5454D4]"
-            >
-              LOGO DESIGN
-            </button>
-            
-            <button
-              onClick={() => handleCategoryChange("video")}
-              className=" rounded-full px-4 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4] active:text-[#5454D4]"
-            >
-              Video Animation
-            </button>
-            
-           
-          </div>
-        </div>
-       
-        <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between pt-6 px-6 mt-5">
+          <button
+            onClick={() => handleCategoryChange("logo")}
+            className="rounded-full px-4 mb-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4] active:text-[#5454D4]"
+          >
+            LOGO DESIGN
+          </button>
 
-          {category === "logo" && (
-            <>
-              {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+          <button
+            onClick={() => handleCategoryChange("video")}
+            className=" rounded-full px-4 mb-1 sm:pl-1 sm:pr-1 md:pl-6 md:pr-6 lg:px-2  hover:text-[#5454D4] active:text-[#5454D4]"
+          >
+            Video Animation
+          </button>
+        </div>
+      </div>
+
+      <div className="block sm:block md:grid lg:grid grid-cols-3 justify-between pt-6 px-6 mt-5">
+        {category === "logo" && (
+          <>
+            {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo21}
                   alt=""
@@ -194,7 +190,7 @@ const PortfolioImages = ()=> {
                   className="border rounded-lg w-full h-full"
                 />
               </div> */}
-              {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+            {/* <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo32}
                   alt=""
@@ -208,246 +204,237 @@ const PortfolioImages = ()=> {
                   className="border rounded-lg w-full h-full"
                 />
               </div> */}
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo34}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo35}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo36}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo37}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo38}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo34}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo35}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo36}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo37}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo38}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
 
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo1}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo1}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
 
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={massagetherapy}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={massagetherapy}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
 
-             
-            
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo5}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo8}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-  
-              
-              
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo11}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo12}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo13}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              
-              
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo16}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-             
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo19}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-              <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
-                <img
-                  src={logo20}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-            </>
-          )}
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo5}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
 
-          {category === "website" && (
-            <>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={Web1}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={Web2}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={Web3}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={Web4}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={Web5}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={Web6}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo8}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
 
-              
-            </>
-          )}
-           {category === "video" && (
-            <>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo11}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo12}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo13}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo16}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo19}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
+              <img
+                src={logo20}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+          </>
+        )}
+
+        {category === "website" && (
+          <>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <img
+                src={Web1}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <img
+                src={Web2}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <img
+                src={Web3}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <img
+                src={Web4}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <img
+                src={Web5}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <img
+                src={Web6}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+          </>
+        )}
+        {category === "video" && (
+          <>
             <div className="relative border rounded-lg w-[90vw] h-[50vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[15vw] lg:w-[29vw] lg:h-[15vw] mb-10">
-                <video controls autoPlay muted controlsList="nodownload">
-                  <source  src={video1} type="video/mp4" />
-                </video>
-              </div>  
-            </>
-          )}
-          {category === "DMM" && (
-            <>
+              <video controls autoPlay muted controlsList="nodownload">
+                <source src={video1} type="video/mp4" />
+              </video>
+            </div>
+          </>
+        )}
+        {category === "DMM" && (
+          <>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM7}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              <img
+                src={DMM7}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM8}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              <img
+                src={DMM8}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM1}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              <img
+                src={DMM1}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM2}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              <img
+                src={DMM2}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM3}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              <img
+                src={DMM3}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM4}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              <img
+                src={DMM4}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM5}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
+              <img
+                src={DMM5}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
-                <img
-                  src={DMM6}
-                  alt=""
-                  className="border rounded-lg w-full h-full"
-                />
-              </div>
-
-              
-            </>
-          )}
-          {/* {category === "ui/ux" && (
+              <img
+                src={DMM6}
+                alt=""
+                className="border rounded-lg w-full h-full"
+              />
+            </div>
+          </>
+        )}
+        {/* {category === "ui/ux" && (
             <>
             <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
@@ -509,11 +496,9 @@ const PortfolioImages = ()=> {
               
             </>
           )} */}
-
-
-        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default PortfolioImages
+export default PortfolioImages;

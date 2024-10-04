@@ -24,7 +24,6 @@ const Navbar = () => {
     setServicesOpen(!servicesOpen);
   };
 
-
   return (
     <div className="shadow-md w-full fixed z-50 top-0 left-0 font-titleFont ">
       <div className="md:flex items-center h-[15vw] sm:h-auto bg-white md:px-20 px-7">
@@ -45,8 +44,8 @@ const Navbar = () => {
         </div>
         <ul
           className={`md:flex text-left items-start md:pb-2 pb-8 absolute md:static bg-white h-screen  md:h-auto top-0 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 2xl:pl-48 transition-all duration-500 ease-in pt-12 sm:pt-20 md:pt-4 2xl:pt-8  ${
-                      menuOpen ? "top-6" : "top-[-1100px]"
-                    }`}
+            menuOpen ? "top-6" : "top-[-1100px]"
+          }`}
         >
           <li onClick={() => setMenuOpen(false)}>
             <Link
@@ -152,9 +151,9 @@ const Navbar = () => {
           </li>
 
           <li onClick={() => setMenuOpen(false)}>
-          <a href="https://www.instagram.com/thesr_innovations?igsh=azMzamx0b3MybmN6&utm_source=qr">
-          <FaInstagram  className="md:text-[#515151] hidden md:block pt-1 2xl:pt-0 pl-3 text-[2.5vw] 2xl:text-[2vw] md:ml-32  2xl:ml-96 "/>
-          </a>
+            <a href="https://www.instagram.com/thesrinnovations?igsh=azMzamx0b3MybmN6&utm_source=qr">
+              <FaInstagram className="md:text-[#515151] hidden md:block pt-1 2xl:pt-0 pl-3 text-[2.5vw] 2xl:text-[2vw] md:ml-32  2xl:ml-96 " />
+            </a>
           </li>
 
           {/* <li  >
@@ -168,8 +167,7 @@ const Navbar = () => {
               
               </div>
           </li> */}
-         
-         
+
           <li onClick={() => setMenuOpen(false)}>
             <Link
               to="/Contact"

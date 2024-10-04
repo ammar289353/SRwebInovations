@@ -4,10 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.css";
 import Hero from "../images/HeroLaptop.png";
-import SR from "../videos/SR-Innovations.mp4"
-import { FaCheck } from 'react-icons/fa';
-
-
+import SR from "../videos/SR-Innovations.mp4";
+import { FaCheck } from "react-icons/fa";
 
 //  Icons
 import { MdArrowOutward } from "react-icons/md";
@@ -34,14 +32,14 @@ import Web4 from "../images/Website/web4.webp";
 import Web5 from "../images/Website/web5.webp";
 import Web6 from "../images/Website/web6.webp";
 // DMM Images
-import DMM7 from "../images/DMM/DMMPortfolio-7.jpg"
-import DMM8 from "../images/DMM/DMMPortfolio-8.jpg"
-import DMM3 from "../images/DMM/DMMPortfolio-3.webp"
-import DMM4 from "../images/DMM/DMMPortfolio-4.webp"
-import DMM5 from "../images/DMM/DMMPortfolio-5.webp"
-import DMM6 from "../images/DMM/DMMPortfolio-6.jpg"
+import DMM7 from "../images/DMM/N_DM_1.jpeg";
+import DMM8 from "../images/DMM/N_DM_2.jpeg";
+import DMM3 from "../images/DMM/N_DM_3.jpeg";
+import DMM4 from "../images/DMM/N_DM_4.jpeg";
+import DMM5 from "../images/DMM/DMMPortfolio-5.webp";
+import DMM6 from "../images/DMM/DMMPortfolio-6.jpg";
 // Video
-import video1 from "../videos/VideoAnimation1.mp4"
+import video1 from "../videos/VideoAnimation1.mp4";
 // Let's do it
 import Image1 from "../images/Image 1.png";
 import Image2 from "../images/Image 2.png";
@@ -65,7 +63,8 @@ const Home = () => {
         <PiPaintBrushLight className="text-[#ddbf45] hover:text-white hover:bg-[#b0a57a] bg-[#5b5025] rounded-full py-2" />
       ),
       title: "Graphic Design",
-      description:"We create compelling graphic designs that capture your brand's essence and engage your audience, from logos to digital graphics. Let us help you make a lasting impression with high-quality, impactful visuals.",
+      description:
+        "We create compelling graphic designs that capture your brand's essence and engage your audience, from logos to digital graphics. Let us help you make a lasting impression with high-quality, impactful visuals.",
       link: "/Graphic",
     },
     {
@@ -112,12 +111,18 @@ const Home = () => {
 
       <section className="flex flex-col-reverse md:flex-row w-[100%] bg-white h-auto md:mt-28  pb-6 md:pb-24 overflow-hidden">
         <div className="md:w-[50%]" data-aos="fade-right">
-          <h1 className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3vw] 
-          pt-16 2xl:pt-48 ">
+          <h1
+            className="text-[5vw] px-6 md:px-32 font-titleFont text-left text-black font-extrabold md:text-[3vw] 
+          pt-16 2xl:pt-48 "
+          >
             Build Your Awesome Platform
           </h1>
           <p className="px-6 md:pl-32 pt-3 md:pt-5 2xl:text-[1.3vw] font-bodyFont">
-          At SR Innovations, we specialize in helping businesses overcome their unique challenges with efficiency and creativity. Our technical expertise and innovative approach enable us to deliver custom website design, web development, SEO, logo design, and digital marketing solutions tailored for high growth.
+            At SR Innovations, we specialize in helping businesses overcome
+            their unique challenges with efficiency and creativity. Our
+            technical expertise and innovative approach enable us to deliver
+            custom website design, web development, SEO, logo design, and
+            digital marketing solutions tailored for high growth.
           </p>
           <Link to="/Services">
             <div className="px-6 md:px-32 pt-3 md:pt-4">
@@ -128,7 +133,10 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        <div className="md:w-[50%] mt-20 md:mt-0 2xl:mt-12 " data-aos="fade-left">
+        <div
+          className="md:w-[50%] mt-20 md:mt-0 2xl:mt-12 "
+          data-aos="fade-left"
+        >
           <img src={Hero} alt="" />
         </div>
       </section>
@@ -136,37 +144,52 @@ const Home = () => {
       {/* About Us */}
 
       <section className="block md:flex px-6 pb-12 w-[100%]">
-               <div className="w-[100%] md:w-[50%]" >
-                   <video controls autoPlay muted controlsList="nodownload">
-                      <source src={SR} type="video/mp4" />
-                   </video>
-               </div>
-               <div className="w-[100%] md:w-[50%] px-2 pt-6 md:pt-0 md:px-6 ">
-                    <p className="text-[#5454D4] font-bold ">ABOUT US</p>
-                    <h1 className="font-bold text-[6vw] md:text-[3vw] font-titleFont ">Empowering Projects <span className="text-[#5454D4]">Thrive</span>.</h1>
-                    <p className="font-bodyFont pt-3 text-[4vw] md:text-[1.5vw] " >Since 2020, SR Innovations has delivered innovative solutions, becoming a trusted leader in  equipping  businesses with pioneering technology solutions.</p>
-                    <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw]" >
-                      <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
-                       A focus on tackling business challenges
-                    </p>
-                    <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw] " >
-                      <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
-                       At the forefront of development
-                    </p>
-                    <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw]" >
-                      <FaCheck className="bg-[#5454D4] rounded-full text-white px-2" size={24} />
-                       Powered by innovation
-                    </p>
+        <div className="w-[100%] md:w-[50%]">
+          <video controls autoPlay muted controlsList="nodownload">
+            <source src={SR} type="video/mp4" />
+          </video>
+        </div>
+        <div className="w-[100%] md:w-[50%] px-2 pt-6 md:pt-0 md:px-6 ">
+          <p className="text-[#5454D4] font-bold ">ABOUT US</p>
+          <h1 className="font-bold text-[6vw] md:text-[3vw] font-titleFont ">
+            Empowering Projects <span className="text-[#5454D4]">Thrive</span>.
+          </h1>
+          <p className="font-bodyFont pt-3 text-[4vw] md:text-[1.5vw] ">
+            Since 2020, SR Innovations has delivered innovative solutions,
+            becoming a trusted leader in equipping businesses with pioneering
+            technology solutions.
+          </p>
+          <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw]">
+            <FaCheck
+              className="bg-[#5454D4] rounded-full text-white px-2"
+              size={24}
+            />
+            A focus on tackling business challenges
+          </p>
+          <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw] ">
+            <FaCheck
+              className="bg-[#5454D4] rounded-full text-white px-2"
+              size={24}
+            />
+            At the forefront of development
+          </p>
+          <p className="flex pt-4 md:pt-2 gap-2 md:gap-4 font-bodyFont text-[4vw] md:text-[1.5vw]">
+            <FaCheck
+              className="bg-[#5454D4] rounded-full text-white px-2"
+              size={24}
+            />
+            Powered by innovation
+          </p>
 
-                    <Link to="/About">
-                          <div className="pt-3 md:pt-2">
-                            <button className="flex bg-[#5454D4] text-[4vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-2 md:py-1 mt-2 hover:bg-white hover:text-[#5454D4] border border-[#5454D4] ">
-                                 Learn More{" "}
-                              <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
-                            </button>
-                          </div>
-                    </Link>
-               </div>
+          <Link to="/About">
+            <div className="pt-3 md:pt-2">
+              <button className="flex bg-[#5454D4] text-[4vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-2 md:py-1 mt-2 hover:bg-white hover:text-[#5454D4] border border-[#5454D4] ">
+                Learn More{" "}
+                <MdArrowOutward className="text-[6vw] md:text-[2vw] md:pt-2" />
+              </button>
+            </div>
+          </Link>
+        </div>
       </section>
 
       {/* OUR WORK PORTFOLIO */}
@@ -175,7 +198,7 @@ const Home = () => {
           <h1 className="text-[6vw] md:text-[3vw] pl-3 font-titleFont font-extrabold">
             Our Awesome Work Portfolio
           </h1>
-          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont"> 
+          <div className="block sm:block md:flex lg:flex m-auto pb-4 pt-4 font-bold font-titleFont">
             <button
               onClick={() => handleCategoryChange("DMM")}
               className=" rounded-full px-3 sm:pl-3 sm:pr-3 md:pl-6 md:pr-6 lg:px-2 hover:text-[#5454D4]"
@@ -209,8 +232,7 @@ const Home = () => {
           </div>
         </div>
         <div className="block sm:block md:grid lg:grid grid-cols-3 pl-6 justify-between mt-5">
-          
-        {category === "logo" && (
+          {category === "logo" && (
             <>
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
@@ -228,8 +250,6 @@ const Home = () => {
                 />
               </div>
 
-             
-            
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo35}
@@ -237,7 +257,7 @@ const Home = () => {
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-              
+
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo36}
@@ -245,9 +265,7 @@ const Home = () => {
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-  
-              
-              
+
               <div className="relative border rounded-lg w-[90vw] h-[52vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[22vw] lg:w-[29vw] lg:h-[22vw] mb-10">
                 <img
                   src={logo37}
@@ -267,113 +285,108 @@ const Home = () => {
 
           {category === "website" && (
             <>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={Web1}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={Web2}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={Web3}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={Web4}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={Web5}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={Web6}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-
-              
             </>
           )}
           {category === "video" && (
             <>
-            <div className="relative border rounded-lg w-[90vw] h-[50vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[15vw] lg:w-[29vw] lg:h-[15vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-[50vw] sm:w-[90vw] sm:h-[52vw] md:w-[29vw] md:h-[15vw] lg:w-[29vw] lg:h-[15vw] mb-10">
                 <video controls controlsList="nodownload">
-                  <source  src={video1} type="video/mp4" />
+                  <source src={video1} type="video/mp4" />
                 </video>
-              </div>  
+              </div>
             </>
           )}
 
           {category === "DMM" && (
             <>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={DMM7}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={DMM8}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={DMM3}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={DMM4}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={DMM5}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-            <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
+              <div className="relative border rounded-lg w-[90vw] h-auto  md:w-[29vw] mb-10">
                 <img
                   src={DMM6}
                   alt=""
                   className="border rounded-lg w-full h-full"
                 />
               </div>
-
-              
             </>
           )}
-          
         </div>
-            
+
         <Link to="/Portfolio">
           <div className="pl-24  md:px-[40vw]">
             <button className="flex bg-[#5454D4] text-[4vw] lg:text-[1.5vw] text-white rounded-2xl px-6 py-2 md:py-1 mt-4 hover:bg-white hover:text-[#5454D4] border border-[#5454D4] ">
@@ -424,7 +437,10 @@ const Home = () => {
       </section>
 
       {/* Let's do it  */}
-      <section className="h-auto pb-6 px-6 lg:px-24 overflow-x-hidden" data-aos="zoom-in-up">
+      <section
+        className="h-auto pb-6 px-6 lg:px-24 overflow-x-hidden"
+        data-aos="zoom-in-up"
+      >
         <div className="pt-8 flex flex-col md:flex-row">
           <div className="md:w-[50%]">
             <span className="text-[#093D84] font-medium">LET'S DO IT</span>
@@ -464,7 +480,7 @@ const Home = () => {
                   Digital Marketing
                 </button>
               </Link>
-            
+
               <Link to="/SEO">
                 <button className="mx-1 px-3  py-1  my-1 rounded-md bg-[#FDEBEB] text-[#FF6262] ">
                   SEO
@@ -475,12 +491,23 @@ const Home = () => {
         </div>
         <div className="hidden md:flex gap-8 pt-12 md:pt-24">
           <img className="w-72 2xl:w-[32rem]" src={Image1} alt="" />
-          <img className="w-72 pt-4 md:pt-0 md:w-[35vw] 2xl:w-[40vw] " src={Image2} alt="" />
-          <img className="w-72  2xl:w-[32rem] pt-4 md:pt-0" src={Image3} alt="" />
+          <img
+            className="w-72 pt-4 md:pt-0 md:w-[35vw] 2xl:w-[40vw] "
+            src={Image2}
+            alt=""
+          />
+          <img
+            className="w-72  2xl:w-[32rem] pt-4 md:pt-0"
+            src={Image3}
+            alt=""
+          />
         </div>
       </section>
       {/* cards */}
-      <section className="bg-[#2A2A2A] pb-8 overflow-x-hidden" data-aos="zoom-in-up">
+      <section
+        className="bg-[#2A2A2A] pb-8 overflow-x-hidden"
+        data-aos="zoom-in-up"
+      >
         <div className="text-center mt-4 pt-6">
           <h1 className="font-extrabold font-titleFont text-white text-[6vw] md:text-[3.5vw]">
             Best Digital & <span className="text-[#5454D4]">IT Company</span>{" "}
@@ -514,15 +541,16 @@ const Home = () => {
               src={Rocket}
               alt=""
             />
-            <p className="font-bodyFont text-[3.5vw] md:text-[2vw] text-white pr-5 md:pr-0  ">Startups</p>
+            <p className="font-bodyFont text-[3.5vw] md:text-[2vw] text-white pr-5 md:pr-0  ">
+              Startups
+            </p>
           </div>
         </div>
       </section>
       {/* TESTIMONIAL */}
-        <Testimonial/>
+      <Testimonial />
       {/* Contact  */}
-       <ContactForm/>
-      
+      <ContactForm />
     </>
   );
 };
