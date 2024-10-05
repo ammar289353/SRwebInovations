@@ -36,8 +36,8 @@ import DMM7 from "../images/DMM/N_DM_1.jpeg";
 import DMM8 from "../images/DMM/N_DM_2.jpeg";
 import DMM3 from "../images/DMM/N_DM_3.jpeg";
 import DMM4 from "../images/DMM/N_DM_4.jpeg";
-import DMM5 from "../images/DMM/DMMPortfolio-5.webp";
-import DMM6 from "../images/DMM/DMMPortfolio-6.jpg";
+import DMM5 from "../images/DMM/N_DMM_5.jpeg";
+import DMM6 from "../images/DMM/N_DMM_6.jpeg";
 // Video
 import video1 from "../videos/VideoAnimation1.mp4";
 // Let's do it
